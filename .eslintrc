@@ -1,7 +1,27 @@
 {
-  "parser": "babel-eslint",
-  "rules": {
-    "strict": 0
+  "root": true,
+  "extends": ["airbnb", "prettier/react"],
+  "settings": {
+    "import/core-modules": ["gatsby"]
   },
-  "extends": ["eslint:recommended", "plugin:react/recommended"]
+  "globals": {
+    "graphql": true
+  },
+  "rules": {
+    "react/jsx-filename-extension": [
+      1,
+      {
+        "extensions": [".js", ".jsx"]
+      }
+    ],
+    "jsx-a11y/anchor-is-valid": [
+      "error",
+      {
+        "components": ["Link"],
+        "specialLink": ["to"],
+        "aspects": ["noHref", "invalidHref", "preferButton"]
+      }
+    ]
+  },
+  "plugins": ["prettier"]
 }

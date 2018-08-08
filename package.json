@@ -1,31 +1,33 @@
 {
-	"name": "raoaditya.com",
-	"description": "Personal website of Aditya Rao.",
-	"license": "MIT",
-	"scripts": {
-		"develop": "gatsby develop",
-		"build": "gatsby build",
-		"serve": "gatsby serve"
-	},
-	"dependencies": {
-		"gatsby": "next",
-		"gatsby-plugin-react-helmet": "next",
-		"gatsby-plugin-sass": "next",
-		"gatsby-plugin-typography": "next",
-		"node-sass": "^4.9.2",
-		"react": "^16.4.2",
-		"react-dom": "^16.4.2",
-		"react-helmet": "^5.2.0",
-		"react-typography": "^0.16.13",
-		"typography": "^0.16.17"
-	},
-	"devDependencies": {
-		"babel-eslint": "^8.2.6",
-		"eslint": "^5.3.0",
-		"eslint-loader": "^2.1.0",
-		"eslint-plugin-import": "^2.13.0",
-		"eslint-plugin-react": "^7.10.0",
-		"gatsby-plugin-eslint": "^1.0.3",
-		"prettier": "1.14.0"
-	}
+  "name": "raoaditya.com",
+  "description": "Personal website of Aditya Rao.",
+  "license": "MIT",
+  "scripts": {
+    "develop": "gatsby develop",
+    "build": "gatsby build",
+    "serve": "gatsby serve"
+  },
+  "dependencies": {
+    "gatsby": "next",
+    "gatsby-plugin-react-helmet": "next",
+    "gatsby-plugin-sass": "next",
+    "node-sass": "^4.9.2",
+    "react": "^16.4.2",
+    "react-dom": "^16.4.2",
+    "react-helmet": "^5.2.0",
+    "react-typography": "^0.16.13",
+    "typography": "^0.16.17"
+  },
+  "devDependencies": {
+    "eslint": "^5.3.0",
+    "eslint-config-airbnb": "^17.0.0",
+    "eslint-config-prettier": "^2.9.0",
+    "eslint-loader": "^2.1.0",
+    "eslint-plugin-import": "^2.13.0",
+    "eslint-plugin-jsx-a11y": "^6.1.1",
+    "eslint-plugin-prettier": "^2.6.2",
+    "eslint-plugin-react": "^7.10.0",
+    "gatsby-plugin-eslint": "^1.0.3",
+    "prettier": "1.14.0"
+  }
 }

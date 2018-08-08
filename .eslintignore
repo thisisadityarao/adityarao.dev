@@ -3,3 +3,4 @@ gatsby-node.js
 node_modules/
 package.json
 public/
+.cache
