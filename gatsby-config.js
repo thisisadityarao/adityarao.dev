@@ -19,5 +19,11 @@ module.exports = {
         precision: 8, // SASS default: 5
       },
     },
+    {
+      resolve: 'gatsby-plugin-google-fonts',
+      options: {
+        fonts: ['Source+Sans+Pro:400,400i,700,700i', 'Rubik:300,300i,400,400i,700,700i'],
+      },
+    },
   ],
 };

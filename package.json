@@ -9,7 +9,8 @@
   },
   "dependencies": {
     "gatsby": "next",
-    "gatsby-plugin-react-helmet": "next",
+    "gatsby-plugin-google-fonts": "0.0.4",
+    "gatsby-plugin-react-helmet": "^3.0.0-beta.4",
     "gatsby-plugin-sass": "next",
     "node-sass": "^4.9.2",
     "react": "^16.4.2",
