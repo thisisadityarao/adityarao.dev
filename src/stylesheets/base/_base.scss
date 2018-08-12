@@ -1,0 +1,107 @@
+html {
+  font-size: 1.125em;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  font-family: "Source Sans Pro", serif;
+  font-weight: 400;
+  line-height: 1.45;
+  color: #333;
+}
+
+/* PARAGRAPHS
+  ========================================================================== */
+
+p {
+  margin-bottom: 1.3em;
+  color: #333;
+  margin: 0;
+  //hyphens: auto;
+}
+
+/* HEADINGS
+  ========================================================================== */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Asap", sans-serif;
+  /* non-scalable fallback for old browsers */
+  margin: 21px 0 0;
+  /* 21px, will be ignored by old browsers */
+  margin-top: 1.5rem;
+  margin-bottom: 0.5em;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+h1 {
+  margin-top: 0;
+  font-size: 3.157em;
+}
+
+h2 {
+  font-size: 2.369em;
+}
+
+h3 {
+  font-size: 1.777em;
+}
+
+h4 {
+  font-size: 1.333em;
+}
+
+/* SMALL TEXT
+  ========================================================================== */
+
+small {
+  font-size: 0.75em;
+}
+
+/* LINKS
+  ========================================================================== */
+
+a {
+  text-decoration: none;
+  &:link {
+    color: #ff6732;
+  }
+
+  &:visited {
+    color: #ff6732;
+  }
+
+  &:focus,
+  &:hover {
+    border-bottom: 1px solid #ff6732;
+  }
+
+  &:active {
+    color: #ff9d00;
+  }
+}
+
+/* IMAGES
+  ========================================================================== */
+
+img {
+  height: auto;
+  width: auto;
+  /* max-width allows image to be responsive. */
+  max-width: 100%;
+}
+
+/* LISTS
+  ========================================================================== */
+li,
+ul {
+  margin: 0;
+  padding: 0;
+}

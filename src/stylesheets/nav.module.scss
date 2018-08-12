@@ -1,0 +1,16 @@
+@import "base/global";
+
+.nav_list {
+  width: 70%;
+  height: 45px;
+  max-width: 320px;
+  padding: 0 5px;
+  padding-top: 25px;
+  float: right;
+}
+
+.nav_list_item {
+  display: inline-block;
+  width: 33.33%;
+  text-align: center;
+}

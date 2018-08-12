@@ -1,0 +1,17 @@
+@import "base/global";
+
+.socialIconsContainer {
+  max-width: 100%;
+  overflow: auto;
+  margin-top: 1.5rem;
+}
+
+.socialIcons {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+
+  &:not(:last-of-type) {
+    margin-right: 4em;
+  }
+}
