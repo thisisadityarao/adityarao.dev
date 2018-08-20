@@ -12,10 +12,34 @@ export default () => (
     <title>Aditya Rao</title>
     <meta name="author" content="Aditya Rao" />
     <meta name="description" content="Aditya Rao is a Front-End Developer." />
-    <link rel="apple-touch-icon" href="../../static/apple-touch-icon-144x144.png" />
-    <link rel="apple-touch-icon" href="../../static/apple-touch-icon-152x152.png" />
-    <link rel="icon" href="../../static/favicon-16x16.png" sizes="16x16" />
-    <link rel="icon" href="../../static/favicon-32x32.png" sizes="32x32" />
-    <link rel="icon" href="../../static/favicon.ico" />
+    <link
+      rel="icon"
+      href="../../static/favicon.ico"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="../../static/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../../static/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="../../static/favicon-16x16.png"
+    />
+    <link rel="manifest" href="../../static/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="../../static/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
+    <meta name="msapplication-TileColor" content="#2b5797" />
+    <meta name="theme-color" content="#ffffff" />
   </Helmet>
 );

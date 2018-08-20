@@ -1,5 +1,3 @@
-const autoprefixer = require('autoprefixer');
-
 module.exports = {
   plugins: [
     // ESLint config
@@ -15,24 +13,11 @@ module.exports = {
       },
     },
     'gatsby-plugin-react-helmet',
+    'gatsby-plugin-styled-components',
     {
-      resolve: 'gatsby-plugin-sass',
+      resolve: 'gatsby-plugin-typography',
       options: {
-        postCssPlugins: [
-          autoprefixer({
-            grid: true,
-            flexbox: true,
-            supports: true,
-            remove: true,
-          }),
-        ],
-        precision: 8, // SASS default: 5
-      },
-    },
-    {
-      resolve: 'gatsby-plugin-google-fonts',
-      options: {
-        fonts: ['Source+Sans+Pro:400,400i,600,600i,700,700i', 'Asap:500,500i,600,600i'],
+        pathToConfigModule: 'src/utils/typography.js',
       },
     },
   ],

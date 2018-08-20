@@ -1,10 +1,21 @@
 import React from 'react';
-import styles from '../stylesheets/footer.module.scss';
+import styled from 'styled-components';
+
+const Footer = styled.footer`
+  width: 100%;
+  height: 5rem;
+  background: #fafafa;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+`;
 
 export default () => (
-  <footer className={ styles.footer }>
-    <small className={ styles.small }>
+  <Footer>
+    <small>
     &copy;2018 All rights reserved - Designed and coded by Aditya
     </small>
-  </footer>
+  </Footer>
 );

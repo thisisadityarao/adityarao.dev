@@ -1,6 +1,0 @@
-// Media Query Mixins
-@mixin xs { @media (min-width: #{$screen-xs-min}) {@content;} } // Tiny devices
-@mixin sm { @media (min-width: #{$screen-sm-min}) {@content;} } // Small devices
-@mixin md { @media (min-width: #{$screen-md-min}) {@content;} } // Medium devices
-@mixin lg { @media (min-width: #{$screen-lg-min}) {@content;} } // Large devices
-@mixin xl { @media (min-width: #{$screen-xl-min}) {@content;} } // Extra large devices
