@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="350px" height="150px" viewBox="0 0 350 150" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.2 (57519) - http://www.bohemiancoding.com/sketch -->
+    <title>Logo</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M83.5024591,2.30326296 L0.640849857,143.028517 C-0.659182862,145.218673 0.0836929772,148.056622 2.28136734,149.352207 C2.99329001,149.753222 3.79807217,150 4.63380749,150 L170.357026,150 C172.926138,150 175,147.933233 175,145.372909 C175,144.540033 174.783328,143.738004 174.349984,143.028517 L91.5193275,2.30326296 C90.2192948,0.0822593913 87.3716041,-0.65807513 85.1429766,0.637510282 C84.4620071,1.03852481 83.9048502,1.62462298 83.5024591,2.30326296 Z" id="path-1"></path>
+        <filter x="-57.1%" y="-33.3%" width="214.3%" height="233.3%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="50" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="25" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.2 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <filter x="-76.9%" y="-33.3%" width="253.8%" height="233.3%" filterUnits="objectBoundingBox" id="filter-3">
+            <feOffset dx="0" dy="50" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="25" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.2 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <circle id="path-4" cx="325" cy="130" r="20"></circle>
+        <filter x="-250.0%" y="-125.0%" width="600.0%" height="600.0%" filterUnits="objectBoundingBox" id="filter-5">
+            <feOffset dx="0" dy="50" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="25" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.2 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Logo" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="ar-color-logo" transform="translate(3.000000, 0.000000)">
+            <g id="A" fill-rule="nonzero">
+                <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                <use fill="#FE813F" xlink:href="#path-1"></use>
+            </g>
+            <g id="R" filter="url(#filter-3)" transform="translate(175.000000, 0.000000)">
+                <polygon id="Shape" fill="#333399" points="130 150 92 88 0 88 0 150"></polygon>
+                <path d="M76,108.278146 C105.726251,108.043872 130,83.8574271 130,53.6423841 C130,24.1864445 105.726251,0 76,0 L0,0 L0,150 C2.21409648e-15,108.278145 76,108.278146 76,108.278146 Z" id="Shape" fill="#6772E5"></path>
+            </g>
+            <g id="O" fill-rule="nonzero">
+                <use fill="black" fill-opacity="1" filter="url(#filter-5)" xlink:href="#path-4"></use>
+                <use fill="#FFD257" xlink:href="#path-4"></use>
+            </g>
+        </g>
+    </g>
+</svg>

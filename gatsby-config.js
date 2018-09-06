@@ -13,12 +13,34 @@ module.exports = {
       },
     },
     'gatsby-plugin-react-helmet',
-    'gatsby-plugin-styled-components',
     {
-      resolve: 'gatsby-plugin-typography',
+      resolve: '@wapps/gatsby-plugin-fonts',
       options: {
-        pathToConfigModule: 'src/utils/typography.js',
+        googleFonts: {
+          families: [
+            'Source Sans Pro:400,400i,700,700i',
+            'Asap:400,400i,700,700i',
+          ],
+        },
       },
+    },
+    {
+      resolve: 'gatsby-plugin-react-svg',
+      options: {
+        rule: {
+          include: /assets/,
+        },
+      },
+    },
+    {
+      resolve: 'gatsby-plugin-styled-components',
+      options: {
+        displayName: false,
+      },
+    },
+    {
+      resolve: 'gatsby-plugin-stylelint',
+      options: { files: ['**/*.js*'] },
     },
   ],
 };
