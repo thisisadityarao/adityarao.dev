@@ -35,10 +35,14 @@ const Logo = styled.h1`
   margin-bottom: 1.5rem;
   font-weight: 700;
 
-  a {
+  & a {
+    color: #000;
     text-decoration: none;
-    color: #3d4852;
   }
+  & a:visited {
+    color: #000;
+  }
+  & a:focus,
   a:hover {
     color: #3b92de;
   }

@@ -10,7 +10,7 @@ const SectionContact = styled.section`
   max-width: 1200px;
   margin: 0 auto;
   padding: 1.5rem;
-  padding-bottom: 6rem;
+  padding-bottom: 10rem;
 
   @media (min-width: 576px) {
     padding-top: 4rem;

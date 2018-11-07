@@ -71,6 +71,10 @@ const LinkButton = styled.a`
   text-decoration: none;
   background-color: #e11665;
 
+  &:link {
+    color: #fff;
+  }
+
   &:hover {
     opacity: 1;
     background-color: #ff4b6e;
