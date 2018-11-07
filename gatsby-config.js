@@ -14,17 +14,6 @@ module.exports = {
     },
     'gatsby-plugin-react-helmet',
     {
-      resolve: '@wapps/gatsby-plugin-fonts',
-      options: {
-        googleFonts: {
-          families: [
-            'Source Sans Pro:400,400i,700,700i',
-            'Asap:400,400i,700,700i',
-          ],
-        },
-      },
-    },
-    {
       resolve: 'gatsby-plugin-react-svg',
       options: {
         rule: {
@@ -33,14 +22,22 @@ module.exports = {
       },
     },
     {
-      resolve: 'gatsby-plugin-styled-components',
+      resolve: '@wapps/gatsby-plugin-fonts',
       options: {
-        displayName: false,
+        googleFonts: {
+          families: [
+            'Fira Sans:300,300i,400,400i,700,700i,900,900i',
+            'Nunito Sans:300,300i,400,400i,700,700i,900,900i',
+          ],
+          subsets: ['latin'],
+        },
       },
     },
     {
-      resolve: 'gatsby-plugin-stylelint',
-      options: { files: ['**/*.js*'] },
+      resolve: 'gatsby-plugin-styled-components',
+      options: {
+        pure: true,
+      },
     },
   ],
 };
