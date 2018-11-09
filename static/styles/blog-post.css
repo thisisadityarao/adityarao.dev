@@ -1,0 +1,134 @@
+article {
+  max-width: 40em;
+  margin: auto;
+  margin-bottom: 15rem;
+  padding: 1.5rem;
+  line-height: 1.5;
+}
+
+article h1 {
+  margin-bottom: 4rem;
+}
+
+article p {
+  max-width: 100%;
+}
+
+article h2 {
+  font-size: 2em;
+}
+article h3 {
+  font-size: 1.8em;
+}
+
+@media (min-width: 992px) {
+  article h3 {
+  font-size: 1.5em;
+}
+}
+
+/** Introduces Vertical Rhythm.
+*   Whitespace above subhead is larger than whitespace below subhead
+*/
+article p + h2 {
+  margin-top: 2rem;
+}
+
+article h2 + p {
+  margin-top: 0.7rem;
+}
+
+article p + h3 {
+  margin-top: 2.1rem;
+}
+
+article h3 + p {
+  margin-top: 0.7rem;
+}
+
+article p + h4 {
+  margin-top: 2.1rem;
+}
+
+article h4 + p {
+  margin-top: 0.7rem;
+}
+
+/** Introduces Vertical Rhythm.
+*   Whitespace above list items.
+*/
+article ul,
+li {
+  margin-top: 1.05rem;
+  padding: 0;
+}
+
+article ul p,
+li p {
+  margin: 0;
+  padding: 0;
+}
+
+article ul {
+  margin-left: 1rem;
+  list-style-position: outside;
+}
+
+article li + li {
+  margin-top: 1.5rem;
+}
+
+article p + p {
+  margin-top: 1rem;
+}
+
+article ul {
+  margin-left: 2.5rem;
+}
+
+article ul + p {
+  margin-top: 0.8rem;
+}
+
+/* BLOCKQUOTE
+  ========================================================================== */
+
+article blockquote {
+  font-style: italic;
+  margin: 1.5em 0;
+  border-left: 2px solid #ff6732;
+  padding: 0.75em 0 0 1.5em;
+}
+
+/* 'pre' Element
+  ========================================================================== */
+
+pre {
+  display: block;
+  padding: 9.5px;
+  margin: 1em 0 10px;
+  font-size: 1em;
+  line-height: 1.5;
+  color: #333;
+  word-break: break-all;
+  word-wrap: break-word;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* 'code' Element
+  ========================================================================== */
+
+code {
+  font-family: monospace;
+  padding: 2px 4px;
+  font-size: 100%;
+  color: #333;
+  border-radius: 4px;
+  background-color: #eff0f1;
+}
+
+pre code {
+  background-color: white;
+}

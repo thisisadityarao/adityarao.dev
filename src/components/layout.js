@@ -46,19 +46,19 @@ const GlobalStyle = createGlobalStyle`
   color: #22292f;
   }
   h1 {
-    font-size: ${modularScale(6, '1em', 'majorThird')};
-  }
-  h2 {
     font-size: ${modularScale(5, '1em', 'majorThird')};
   }
-  h3 {
+  h2 {
     font-size: ${modularScale(4, '1em', 'majorThird')};
   }
-  h4 {
+  h3 {
     font-size: ${modularScale(3, '1em', 'majorThird')};
   }
-  h5 {
+  h4 {
     font-size: ${modularScale(2, '1em', 'majorThird')};
+  }
+  h5 {
+    font-size: ${modularScale(1, '1em', 'majorThird')};
   }
   h6 {
     font-size: ${modularScale(1, '1em', 'majorThird')};
@@ -70,7 +70,7 @@ const GlobalStyle = createGlobalStyle`
   a:link {
     cursor: pointer;
     opacity: 1;
-	  color: #3b92de;
+  color: #3b92de;
   }
   a:visited {
     color: #1890ff;

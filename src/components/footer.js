@@ -4,7 +4,6 @@ import styled from 'styled-components';
 const Footer = styled.footer`
   height: 100px;
   width: 100%;
-  margin-top: -100px;
   display: flex;
   align-items: center;
   background-image: linear-gradient(to right, #2193b0, #6dd5ed);
