@@ -46,6 +46,7 @@ const SocialIcons = styled.ul`
   display: flex;
   flex-direction: column;
   margin-top: 4em;
+  padding-left: 0;
 
   @media (min-width: 786px) {
     flex-direction: row;

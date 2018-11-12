@@ -30,6 +30,10 @@ const SectionAbout = styled.section`
     }
   }
 
+  ul {
+    padding-left: 0;
+  }
+
   li {
     display: inline-block;
     color: #29384d;

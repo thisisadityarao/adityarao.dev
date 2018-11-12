@@ -1,66 +1,53 @@
-import React from 'react';
-import { Link } from 'gatsby';
+import React, { Component } from 'react';
 import styled from 'styled-components';
-import Nav from './nav';
+import SideBar from './SideBar';
+import HeaderWrapper from './HeaderWrapper';
+
+const TopBar = styled.div`
+  height: 8px;
+  background-color: #ff4b6e;
+`;
 
 const Header = styled.header`
   width: 100%;
-  padding-top: 50px;
-  padding-bottom: 20px;
-  border-top: 6px solid #e11665;
+  padding-top: 42px;
+  margin-bottom: 2rem;
 `;
 
-const HeaderWrapper = styled.div`
-  width: 100%;
-  max-width: 1200px;
-  height: 160px;
-  margin: 0 auto;
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+export default class HeaderComponent extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      sideDrawerOpen: false,
+    };
 
-  @media (min-width: 758px) and (max-width: 1440px) {
-    justify-content: space-between;
-  }
-`;
-
-const Logo = styled.h1`
-  display: flex;
-  align-self: center;
-  font-size: 2rem;
-  line-height: 1.1;
-  margin-top: 1rem;
-  margin-bottom: 1.5rem;
-  font-weight: 700;
-
-  & a {
-    color: #000;
-    text-decoration: none;
-  }
-  & a:visited {
-    color: #000;
-  }
-  & a:focus,
-  a:hover {
-    color: #3b92de;
+    this.drawerToggle = this.drawerToggle.bind(this);
+    this.navCloseHandler = this.navCloseHandler.bind(this);
   }
 
-  @media (min-width: 576px) {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
+  drawerToggle() {
+    this.setState(prevState => ({ sideDrawerOpen: !prevState.sideDrawerOpen }));
   }
-`;
 
-export default () => (
-  <Header>
-    <HeaderWrapper>
-      <Logo>
-        <Link to="/">aditya rao</Link>
-      </Logo>
+  navCloseHandler() {
+    this.setState({ sideDrawerOpen: false });
+  }
 
-      <Nav />
-    </HeaderWrapper>
-  </Header>
-);
+  render() {
+    let sideDrawer;
+
+    if (this.state.sideDrawerOpen) {
+      sideDrawer = <SideBar close={this.navCloseHandler} />;
+    }
+
+    return (
+      <>
+        <TopBar />
+        <Header>
+          <HeaderWrapper clickHandler={this.drawerToggle} />
+          {sideDrawer}
+        </Header>
+      </>
+    );
+  }
+}
