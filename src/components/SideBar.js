@@ -29,9 +29,8 @@ const Nav = styled.ul`
   right: 0px;
   top: 0px;
   bottom: 0px;
-  left: 0;
   z-index: 100;
-  width: 100%;
+  width: 70%;
 
   background-image: linear-gradient(to bottom, #d74177, #3a3897);
 
