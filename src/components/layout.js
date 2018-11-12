@@ -4,9 +4,9 @@
 import React from 'react';
 import { createGlobalStyle } from 'styled-components';
 import { modularScale } from 'polished';
-import Head from './head';
-import Header from './header';
-import Footer from './footer';
+import Head from './Head';
+import HeaderComponent from './Header';
+import Footer from './Footer';
 
 // CSS Reset
 import '../../node_modules/sanitize.css/sanitize.css';
@@ -24,11 +24,10 @@ const GlobalStyle = createGlobalStyle`
   height: 100%;
   width: 100%;
   padding: 0;
-  margin: 0;
   font-family: "Nunito Sans", sans-serif;
   font-size: ${modularScale(0, '1em', 'majorThird')};
   line-height: 1.4;
-
+  overflow-x: hidden;
   }
 
   p {
@@ -64,43 +63,11 @@ const GlobalStyle = createGlobalStyle`
     font-size: ${modularScale(1, '1em', 'majorThird')};
   }
 
-  a {
-    text-decoration: underline;
-  }
-  a:link {
-    cursor: pointer;
-    opacity: 1;
-  color: #3b92de;
-  }
-  a:visited {
-    color: #1890ff;
-  }
-  a:focus,
-  a:hover {
-    opacity: 0.5;
-    transition: opacity .15s ease-in;
-  }
-  a:active {
-    color: #1890ff;
-  }
-
   img {
     height: auto;
     width: auto;
     /* max-width allows image to be responsive. */
     max-width: 100%;
-  }
-
-  ul,
-  ol {
-    padding-left: 0;
-    list-style-position: inside;
-  }
-
-  li,
-  ul {
-    margin: 0;
-    padding: 0;
   }
 
   // Tab Styles
@@ -158,7 +125,7 @@ export default ({ children }) => (
   <>
     <Head />
     <GlobalStyle />
-    <Header />
+    <HeaderComponent />
     {children}
     <Footer />
   </>

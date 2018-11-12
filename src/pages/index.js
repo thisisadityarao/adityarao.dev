@@ -1,9 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
-import Layout from '../components/layout';
-import SectionAbout from '../components/aboutSection';
-import SectionHireMe from '../components/hiremeSection';
-import SectionContact from '../components/contactSection';
+import Layout from '../components/Layout';
+import SectionAbout from '../components/AboutSection';
+import SectionHireMe from '../components/HireMeSection';
+import SectionContact from '../components/ContactSection';
 
 const HomeSection = styled.section`
   min-height: 100%;

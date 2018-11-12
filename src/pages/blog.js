@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Link, graphql } from 'gatsby';
-import Layout from '../components/layout';
+import Layout from '../components/Layout';
 
 const BlogPostLink = styled(Link)`
   color: #29384d;
@@ -11,7 +11,8 @@ const BlogPostLink = styled(Link)`
     color: #29384d;
   }
 
-  :focus, :hover {
+  :focus,
+  :hover {
     color: #3b92de;
   }
 
@@ -77,7 +78,7 @@ export default ({ data }) => (
 
 export const query = graphql`
   query {
-    allMarkdownRemark {
+    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
       totalCount
       edges {
         node {
