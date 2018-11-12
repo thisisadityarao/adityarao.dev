@@ -17,9 +17,9 @@ ListLink.propTypes = {
 };
 
 const Nav = styled.ul`
-  height: 100%;
+  height: 100vh;
   margin: 0;
-  padding: 50% 5%;
+  padding: 15% 5%;
 
   display: flex;
   flex-direction: column;
@@ -29,6 +29,7 @@ const Nav = styled.ul`
   right: 0px;
   top: 0px;
   bottom: 0px;
+  left: 0;
   z-index: 100;
   width: 100%;
 

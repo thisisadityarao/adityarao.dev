@@ -20,8 +20,8 @@ const GlobalStyle = createGlobalStyle`
   }
 
   body {
-  height: 100vh;
-  height: 100%;
+  min-height: 100vh;
+  min-height: 100%;
   width: 100%;
   padding: 0;
   font-family: "Nunito Sans", sans-serif;

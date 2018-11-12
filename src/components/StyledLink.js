@@ -26,8 +26,8 @@ export default styled(Link)`
 
   ${media.lessThan('medium')`
       &:focus,
-  &:hover  {
-    border: none;
-  }
+      &:hover  {
+        border: none;
+      }
   `}
 `;

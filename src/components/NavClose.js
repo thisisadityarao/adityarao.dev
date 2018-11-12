@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import media from 'styled-media-query';
 
 const Close = styled.div`
-  margin-bottom: 6rem;
+  margin-bottom: 4rem;
   div {
     cursor: pointer;
     z-index: 100;
