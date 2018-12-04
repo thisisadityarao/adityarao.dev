@@ -6,7 +6,7 @@ import Navigation from './Navigation';
 const Header = styled.header`
   height: 60px;
   width: 100%;
-  margin: 4rem 0;
+  margin: 2rem 0;
 `;
 
 const HeaderContainer = styled.div`

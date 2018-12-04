@@ -6,7 +6,7 @@ const Menu = styled.div`
   div {
     width: 35px;
     height: 3px;
-    margin: 4px;
+    margin: 5px;
     border-radius: 50px;
     background-color: #5a5a5a;
   }

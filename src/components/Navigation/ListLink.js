@@ -19,8 +19,8 @@ const StyledLink = styled(Link)`
   }
 `;
 
-export default ({ href, children }) => (
+export default ({ to, children }) => (
   <li>
-    <StyledLink href={href}>{children}</StyledLink>
+    <StyledLink to={to}>{children}</StyledLink>
   </li>
 );

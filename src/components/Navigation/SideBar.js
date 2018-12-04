@@ -1,7 +1,7 @@
-import React from "react";
-import styled from "styled-components";
-import ListLink from "./ListLink";
-import MenuClose from "./MenuClose";
+import React from 'react';
+import styled from 'styled-components';
+import ListLink from './ListLink';
+import MenuClose from './MenuClose';
 
 const Nav = styled.nav`
   position: fixed;

@@ -13,16 +13,19 @@ import '../../node_modules/sanitize.css/sanitize.css';
 
 // Create global styles
 const GlobalStyle = createGlobalStyle`
+  html, body {
+    height: 100%;
+    width: 100%;
+    padding: 0;
+  }
 
   html {
-    height: 100%;
     margin: 0;
   }
 
   body {
   min-height: 100vh;
   min-height: 100%;
-  width: 100%;
   padding: 0;
   font-family: "Nunito Sans", sans-serif;
   font-size: ${modularScale(0, '1em', 'majorThird')};
