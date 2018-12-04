@@ -5,7 +5,7 @@ import React from 'react';
 import { createGlobalStyle } from 'styled-components';
 import { modularScale } from 'polished';
 import Head from './head';
-import HeaderComponent from './header';
+import Header from './Navigation/Header';
 import Footer from './footer';
 
 // CSS Reset
@@ -125,7 +125,7 @@ export default ({ children }) => (
   <>
     <Head />
     <GlobalStyle />
-    <HeaderComponent />
+    <Header />
     {children}
     <Footer />
   </>

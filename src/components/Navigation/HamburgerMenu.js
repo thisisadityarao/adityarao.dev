@@ -1,22 +1,19 @@
-/* eslint-disable */
-
 import React from 'react';
 import styled from 'styled-components';
-import media from 'styled-media-query';
 
 const Menu = styled.div`
+  cursor: pointer;
   div {
-    cursor: pointer;
     width: 35px;
-    height: 4px;
+    height: 3px;
     margin: 4px;
     border-radius: 50px;
-    background-color: #29384d;
+    background-color: #5a5a5a;
   }
 
-  ${media.greaterThan('medium')`
-    display: none
-  `}
+  @media (min-width: 768px) {
+    display: none;
+  }
 `;
 
 export default props => (

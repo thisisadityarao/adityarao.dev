@@ -1,12 +1,12 @@
-import React from 'react';
-import styled from 'styled-components';
-import media from 'styled-media-query';
+import React from "react";
+import styled from "styled-components";
 
 const Close = styled.div`
-  margin-bottom: 4rem;
+  cursor: pointer;
+  z-index: 20;
+  margin: 10% auto;
+
   div {
-    cursor: pointer;
-    z-index: 100;
     width: 35px;
     height: 4px;
     margin: 4px;
@@ -24,13 +24,13 @@ const Close = styled.div`
     transform: rotate(45deg) translate(-5px, -6px);
   }
 
-  ${media.greaterThan('medium')`
-    display: none
-  `}
+  @media (min-width: 768px) {
+    display: none;
+  }
 `;
 
 export default props => (
-  <Close onClick={props.click}>
+  <Close onClick={props.close}>
     <div className="line1" />
     <div className="line2" />
     <div className="line3" />

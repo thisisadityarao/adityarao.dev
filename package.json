@@ -23,7 +23,7 @@
     "react-helmet": "^5.2.0",
     "sanitize.css": "^8.0.0",
     "styled-components": "^4.0.3",
-    "styled-icons": "^3.6.0",
+    "styled-icons": "^3.7.0",
     "styled-media-query": "^2.0.2"
   },
   "devDependencies": {
