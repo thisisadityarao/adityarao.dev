@@ -4,6 +4,7 @@ import ListLink from './ListLink';
 import MenuClose from './MenuClose';
 
 const Nav = styled.nav`
+  overflow-y: hidden;
   position: fixed;
   right: 0;
   left: 0;
@@ -13,6 +14,7 @@ const Nav = styled.nav`
 `;
 
 const NavList = styled.ul`
+  color: white;
   height: 100vh;
   margin: 0;
   padding: 0;
@@ -24,6 +26,7 @@ const NavList = styled.ul`
   background-color: #2193b0;
 
   & li {
+    color: white;
     margin: 0;
     padding: 0;
     text-align: center;
@@ -32,7 +35,8 @@ const NavList = styled.ul`
     justify-content: center;
   }
 
-  & a {
+  && a {
+    color: white;
     cursor: pointer;
     font-size: 1.5rem;
     text-decoration: none;
@@ -41,7 +45,6 @@ const NavList = styled.ul`
     width: 100%;
     line-height: 0;
     text-align: center;
-    color: #fff;
 
     @media (min-width: 768px) {
       display: none;
