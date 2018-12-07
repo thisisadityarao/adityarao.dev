@@ -24,6 +24,10 @@ const Close = styled.div`
     transform: rotate(45deg) translate(-5px, -6px);
   }
 
+  :hover {
+    opacity: 0.8;
+  }
+
   @media (min-width: 768px) {
     display: none;
   }

@@ -15,14 +15,15 @@ const slide = keyframes`
 `;
 
 const Nav = styled.nav`
-  overflow: hidden;
   position: fixed;
   right: 0;
   left: 0;
-  bottom: 0;
   top: 0;
+  bottom: 0;
+  overflow: hidden;
   width: 100%;
   margin-right: 0;
+  margin-top: 0;
   height: 100vh;
   max-height: 100vh;
   z-index: 100;
@@ -80,7 +81,7 @@ const NavList = styled.ul`
 
 export default props => (
   <Nav>
-    <NavList>
+    <NavList onClick={props.click}>
       <MenuClose close={props.click} />
       <ListLink to="/">Home</ListLink>
       <ListLink to="#about">About Me</ListLink>
