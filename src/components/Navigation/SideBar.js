@@ -27,6 +27,7 @@ const Nav = styled.nav`
   height: 100vh;
   max-height: 100vh;
   z-index: 100;
+  transform: translateZ(0);
   animation: ${slide} 0.3s ease-out;
 `;
 
