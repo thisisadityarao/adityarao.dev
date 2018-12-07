@@ -4,7 +4,7 @@ import styled from "styled-components";
 const Close = styled.div`
   cursor: pointer;
   z-index: 20;
-  margin: 10% auto;
+  margin: 5% auto;
 
   div {
     width: 35px;

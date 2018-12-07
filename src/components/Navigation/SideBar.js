@@ -1,16 +1,32 @@
 import React from 'react';
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
 import ListLink from './ListLink';
 import MenuClose from './MenuClose';
 
+const slide = keyframes`
+  0% {
+    transform: scaleX(0);
+    opacity: 1;
+  }
+  100% {
+    transform: scaleX(-100px);
+    opacity: 1;
+  }
+`;
+
 const Nav = styled.nav`
-  overflow-y: hidden;
+  overflow: hidden;
   position: fixed;
   right: 0;
   left: 0;
   bottom: 0;
   top: 0;
-  z-index: 10;
+  width: 100%;
+  margin-right: 0;
+  height: 100vh;
+  max-height: 100vh;
+  z-index: 100;
+  animation: ${slide} 0.3s ease-out;
 `;
 
 const NavList = styled.ul`
@@ -23,7 +39,7 @@ const NavList = styled.ul`
   flex-direction: column;
   align-items: stretch;
   justify-content: space-around;
-  background-color: #2193b0;
+  background-color: #2196f3;
 
   & li {
     color: white;
