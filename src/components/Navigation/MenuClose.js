@@ -1,10 +1,11 @@
-import React from "react";
-import styled from "styled-components";
+import React from 'react';
+import styled from 'styled-components';
 
 const Close = styled.div`
   cursor: pointer;
-  z-index: 20;
-  margin: 5% auto;
+  position: absolute;
+  top: 50px;
+  right: 15px;
 
   div {
     width: 35px;

@@ -3,12 +3,13 @@ import styled from 'styled-components';
 
 const Menu = styled.div`
   cursor: pointer;
+  width: 35px;
   div {
-    width: 35px;
-    height: 3px;
-    margin: 5px;
-    border-radius: 50px;
-    background-color: #e11665;
+    width: 100%;
+    height: 4px;
+    margin: 4px;
+    border-radius: 20px;
+    background-color: #ff4b6e;
   }
 
   @media (min-width: 768px) {
