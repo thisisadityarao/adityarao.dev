@@ -30,7 +30,6 @@ const GlobalStyle = createGlobalStyle`
   font-family: "Nunito Sans", sans-serif;
   font-size: ${modularScale(0, '1em', 'majorThird')};
   line-height: 1.4;
-  overflow: hidden;
   }
 
   p {
