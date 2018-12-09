@@ -5,7 +5,7 @@ import MenuClose from './MenuClose';
 
 const slide = keyframes`
   0% {
-    transform: translateX(110%);
+    transform: translateX(1000px);
     opacity: 0;
   }
   100% {
@@ -25,7 +25,7 @@ const Nav = styled.nav`
   width: 100%;
   color: #fff;
   z-index: 1000;
-  background: linear-gradient(180deg, #ff3cac 0%, #784ba0 50%, #2b86c5 100%);
+  background: linear-gradient(135deg, #ff3cac 0%, #784ba0 50%, #2b86c5 100%);
   animation: ${slide} 0.4s ease-in;
 
   @media (min-width: 768px) {
@@ -44,7 +44,7 @@ const NavWrapper = styled.div`
 const NameWrapper = styled.div`
   width: 100%;
   margin: 2em auto;
-  font-size: 20px;
+  font-size: 18px;
   text-transform: uppercase;
   letter-spacing: 2px;
   font-weight: 900;
@@ -56,7 +56,7 @@ const Name = styled.span`
   display: inline-block;
   margin: 0;
   border-radius: 30px;
-  padding: 10px 20px;
+  padding: 5px 20px;
   z-index: 10;
   position: relative;
   background-color: #fff000;
@@ -70,7 +70,7 @@ const BackgroundLine = styled.div`
   z-index: -1;
   background-color: white;
   position: absolute;
-  top: 21px;
+  top: 17px;
 `;
 
 const NavList = styled.ul`
@@ -95,7 +95,7 @@ const NavList = styled.ul`
 
   && a {
     cursor: pointer;
-    font-size: 1.6rem;
+    font-size: 1.8rem;
     text-decoration: none;
     font-weight: bold;
     text-transform: uppercase;
@@ -106,6 +106,7 @@ const NavList = styled.ul`
     text-align: center;
     letter-spacing: 2px;
     color: #fff;
+    text-shadow: 0 3px 20px rgba(2, 11, 22, 0.2);
 
     @media (min-width: 768px) {
       display: none;
