@@ -104,26 +104,18 @@ export default class Navigation extends Component {
   }
 
   componentDidMount() {
-    const d = document;
-    const body = d.getElementsByTagName('body')[0];
-    try {
+    if (typeof window !== 'undefined') {
       if (this.state.isOpen) {
-        body.style = 'overflow: hidden';
+        window.document.body.style = 'overflow: hidden';
       }
-    } catch (e) {
-      console.error(e);
     }
   }
 
   componentWillUnmount() {
-    const d = document;
-    const body = d.getElementsByTagName('body')[0];
-    try {
+    if (typeof window !== 'undefined') {
       if (!this.state.isOpen) {
-        body.style = 'overflow: none';
+        window.document.body.style = 'overflow: auto';
       }
-    } catch (e) {
-      console.error(e);
     }
   }
 
