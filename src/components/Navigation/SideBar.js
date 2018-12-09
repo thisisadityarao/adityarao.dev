@@ -93,7 +93,7 @@ const NavList = styled.ul`
     justify-content: center;
   }
 
-  & a {
+  && a {
     cursor: pointer;
     font-size: 1.6rem;
     text-decoration: none;
