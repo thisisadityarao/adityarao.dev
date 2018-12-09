@@ -76,7 +76,7 @@ const BackgroundLine = styled.div`
 const NavList = styled.ul`
   margin: 0;
   padding: 0;
-  height: 350px;
+  height: 320px;
 
   display: flex;
   flex-direction: column;
@@ -100,7 +100,7 @@ const NavList = styled.ul`
     font-weight: bold;
     text-transform: uppercase;
     display: inline-block;
-    padding: 40px 50px;
+    padding: 35px 50px;
     width: 100%;
     line-height: 0;
     text-align: center;

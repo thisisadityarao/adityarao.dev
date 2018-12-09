@@ -6,6 +6,20 @@ article {
   line-height: 1.5;
 }
 
+article a:link {
+  text-decoration: none;
+  color: rgb(59, 146, 222);
+}
+
+article a:focus,
+article a:hover {
+  border-bottom: 3px solid rgb(59, 146, 222);
+}
+
+article a:active {
+  color: rgb(59, 146, 222);
+}
+
 article h1 {
   margin-bottom: 4rem;
 }
@@ -23,8 +37,8 @@ article h3 {
 
 @media (min-width: 992px) {
   article h3 {
-  font-size: 1.5em;
-}
+    font-size: 1.5em;
+  }
 }
 
 /** Introduces Vertical Rhythm.
