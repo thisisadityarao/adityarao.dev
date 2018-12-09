@@ -103,21 +103,22 @@ export default class Navigation extends Component {
     this.toggleMenu = this.toggleMenu.bind(this);
   }
 
+  componentDidMount() {
+  documentDOM.body.style = 'overflow: hidden';
+
   toggleMenu() {
     this.setState({
       isOpen: !this.state.isOpen,
     });
   }
+  }
+
+  componentWillUnmount() {
+    documentDOM.body.style = 'overflow: none';
+  }
 
   render() {
     const sidebarOn = this.state.isOpen;
-    const documentDOM = typeof document === 'undefined' ? '' : document;
-
-    if (sidebarOn) {
-      documentDOM.body.style = 'overflow: hidden';
-    } else {
-      documentDOM.body.style = 'overflow: none';
-    }
 
     if (!sidebarOn) {
       return (
