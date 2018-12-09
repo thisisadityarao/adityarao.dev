@@ -112,7 +112,7 @@ export default class Navigation extends Component {
   render() {
     const sidebarOn = this.state.isOpen;
 
-    if (sidebarOn) {
+    if (typeof document !== 'undefined') {
       document.body.style = 'overflow: hidden';
     } else {
       document.body.style = 'overflow: none';
