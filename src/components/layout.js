@@ -17,19 +17,20 @@ const GlobalStyle = createGlobalStyle`
     height: 100%;
     width: 100%;
     padding: 0;
+
   }
 
   html {
     margin: 0;
+    overflow: hidden;
   }
 
   body {
-  min-height: 100vh;
-  min-height: 100%;
   padding: 0;
   font-family: "Nunito Sans", sans-serif;
   font-size: ${modularScale(0, '1em', 'majorThird')};
   line-height: 1.4;
+  overflow: visible;
   }
 
   p {
@@ -127,6 +128,7 @@ export default ({ children }) => (
   <>
     <Head />
     <GlobalStyle />
+
     <Header />
     {children}
     <Footer />

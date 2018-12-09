@@ -21,10 +21,9 @@ const Nav = styled.nav`
   bottom: 0;
   right: 0;
   height: 100vh;
-  max-height: 100vh;
+  height: 100%;
   width: 100%;
   color: #fff;
-  overflow: hidden;
   z-index: 1000;
   background: linear-gradient(180deg, #ff3cac 0%, #784ba0 50%, #2b86c5 100%);
   animation: ${slide} 0.4s ease-in;
@@ -35,10 +34,14 @@ const Nav = styled.nav`
 `;
 
 const NavWrapper = styled.div`
-  width: 620px;
-  max-width: 100%;
-  margin: 40px auto;
-  margin-top: 18vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+  /* Optional but highly reccomended: enables momentum scrolling on iOS */
+  -webkit-overflow-scrolling: touch;
   padding: 0 60px;
 `;
 

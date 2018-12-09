@@ -103,22 +103,6 @@ export default class Navigation extends Component {
     this.toggleMenu = this.toggleMenu.bind(this);
   }
 
-  componentDidMount() {
-    if (typeof window !== 'undefined') {
-      if (this.state.isOpen) {
-        window.document.body.style = 'overflow: hidden';
-      }
-    }
-  }
-
-  componentWillUnmount() {
-    if (typeof window !== 'undefined') {
-      if (!this.state.isOpen) {
-        window.document.body.style = 'overflow: auto';
-      }
-    }
-  }
-
   toggleMenu() {
     this.setState({
       isOpen: !this.state.isOpen,
