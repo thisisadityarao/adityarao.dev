@@ -104,6 +104,16 @@ export default class Navigation extends Component {
     this.closeMenu = this.closeMenu.bind(this);
   }
 
+  componentDidMount() {
+    document.body.style.overflow = 'hidden';
+    this.openMenu();
+  }
+
+  componentWillUnMount() {
+    document.body.style.overflow = 'visible';
+    this.closeMenu();
+  }
+
   openMenu() {
     this.setState({
       isOpen: true,

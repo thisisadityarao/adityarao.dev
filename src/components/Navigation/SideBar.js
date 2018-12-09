@@ -39,10 +39,9 @@ const NavWrapper = styled.div`
   left: 0;
   width: 100%;
   height: 100%;
-  overflow-y: auto;
   /* Optional but highly reccomended: enables momentum scrolling on iOS */
   -webkit-overflow-scrolling: touch;
-  padding: 0 60px;
+  padding: 20px 60px;
 `;
 
 const NameWrapper = styled.div`
