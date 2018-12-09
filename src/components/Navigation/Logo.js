@@ -51,6 +51,10 @@ const Logo = styled.div`
     @media (min-width: 768px) {
       font-size: 32px;
     }
+
+    & a {
+      transition: color 0.3s ease-in-out;
+    }
   }
 `;
 

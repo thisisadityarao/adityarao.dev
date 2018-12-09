@@ -81,7 +81,7 @@ const NavLinks = styled.ul`
 
     li a {
       cursor: pointer;
-      color: #3d4852;
+      color: #999;
       margin: 0;
       padding: 0;
       position: relative;
@@ -110,7 +110,15 @@ export default class Navigation extends Component {
   }
 
   render() {
-    if (!this.state.isOpen) {
+    const sidebarOn = this.state.isOpen;
+
+    if (sidebarOn) {
+      document.body.style = 'overflow: hidden';
+    } else {
+      document.body.style = 'overflow: none';
+    }
+
+    if (!sidebarOn) {
       return (
         <Nav>
           <NavLinks>
@@ -135,28 +143,6 @@ export default class Navigation extends Component {
         </Nav>
       );
     }
-    return (
-      <Nav>
-        <NavLinks>
-          <ListLink to="/">
-            <HomeIcon />
-            Home
-          </ListLink>
-          <ListLink to="#about">
-            <PersonIcon />
-            About Me
-          </ListLink>
-          <ListLink to="/blog/">
-            <EditIcon />
-            Blog
-          </ListLink>
-          <ListLink to="#contact">
-            <LocationOnIcon />
-            Contact
-          </ListLink>
-        </NavLinks>
-        <SideBar click={this.toggleMenu} />
-      </Nav>
-    );
+    return <SideBar click={this.toggleMenu} />;
   }
 }

@@ -45,7 +45,7 @@ const NavWrapper = styled.div`
 const NameWrapper = styled.div`
   width: 100%;
   margin: 3em auto;
-  font-size: 16px;
+  font-size: 18px;
   text-transform: uppercase;
   letter-spacing: 2px;
   font-weight: 900;
@@ -54,7 +54,7 @@ const NameWrapper = styled.div`
 `;
 
 const Name = styled.span`
-  padding: 5px 15px;
+  padding: 10px 15px;
   z-index: 10;
   position: relative;
   background-color: #fff000;
@@ -93,7 +93,7 @@ const NavList = styled.ul`
 
   & a {
     cursor: pointer;
-    font-size: 1.8rem;
+    font-size: 2rem;
     text-decoration: none;
     font-weight: bold;
     text-transform: uppercase;
