@@ -36,9 +36,9 @@ const Nav = styled.nav`
 const NavWrapper = styled.div`
   max-width: 100%;
   height: 100%;
-  padding: 20px 60px;
+  padding: 20px 50px;
   margin: 0 auto;
-  margin-top: 18vh;
+  margin-top: 12vh;
 `;
 
 const NameWrapper = styled.div`
