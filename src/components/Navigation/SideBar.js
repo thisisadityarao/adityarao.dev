@@ -93,7 +93,7 @@ const NavList = styled.ul`
 
   & a {
     cursor: pointer;
-    font-size: 2rem;
+    font-size: 1.6rem;
     text-decoration: none;
     font-weight: bold;
     text-transform: uppercase;

@@ -92,7 +92,7 @@ const NavLinks = styled.ul`
     }
   }
 `;
-
+const windowGlobal = typeof window !== 'undefined' && window;
 export default class Navigation extends Component {
   constructor(props) {
     super(props);
@@ -105,7 +105,6 @@ export default class Navigation extends Component {
 
   componentDidMount() {
     try {
-      const windowGlobal = typeof window !== 'undefined' && window;
       if (this.state.isOpen) {
         windowGlobal.document.style = 'overflow: hidden';
       }
