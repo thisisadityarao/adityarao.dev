@@ -100,12 +100,19 @@ export default class Navigation extends Component {
       isOpen: false,
     };
 
-    this.toggleMenu = this.toggleMenu.bind(this);
+    this.openMenu = this.openMenu.bind(this);
+    this.closeMenu = this.closeMenu.bind(this);
   }
 
-  toggleMenu() {
+  openMenu() {
     this.setState({
-      isOpen: !this.state.isOpen,
+      isOpen: true,
+    });
+  }
+
+  closeMenu() {
+    this.setState({
+      isOpen: false,
     });
   }
 
@@ -133,10 +140,10 @@ export default class Navigation extends Component {
               Contact
             </ListLink>
           </NavLinks>
-          <HamburgerMenu click={this.toggleMenu} />
+          <HamburgerMenu click={this.openMenu} />
         </Nav>
       );
     }
-    return <SideBar click={this.toggleMenu} />;
+    return <SideBar click={this.closeMenu} />;
   }
 }
