@@ -38,12 +38,12 @@ const NavWrapper = styled.div`
   height: 100%;
   padding: 20px 50px;
   margin: 0 auto;
-  margin-top: 9vh;
+  margin-top: 8vh;
 `;
 
 const NameWrapper = styled.div`
   width: 100%;
-  margin: 3em auto;
+  margin: 2em auto;
   font-size: 20px;
   text-transform: uppercase;
   letter-spacing: 2px;
