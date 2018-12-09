@@ -92,7 +92,7 @@ const NavLinks = styled.ul`
     }
   }
 `;
-const windowGlobal = typeof window !== 'undefined' && window;
+
 export default class Navigation extends Component {
   constructor(props) {
     super(props);
@@ -104,9 +104,11 @@ export default class Navigation extends Component {
   }
 
   componentDidMount() {
+    const d = document;
+    const body = d.getElementsByTagName('body')[0];
     try {
       if (this.state.isOpen) {
-        windowGlobal.document.style = 'overflow: hidden';
+        body.style = 'overflow: hidden';
       }
     } catch (e) {
       console.error(e);
@@ -114,8 +116,14 @@ export default class Navigation extends Component {
   }
 
   componentWillUnmount() {
-    if (!this.state.isOpen) {
-      windowGlobal.document.style = 'overflow: none';
+    const d = document;
+    const body = d.getElementsByTagName('body')[0];
+    try {
+      if (!this.state.isOpen) {
+        body.style = 'overflow: none';
+      }
+    } catch (e) {
+      console.error(e);
     }
   }
 
