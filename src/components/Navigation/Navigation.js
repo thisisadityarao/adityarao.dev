@@ -1,5 +1,7 @@
+/* eslint-disable react/destructuring-assignment */
 import React, { Component } from 'react';
 import styled from 'styled-components';
+import { disableBodyScroll, enableBodyScroll, clearAllBodyScrollLocks } from 'body-scroll-lock';
 import { Home } from 'styled-icons/fa-solid/Home';
 import { Person } from 'styled-icons/material/Person';
 import { Edit } from 'styled-icons/fa-regular/Edit';
@@ -99,37 +101,38 @@ export default class Navigation extends Component {
     this.state = {
       isOpen: false,
     };
-
+    this.targetElement = null;
     this.openMenu = this.openMenu.bind(this);
     this.closeMenu = this.closeMenu.bind(this);
   }
 
   componentDidMount() {
     if (typeof window !== 'undefined') {
+      this.targetElement = document.querySelector('body');
       if (this.state.isOpen === true) {
         document.body.style.overflow = 'hidden';
+      } else if (this.state.isOpen === false) {
+        document.body.style.overflow = 'visible';
       }
     }
   }
 
-  componentWillUnMount() {
-    if (typeof window !== 'undefined') {
-      if (this.state.isOpen === false) {
-        document.body.style.overflow = 'visible';
-      }
-    }
+  componentWillUnmount() {
+    clearAllBodyScrollLocks();
   }
 
   openMenu() {
     this.setState({
       isOpen: true,
     });
+    disableBodyScroll(this.targetElement);
   }
 
   closeMenu() {
     this.setState({
       isOpen: false,
     });
+    enableBodyScroll(this.targetElement);
   }
 
   render() {

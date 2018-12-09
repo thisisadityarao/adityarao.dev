@@ -10,6 +10,7 @@
   "dependencies": {
     "@wapps/gatsby-plugin-fonts": "^1.0.2",
     "babel-plugin-styled-components": "^1.9.2",
+    "body-scroll-lock": "^2.6.1",
     "gatsby": "^2.0.64",
     "gatsby-plugin-react-svg": "^2.0.0",
     "gatsby-plugin-styled-components": "^3.0.4",

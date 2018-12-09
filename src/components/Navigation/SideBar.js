@@ -34,16 +34,17 @@ const Nav = styled.nav`
 `;
 
 const NavWrapper = styled.div`
-  width: 600px;
   max-width: 100%;
   height: 100%;
   padding: 20px 60px;
+  margin: 0 auto;
+  margin-top: 18vh;
 `;
 
 const NameWrapper = styled.div`
   width: 100%;
   margin: 3em auto;
-  font-size: 18px;
+  font-size: 20px;
   text-transform: uppercase;
   letter-spacing: 2px;
   font-weight: 900;
@@ -52,7 +53,10 @@ const NameWrapper = styled.div`
 `;
 
 const Name = styled.span`
-  padding: 10px 15px;
+  display: inline-block;
+  margin: 0;
+  border-radius: 30px;
+  padding: 10px 20px;
   z-index: 10;
   position: relative;
   background-color: #fff000;
@@ -66,7 +70,7 @@ const BackgroundLine = styled.div`
   z-index: -1;
   background-color: white;
   position: absolute;
-  top: 7px;
+  top: 21px;
 `;
 
 const NavList = styled.ul`

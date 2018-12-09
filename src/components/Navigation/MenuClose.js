@@ -5,7 +5,7 @@ const Close = styled.div`
   cursor: pointer;
   position: absolute;
   top: 50px;
-  right: 15px;
+  right: 30px;
 
   div {
     width: 35px;
