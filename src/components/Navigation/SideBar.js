@@ -38,7 +38,7 @@ const NavWrapper = styled.div`
   height: 100%;
   padding: 20px 50px;
   margin: 0 auto;
-  margin-top: 12vh;
+  margin-top: 9vh;
 `;
 
 const NameWrapper = styled.div`
@@ -127,7 +127,7 @@ export default props => (
   <Nav>
     <NavWrapper>
       <NameWrapper>
-        <Name>aditya rao</Name>
+        <Name>Menu</Name>
         <BackgroundLine />
       </NameWrapper>
       <NavList onClick={props.click}>
