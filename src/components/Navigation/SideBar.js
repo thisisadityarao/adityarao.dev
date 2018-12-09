@@ -20,8 +20,8 @@ const Nav = styled.nav`
   left: 0;
   bottom: 0;
   right: 0;
-  height: 100vh;
   height: 100%;
+  height: 100vh;
   width: 100%;
   color: #fff;
   z-index: 1000;
@@ -34,13 +34,9 @@ const Nav = styled.nav`
 `;
 
 const NavWrapper = styled.div`
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
+  width: 600px;
+  max-width: 100%;
   height: 100%;
-  /* Optional but highly reccomended: enables momentum scrolling on iOS */
-  -webkit-overflow-scrolling: touch;
   padding: 20px 60px;
 `;
 

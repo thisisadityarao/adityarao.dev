@@ -105,13 +105,19 @@ export default class Navigation extends Component {
   }
 
   componentDidMount() {
-    document.body.style.overflow = 'hidden';
-    this.openMenu();
+    if (typeof window !== 'undefined') {
+      if (this.state.isOpen === true) {
+        document.body.style.overflow = 'hidden';
+      }
+    }
   }
 
   componentWillUnMount() {
-    document.body.style.overflow = 'visible';
-    this.closeMenu();
+    if (typeof window !== 'undefined') {
+      if (this.state.isOpen === false) {
+        document.body.style.overflow = 'visible';
+      }
+    }
   }
 
   openMenu() {
