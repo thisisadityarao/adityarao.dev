@@ -36,7 +36,7 @@ const Nav = styled.nav`
 const NavWrapper = styled.div`
   max-width: 100%;
   height: 100%;
-  padding: 20px 50px;
+  padding: 20px 40px;
   margin: 0 auto;
   margin: 8vh auto;
 `;
@@ -56,7 +56,7 @@ const Name = styled.span`
   display: inline-block;
   margin: 0;
   border-radius: 30px;
-  padding: 5px 20px;
+  padding: 5px 15px;
   z-index: 10;
   position: relative;
   background-color: #fff000;
@@ -95,12 +95,12 @@ const NavList = styled.ul`
 
   && a {
     cursor: pointer;
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     text-decoration: none;
     font-weight: bold;
     text-transform: uppercase;
     display: inline-block;
-    padding: 35px 50px;
+    padding: 35px 40px;
     width: 100%;
     line-height: 0;
     text-align: center;
@@ -128,7 +128,7 @@ export default props => (
   <Nav>
     <NavWrapper>
       <NameWrapper>
-        <Name>Menu</Name>
+        <Name>ADITYA RAO</Name>
         <BackgroundLine />
       </NameWrapper>
       <NavList onClick={props.click}>

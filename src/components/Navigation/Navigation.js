@@ -16,6 +16,7 @@ const HomeIcon = styled(Home)`
   margin-right: 5px;
   margin-bottom: 1px;
   line-height: 60px;
+  color: #999;
 `;
 
 const PersonIcon = styled(Person)`
@@ -24,6 +25,7 @@ const PersonIcon = styled(Person)`
   margin-right: 5px;
   margin-bottom: 3px;
   line-height: 60px;
+  color: #999;
 `;
 
 const EditIcon = styled(Edit)`
@@ -32,6 +34,7 @@ const EditIcon = styled(Edit)`
   margin-right: 5px;
   margin-bottom: 3px;
   line-height: 60px;
+  color: #999;
 `;
 
 const LocationOnIcon = styled(LocationOn)`
@@ -40,6 +43,7 @@ const LocationOnIcon = styled(LocationOn)`
   margin-right: 5px;
   margin-bottom: 5px;
   line-height: 60px;
+  color: #999;
 `;
 
 const Nav = styled.nav`

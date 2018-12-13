@@ -1,7 +1,8 @@
 article {
-  max-width: 40em;
+  max-width: 43em;
   margin: auto;
   margin-bottom: 15rem;
+  margin-top: 6rem;
   padding: 1.5rem;
   line-height: 1.5;
 }
@@ -13,7 +14,7 @@ article a:link {
 
 article a:focus,
 article a:hover {
-  border-bottom: 3px solid rgb(59, 146, 222);
+  border-bottom: 2px solid rgb(59, 146, 222);
 }
 
 article a:active {
@@ -21,7 +22,9 @@ article a:active {
 }
 
 article h1 {
+  font-size: 2.2em;
   margin-bottom: 4rem;
+  line-height: 1.4;
 }
 
 article p {
@@ -34,38 +37,45 @@ article h2 {
 article h3 {
   font-size: 1.8em;
 }
+article h4 {
+  font-size: 1.5em;
+}
 
 @media (min-width: 992px) {
   article h3 {
     font-size: 1.5em;
   }
+
+  article h4 {
+  font-size: 1.2em;
+}
 }
 
 /** Introduces Vertical Rhythm.
 *   Whitespace above subhead is larger than whitespace below subhead
 */
 article p + h2 {
-  margin-top: 2rem;
+  margin-top: 2.2rem;
 }
 
 article h2 + p {
-  margin-top: 0.7rem;
+  margin-top: 1.2rem;
 }
 
 article p + h3 {
-  margin-top: 2.1rem;
+  margin-top: 2.4rem;
 }
 
 article h3 + p {
-  margin-top: 0.7rem;
+  margin-top: 0.9rem;
 }
 
 article p + h4 {
-  margin-top: 2.1rem;
+  margin-top: 2.6rem;
 }
 
 article h4 + p {
-  margin-top: 0.7rem;
+  margin-top: 0.9rem;
 }
 
 /** Introduces Vertical Rhythm.
@@ -73,7 +83,7 @@ article h4 + p {
 */
 article ul,
 li {
-  margin-top: 1.05rem;
+  margin-top: 1.5rem;
   padding: 0;
 }
 
@@ -89,7 +99,7 @@ article ul {
 }
 
 article li + li {
-  margin-top: 1.5rem;
+  margin-top: 1.2rem;
 }
 
 article p + p {
@@ -120,29 +130,38 @@ article blockquote {
 pre {
   display: block;
   padding: 9.5px;
-  margin: 1em 0 10px;
-  font-size: 1em;
+  margin: 1em 0 1.5em;
+  font-size: 0.8em;
   line-height: 1.5;
-  color: #333;
+  color: #3b3b3b;
   word-break: break-all;
   word-wrap: break-word;
   background-color: #fff;
   border: 1px solid #ccc;
   border-radius: 4px;
+  overflow: auto;
 }
 
 /* 'code' Element
   ========================================================================== */
 
-code {
+:not(pre) > code[class*="language-"] {
   font-family: monospace;
-  padding: 2px 4px;
-  font-size: 100%;
-  color: #333;
+  padding: 2px 6px;
+  font-size: 80%;
   border-radius: 4px;
-  background-color: #eff0f1;
+  color: #ffcc93;
 }
 
-pre code {
-  background-color: white;
+pre[class*="language-"] {
+    padding: 1em;
+    margin: 1.2em 0;
+    margin-bottom: 1.8em;
+    overflow: auto;
+}
+
+pre > code {
+  padding: 0;
+  font-size: 95%;
+  line-height: 1.6;
 }

@@ -5,7 +5,7 @@ import { Link } from 'gatsby';
 const StyledLink = styled(Link)`
   &:link {
     text-decoration: none;
-    color: #5a5a5a;
+    color: #999;
   }
   &:focus,
   &:hover {
