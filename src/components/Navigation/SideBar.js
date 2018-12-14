@@ -1,5 +1,8 @@
 import React from 'react';
 import styled, { keyframes } from 'styled-components';
+import { Github } from 'styled-icons/fa-brands/Github';
+import { Envelope } from 'styled-icons/fa-regular/Envelope';
+import { Twitter } from 'styled-icons/fa-brands/Twitter';
 import ListLink from './ListLink';
 import MenuClose from './MenuClose';
 
@@ -25,7 +28,7 @@ const Nav = styled.nav`
   width: 100%;
   color: #fff;
   z-index: 1000;
-  background: linear-gradient(135deg, #ff3cac 0%, #784ba0 50%, #2b86c5 100%);
+  background: linear-gradient(135deg, #3a42e1 0%, #620c90 100%);
   animation: ${slide} 0.4s ease-in;
 
   @media (min-width: 768px) {
@@ -38,45 +41,20 @@ const NavWrapper = styled.div`
   height: 100%;
   padding: 20px 40px;
   margin: 0 auto;
-  margin: 8vh auto;
+  margin: 10vh auto;
 `;
 
-const NameWrapper = styled.div`
-  width: 100%;
-  margin: 2em auto;
-  font-size: 18px;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  font-weight: 900;
-  text-align: center;
-  position: relative;
-`;
-
-const Name = styled.span`
-  display: inline-block;
-  margin: 0;
-  border-radius: 30px;
-  padding: 5px 15px;
-  z-index: 10;
-  position: relative;
-  background-color: #fff000;
-  color: #17305b;
-`;
-
-const BackgroundLine = styled.div`
-  display: block;
-  height: 3px;
-  width: 100%;
-  z-index: -1;
-  background-color: white;
-  position: absolute;
-  top: 17px;
+const SocialMediaWrapper = styled.div`
+  margin-top: 7rem;
+  display: flex;
+  max-width: 100%;
+  justify-content: space-around;
 `;
 
 const NavList = styled.ul`
   margin: 0;
   padding: 0;
-  height: 320px;
+  height: 50%;
 
   display: flex;
   flex-direction: column;
@@ -95,7 +73,7 @@ const NavList = styled.ul`
 
   && a {
     cursor: pointer;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     text-decoration: none;
     font-weight: bold;
     text-transform: uppercase;
@@ -106,14 +84,14 @@ const NavList = styled.ul`
     text-align: center;
     letter-spacing: 2px;
     color: #fff;
-    text-shadow: 0 3px 20px rgba(2, 11, 22, 0.2);
+    text-shadow: 0 15px 20px rgba(2, 11, 22, 0.2);
 
     @media (min-width: 768px) {
       display: none;
     }
   }
 
-  & a:hover {
+  && a:hover {
     border-bottom: none;
     background-color: #fff000;
     color: #000;
@@ -124,13 +102,33 @@ const NavList = styled.ul`
   }
 `;
 
+const GithubAlt = styled(Github)`
+  color: white;
+  width: 30px;
+  height: 30px;
+  vertical-align: middle;
+  box-shadow: 0 15px 20px rgba(2, 11, 22, 0.2);
+`;
+
+const EnvelopeAlt = styled(Envelope)`
+  color: white;
+  width: 30px;
+  height: 30px;
+  vertical-align: middle;
+  box-shadow: 0 15px 20px rgba(2, 11, 22, 0.2);
+`;
+
+const TwitterAlt = styled(Twitter)`
+  color: white;
+  width: 30px;
+  height: 30px;
+  vertical-align: middle;
+  box-shadow: 0 15px 20px rgba(2, 11, 22, 0.2);
+`;
+
 export default props => (
   <Nav>
     <NavWrapper>
-      <NameWrapper>
-        <Name>ADITYA RAO</Name>
-        <BackgroundLine />
-      </NameWrapper>
       <NavList onClick={props.click}>
         <MenuClose close={props.click} />
         <ListLink to="/">Home</ListLink>
@@ -138,6 +136,17 @@ export default props => (
         <ListLink to="/blog/">Blog</ListLink>
         <ListLink to="#contact">Contact</ListLink>
       </NavList>
+      <SocialMediaWrapper>
+        <a href="mailto:dev.adityarao@gmail.com">
+          <EnvelopeAlt />
+        </a>
+        <a href="https://twitter.com/ad1tyarao">
+          <TwitterAlt />
+        </a>
+        <a href="https://github.com/ad1tyara0">
+          <GithubAlt />
+        </a>
+      </SocialMediaWrapper>
     </NavWrapper>
   </Nav>
 );
