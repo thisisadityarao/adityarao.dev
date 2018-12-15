@@ -40,6 +40,7 @@ const HR = styled.hr.attrs({
   margin: 0;
   margin-bottom: ${props => props.margin};
   background-image: linear-gradient(to right, #ff4b6e, #e11665);
+  background: #ff4b6e;
 `;
 
 const SocialIcons = styled.ul`
@@ -61,13 +62,54 @@ const SocialIcons = styled.ul`
     list-style-type: none;
   }
 
-  & li a {
-    color: #29384d;
+  & a {
+    display: inline-block;
+    position: relative;
+    padding-bottom: 3px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    color: #888;
+    font-style: normal;
+    transition: all 0.2s linear;
+    text-decoration: none;
 
     &:hover {
-      opacity: 1;
-      color: #3b92de;
+      color: #2c9cdb;
     }
+  }
+
+  & a::before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    width: 0;
+    transition: width 0s ease, background 0.5s ease;
+  }
+
+  & a:hover::before {
+    width: 100%;
+    background: #2c9cdb;
+    transition: width 0.5s ease;
+  }
+
+  & a::after {
+    content: '';
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: 2px;
+    width: 0;
+    background: #2c9cdb;
+    transition: width 0.5s ease;
+  }
+
+  & a:hover::after {
+    width: 100%;
+    background: transparent;
+    transition: all 0s ease;
   }
 
   & li span {

@@ -28,7 +28,7 @@ const Nav = styled.nav`
   width: 100%;
   color: #fff;
   z-index: 1000;
-  background: linear-gradient(135deg, #3a42e1 0%, #620c90 100%);
+  background: linear-gradient(135deg, #565eff 0%, #8f00db 100%);
   animation: ${slide} 0.4s ease-in;
 
   @media (min-width: 768px) {
@@ -39,9 +39,9 @@ const Nav = styled.nav`
 const NavWrapper = styled.div`
   max-width: 100%;
   height: 100%;
-  padding: 20px 40px;
+  padding: 0px 40px;
   margin: 0 auto;
-  margin: 10vh auto;
+  margin: 14vh auto;
 `;
 
 const SocialMediaWrapper = styled.div`
@@ -107,7 +107,6 @@ const GithubAlt = styled(Github)`
   width: 30px;
   height: 30px;
   vertical-align: middle;
-  box-shadow: 0 15px 20px rgba(2, 11, 22, 0.2);
 `;
 
 const EnvelopeAlt = styled(Envelope)`
@@ -115,7 +114,6 @@ const EnvelopeAlt = styled(Envelope)`
   width: 30px;
   height: 30px;
   vertical-align: middle;
-  box-shadow: 0 15px 20px rgba(2, 11, 22, 0.2);
 `;
 
 const TwitterAlt = styled(Twitter)`
@@ -123,7 +121,6 @@ const TwitterAlt = styled(Twitter)`
   width: 30px;
   height: 30px;
   vertical-align: middle;
-  box-shadow: 0 15px 20px rgba(2, 11, 22, 0.2);
 `;
 
 export default props => (

@@ -85,7 +85,7 @@ const HR = styled.hr.attrs({
   border: none;
   margin: 0;
   margin-bottom: ${props => props.margin};
-  background-image: linear-gradient(to right, #ff4b6e, #e11665);
+  background: #ff4b6e;
 `;
 
 export default () => (
@@ -126,10 +126,20 @@ export default () => (
         advertising expenditure.
       </p>
       <li>EMAIL MARKETING</li>
-      <p> Email marketing helps you connect with your audience to promote your brand and increase sales. You can sell your product, tell a story, or keep prospective clients/customers updated with the latest news. I help you build and maintain an engaged subscriber list, made up of people who want to receive your messages.
+      <p>
+        {' '}
+        Email marketing helps you connect with your audience to promote your brand and increase
+        sales. You can sell your product, tell a story, or keep prospective clients/customers
+        updated with the latest news. I help you build and maintain an engaged subscriber list, made
+        up of people who want to receive your messages.
       </p>
       <li>SOCIAL MEDIA MARKETING</li>
-      <p> Social media has emerged as a powerful marketing tool in recent years. Social media gives you an insight into what your customers are looking for. I help you connect with your target audience, manage your reputation, and boost your brand image. </p>
-      </ul>
+      <p>
+        {' '}
+        Social media has emerged as a powerful marketing tool in recent years. Social media gives
+        you an insight into what your customers are looking for. I help you connect with your target
+        audience, manage your reputation, and boost your brand image.{' '}
+      </p>
+    </ul>
   </SectionAbout>
 );

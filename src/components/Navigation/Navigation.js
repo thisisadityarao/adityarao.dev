@@ -16,7 +16,7 @@ const HomeIcon = styled(Home)`
   margin-right: 5px;
   margin-bottom: 1px;
   line-height: 60px;
-  color: #999;
+  color: #888;
 `;
 
 const PersonIcon = styled(Person)`
@@ -25,7 +25,7 @@ const PersonIcon = styled(Person)`
   margin-right: 5px;
   margin-bottom: 3px;
   line-height: 60px;
-  color: #999;
+  color: #888;
 `;
 
 const EditIcon = styled(Edit)`
@@ -34,7 +34,7 @@ const EditIcon = styled(Edit)`
   margin-right: 5px;
   margin-bottom: 3px;
   line-height: 60px;
-  color: #999;
+  color: #888;
 `;
 
 const LocationOnIcon = styled(LocationOn)`
@@ -43,7 +43,7 @@ const LocationOnIcon = styled(LocationOn)`
   margin-right: 5px;
   margin-bottom: 5px;
   line-height: 60px;
-  color: #999;
+  color: #888;
 `;
 
 const Nav = styled.nav`
@@ -87,14 +87,56 @@ const NavLinks = styled.ul`
 
     li a {
       cursor: pointer;
-      color: #999;
       margin: 0;
-      padding: 0;
+      display: inline-block;
       position: relative;
+      padding-bottom: 2px;
       letter-spacing: 1px;
-      display: block;
+
       height: 60px;
       line-height: 60px;
+      transition: all 0.2s linear;
+
+      &:hover {
+        ${HomeIcon}, ${PersonIcon}, ${EditIcon}, ${LocationOn} {
+          color: #3b92de;
+        }
+      }
+    }
+
+    & a::before {
+      content: '';
+      display: block;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      height: 2px;
+      width: 0;
+      transition: width 0s ease, background 0.5s ease;
+    }
+
+    & a:hover::before {
+      width: 100%;
+      background: #2c9cdb;
+      transition: width 0.5s ease;
+    }
+
+    & a::after {
+      content: '';
+      display: block;
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      height: 2px;
+      width: 0;
+      background: #2c9cdb;
+      transition: width 0.5s ease;
+    }
+
+    & a:hover::after {
+      width: 100%;
+      background: transparent;
+      transition: all 0s ease;
     }
   }
 `;

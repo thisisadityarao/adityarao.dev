@@ -10,8 +10,11 @@ import Footer from './footer';
 
 // CSS Reset
 import '../../node_modules/sanitize.css/sanitize.css';
-// Load Cooper Hewitt typeface
-require('typeface-aleo');
+// Load Clear Sans typeface
+require('typeface-clear-sans');
+// Load IBM Plex Serif typeface
+require('typeface-ibm-plex-sans');
+
 
 // Create global styles
 const GlobalStyle = createGlobalStyle`
@@ -29,9 +32,21 @@ const GlobalStyle = createGlobalStyle`
 
   body {
   padding: 0;
-  font-family: "Fira Sans", sans-serif;
+  font-family: "IBM Plex Sans", sans-serif;
   font-size: ${modularScale(0, '1em', 'majorThird')};
   line-height: 1.4;
+  }
+
+  body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 3px;
+    width: 100%;
+    background: #00bcd4;
+    background: linear-gradient(to right, #00bcd4 0%,#ffc107 100%);
+    z-index: 1004;
   }
 
     p {
@@ -41,7 +56,7 @@ const GlobalStyle = createGlobalStyle`
   }
 
   h1, h2, h3, h4, h5, h6 {
-  font-family: "Aleo", sans-serif;
+  font-family: "Clear Sans", sans-serif;
   /* non-scalable fallback for old browsers */
   margin: 21px 0 0;
   /* 21px, will be ignored by old browsers */

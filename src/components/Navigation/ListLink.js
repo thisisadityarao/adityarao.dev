@@ -5,15 +5,14 @@ import { Link } from 'gatsby';
 const StyledLink = styled(Link)`
   &:link {
     text-decoration: none;
-    color: #999;
+    color: #888;
   }
   &:focus,
   &:hover {
-    color: #3b92de;
-    border-bottom: 3px solid #3b92de;
+    color: #2C9CDB;
   }
   &:active {
-    color: #3b92de;
+    color: #2C9CDB;
   }
 `;
 

@@ -65,11 +65,12 @@ const LinkButton = styled.a`
   margin-top: 1em;
   padding: 1rem 2rem;
   border-radius: 9999px;
+  transition: all 0.2s linear;
 
   color: #fff;
   text-align: center;
   text-decoration: none;
-  background-color: #e11665;
+  background-color: #ff4b6e;
 
   &:link {
     color: #fff;
@@ -78,6 +79,7 @@ const LinkButton = styled.a`
   &:hover {
     opacity: 1;
     background-color: #ff4b6e;
+    box-shadow: 0px 3px 6px #b0b0b0;
   }
 
   @media (min-width: 576px) {

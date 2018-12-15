@@ -6,16 +6,16 @@ const Footer = styled.footer`
   width: 100%;
   display: flex;
   align-items: center;
-  background-image: linear-gradient(to right, #8360c3, #2ebf91);
+  background-color: #fafafa;
+  border: 1px solid #eeeeee;
 
   & small {
-    font-size: 70%;
+    font-size: 80%;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 80%;
     text-align: center;
-    color: #fff;
+    color: #000;
   }
 `;
 

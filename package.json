@@ -8,7 +8,6 @@
     "serve": "gatsby serve"
   },
   "dependencies": {
-    "@wapps/gatsby-plugin-fonts": "^1.0.2",
     "babel-plugin-styled-components": "^1.9.2",
     "body-scroll-lock": "^2.6.1",
     "gatsby": "^2.0.64",
@@ -29,7 +28,9 @@
     "styled-icons": "^5.4.0",
     "styled-media-query": "^2.0.2",
     "typeface-aleo": "0.0.44",
-    "typeface-cooper-hewitt": "0.0.44",
+    "typeface-clear-sans": "0.0.44",
+    "typeface-ibm-plex-sans": "0.0.61",
+    "typeface-lato": "0.0.54",
     "typeface-source-sans-pro": "0.0.54"
   },
   "devDependencies": {

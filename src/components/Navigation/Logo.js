@@ -12,7 +12,7 @@ const Link = styled.a`
   }
 
   &:link {
-    color: #3d4852;
+    color: #29384c;
     text-decoration: none;
   }
   &:visited {
@@ -32,11 +32,11 @@ const Logo = styled.div`
   width: 60%;
 
   @media (min-width: 400px) {
-    width: 45%;
+    width: 50%;
   }
 
   @media (min-width: 768px) {
-    width: 30%;
+    width: 35%;
     text-align: left;
   }
 
@@ -44,22 +44,19 @@ const Logo = styled.div`
     margin: 0;
     padding: 0;
     line-height: 65px;
-    font-size: 20px;
+    font-size: 18px;
     letter-spacing: 1px;
 
-    @media (min-width: 435px) {
-      font-size: 24px;
+    @media (min-width: 530px) {
+      font-size: 20px;
     }
 
     @media (min-width: 768px) {
-      font-size: 30px;
+      font-size: 26px;
     }
 
     & a {
       transition: color 0.3s ease-in-out;
-      background: linear-gradient(to right, #ff0057, #008eff 50%);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
     }
   }
 `;

@@ -4,20 +4,29 @@ article {
   margin-bottom: 15rem;
   margin-top: 6rem;
   padding: 1.5rem;
-  line-height: 1.5;
+  line-height: 1.6;
+}
+
+article img {
+  margin-bottom: 2em;
 }
 
 article a:link {
-  text-decoration: none;
+  text-decoration: underline;
+  padding-bottom: 1px;
   color: rgb(59, 146, 222);
 }
 
 article a:focus,
 article a:hover {
-  border-bottom: 2px solid rgb(59, 146, 222);
+  color: rgb(46, 106, 159);
 }
 
 article a:active {
+  color: rgb(59, 146, 222);
+}
+
+article a:visited {
   color: rgb(59, 146, 222);
 }
 
@@ -147,10 +156,10 @@ pre {
 
 :not(pre) > code[class*="language-"] {
   font-family: monospace;
-  padding: 2px 6px;
+  padding: 1px 4px;
   font-size: 80%;
-  border-radius: 4px;
   color: #ffcc93;
+  vertical-align: 15%;
 }
 
 pre[class*="language-"] {

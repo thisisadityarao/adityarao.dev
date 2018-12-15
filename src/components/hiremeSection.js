@@ -54,11 +54,13 @@ const EmailButton = styled.a`
   color: white;
   text-align: center;
   text-decoration: none;
-  background-color: #e11665;
+  background-color: #ff4b6e;
+  transition: all 0.2s linear;
 
   &:hover {
     opacity: 1;
     background-color: #ff4b6e;
+    box-shadow: 0px 3px 6px #b0b0b0;
   }
 
   @media (min-width: 576px) {
