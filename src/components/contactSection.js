@@ -10,10 +10,10 @@ const SectionContact = styled.section`
   max-width: 1200px;
   margin: 0 auto;
   padding: 1.5rem;
-  padding-bottom: 10rem;
+  padding-bottom: 3rem;
 
   @media (min-width: 576px) {
-    padding-top: 4rem;
+    padding-top: 2rem;
   }
 `;
 
@@ -23,7 +23,6 @@ const H3 = styled.h3.attrs({
   font-weight: 700;
   font-size: 1.2rem;
   letter-spacing: 1px;
-  margin-bottom: 0.5rem;
   margin-top: ${props => props.margin};
 
   @media (min-width: 576px) {

@@ -99,7 +99,7 @@ const NavLinks = styled.ul`
 
       &:hover {
         ${HomeIcon}, ${PersonIcon}, ${EditIcon}, ${LocationOn} {
-          color: #3b92de;
+          color: #2C9CDB;
         }
       }
     }
