@@ -43,17 +43,23 @@ const Logo = styled.div`
   h1 {
     margin: 0;
     padding: 0;
-    line-height: 60px;
-    font-family: 'Fira Sans', sans-serif;
-    font-size: 24px;
-    letter-spacing: 0.5px;
+    line-height: 65px;
+    font-size: 20px;
+    letter-spacing: 1px;
+
+    @media (min-width: 435px) {
+      font-size: 24px;
+    }
 
     @media (min-width: 768px) {
-      font-size: 32px;
+      font-size: 30px;
     }
 
     & a {
       transition: color 0.3s ease-in-out;
+      background: linear-gradient(to right, #ff0057, #008eff 50%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
     }
   }
 `;
@@ -61,7 +67,7 @@ const Logo = styled.div`
 export default () => (
   <Logo>
     <h1>
-      <Link href="/">aditya rao</Link>
+      <Link href="/">ADITYA RAO</Link>
     </h1>
   </Logo>
 );

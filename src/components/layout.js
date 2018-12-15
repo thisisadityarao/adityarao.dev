@@ -10,9 +10,12 @@ import Footer from './footer';
 
 // CSS Reset
 import '../../node_modules/sanitize.css/sanitize.css';
+// Load Cooper Hewitt typeface
+require('typeface-aleo');
 
 // Create global styles
 const GlobalStyle = createGlobalStyle`
+
   html, body {
     height: 100%;
     width: 100%;
@@ -26,19 +29,19 @@ const GlobalStyle = createGlobalStyle`
 
   body {
   padding: 0;
-  font-family: "Nunito Sans", sans-serif;
+  font-family: "Fira Sans", sans-serif;
   font-size: ${modularScale(0, '1em', 'majorThird')};
   line-height: 1.4;
   }
 
-  p {
+    p {
   color: #3d4852;
   margin: 0;
   hyphens: auto;
   }
 
   h1, h2, h3, h4, h5, h6 {
-  font-family: "Fira Sans", sans-serif;
+  font-family: "Aleo", sans-serif;
   /* non-scalable fallback for old browsers */
   margin: 21px 0 0;
   /* 21px, will be ignored by old browsers */
