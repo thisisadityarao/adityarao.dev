@@ -8,6 +8,15 @@ module.exports = {
       },
     },
     {
+      resolve: 'gatsby-source-cloudinary',
+      options: {
+        cloudName: 'adityar',
+        apiKey: '634325125787942',
+        apiSecret: 'VMkZeFpBf562yxN_IhNoCxrvBR4',
+        resourceType: 'image',
+      },
+    },
+    {
       resolve: 'gatsby-transformer-remark',
       options: {
         plugins: ['gatsby-remark-prismjs'],
@@ -26,14 +35,6 @@ module.exports = {
       },
     },
     'gatsby-plugin-react-helmet',
-    {
-      resolve: 'gatsby-plugin-react-svg',
-      options: {
-        rule: {
-          include: /assets/,
-        },
-      },
-    },
     {
       resolve: 'gatsby-plugin-styled-components',
       options: {

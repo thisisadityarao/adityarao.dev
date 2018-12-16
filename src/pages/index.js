@@ -11,27 +11,45 @@ const HomeSection = styled.section`
 
 const SectionIntro = styled.section`
   width: 100%;
-  max-width: 1200px;
+  max-width: 1440px;
   margin: 0 auto;
   padding: 1.5rem;
-  padding-top: 4rem;
+  padding-top: 5rem;
+
+  @media (min-width: 1220px) {
+    background-image: url('https://res.cloudinary.com/adityar/image/upload/c_scale,h_200/v1544967290/raoaditya.com/Website%20Asset/profile.svg');
+    background-position: center right;
+    background-size: 400px 400px;
+    z-index: -2;
+  }
+
+  @media (min-width: 1300px) {
+    background-image: url('https://res.cloudinary.com/adityar/image/upload/c_scale,h_200/v1544967290/raoaditya.com/Website%20Asset/profile.svg');
+    background-position: center right;
+    background-size: 500px 500px;
+  }
 
   & p {
     color: #3d4852;
     font-weight: 300;
     font-size: 1.2rem;
-    max-width: 40em;
+    max-width: 30em;
     @media (min-width: 576px) {
       font-size: 1.6rem;
     }
-  }
-  .subtitle {
-    margin-top: 2em;
-    font-size: 0.9rem;
-    @media (min-width: 576px) {
-      font-size: 1.3rem;
+    @media (min-width: 786px) {
+      max-width: 32em;
     }
   }
+
+  .subtitle {
+    margin-top: 3em;
+    font-size: 1rem;
+    @media (min-width: 576px) {
+      font-size: 1.4rem;
+    }
+  }
+
   p + p {
     margin-top: 0.5em;
 
@@ -83,7 +101,7 @@ const LinkButton = styled.a`
   }
 
   @media (min-width: 576px) {
-    height: 60px;
+    height: 65px;
     width: 200px;
   }
 `;

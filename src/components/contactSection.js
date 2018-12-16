@@ -7,7 +7,7 @@ import { ExternalLinkAlt } from 'styled-icons/fa-solid/ExternalLinkAlt';
 
 const SectionContact = styled.section`
   width: 100%;
-  max-width: 1200px;
+  max-width: 1440px;
   margin: 0 auto;
   padding: 1.5rem;
   padding-bottom: 3rem;

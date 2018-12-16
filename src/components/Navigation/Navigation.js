@@ -95,48 +95,13 @@ const NavLinks = styled.ul`
 
       height: 60px;
       line-height: 60px;
-      transition: all 0.2s linear;
+      transition: all 0.3s ease-in-out;
 
-      &:hover {
+      &:focus, &:hover, &:active  {
         ${HomeIcon}, ${PersonIcon}, ${EditIcon}, ${LocationOn} {
           color: #2C9CDB;
         }
       }
-    }
-
-    & a::before {
-      content: '';
-      display: block;
-      position: absolute;
-      left: 0;
-      bottom: 0;
-      height: 2px;
-      width: 0;
-      transition: width 0s ease, background 0.5s ease;
-    }
-
-    & a:hover::before {
-      width: 100%;
-      background: #2c9cdb;
-      transition: width 0.5s ease;
-    }
-
-    & a::after {
-      content: '';
-      display: block;
-      position: absolute;
-      right: 0;
-      bottom: 0;
-      height: 2px;
-      width: 0;
-      background: #2c9cdb;
-      transition: width 0.5s ease;
-    }
-
-    & a:hover::after {
-      width: 100%;
-      background: transparent;
-      transition: all 0s ease;
     }
   }
 `;

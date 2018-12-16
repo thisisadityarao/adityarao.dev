@@ -23,7 +23,6 @@ const GlobalStyle = createGlobalStyle`
     height: 100%;
     width: 100%;
     padding: 0;
-
   }
 
   html {
@@ -42,7 +41,7 @@ const GlobalStyle = createGlobalStyle`
     position: absolute;
     top: 0;
     left: 0;
-    height: 3px;
+    height: 4px;
     width: 100%;
     background: #00bcd4;
     background: linear-gradient(to right, #00bcd4 0%,#ffc107 100%);
