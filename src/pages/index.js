@@ -14,7 +14,7 @@ const SectionIntro = styled.section`
   max-width: 1440px;
   margin: 0 auto;
   padding: 1.5rem;
-  padding-top: 3.5rem;
+  padding-top: 3rem;
 
   @media (min-width: 786px) {
     padding-top: 5rem;
