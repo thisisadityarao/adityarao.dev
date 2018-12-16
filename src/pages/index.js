@@ -14,13 +14,16 @@ const SectionIntro = styled.section`
   max-width: 1440px;
   margin: 0 auto;
   padding: 1.5rem;
-  padding-top: 5rem;
+  padding-top: 3.5rem;
+
+  @media (min-width: 786px) {
+    padding-top: 5rem;
+  }
 
   @media (min-width: 1220px) {
     background-image: url('https://res.cloudinary.com/adityar/image/upload/c_scale,h_200/v1544967290/raoaditya.com/Website%20Asset/profile.svg');
     background-position: center right;
     background-size: 400px 400px;
-    z-index: -2;
   }
 
   @media (min-width: 1300px) {

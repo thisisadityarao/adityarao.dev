@@ -41,14 +41,14 @@ const GlobalStyle = createGlobalStyle`
     position: absolute;
     top: 0;
     left: 0;
-    height: 4px;
+    height: 5px;
     width: 100%;
     background: #00bcd4;
     background: linear-gradient(to right, #00bcd4 0%,#ffc107 100%);
     z-index: 1004;
   }
 
-    p {
+  p {
   color: #3d4852;
   margin: 0;
   hyphens: auto;
