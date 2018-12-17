@@ -11,7 +11,6 @@
     "babel-plugin-styled-components": "^1.9.4",
     "body-scroll-lock": "^2.6.1",
     "gatsby": "^2.0.67",
-    "gatsby-plugin-react-svg": "^2.0.0",
     "gatsby-plugin-styled-components": "^3.0.4",
     "gatsby-remark-prismjs": "^3.1.4",
     "gatsby-source-cloudinary": "^0.1.8",
@@ -27,12 +26,8 @@
     "sanitize.css": "^8.0.0",
     "styled-components": "^4.1.2",
     "styled-icons": "^5.5.0",
-    "styled-media-query": "^2.0.2",
-    "typeface-aleo": "0.0.44",
     "typeface-clear-sans": "0.0.44",
-    "typeface-ibm-plex-sans": "0.0.61",
-    "typeface-lato": "0.0.54",
-    "typeface-source-sans-pro": "0.0.54"
+    "typeface-ibm-plex-sans": "0.0.61"
   },
   "devDependencies": {
     "eslint": "^5.10.0",

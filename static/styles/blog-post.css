@@ -56,8 +56,8 @@ article h4 {
   }
 
   article h4 {
-  font-size: 1.2em;
-}
+    font-size: 1.2em;
+  }
 }
 
 /** Introduces Vertical Rhythm.
@@ -115,10 +115,6 @@ article p + p {
   margin-top: 1rem;
 }
 
-article ul {
-  margin-left: 2.5rem;
-}
-
 article ul + p {
   margin-top: 0.8rem;
 }
@@ -156,17 +152,20 @@ pre {
 
 :not(pre) > code[class*="language-"] {
   font-family: monospace;
-  padding: 1px 4px;
+  background: #f0f0f0;
+  color: #ef3b7d;
+  border-radius: 2px;
+  display: inline-block;
+  padding: 1px 6px;
   font-size: 80%;
-  color: #ffcc93;
   vertical-align: 15%;
 }
 
 pre[class*="language-"] {
-    padding: 1em;
-    margin: 1.2em 0;
-    margin-bottom: 1.8em;
-    overflow: auto;
+  padding: 1em;
+  margin: 1.2em 0;
+  margin-bottom: 1.8em;
+  overflow: auto;
 }
 
 pre > code {
