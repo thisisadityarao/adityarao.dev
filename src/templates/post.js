@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { graphql } from 'gatsby';
 import Layout from '../components/layout';
-import '../../static/styles/blog-post.css';
+import '../../static/styles/post.css';
 
 const Wrapper = styled.main`
   min-height: 100%;
@@ -23,16 +23,16 @@ export default ({ data }) => {
     <Layout>
       <Wrapper>
         <article>
-        <h1>{post.frontmatter.title}</h1>
-        <Date>{post.frontmatter.date}</Date>
-        <div dangerouslySetInnerHTML={{ __html: post.html }} />
+          <h1>{post.frontmatter.title}</h1>
+          <Date>{post.frontmatter.date}</Date>
+          <div dangerouslySetInnerHTML={{ __html: post.html }} />
         </article>
       </Wrapper>
     </Layout>
   );
 };
 
-export const query = graphql`
+export const pageQuery = graphql`
   query($slug: String!) {
     markdownRemark(fields: { slug: { eq: $slug } }) {
       html

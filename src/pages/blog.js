@@ -27,22 +27,31 @@ const Wrapper = styled.main`
 
 const BlogList = styled.section`
   width: 100%;
-  max-width: 1200px;
+  max-width: 1000px;
   margin: 0 auto;
-  padding: 2rem 1.5rem;
+  padding: 2.5rem 1.5rem;
+
+  @media (min-width: 576px) {
+    padding: 4rem 1.5rem;
+  }
 `;
 
 const BlogPost = styled.div`
-  margin-bottom: 2rem;
+  margin-bottom: 2.5rem;
 
   @media (min-width: 576px) {
-    margin-bottom: 3rem;
+    margin-bottom: 3.5rem;
   }
 `;
 
 const Date = styled.p`
-  font-size: 0.9rem;
+  display: inline-block;
+  font-size: 0.8rem;
   margin-bottom: 0.2rem;
+  border-radius: 0.1rem;
+  text-decoration: underline;
+  line-height: 1.2;
+  padding: 0.1rem 0.2rem;
 
   @media (min-width: 576px) {
     font-size: 1rem;
@@ -59,22 +68,24 @@ const H2 = styled.h2`
   }
 `;
 
-export default ({ data }) => (
-  <Layout>
-    <Wrapper>
-      <BlogList>
-        {data.allMarkdownRemark.edges.map(({ node }) => (
-          <BlogPost key={node.id}>
-            <BlogPostLink to={node.fields.slug}>
-              <Date>{node.frontmatter.date}</Date>
-              <H2>{node.frontmatter.title}</H2>
-            </BlogPostLink>
-          </BlogPost>
-        ))}
-      </BlogList>
-    </Wrapper>
-  </Layout>
-);
+export default ({ data }) => {
+  return (
+    <Layout>
+      <Wrapper>
+        <BlogList>
+          {data.allMarkdownRemark.edges.map(({ node }) => (
+            <BlogPost key={node.id}>
+              <BlogPostLink to={node.fields.slug}>
+                <Date>{node.frontmatter.date}</Date>
+                <H2>{node.frontmatter.title}</H2>
+              </BlogPostLink>
+            </BlogPost>
+          ))}
+        </BlogList>
+      </Wrapper>
+    </Layout>
+  );
+};
 
 export const query = graphql`
   query {

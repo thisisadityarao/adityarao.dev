@@ -2,7 +2,7 @@ article {
   max-width: 43em;
   margin: auto;
   margin-bottom: 15rem;
-  margin-top: 6rem;
+  margin-top: 3rem;
   padding: 1.5rem;
   line-height: 1.6;
 }
@@ -125,7 +125,7 @@ article ul + p {
 article blockquote {
   font-style: italic;
   margin: 1.5em 0;
-  border-left: 2px solid #ff6732;
+  border-left: 3px solid #ff6732;
   padding: 0.75em 0 0 1.5em;
 }
 
@@ -152,13 +152,14 @@ pre {
 
 :not(pre) > code[class*="language-"] {
   font-family: monospace;
-  background: #f0f0f0;
-  color: #ef3b7d;
-  border-radius: 2px;
+  font-size: 85%;
   display: inline-block;
-  padding: 1px 6px;
-  font-size: 80%;
-  vertical-align: 15%;
+  background: #ffe9b3;
+  border-bottom: .05rem solid #ffd367;
+  color: #3b4351;
+  padding: .05rem .1rem 0;
+  border-radius: 3px;
+  vertical-align: 12%;
 }
 
 pre[class*="language-"] {
@@ -172,4 +173,10 @@ pre > code {
   padding: 0;
   font-size: 95%;
   line-height: 1.6;
+}
+
+.divider {
+  border-top: .05rem solid #dadee4;
+  height: .05rem;
+  margin: .4rem 0;
 }
