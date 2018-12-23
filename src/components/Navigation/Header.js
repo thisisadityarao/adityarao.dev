@@ -5,11 +5,11 @@ import Navigation from './Navigation';
 
 const Header = styled.header`
   width: 100%;
-  padding: 2rem 0 2rem 0;
+  padding: 1rem 0 1rem 0;
   border-bottom: 1px solid #eeeeee;
 
   @media (min-width: 786px) {
-    padding: 3rem 0 3rem 0;
+    padding: 2rem 0 2rem 0;
   }
 `;
 

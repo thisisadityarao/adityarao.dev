@@ -30,45 +30,59 @@ const SectionAbout = styled.section`
     }
   }
 
-    & span {
-      padding-left: 5px;
-      padding-right: 5px;
-    }
+  & span {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
 
-    & + p {
-      font-size: 1.2rem;
-      margin-top: 1.2rem;
+  & + p {
+    font-size: 1.2rem;
+    margin-top: 1.2rem;
 
-      @media (min-width: 576px) {
-        font-size: 1.5rem;
-      }
+    @media (min-width: 576px) {
+      font-size: 1.5rem;
     }
+  }
 `;
 
 const SectionWork = styled.section`
   width: 100%;
 `;
 
-const Work = styled.div`
+const Work = styled.div.attrs({
+  flexDirection: props => props.direction || 'row',
+})`
+  display: flex;
+  flex-direction: column;
 
   @media (min-width: 1220px) {
     display: flex;
+    flex-direction: ${props => props.flexDirection};
     margin: 0;
-    margin-bottom: 4rem;
+    margin-bottom: 5rem;
     padding: 0;
     flex-flow: row wrap;
     justify-content: space-between;
+    height: 280px;
 
     .work {
       max-width: 850px;
+      vertical-align: bottom;
+      align-self: center;
     }
   }
 `;
 
 const ImgContainer = styled.div`
+  height: 150px;
+  background-position: center center;
+  margin-bottom: 2rem;
+  background-size: 275px 150px;
+
   @media (min-width: 1220px) {
     flex: auto;
-    background-position: bottom ${props => props.side};
+    height: 280px;
+    background-position: bottom center;
     background-size: 280px 280px;
   }
 
@@ -83,7 +97,7 @@ const H3 = styled.h3.attrs({
   font-weight: 700;
   font-size: 1.2rem;
   letter-spacing: 1px;
-  margin-bottom: 0.5rem;
+  margin-bottom: 1rem;
   margin-top: ${props => props.margin};
 
   @media (min-width: 576px) {
@@ -132,39 +146,41 @@ export default () => (
       and evolve my set of technical skills and apply them to equally varied methods of problem
       solving and understanding.
     </p>
+
     <H3 size="4rem">WHAT DO I DO?</H3>
     <HR size="2rem" />
+
     <SectionWork>
+      <H4 size="3rem">
+        <span>FRONT-END DEVELOPMENT</span>
+      </H4>
+
       <Work>
+        <ImgContainer
+          style={{
+            backgroundImage:
+              'url("https://res.cloudinary.com/adityar/image/upload/v1544967290/raoaditya.com/Website%20Asset/front-end-development.svg")',
+          }}
+        />
         <div className="work">
-          <H4 size="1.5rem">
-            <span>FRONT-END DEVELOPMENT</span>
-          </H4>
-          <p>
+          <p style={{ alignSelf: 'center' }}>
             As a Front End Developer, I am responsible for converting the design to live, high
             performance, interactive website. I create responsive websites that work across a range
             of devices and browsers. I follow industry coding standards and use the latest tools &
             techniques to create accessible, performant websites.
           </p>
         </div>
-        <ImgContainer
-          side="right"
-          style={{
-            backgroundImage:
-              'url("https://res.cloudinary.com/adityar/image/upload/v1544967290/raoaditya.com/Website%20Asset/front-end-development.svg")',
-          }}
-        />
       </Work>
-      <Work>
+
+      <H4 size="3rem">SEARCH ENGINE MARKETING</H4>
+      <Work direction="row-reverse">
         <ImgContainer
-          side="left"
           style={{
             backgroundImage:
               'url("https://res.cloudinary.com/adityar/image/upload/v1544967290/raoaditya.com/Website%20Asset/seo.svg")',
           }}
         />
-        <div className="work">
-          <H4 size="1.5rem">SEARCH ENGINE MARKETING</H4>
+        <div className="work" style={{ alignSelf: 'center' }}>
           <p>
             For increased traffic, enhanced sales and high page rankings you need effective SEO.
             Every business is unique & so the SEO strategy is also unique. Through comprehensive SEO
@@ -175,9 +191,16 @@ export default () => (
           </p>
         </div>
       </Work>
+
+      <H4 size="3rem">EMAIL MARKETING</H4>
       <Work>
-        <div>
-          <H4 size="1.5rem">EMAIL MARKETING</H4>
+        <ImgContainer
+          style={{
+            backgroundImage:
+              'url("https://res.cloudinary.com/adityar/image/upload/v1544967290/raoaditya.com/Website%20Asset/email-marketing.svg")',
+          }}
+        />
+        <div style={{ alignSelf: 'center' }}>
           <p>
             {' '}
             Email marketing helps you connect with your audience to promote your brand and increase
@@ -186,24 +209,17 @@ export default () => (
             made up of people who want to receive your messages.
           </p>
         </div>
-        <ImgContainer
-          side="right"
-          style={{
-            backgroundImage:
-              'url("https://res.cloudinary.com/adityar/image/upload/v1544967290/raoaditya.com/Website%20Asset/email-marketing.svg")',
-          }}
-        />
       </Work>
+
+      <H4 size="3rem">SOCIAL MEDIA MARKETING</H4>
       <Work>
         <ImgContainer
-          side="left"
           style={{
             backgroundImage:
               'url("https://res.cloudinary.com/adityar/image/upload/v1544967290/raoaditya.com/Website%20Asset/social-media-marketing.svg")',
           }}
         />
-        <div>
-          <H4 size="1.5rem">SOCIAL MEDIA MARKETING</H4>
+        <div style={{ alignSelf: 'center' }}>
           <p>
             {' '}
             Social media has emerged as a powerful marketing tool in recent years. Social media
