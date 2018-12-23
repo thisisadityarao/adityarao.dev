@@ -1,6 +1,6 @@
 ---
 title: "Guide to become a Front-End Developer using Free resources"
-date: 2017-07-19
+date: "2017-07-19"
 ---
 
 [Tim Berners-Lee][53] wrote a proposal in 1989 for a system called the World Wide Web. He also created [HTML (Hypertext Markup Language)][54] in 1990, for the purpose of formatting scientific documents. HTML is a markup language that gives structure and meaning to documents.

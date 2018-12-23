@@ -1,6 +1,6 @@
 ---
 title: "Getting started with Webpack."
-date: 2017-09-20
+date: "2017-09-20"
 ---
 
 ![Webpack Logo](https://res.cloudinary.com/adityar/image/upload/v1509028531/adityarao/webpack-logo_kua5wi.png)

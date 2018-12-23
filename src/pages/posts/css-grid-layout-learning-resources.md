@@ -1,6 +1,6 @@
 ---
 title: "CSS Grid Layout learning resources."
-date: 2017-10-22
+date: "2017-10-22"
 ---
 
 A few weeks ago I came across [this post][1] on Slack Engineering Blog. It's about Slack rebuilding [slack.com][8] (their marketing website) using **CSS Grids**.

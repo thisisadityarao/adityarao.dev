@@ -1,6 +1,6 @@
 ---
 title: "Javascript Linting with ESLint."
-date: 2017-09-09
+date: "2017-09-09"
 ---
 
 [ESLint][1] is a powerful and customizable Javascript [linter][2].

@@ -1,7 +1,7 @@
 article {
   max-width: 43em;
   margin: auto;
-  margin-bottom: 15rem;
+  margin-bottom: 5rem;
   margin-top: 3rem;
   padding: 1.5rem;
   line-height: 1.6;
@@ -173,10 +173,4 @@ pre > code {
   padding: 0;
   font-size: 95%;
   line-height: 1.6;
-}
-
-.divider {
-  border-top: .05rem solid #dadee4;
-  height: .05rem;
-  margin: .4rem 0;
 }

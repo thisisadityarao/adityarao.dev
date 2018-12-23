@@ -1,6 +1,6 @@
 ---
 title: "Using rbenv to install and maintain Ruby on macOS."
-date: 2017-10-09
+date: "2017-10-09"
 ---
 
 I haven't learned [Ruby][1] but I do use [Bundler][2] it's dependency management programme. While trying to update the previous post I ran across a problem with Ruby, for which I spent more than 30 minutes to find and try the solutions. I did find the solution that worked - reinstalling Ruby. But this time I used a Ruby version management tool [rbenv][3].
