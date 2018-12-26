@@ -4,16 +4,17 @@ import styled from 'styled-components';
 const Footer = styled.footer`
   height: 100px;
   width: 100%;
-  display: flex;
-  align-items: center;
+  display: fixed;
+  bottom: 0;
+  left: 0;
   background-color: #fafafa;
   border: 1px solid #eeeeee;
 
   & small {
     font-size: 80%;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    margin: auto;
+    margin-top: 40px;
     text-align: center;
     color: #000;
   }
