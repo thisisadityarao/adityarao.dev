@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 const SectionHireMe = styled.section`
+  flex: 1 0 auto;
   width: 100%;
   background-color: #f7f8f8;
   border-top: 1px solid #eeeeee;
