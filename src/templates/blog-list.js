@@ -6,6 +6,7 @@ import Layout from '../components/layout';
 
 const Wrapper = styled.main`
   min-height: 100%;
+  flex: 1 0 auto;
 `;
 
 const BlogListing = styled.section`
