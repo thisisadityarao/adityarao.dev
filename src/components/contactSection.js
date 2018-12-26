@@ -6,6 +6,7 @@ import { Twitter } from 'styled-icons/fa-brands/Twitter';
 import { ExternalLinkAlt } from 'styled-icons/fa-solid/ExternalLinkAlt';
 
 const SectionContact = styled.section`
+  flex: 1 0 auto;
   width: 100%;
   max-width: 1440px;
   margin: 0 auto;

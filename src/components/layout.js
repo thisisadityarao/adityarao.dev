@@ -15,7 +15,6 @@ require('typeface-clear-sans');
 // Load IBM Plex Serif typeface
 require('typeface-ibm-plex-sans');
 
-
 // Create global styles
 const GlobalStyle = createGlobalStyle`
 
@@ -30,10 +29,11 @@ const GlobalStyle = createGlobalStyle`
   }
 
   body {
+  display: flex;
+  flex-direction: column;
   min-height: 100%;
-  position: relative;
+  height: 100vh;
   padding: 0;
-  padding-bottom: 100px;
   font-family: "IBM Plex Sans", sans-serif;
   font-size: ${modularScale(0, '1em', 'majorThird')};
   line-height: 1.4;
