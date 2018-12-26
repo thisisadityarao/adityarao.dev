@@ -30,6 +30,9 @@ const GlobalStyle = createGlobalStyle`
   }
 
   body {
+  min-height: 100%;
+  position: relative;
+  padding-bottom: 100px;
   padding: 0;
   font-family: "IBM Plex Sans", sans-serif;
   font-size: ${modularScale(0, '1em', 'majorThird')};
