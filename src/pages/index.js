@@ -82,7 +82,7 @@ const LinkButton = styled.a`
 
   display: inline-block;
   min-width: 220px;
-  font-size: 1em;
+  font-size: 1.1em;
   margin-top: 1em;
   padding: 1rem 2rem;
   border-radius: 9999px;
@@ -91,7 +91,7 @@ const LinkButton = styled.a`
   color: #fff;
   text-align: center;
   text-decoration: none;
-  background-color: #ff4b6e;
+  background-color: #f43059;
 
   &:link {
     color: #fff;
@@ -104,8 +104,18 @@ const LinkButton = styled.a`
   }
 
   @media (min-width: 576px) {
-    height: 65px;
+    height: 60px;
     width: 200px;
+    font-size: 1.2em;
+  }
+
+  @media (min-width: 786px) {
+    height: 65px;
+    font-size: 1.1em;
+  }
+
+  @media (min-width: 900px) {
+    font-size: 1em;
   }
 `;
 

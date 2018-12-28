@@ -2,7 +2,6 @@ import React from 'react';
 import styled from 'styled-components';
 
 const SectionHireMe = styled.section`
-  flex: 1 0 auto;
   width: 100%;
   background-color: #f7f8f8;
   border-top: 1px solid #eeeeee;
@@ -55,7 +54,7 @@ const EmailButton = styled.a`
   color: white;
   text-align: center;
   text-decoration: none;
-  background-color: #ff4b6e;
+  background-color: #F43059;
   transition: all 0.2s linear;
 
   &:hover {

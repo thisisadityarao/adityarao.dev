@@ -2,49 +2,9 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 import { disableBodyScroll, enableBodyScroll, clearAllBodyScrollLocks } from 'body-scroll-lock';
-import { Home } from 'styled-icons/fa-solid/Home';
-import { Person } from 'styled-icons/material/Person';
-import { Edit } from 'styled-icons/fa-regular/Edit';
-import { LocationOn } from 'styled-icons/material/LocationOn';
 import ListLink from './ListLink';
 import HamburgerMenu from './HamburgerMenu';
 import SideBar from './SideBar';
-
-const HomeIcon = styled(Home)`
-  width: 20px;
-  height: 20px;
-  margin-right: 5px;
-  margin-bottom: 1px;
-  line-height: 60px;
-  color: #888;
-`;
-
-const PersonIcon = styled(Person)`
-  width: 20px;
-  height: 20px;
-  margin-right: 5px;
-  margin-bottom: 3px;
-  line-height: 60px;
-  color: #888;
-`;
-
-const EditIcon = styled(Edit)`
-  width: 20px;
-  height: 18px;
-  margin-right: 5px;
-  margin-bottom: 3px;
-  line-height: 60px;
-  color: #888;
-`;
-
-const LocationOnIcon = styled(LocationOn)`
-  width: 20px;
-  height: 20px;
-  margin-right: 5px;
-  margin-bottom: 5px;
-  line-height: 60px;
-  color: #888;
-`;
 
 const Nav = styled.nav`
   margin: 0;
@@ -79,29 +39,9 @@ const NavLinks = styled.ul`
     li {
       margin: 0;
       padding: 0;
-      padding-top: 5px;
       height: 60px;
       line-height: 60px;
       list-style: none;
-    }
-
-    li a {
-      cursor: pointer;
-      margin: 0;
-      display: inline-block;
-      position: relative;
-      padding-bottom: 2px;
-      letter-spacing: 1px;
-
-      height: 60px;
-      line-height: 60px;
-      transition: all 0.3s ease-in-out;
-
-      &:focus, &:hover, &:active  {
-        ${HomeIcon}, ${PersonIcon}, ${EditIcon}, ${LocationOn} {
-          color: #2C9CDB;
-        }
-      }
     }
   }
 `;
@@ -154,19 +94,15 @@ export default class Navigation extends Component {
         <Nav>
           <NavLinks>
             <ListLink to="/">
-              <HomeIcon />
               Home
             </ListLink>
             <ListLink to="#about">
-              <PersonIcon />
               About Me
             </ListLink>
             <ListLink to="/blog/">
-              <EditIcon />
               Blog
             </ListLink>
             <ListLink to="#contact">
-              <LocationOnIcon />
               Contact
             </ListLink>
           </NavLinks>

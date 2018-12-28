@@ -6,7 +6,6 @@ import { Twitter } from 'styled-icons/fa-brands/Twitter';
 import { ExternalLinkAlt } from 'styled-icons/fa-solid/ExternalLinkAlt';
 
 const SectionContact = styled.section`
-  flex: 1 0 auto;
   width: 100%;
   max-width: 1440px;
   margin: 0 auto;
@@ -73,7 +72,7 @@ const SocialIcons = styled.ul`
     text-decoration: none;
 
     &:hover {
-      color: #2c9cdb;
+      color: #f43059;
     }
   }
 
@@ -90,7 +89,7 @@ const SocialIcons = styled.ul`
 
   & a:hover::before {
     width: 100%;
-    background: #2c9cdb;
+    background: #f43059;
     transition: width 0.5s ease;
   }
 
@@ -102,7 +101,7 @@ const SocialIcons = styled.ul`
     bottom: 0;
     height: 2px;
     width: 0;
-    background: #2c9cdb;
+    background: #f43059;
     transition: width 0.5s ease;
   }
 
@@ -115,7 +114,7 @@ const SocialIcons = styled.ul`
   & li span {
     font-size: 1.1em;
     padding-left: 15px;
-    padding-right: 5px;
+    padding-right: 8px;
     @media (min-width: 1200px) {
       font-size: 1em;
     }
@@ -158,6 +157,11 @@ const TwitterAlt = styled(Twitter)`
 const ExternalLink = styled(ExternalLinkAlt)`
   width: 15px;
   height: 15px;
+
+  @media (min-width: 600px) {
+    width: 18px;
+    height: 18px;
+  }
 
   @media (min-width: 1200px) {
     width: 20px;

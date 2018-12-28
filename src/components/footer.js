@@ -4,8 +4,6 @@ import styled from 'styled-components';
 const Footer = styled.footer`
   height: 100px;
   width: 100%;
-  flex-shrink: 0;
-  background-color: #fafafa;
   border: 1px solid #eeeeee;
 
   & small {
@@ -20,6 +18,9 @@ const Footer = styled.footer`
 
 export default () => (
   <Footer>
-    <small>&copy;2018 All rights reserved - Designed and coded by Aditya 👨🏽‍💻</small>
+    <small>
+      <span style={{ color: '#f43059' }}>&copy;</span>2018 All rights reserved - Designed and coded
+      by Aditya 👨🏽‍💻
+    </small>
   </Footer>
 );

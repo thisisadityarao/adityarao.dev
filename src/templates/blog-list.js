@@ -6,7 +6,6 @@ import Layout from '../components/layout';
 
 const Wrapper = styled.main`
   min-height: 100%;
-  flex: 1 0 auto;
 `;
 
 const BlogListing = styled.section`
@@ -42,7 +41,7 @@ const Date = styled.p`
 `;
 
 const H2 = styled.h2`
-  font-size: 1rem;
+  font-size: 1.2rem;
   margin-top: 0.3rem;
   margin-bottom: 0.6rem;
 
@@ -51,20 +50,20 @@ const H2 = styled.h2`
   }
 `;
 
-const ArticleLink = styled(Link)`
+const Links = styled(Link)`
   &:link {
     text-decoration: none;
-    color: rgb(59, 146, 222);
+    color: #f43059;
   }
   &:focus,
   &:hover {
-    color: rgb(59, 146, 222);
+    color: #f43059;
   }
   &:active {
-    color: rgb(59, 146, 222);
+    color: #f43059;
   }
   &:visited {
-    color: rgb(59, 146, 222);
+    color: #f43059;
   }
 `;
 
@@ -85,9 +84,9 @@ export default ({ data, pageContext }) => {
             return (
               <div key={node.fields.slug}>
                 <H2>
-                  <ArticleLink style={{ boxShadow: 'none' }} to={node.fields.slug}>
+                  <Links style={{ boxShadow: 'none' }} to={node.fields.slug}>
                     {title}
-                  </ArticleLink>
+                  </Links>
                 </H2>
                 <Date>{node.frontmatter.date}</Date>
                 <BlogPost dangerouslySetInnerHTML={{ __html: node.excerpt }} />
@@ -106,13 +105,14 @@ export default ({ data, pageContext }) => {
             margin: 'auto',
             paddingLeft: '1.5rem',
             paddingRight: '1.5rem',
-            marginBottom: '4rem',
+            marginBottom: '3rem',
+            height: '50px',
           }}
         >
           {!isFirst && (
-            <Link to={prevPage} rel="prev">
+            <Links to={prevPage} rel="prev">
               ← Previous Page
-            </Link>
+            </Links>
           )}
           {Array.from({ length: numPages }, (_, i) => (
             <li
@@ -121,23 +121,23 @@ export default ({ data, pageContext }) => {
                 margin: 0,
               }}
             >
-              <Link
+              <Links
                 to={`blog/${i === 0 ? '' : i + 1}`}
                 style={{
-                  padding: '0.5em',
+                  padding: '0.1em 0.4em',
                   textDecoration: 'none',
                   color: i + 1 === currentPage ? '#ffffff' : '',
-                  background: i + 1 === currentPage ? '#007acc' : '',
+                  background: i + 1 === currentPage ? '#F43059' : '',
                 }}
               >
                 {i + 1}
-              </Link>
+              </Links>
             </li>
           ))}
           {!isLast && (
-            <Link to={nextPage} rel="next">
+            <Links to={nextPage} rel="next">
               Next Page →
-            </Link>
+            </Links>
           )}
         </ul>
       </Wrapper>

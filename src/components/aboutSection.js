@@ -2,7 +2,6 @@ import React from 'react';
 import styled from 'styled-components';
 
 const SectionAbout = styled.section`
-  flex: 1 0 auto;
   width: 100%;
   max-width: 1440px;
   margin: 0 auto;
@@ -128,7 +127,7 @@ const HR = styled.hr.attrs({
   border: none;
   margin: 0;
   margin-bottom: ${props => props.margin};
-  background: #ff4b6e;
+  background: #f43059;
 `;
 
 export default () => (

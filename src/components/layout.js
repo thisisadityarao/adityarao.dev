@@ -29,10 +29,8 @@ const GlobalStyle = createGlobalStyle`
   }
 
   body {
-  display: flex;
-  flex-direction: column;
   min-height: 100%;
-  height: 100vh;
+  min-height: 100vh;
   padding: 0;
   font-family: "IBM Plex Sans", sans-serif;
   font-size: ${modularScale(0, '1em', 'majorThird')};

@@ -4,7 +4,6 @@ import Logo from './Logo';
 import Navigation from './Navigation';
 
 const Header = styled.header`
-  flex: 1 0 auto;
   width: 100%;
   padding: 1rem 0 1rem 0;
   border-bottom: 1px solid #eeeeee;

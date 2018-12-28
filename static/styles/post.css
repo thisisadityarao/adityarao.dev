@@ -2,8 +2,8 @@ article {
   max-width: 43em;
   margin: auto;
   margin-bottom: 5rem;
-  margin-top: 3rem;
   padding: 1.5rem;
+  padding-top: 4.5rem;
   line-height: 1.6;
 }
 
@@ -14,20 +14,20 @@ article img {
 article a:link {
   text-decoration: underline;
   padding-bottom: 1px;
-  color: rgb(59, 146, 222);
+  color: #F43059;
 }
 
 article a:focus,
 article a:hover {
-  color: rgb(46, 106, 159);
+  color: #FF4B6E;
 }
 
 article a:active {
-  color: rgb(59, 146, 222);
+  color: #F43059;
 }
 
 article a:visited {
-  color: rgb(59, 146, 222);
+  color: #F43059;
 }
 
 article h1 {

@@ -6,6 +6,7 @@ import '../../static/styles/post.css';
 
 const Wrapper = styled.main`
   min-height: 100%;
+  background-color: #fafafa;
 `;
 
 const Divider = styled.div`
@@ -30,7 +31,6 @@ const Divider = styled.div`
 
 const Date = styled.p`
   font-size: 0.9rem;
-  margin-bottom: 0.2rem;
 
   @media (min-width: 576px) {
     font-size: 1rem;
@@ -45,8 +45,8 @@ export default ({ data, pageContext }) => {
     <Layout>
       <Wrapper>
         <article>
-          <h1>{post.frontmatter.title}</h1>
           <Date>{post.frontmatter.date}</Date>
+          <h1>{post.frontmatter.title}</h1>
           <div dangerouslySetInnerHTML={{ __html: post.html }} />
         </article>
         <Divider />
@@ -56,17 +56,16 @@ export default ({ data, pageContext }) => {
             flexWrap: 'wrap',
             justifyContent: 'space-between',
             listStyle: 'none',
-            padding: '1.5em',
+            padding: '3.5em',
             width: '100%',
             maxWidth: '1000px',
-            marginBottom: '1.5rem',
             margin: 'auto',
             fontSize: '1.2rem',
           }}
         >
           {previous && (
             <li style={{ marginTop: '10px' }}>
-              <Link to={previous.fields.slug} rel="prev">
+              <Link to={previous.fields.slug} rel="prev" style={{ color: '#F43059' }}>
                 ← {previous.frontmatter.title}
               </Link>
             </li>
@@ -74,7 +73,7 @@ export default ({ data, pageContext }) => {
 
           {next && (
             <li style={{ marginTop: '10px' }}>
-              <Link to={next.fields.slug} rel="next">
+              <Link to={next.fields.slug} rel="next" style={{ color: '#F43059' }}>
                 {next.frontmatter.title} →
               </Link>
             </li>

@@ -16,14 +16,14 @@ const Link = styled.a`
     text-decoration: none;
   }
   &:visited {
-    color: #3d4852;
+    color: #29384c;
   }
   &:focus,
   &:hover {
-    color: #3b92de;
+    color: #f43059;
   }
   &:active {
-    color: #3b92de;
+    color: #f43059;
   }
 `;
 
@@ -53,6 +53,7 @@ const Logo = styled.div`
 
     @media (min-width: 768px) {
       font-size: 26px;
+      line-height: 60px;
     }
 
     & a {

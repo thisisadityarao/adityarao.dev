@@ -28,7 +28,7 @@ const Nav = styled.nav`
   width: 100%;
   color: #fff;
   z-index: 1000;
-  background: linear-gradient(135deg, #565eff 0%, #8f00db 100%);
+  background: linear-gradient(to bottom, #00bcd4 0%, #ffc107 100%);
   animation: ${slide} 0.4s ease-in;
 
   @media (min-width: 768px) {
@@ -93,8 +93,8 @@ const NavList = styled.ul`
 
   && a:hover {
     border-bottom: none;
-    background-color: #fff000;
-    color: #000;
+    color: #f43059;
+    background-color: #f9f9f9;
   }
 
   @media (min-width: 768px) {
@@ -107,6 +107,10 @@ const GithubAlt = styled(Github)`
   width: 30px;
   height: 30px;
   vertical-align: middle;
+
+  &:hover {
+    color: #f43059;
+  }
 `;
 
 const EnvelopeAlt = styled(Envelope)`
@@ -114,6 +118,10 @@ const EnvelopeAlt = styled(Envelope)`
   width: 30px;
   height: 30px;
   vertical-align: middle;
+
+  &:hover {
+    color: #f43059;
+  }
 `;
 
 const TwitterAlt = styled(Twitter)`
@@ -121,6 +129,10 @@ const TwitterAlt = styled(Twitter)`
   width: 30px;
   height: 30px;
   vertical-align: middle;
+
+  &:hover {
+    color: #f43059;
+  }
 `;
 
 export default props => (
