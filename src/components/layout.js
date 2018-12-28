@@ -45,7 +45,17 @@ const GlobalStyle = createGlobalStyle`
     height: 4px;
     width: 100%;
     background: #00bcd4;
-    background: linear-gradient(to right, #00bcd4 0%,#ffc107 100%);
+    background: linear-gradient(
+      to right,
+      #e52f45 0%,
+      #e52f45 25%,
+      #b42b3e 25%,
+      #b42b3e 50%,
+      #8ab2ff 50%,
+      #8ab2ff 75%,
+      #4d71b7 75%,
+      #4d71b7 100%
+    );
     z-index: 1004;
   }
 

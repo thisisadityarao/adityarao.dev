@@ -48,6 +48,22 @@ const H2 = styled.h2`
   @media (min-width: 576px) {
     font-size: 1.4rem;
   }
+
+  &.page-header {
+    color: #29384c;
+    margin-bottom: 3.5rem;
+    letter-spacing: 1px;
+    font-size: 1.5rem;
+
+    @media (min-width: 576px) {
+      margin-bottom: 4rem;
+      font-size: 2rem;
+    }
+
+    @media (min-width: 1200px) {
+      margin-bottom: 5rem;
+    }
+  }
 `;
 
 const Links = styled(Link)`
@@ -79,6 +95,7 @@ export default ({ data, pageContext }) => {
     <Layout>
       <Wrapper>
         <BlogListing>
+          <H2 className="page-header">Articles</H2>
           {posts.map(({ node }) => {
             const title = get(node, 'frontmatter.title') || node.fields.slug;
             return (

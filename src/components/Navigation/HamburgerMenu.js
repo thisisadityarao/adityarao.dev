@@ -9,7 +9,7 @@ const Menu = styled.div`
     height: 4px;
     margin: 4px;
     border-radius: 20px;
-    background-color: #ff4b6e;
+    background-color: #f43059;
   }
 
   @media (min-width: 768px) {

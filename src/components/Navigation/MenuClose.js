@@ -12,7 +12,7 @@ const Close = styled.div`
     height: 4px;
     margin: 4px;
     border-radius: 50px;
-    background-color: #fff;
+    background-color: #000;
   }
 
   & .line1 {

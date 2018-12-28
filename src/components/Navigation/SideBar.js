@@ -28,8 +28,8 @@ const Nav = styled.nav`
   width: 100%;
   color: #fff;
   z-index: 1000;
-  background: linear-gradient(to bottom, #00bcd4 0%, #ffc107 100%);
-  animation: ${slide} 0.4s ease-in;
+  background: #fafafa;
+  animation: ${slide} 0.7s ease-in-out;
 
   @media (min-width: 768px) {
     display: none;
@@ -83,8 +83,7 @@ const NavList = styled.ul`
     line-height: 0;
     text-align: center;
     letter-spacing: 2px;
-    color: #fff;
-    text-shadow: 0 15px 20px rgba(2, 11, 22, 0.2);
+    color: #e91e63;
 
     @media (min-width: 768px) {
       display: none;
@@ -93,8 +92,8 @@ const NavList = styled.ul`
 
   && a:hover {
     border-bottom: none;
-    color: #f43059;
-    background-color: #f9f9f9;
+    color: #3798ec;
+    background-color: #ffffff;
   }
 
   @media (min-width: 768px) {
@@ -103,35 +102,35 @@ const NavList = styled.ul`
 `;
 
 const GithubAlt = styled(Github)`
-  color: white;
+  color: #e91e63;
   width: 30px;
   height: 30px;
   vertical-align: middle;
 
   &:hover {
-    color: #f43059;
+    color: #3798ec;
   }
 `;
 
 const EnvelopeAlt = styled(Envelope)`
-  color: white;
+  color: #e91e63;
   width: 30px;
   height: 30px;
   vertical-align: middle;
 
   &:hover {
-    color: #f43059;
+    color: #3798ec;
   }
 `;
 
 const TwitterAlt = styled(Twitter)`
-  color: white;
+  color: #e91e63;
   width: 30px;
   height: 30px;
   vertical-align: middle;
 
   &:hover {
-    color: #f43059;
+    color: #3798ec;
   }
 `;
 

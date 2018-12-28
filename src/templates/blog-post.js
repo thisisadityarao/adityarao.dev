@@ -29,6 +29,44 @@ const Divider = styled.div`
   );
 `;
 
+const List = styled.ul`
+  display: flex;
+  flex-flow: column wrap;
+  list-style: none;
+  padding: 3em 1em;
+  width: 100%;
+  max-width: 1000px;
+  margin: auto;
+  font-size: 1.2rem;
+
+  @media (min-width: 1000px) {
+    flex-flow: row wrap;
+  }
+`;
+
+const ListItem = styled.li`
+  min-width: 270px;
+  text-align: center;
+  margin-top: 2.5rem;
+
+  &.first {
+    margin-top: 0;
+  }
+
+  @media (min-width: 1000px) {
+    width: 50%;
+    margin-top: 0;
+
+    &.first {
+      text-align: left;
+    }
+
+    &.second {
+      text-align: right;
+    }
+  }
+`;
+
 const Date = styled.p`
   font-size: 0.9rem;
 
@@ -50,35 +88,23 @@ export default ({ data, pageContext }) => {
           <div dangerouslySetInnerHTML={{ __html: post.html }} />
         </article>
         <Divider />
-        <ul
-          style={{
-            display: 'flex',
-            flexWrap: 'wrap',
-            justifyContent: 'space-between',
-            listStyle: 'none',
-            padding: '3.5em',
-            width: '100%',
-            maxWidth: '1000px',
-            margin: 'auto',
-            fontSize: '1.2rem',
-          }}
-        >
+        <List>
           {previous && (
-            <li style={{ marginTop: '10px' }}>
+            <ListItem className="first">
               <Link to={previous.fields.slug} rel="prev" style={{ color: '#F43059' }}>
                 ← {previous.frontmatter.title}
               </Link>
-            </li>
+            </ListItem>
           )}
 
           {next && (
-            <li style={{ marginTop: '10px' }}>
+            <ListItem className="second">
               <Link to={next.fields.slug} rel="next" style={{ color: '#F43059' }}>
                 {next.frontmatter.title} →
               </Link>
-            </li>
+            </ListItem>
           )}
-        </ul>
+        </List>
       </Wrapper>
     </Layout>
   );
