@@ -1,7 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
 import Layout from '../components/layout';
-import SectionAbout from '../components/aboutSection';
+import SectionWork from '../components/work';
+import SectionAbout from '../components/about';
 import SectionHireMe from '../components/hiremeSection';
 import SectionContact from '../components/contactSection';
 
@@ -134,6 +135,7 @@ export default () => (
           <LinkButton href="mailto:dev.adityarao@gmail.com">Get in Touch</LinkButton>
         </SectionIntro>
         <SectionAbout />
+        <SectionWork />
         <SectionHireMe />
         <SectionContact />
       </HomeSection>

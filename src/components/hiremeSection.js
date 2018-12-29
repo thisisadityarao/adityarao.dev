@@ -64,8 +64,8 @@ const EmailButton = styled.a`
   }
 
   @media (min-width: 576px) {
-    font-size: 0.95em;
-    height: 60px;
+    font-size: 0.9em;
+    height: 62px;
     width: 200px;
   }
 `;
