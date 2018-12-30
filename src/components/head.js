@@ -22,5 +22,7 @@ export default () => (
     },
     { rel: 'manifest', href: '../../static/site.webmanifest' },
   ]}
-/>
+>
+<html lang="en" />
+</Helmet>
 );

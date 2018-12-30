@@ -15,11 +15,11 @@ const StyledLink = styled(Link)`
   transition: all 0.2s ease-in-out;
 
   &:visited {
-    color: #888;
+    color: #595959;
   }
   &:link {
     text-decoration: none;
-    color: #888;
+    color: #595959;
   }
   &:focus,
   &:hover {
