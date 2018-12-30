@@ -7,11 +7,11 @@ module.exports = {
         short_name: 'Aditya Rao',
         start_url: '/',
         background_color: '#ffffff',
-        theme_color: '#ff4b6e',
+        theme_color: '#007acc',
         // Enables "Add to Homescreen" prompt and disables browser UI (including back button)
         // see https://developers.google.com/web/fundamentals/web-app-manifest/#display
         display: 'standalone',
-        icons: 'static/icon.png', // This path is relative to the root of the site.
+        icons: 'static/images/icon.png', // This path is relative to the root of the site.
       },
     },
     'gatsby-plugin-offline',
