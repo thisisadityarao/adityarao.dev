@@ -3,8 +3,8 @@ import styled from 'styled-components';
 import Layout from '../components/layout';
 import SectionWork from '../components/work';
 import SectionAbout from '../components/about';
-import SectionHireMe from '../components/hiremeSection';
-import SectionContact from '../components/contactSection';
+import SectionHireMe from '../components/associate';
+import SectionContact from '../components/contact';
 
 const HomeSection = styled.section`
   min-height: 100%;
