@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 const SectionHireMe = styled.section`
   width: 100%;
-  background-color: #f7f8f8;
+  background-color: #fafafa;
   border-top: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
   margin-top: 4rem;
@@ -45,7 +45,7 @@ const EmailButton = styled.a`
 
   display: block;
   width: 200px;
-  border-radius: 9999px;
+  border-radius: 6px;
   font-size: 1.1em;
   letter-spacing: 1px;
   padding: 1rem 2rem;
@@ -54,12 +54,12 @@ const EmailButton = styled.a`
   color: white;
   text-align: center;
   text-decoration: none;
-  background-color: #F43059;
+  background-color: #f43059;
   transition: all 0.2s linear;
 
   &:hover {
     opacity: 1;
-    background-color: #ff4b6e;
+    background-color: #e91e63;
     box-shadow: 0px 3px 6px #b0b0b0;
   }
 

@@ -22,7 +22,7 @@ const H3 = styled.h3.attrs({
 })`
   font-weight: 700;
   font-size: 1.2rem;
-  letter-spacing: 1px;
+  letter-spacing: 2px;
   margin-top: ${props => props.margin};
 
   @media (min-width: 576px) {
@@ -30,14 +30,13 @@ const H3 = styled.h3.attrs({
   }
 `;
 
-const HR = styled.hr.attrs({
-  margin: props => props.size || '3rem',
-})`
-  height: 6px;
-  max-width: 100px;
+const HR = styled.hr`
+  height: 5px;
+  max-width: 60px;
   border: none;
   margin: 0;
-  margin-bottom: ${props => props.margin};
+  margin-top: 1rem;
+  margin-bottom: 3rem;
   background-image: linear-gradient(to right, #ff4b6e, #e11665);
   background: #ff4b6e;
 `;
@@ -66,7 +65,7 @@ const SocialIcons = styled.ul`
     position: relative;
     padding-bottom: 3px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-    color: #888;
+    color: #777777;
     font-style: normal;
     transition: all 0.2s linear;
     text-decoration: none;

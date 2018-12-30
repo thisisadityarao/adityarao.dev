@@ -86,7 +86,7 @@ const LinkButton = styled.a`
   font-size: 1.1em;
   margin-top: 1em;
   padding: 1rem 2rem;
-  border-radius: 9999px;
+  border-radius: 6px;
   transition: all 0.2s linear;
 
   color: #fff;
@@ -100,7 +100,7 @@ const LinkButton = styled.a`
 
   &:hover {
     opacity: 1;
-    background-color: #ff4b6e;
+    background-color: #e91e63;
     box-shadow: 0px 3px 6px #b0b0b0;
   }
 

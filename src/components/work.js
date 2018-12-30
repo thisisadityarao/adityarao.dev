@@ -59,7 +59,7 @@ const Work = styled.div`
     }
 
     @media (min-width: 992px) {
-      font-size: 1.3rem;
+      font-size: 1.5rem;
       line-height: 1.5;
     }
   }
@@ -90,7 +90,7 @@ const ImgContainer = styled.div`
 const H3 = styled.h3`
   font-weight: 700;
   font-size: 1.4rem;
-  letter-spacing: 1px;
+  letter-spacing: 2px;
   margin-bottom: 1rem;
   margin-top: 1.5rem;
 
@@ -118,15 +118,16 @@ const H4 = styled.h4`
 
 const Separator = styled.hr`
   border: 0;
-  border-bottom: 1px dashed #ccc;
-  background: #ccc;
+  border-bottom: 1px solid #eee;
+  background: #eee;
 `;
 
 const HR = styled.hr`
-  height: 6px;
-  max-width: 100px;
+  height: 5px;
+  max-width: 60px;
   border: none;
   margin: 0;
+  margin-top: 1rem;
   margin-bottom: 5rem;
   background: #f43059;
 `;

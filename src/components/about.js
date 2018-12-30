@@ -17,7 +17,7 @@ const SectionAbout = styled.section`
     line-height: 1.5;
     max-width: 35em;
 
-    @media (min-width: 480px) {
+    @media (min-width: 768px) {
       font-size: 1.6rem;
       line-height: 1.6;
     }
@@ -35,7 +35,7 @@ const SectionAbout = styled.section`
 const H3 = styled.h3`
   font-weight: 700;
   font-size: 1.2rem;
-  letter-spacing: 1px;
+  letter-spacing: 2px;
   margin-bottom: 1rem;
   margin-top: 1.5rem;
 
@@ -45,10 +45,11 @@ const H3 = styled.h3`
 `;
 
 const HR = styled.hr`
-  height: 6px;
-  max-width: 100px;
+  height: 5px;
+  max-width: 60px;
   border: none;
   margin: 0;
+  margin-top: 1rem;
   margin-bottom: 3rem;
   background: #f43059;
 `;

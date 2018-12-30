@@ -44,8 +44,6 @@ const GlobalStyle = createGlobalStyle`
     left: 0;
     height: 4px;
     width: 100%;
-    background: #00bcd4;
-    background-image: linear-gradient(-225deg, #FF057C 0%, #7C64D5 48%, #4CC3FF 100%);
     z-index: 1004;
   }
 
