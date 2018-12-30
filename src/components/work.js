@@ -135,7 +135,7 @@ const HR = styled.hr`
 export default () => (
   <>
     <SectionWork>
-      <H3>WHAT DO I DO?</H3>
+      <H3>SERVICES</H3>
       <HR />
 
       <Section>
