@@ -82,7 +82,7 @@ const LinkButton = styled.a`
   cursor: pointer;
 
   display: block;
-  width: 260px;
+  width: 230px;
   height: 50px;
   font-size: 1.1rem;
   margin: 0;
