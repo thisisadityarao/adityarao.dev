@@ -44,12 +44,13 @@ const EmailButton = styled.a`
   cursor: pointer;
 
   display: block;
-  width: 200px;
-  border-radius: 6px;
-  font-size: 1.1em;
+  width: 260px;
+  height: 50px;
+  border-radius: 3px;
+  font-size: 1.1rem;
   letter-spacing: 1px;
-  padding: 1rem 2rem;
   margin: 0 auto;
+  padding: 13px;
 
   color: white;
   text-align: center;
@@ -61,12 +62,6 @@ const EmailButton = styled.a`
     opacity: 1;
     background-color: #e91e63;
     box-shadow: 0px 3px 6px #b0b0b0;
-  }
-
-  @media (min-width: 576px) {
-    font-size: 0.9em;
-    height: 62px;
-    width: 200px;
   }
 `;
 

@@ -81,12 +81,14 @@ const H2 = styled.h2`
 const LinkButton = styled.a`
   cursor: pointer;
 
-  display: inline-block;
-  min-width: 220px;
-  font-size: 1.1em;
-  margin-top: 1em;
-  padding: 1rem 2rem;
-  border-radius: 6px;
+  display: block;
+  width: 260px;
+  height: 50px;
+  font-size: 1.1rem;
+  margin: 0;
+  margin-top: 1rem;
+  padding: 13px;
+  border-radius: 3px;
   transition: all 0.2s linear;
 
   color: #fff;
@@ -102,21 +104,6 @@ const LinkButton = styled.a`
     opacity: 1;
     background-color: #e91e63;
     box-shadow: 0px 3px 6px #b0b0b0;
-  }
-
-  @media (min-width: 576px) {
-    height: 60px;
-    width: 200px;
-    font-size: 1.2em;
-  }
-
-  @media (min-width: 786px) {
-    height: 65px;
-    font-size: 1.1em;
-  }
-
-  @media (min-width: 900px) {
-    font-size: 1em;
   }
 `;
 
