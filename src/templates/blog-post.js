@@ -80,8 +80,10 @@ const TagSection = styled.div`
   max-width: 43em;
   height: 48px;
   line-height: 40px;
-  margin: 1rem;
+  margin: 1rem auto;
   margin-top: 0;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
 `;
 
 const PostTagLink = styled(Link)`
