@@ -75,8 +75,85 @@ const Date = styled.p`
   }
 `;
 
+const TagSection = styled.div`
+  width: 100%;
+  max-width: 43em;
+  height: 48px;
+  line-height: 40px;
+  margin: 1rem;
+  margin-top: 0;
+`;
+
+const PostTagLink = styled(Link)`
+  border-bottom: 2px solid #f43059;
+  padding-bottom: 2px;
+  font-size: 1.2rem;
+  &:link {
+    text-decoration: none;
+    color: #f43059;
+  }
+  &:focus,
+  &:hover {
+    color: #f43059;
+  }
+  &:active {
+    color: #f43059;
+  }
+  &:visited {
+    color: #f43059;
+  }
+`;
+
+const PostTags = styled(Link)`
+  display: inline-block;
+  height: 28px;
+  line-height: 26px;
+  position: relative;
+  margin: 0 12px 8px 0;
+  padding: 0 12px 0 10px;
+  background: #2196f3;
+  border-bottom-left-radius: 5px;
+  border-top-left-radius: 5px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  color: #fff;
+  font-size: 12px;
+  text-decoration: none;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  margin-left: 15px;
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: 12px;
+    right: 1px;
+    float: left;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: #fff;
+    box-shadow: -1px -1px 2px rgba(0, 0, 0, 0.4);
+  }
+
+  &:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: -12px;
+    width: 0;
+    height: 0;
+    border-color: transparent transparent transparent #2196f3;
+    border-style: solid;
+    border-width: 14px 0 14px 12px;
+  }
+
+  &:link {
+    text-decoration: none;
+  }
+`;
+
 export default ({ data, pageContext }) => {
   const post = data.markdownRemark;
+  const { tags } = data.markdownRemark.frontmatter;
   const { previous, next } = pageContext;
 
   return (
@@ -87,6 +164,14 @@ export default ({ data, pageContext }) => {
           <h1>{post.frontmatter.title}</h1>
           <div dangerouslySetInnerHTML={{ __html: post.html }} />
         </article>
+        <TagSection>
+          <PostTagLink to="/tags/">Tags :</PostTagLink>
+          {tags.map((tag, i) => (
+            <PostTags to={`/${tag}`} key={i} style={{ color: '#fff' }}>
+              {tag}
+            </PostTags>
+          ))}
+        </TagSection>
         <Divider />
         <List>
           {previous && (
@@ -118,6 +203,7 @@ export const pageQuery = graphql`
       html
       frontmatter {
         title
+        tags
         date(formatString: "MMMM DD, YYYY")
       }
     }

@@ -1,6 +1,7 @@
 ---
 title: "Getting started with Babel."
 date: "2017-10-08"
+tags: ['javascript', 'tooling']
 ---
 
 ![Babel Logo](https://res.cloudinary.com/adityar/image/upload/v1509028515/adityarao/babel-logo_yovc4x.png)

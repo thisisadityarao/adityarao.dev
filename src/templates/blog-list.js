@@ -163,7 +163,7 @@ export default ({ data, pageContext }) => {
 };
 
 export const pageQuery = graphql`
-  query blogPageQuery($skip: Int!, $limit: Int!) {
+  query PageQuery($skip: Int!, $limit: Int!) {
     allMarkdownRemark(
       sort: { fields: [frontmatter___date], order: DESC }
       limit: $limit
