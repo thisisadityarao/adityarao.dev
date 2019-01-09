@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import get from 'lodash/get';
 import { Link, graphql } from 'gatsby';
+import { DateRange } from 'styled-icons/material/DateRange';
 import Layout from '../components/layout';
 
 const Wrapper = styled.main`
@@ -26,7 +27,7 @@ const BlogPost = styled.p`
   }
 `;
 
-const Date = styled.p`
+const Date = styled.span`
   display: inline-block;
   font-size: 0.8rem;
   margin-bottom: 0.8rem;
@@ -83,6 +84,19 @@ const Links = styled(Link)`
   }
 `;
 
+const DateIcon = styled(DateRange)`
+  width: 20px;
+  height: 20px;
+  margin-right: 4px;
+  margin-top: -2px;
+  color: #888;
+
+  @media (min-width: 576px) {
+    width: 22px;
+    height: 22px;
+  }
+`;
+
 export default ({ data, pageContext }) => {
   const posts = data.allMarkdownRemark.edges;
   const { currentPage, numPages } = pageContext;
@@ -105,6 +119,7 @@ export default ({ data, pageContext }) => {
                     {title}
                   </Links>
                 </H2>
+                <DateIcon />
                 <Date>{node.frontmatter.date}</Date>
                 <BlogPost dangerouslySetInnerHTML={{ __html: node.excerpt }} />
               </div>

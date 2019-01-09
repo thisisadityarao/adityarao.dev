@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { graphql, Link } from 'gatsby';
+import { DateRange } from 'styled-icons/material/DateRange';
 import Layout from '../components/layout';
 import '../../static/styles/post.css';
 
@@ -67,8 +68,10 @@ const ListItem = styled.li`
   }
 `;
 
-const Date = styled.p`
+const Date = styled.span`
+  display: inline-block;
   font-size: 0.9rem;
+  text-decoration: underline;
 
   @media (min-width: 576px) {
     font-size: 1rem;
@@ -153,6 +156,19 @@ const PostTags = styled(Link)`
   }
 `;
 
+const DateIcon = styled(DateRange)`
+  width: 20px;
+  height: 20px;
+  margin-right: 4px;
+  margin-top: -2px;
+  color: #888;
+
+  @media (min-width: 576px) {
+    width: 22px;
+    height: 22px;
+  }
+`;
+
 export default ({ data, pageContext }) => {
   const post = data.markdownRemark;
   const { tags } = data.markdownRemark.frontmatter;
@@ -162,6 +178,7 @@ export default ({ data, pageContext }) => {
     <Layout>
       <Wrapper>
         <article>
+          <DateIcon />
           <Date>{post.frontmatter.date}</Date>
           <h1>{post.frontmatter.title}</h1>
           <div dangerouslySetInnerHTML={{ __html: post.html }} />
