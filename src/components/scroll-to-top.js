@@ -1,16 +1,17 @@
 import React from 'react';
 import styled from 'styled-components';
-import { UpArrowCircle } from 'styled-icons/boxicons-regular/UpArrowCircle';
+import { ArrowCircleUp } from 'styled-icons/fa-solid/ArrowCircleUp';
 
-const UpTop = styled(UpArrowCircle)`
-  opacity: 0.5;
-  width: 40px;
-  height: 40px;
+const UpTop = styled(ArrowCircleUp)`
+  opacity: 0.3;
+  width: 30px;
+  height: 30px;
   position: fixed;
-  bottom: 10px;
+  bottom: 15px;
   right: 10px;
   border-radius: 5px;
   border: none;
+  color: #f43059;
 
   &:hover {
     opacity: 1;

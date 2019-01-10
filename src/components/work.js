@@ -5,7 +5,7 @@ const SectionWork = styled.section`
   width: 100%;
   max-width: 1440px;
   margin: 2rem auto;
-  padding: 1rem;
+  padding: 1rem 0.5rem;
 
   @media (min-width: 768px) {
     padding: 2rem;
@@ -48,9 +48,11 @@ const Work = styled.div`
     font-size: 1rem;
     font-weight: 300;
     line-height: 1.5;
+    text-align: left;
+    hyphens: none;
 
     @media (max-width: 442px) {
-      text-align: center;
+      text-align: left;
     }
 
     @media (min-width: 380px) and (max-width: 992px) {
@@ -171,11 +173,11 @@ export default () => (
           <H4>SEARCH ENGINE OPTIMIZATION</H4>
           <p>
             For increased traffic, enhanced sales and high page rankings you need effective SEO.
-            Every business is unique & so the SEO strategy is also unique. TSeperatorough
-            comprehensive SEO audits & deploying on-page optimization techniques to the site, I
-            remove the flaws & optimise the site for search engines and users. With an able PPC
-            campaign, you’ll be able to reach out to your target audience and pay only for the
-            clicks you get, thereby reducing the total advertising expenditure.
+            Every business is unique & so the SEO strategy is also unique. Through comprehensive SEO
+            audits & deploying on-page optimization techniques to the site, I remove the flaws &
+            optimise the site for search engines and users. With an able PPC campaign, you’ll be
+            able to reach out to your target audience and pay only for the clicks you get, thereby
+            reducing the total advertising expenditure.
           </p>
         </Work>
       </Section>
