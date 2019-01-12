@@ -90,9 +90,12 @@ const TagSection = styled.div`
 `;
 
 const PostTagLink = styled(Link)`
-  border-bottom: 2px solid #f43059;
-  padding-bottom: 2px;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
+
+  @media (min-width: 768px) {
+    font-size: 1.2rem;
+  }
+
   &:link {
     text-decoration: none;
     color: #f43059;
@@ -111,56 +114,33 @@ const PostTagLink = styled(Link)`
 
 const PostTags = styled(Link)`
   display: inline-block;
-  height: 28px;
-  line-height: 26px;
+  margin-left: 0.8rem;
+  text-decoration: none;
+  font-size: 16px;
+  white-space: nowrap;
+  word-break: keep-all;
+  cursor: pointer;
+  line-height: 1.1;
   position: relative;
-  margin: 0 12px 8px 0;
-  padding: 0 12px 0 10px;
-  border-bottom-left-radius: 5px;
-  border-top-left-radius: 5px;
+  text-align: center;
+  opacity: 1;
   box-shadow: rgba(0, 0, 0, 0.04) 0px 1px 2px;
   color: rgb(255, 255, 255);
   background-color: rgb(6, 132, 248);
   background-image: linear-gradient(rgb(6, 132, 248), rgb(6, 122, 228));
-  font-size: 12px;
-  text-decoration: none;
   text-shadow: rgba(0, 0, 0, 0.08) 0px 1px 1px;
-  margin-left: 15px;
+  border-radius: 20px;
   transition: all 0.2s ease-in-out 0s;
-
-  &:before {
-    content: '';
-    position: absolute;
-    top: 12px;
-    right: 1px;
-    float: left;
-    width: 5px;
-    height: 5px;
-    border-radius: 50%;
-    background: #fff;
-    box-shadow: -1px -1px 2px rgba(0, 0, 0, 0.4);
-  }
-
-  &:after {
-    content: '';
-    position: absolute;
-    top: 0;
-    right: -12px;
-    width: 0;
-    height: 0;
-    border-color: transparent transparent transparent rgb(6, 132, 248);
-    border-style: solid;
-    border-width: 14px 0 14px 12px;
-  }
-
-  &:link {
-    text-decoration: none;
-  }
+  padding: 6px 12px;
 
   &:hover {
     background-image: linear-gradient(rgb(6, 153, 255), rgb(6, 141, 255));
     box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
     transition: all 0.2s ease-in-out 0s;
+  }
+
+  @media (min-width: 576px) {
+    padding: 8px 16px;
   }
 `;
 
@@ -195,7 +175,7 @@ export default ({ data, pageContext }) => {
           <PostTagLink to="/tags/">Tags :</PostTagLink>
           {tags.map((tag, i) => (
             <PostTags to={`/${tag}`} key={i} style={{ color: '#fff' }}>
-              {tag}
+              #{tag}
             </PostTags>
           ))}
         </TagSection>
