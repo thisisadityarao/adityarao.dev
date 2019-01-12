@@ -1,22 +1,61 @@
 import React from 'react';
 import styled from 'styled-components';
-import { ArrowCircleUp } from 'styled-icons/fa-solid/ArrowCircleUp';
+import { KeyboardArrowUp } from 'styled-icons/material/KeyboardArrowUp';
 
-const UpTop = styled(ArrowCircleUp)`
-  opacity: 0.3;
-  width: 30px;
-  height: 30px;
+const Container = styled.button`
+  width: 34px;
+  height: 34px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   position: fixed;
-  bottom: 15px;
-  right: 10px;
-  border-radius: 5px;
-  border: none;
-  color: #f43059;
+  bottom: 16px;
+  right: 16px;
+  box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 8px;
+  opacity: 0.2;
+  background-color: #f43059;
+  transform: translateY(0px);
+  cursor: pointer;
+  z-index: 9999;
+  border-radius: 24px;
+  transition: all 0.2s ease-in-out 0s;
 
+  &:focus,
   &:hover {
     opacity: 1;
   }
+  &:active {
+    opacity: 1;
+  }
+
+  @media (min-width: 768px) {
+    width: 48px;
+    height: 48px;
+  }
 `;
+
+const InnerContainer = styled.div`
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  min-width: 32px;
+  min-height: 32px;
+  position: relative;
+  color: inherit;
+  flex: 0 0 32px;
+`;
+
+const ArrowUp = styled(KeyboardArrowUp)`
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+  color: #fff;
+`;
+
 class ScrollButton extends React.Component {
   constructor() {
     super();
@@ -40,11 +79,15 @@ class ScrollButton extends React.Component {
 
   render() {
     return (
-      <UpTop
+      <Container
         onClick={() => {
           this.scrollToTop();
         }}
-      />
+      >
+        <InnerContainer>
+          <ArrowUp />
+        </InnerContainer>
+      </Container>
     );
   }
 }
