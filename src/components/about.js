@@ -18,8 +18,12 @@ const SectionAbout = styled.section`
     max-width: 35em;
 
     @media (min-width: 768px) {
-      font-size: 1.6rem;
+      font-size: 1.4rem;
       line-height: 1.6;
+    }
+    @media (min-width: 992px) {
+      font-size: 1.5rem;
+      line-height: 1.5;
     }
   }
 
