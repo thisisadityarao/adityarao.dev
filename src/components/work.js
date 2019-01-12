@@ -5,7 +5,7 @@ const SectionWork = styled.section`
   width: 100%;
   max-width: 1440px;
   margin: 2rem auto;
-  padding: 1rem 0.5rem;
+  padding: 1rem;
 
   @media (min-width: 768px) {
     padding: 2rem;
@@ -18,7 +18,7 @@ const Section = styled.div`
   margin: 4rem auto;
 
   @media (min-width: 380px) and (max-width: 768px) {
-    margin: 4rem 1rem;
+    margin: 4rem 0;
   }
 
   @media (min-width: 768px) {
@@ -44,11 +44,16 @@ const Section = styled.div`
 `;
 
 const Work = styled.div`
+  width: 100%;
+  margin-left: 0;
+  margin-right: 0;
+
   & p {
     font-size: 1rem;
     font-weight: 300;
     line-height: 1.5;
     text-align: left;
+    word-break: keep-all;
     hyphens: none;
 
     @media (max-width: 442px) {
@@ -91,7 +96,7 @@ const ImgContainer = styled.div`
 
 const H3 = styled.h3`
   font-weight: 700;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   letter-spacing: 2px;
   margin-bottom: 1rem;
   margin-top: 1.5rem;
@@ -107,10 +112,6 @@ const H4 = styled.h4`
   letter-spacing: 1px;
   margin-top: 3.5rem;
   margin-bottom: 2rem;
-
-  @media (max-width: 442px) {
-    text-align: center;
-  }
 
   @media (min-width: 768px) {
     font-size: 1.5rem;
@@ -128,8 +129,8 @@ const HR = styled.hr`
   height: 5px;
   max-width: 60px;
   border: none;
-  margin: 0;
-  margin-top: 1rem;
+  margin: 1rem;
+  margin-left: 0;
   margin-bottom: 5rem;
   background: #f43059;
 `;

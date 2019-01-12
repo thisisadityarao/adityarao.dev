@@ -39,7 +39,7 @@ const H3 = styled.h3`
   margin-bottom: 1rem;
   margin-top: 1.5rem;
 
-  @media (min-width: 480px) {
+  @media (min-width: 768px) {
     font-size: 1.8rem;
   }
 `;
