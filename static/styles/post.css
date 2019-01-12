@@ -60,8 +60,8 @@ article h4 {
   }
 }
 
-/** Introduces Vertical Rhythm.
-*   Whitespace above subhead is larger than whitespace below subhead
+/* Introduces Vertical Rhythm.
+  Whitespace above subhead is larger than whitespace below subhead
 */
 article p + h2 {
   margin-top: 2.2rem;
@@ -87,8 +87,8 @@ article h4 + p {
   margin-top: 0.9rem;
 }
 
-/** Introduces Vertical Rhythm.
-*   Whitespace above list items.
+/* Introduces Vertical Rhythm.
+  Whitespace above list items.
 */
 article ul,
 li {
@@ -112,7 +112,7 @@ article li + li {
 }
 
 article p + p {
-  margin-top: 1rem;
+  margin-top: 1.4rem;
 }
 
 article ul + p {
@@ -120,7 +120,7 @@ article ul + p {
 }
 
 /* BLOCKQUOTE
-  ========================================================================== */
+========================================================================== */
 
 article blockquote {
   font-style: italic;
@@ -130,7 +130,7 @@ article blockquote {
 }
 
 /* 'pre' Element
-  ========================================================================== */
+========================================================================== */
 
 pre {
   display: block;
@@ -148,7 +148,7 @@ pre {
 }
 
 /* 'code' Element
-  ========================================================================== */
+========================================================================== */
 
 :not(pre) > code[class*="language-"] {
   font-family: monospace;
@@ -172,4 +172,14 @@ pre > code {
   padding: 0;
   font-size: 95%;
   line-height: 1.6;
+}
+
+/* 'Tab and Desktop Styles'
+=========================================================================
+*/
+
+@media (min-width: 768px) {
+  article h1 {
+    margin-bottom: 6rem;
+  }
 }

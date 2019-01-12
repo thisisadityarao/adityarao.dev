@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { graphql, Link } from 'gatsby';
-import { DateRange } from 'styled-icons/material/DateRange';
+import { Calendar } from 'styled-icons/octicons/Calendar';
 import Layout from '../components/layout';
 import '../../static/styles/post.css';
 
@@ -83,7 +83,7 @@ const TagSection = styled.div`
   max-width: 43em;
   height: 48px;
   line-height: 40px;
-  margin: 1rem auto;
+  margin: 2rem auto;
   margin-top: 0;
   padding-left: 1.5rem;
   padding-right: 1.5rem;
@@ -116,15 +116,17 @@ const PostTags = styled(Link)`
   position: relative;
   margin: 0 12px 8px 0;
   padding: 0 12px 0 10px;
-  background: #2196f3;
   border-bottom-left-radius: 5px;
   border-top-left-radius: 5px;
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
-  color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.04) 0px 1px 2px;
+  color: rgb(255, 255, 255);
+  background-color: rgb(6, 132, 248);
+  background-image: linear-gradient(rgb(6, 132, 248), rgb(6, 122, 228));
   font-size: 12px;
   text-decoration: none;
-  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  text-shadow: rgba(0, 0, 0, 0.08) 0px 1px 1px;
   margin-left: 15px;
+  transition: all 0.2s ease-in-out 0s;
 
   &:before {
     content: '';
@@ -146,7 +148,7 @@ const PostTags = styled(Link)`
     right: -12px;
     width: 0;
     height: 0;
-    border-color: transparent transparent transparent #2196f3;
+    border-color: transparent transparent transparent rgb(6, 132, 248);
     border-style: solid;
     border-width: 14px 0 14px 12px;
   }
@@ -154,9 +156,15 @@ const PostTags = styled(Link)`
   &:link {
     text-decoration: none;
   }
+
+  &:hover {
+    background-image: linear-gradient(rgb(6, 153, 255), rgb(6, 141, 255));
+    box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
+    transition: all 0.2s ease-in-out 0s;
+  }
 `;
 
-const DateIcon = styled(DateRange)`
+const DateIcon = styled(Calendar)`
   width: 20px;
   height: 20px;
   margin-right: 4px;

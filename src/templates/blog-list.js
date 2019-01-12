@@ -2,11 +2,12 @@ import React from 'react';
 import styled from 'styled-components';
 import get from 'lodash/get';
 import { Link, graphql } from 'gatsby';
-import { DateRange } from 'styled-icons/material/DateRange';
+import { Calendar } from 'styled-icons/octicons/Calendar';
 import Layout from '../components/layout';
 
 const Wrapper = styled.main`
-  min-height: 100%;
+  height: 100%;
+  min-height: 702px;
 `;
 
 const BlogListing = styled.section`
@@ -21,18 +22,14 @@ const BlogListing = styled.section`
 `;
 
 const BlogPost = styled.p`
-  margin-bottom: 3rem;
-  @media (min-width: 576px) {
-    margin-bottom: 3.5rem;
-  }
+  margin-bottom: 1rem;
 `;
 
 const Date = styled.span`
   display: inline-block;
   font-size: 0.8rem;
-  margin-bottom: 0.8rem;
+  margin-bottom: 1.2rem;
   border-radius: 0.1rem;
-  text-decoration: underline;
   line-height: 1.2;
   padding: 0.1rem 0.2rem;
 
@@ -44,21 +41,21 @@ const Date = styled.span`
 const H2 = styled.h2`
   font-size: 1.2rem;
   margin-top: 0.3rem;
-  margin-bottom: 0.6rem;
+  margin-bottom: 0.8rem;
 
   @media (min-width: 576px) {
-    font-size: 1.4rem;
+    font-size: 1.5rem;
   }
 
   &.page-header {
     color: #29384c;
     margin-bottom: 3.5rem;
     letter-spacing: 1px;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
 
     @media (min-width: 576px) {
       margin-bottom: 4rem;
-      font-size: 2rem;
+      font-size: 1.5rem;
     }
 
     @media (min-width: 1200px) {
@@ -84,7 +81,7 @@ const Links = styled(Link)`
   }
 `;
 
-const DateIcon = styled(DateRange)`
+const DateIcon = styled(Calendar)`
   width: 20px;
   height: 20px;
   margin-right: 4px;
@@ -94,6 +91,21 @@ const DateIcon = styled(DateRange)`
   @media (min-width: 576px) {
     width: 22px;
     height: 22px;
+  }
+`;
+
+const Post = styled.div`
+  margin-bottom: 3rem;
+  padding: 24px 16px;
+  transition: all 0.2s ease-in-out 0s;
+
+  &:hover {
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 8px 24px;
+    transform: translateY(-3px);
+    background: rgb(255, 255, 255);
+    border-radius: 8px;
+    transition: all 0.2s ease-in-out 0s;
   }
 `;
 
@@ -109,20 +121,25 @@ export default ({ data, pageContext }) => {
     <Layout>
       <Wrapper>
         <BlogListing>
-          <H2 className="page-header">Articles</H2>
+          <H2 className="page-header">Latest Blog Posts</H2>
           {posts.map(({ node }) => {
             const title = get(node, 'frontmatter.title') || node.fields.slug;
             return (
-              <div key={node.fields.slug}>
+              <Links to={node.fields.slug}>
+              <Post key={node.fields.slug}>
                 <H2>
-                  <Links style={{ boxShadow: 'none' }} to={node.fields.slug}>
+                  <Links
+                    style={{ boxShadow: 'none', textDecoration: 'underline' }}
+                    to={node.fields.slug}
+                  >
                     {title}
                   </Links>
                 </H2>
                 <DateIcon />
                 <Date>{node.frontmatter.date}</Date>
                 <BlogPost dangerouslySetInnerHTML={{ __html: node.excerpt }} />
-              </div>
+              </Post>
+              </Links>
             );
           })}
         </BlogListing>

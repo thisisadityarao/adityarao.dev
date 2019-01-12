@@ -4,7 +4,8 @@ import styled from 'styled-components';
 import Layout from '../components/layout';
 
 const Wrapper = styled.main`
-  min-height: 100%;
+  height: 100%;
+  min-height: 702px;
   width: 100%;
   margin: 0 auto;
 `;
@@ -15,14 +16,14 @@ const TagListing = styled.section`
   width: 80%;
   max-width: 1000px;
   margin: 0 auto;
-  padding: 2.5rem 1rem;
+  padding: 2.5rem 0;
 
   @media (min-width: 576px) {
     padding: 4rem 1.5rem;
   }
 `;
 const H2 = styled.span`
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   font-weight: bold;
   margin-top: 1rem;
   margin-bottom: 3.5rem;
@@ -33,10 +34,11 @@ const H2 = styled.span`
 
   & span {
     display: inline-block;
-    padding: 1px 8px;
-    border-radius: 5px;
+    padding: 4px 16px;
+    border-radius: 4px;
     background-color: rgb(255, 246, 187);
     color: #333;
+    box-shadow: rgba(0, 0, 0, 0.04) 0px 1px 2px;
   }
 `;
 const Links = styled(Link)`
@@ -65,7 +67,7 @@ function Tags({ data, pageContext }) {
       <Wrapper>
         <TagListing>
           <H2>
-            Available posts in - <span>{tag}</span>
+            Posts tagged in - <span>{tag}</span>
           </H2>
 
           {posts.map(({ node }, i) => (
