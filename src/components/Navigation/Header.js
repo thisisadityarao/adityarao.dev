@@ -5,11 +5,11 @@ import Navigation from './Navigation';
 
 const Header = styled.header`
   width: 100%;
-  padding: 1rem 0 1rem 0;
+  padding: 1rem;
   border-bottom: 1px solid #eeeeee;
 
   @media (min-width: 786px) {
-    padding: 2rem 0 2rem 0;
+    padding: 2rem;
   }
 `;
 
@@ -23,6 +23,7 @@ const HeaderContainer = styled.div`
   justify-content: space-between;
 
   @media (min-width: 786px) {
+    padding: 0;
     justify-content: space-between;
   }
 `;

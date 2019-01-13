@@ -5,11 +5,7 @@ const SectionWork = styled.section`
   width: 100%;
   max-width: 1440px;
   margin: 2rem auto;
-  padding: 1rem;
-
-  @media (min-width: 768px) {
-    padding: 2rem;
-  }
+  padding-top: 2rem;
 `;
 
 const Section = styled.div`

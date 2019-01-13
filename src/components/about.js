@@ -5,7 +5,7 @@ const SectionAbout = styled.section`
   width: 100%;
   max-width: 1440px;
   margin: 2rem auto;
-  padding: 1rem;
+  padding-top: 1rem;
 
   @media (min-width: 480px) {
     padding-top: 4rem;

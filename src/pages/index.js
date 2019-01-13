@@ -8,13 +8,17 @@ import SectionContact from '../components/contact';
 
 const HomeSection = styled.section`
   min-height: 100%;
+  padding: 1rem;
+
+  @media (min-width: 786px) {
+    padding-top: 2rem;
+  }
 `;
 
 const SectionIntro = styled.section`
   width: 100%;
   max-width: 1440px;
   margin: 0 auto;
-  padding: 1.5rem;
   padding-top: 3rem;
 
   @media (min-width: 786px) {
@@ -88,13 +92,16 @@ const LinkButton = styled.a`
   margin: 0;
   margin-top: 1rem;
   padding: 13px;
-  border-radius: 3px;
-  transition: all 0.2s linear;
-
   color: #fff;
   text-align: center;
   text-decoration: none;
   background-color: #f43059;
+
+  border-radius: 4px;
+  white-space: nowrap;
+  word-break: keep-all;
+  box-shadow: rgba(0, 0, 0, 0.04) 0px 1px 2px;
+  transition: all 0.2s ease-in-out 0s;
 
   &:link {
     color: #fff;

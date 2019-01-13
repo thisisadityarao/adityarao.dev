@@ -9,16 +9,11 @@ import SideBar from './SideBar';
 const Nav = styled.nav`
   margin: 0;
   padding: 0;
-  height: 60px;
-  width: 50%;
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  display: flex;
 
-  @media (min-width: 768px) {
-    display: block;
-    width: 60%;
-  }
 
   @media (min-width: 1400px) {
     width: 40%;
@@ -27,11 +22,11 @@ const Nav = styled.nav`
 
 const NavLinks = styled.ul`
   display: none;
+  width: 100%;
 
   @media (min-width: 768px) {
     padding: 0;
     margin: 0;
-    height: 60px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -39,8 +34,6 @@ const NavLinks = styled.ul`
     li {
       margin: 0;
       padding: 0;
-      height: 60px;
-      line-height: 60px;
       list-style: none;
     }
   }
@@ -93,18 +86,10 @@ export default class Navigation extends Component {
       return (
         <Nav>
           <NavLinks>
-            <ListLink to="/">
-              Home
-            </ListLink>
-            <ListLink to="#about">
-              About Me
-            </ListLink>
-            <ListLink to="/blog/">
-              Blog
-            </ListLink>
-            <ListLink to="#contact">
-              Contact
-            </ListLink>
+            <ListLink to="/">Home</ListLink>
+            <ListLink to="#about">About Me</ListLink>
+            <ListLink to="/blog/">Blog</ListLink>
+            <ListLink to="#contact">Contact</ListLink>
           </NavLinks>
           <HamburgerMenu click={this.openMenu} />
         </Nav>

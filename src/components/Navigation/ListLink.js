@@ -7,11 +7,9 @@ const StyledLink = styled(Link)`
   margin: 0;
   display: inline-block;
   position: relative;
-  padding-bottom: 2px;
+  padding: 10px 20px;
   letter-spacing: 1px;
 
-  height: 60px;
-  line-height: 60px;
   transition: all 0.2s ease-in-out;
 
   &:visited {
@@ -23,7 +21,11 @@ const StyledLink = styled(Link)`
   }
   &:focus,
   &:hover {
-    color: #f43059;
+    color: #fff;
+    background: #f43059;
+    box-shadow: none;
+    border-radius: 4px;
+    transition: all 0.2s ease-in-out 0s;
   }
   &:active {
     color: #f43059;

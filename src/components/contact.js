@@ -9,7 +9,7 @@ const SectionContact = styled.section`
   width: 100%;
   max-width: 1440px;
   margin: 0 auto;
-  padding: 1.5rem;
+  padding-top: 1.5rem;
   padding-bottom: 3rem;
 
   @media (min-width: 576px) {

@@ -3,13 +3,8 @@ import styled from 'styled-components';
 
 const Link = styled.a`
   display: inline-block;
-  height: 60px;
   width: 100%;
   cursor: pointer;
-
-  @media (min-width: 768px) {
-    width: 75%;
-  }
 
   &:link {
     color: #29384c;
@@ -28,8 +23,9 @@ const Link = styled.a`
 `;
 
 const Logo = styled.div`
-  height: 60px;
   width: 60%;
+  display: flex;
+  align-items: center;
 
   @media (min-width: 400px) {
     width: 50%;

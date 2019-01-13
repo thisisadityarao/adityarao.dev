@@ -4,8 +4,8 @@ import styled from 'styled-components';
 const SectionHireMe = styled.section`
   width: 100%;
   background-color: #fafafa;
-  border-top: 1px solid #eeeeee;
-  border-bottom: 1px solid #eeeeee;
+  border: 1px solid #eeeeee;
+  border-radius: 4px;
   margin-top: 4rem;
   padding-top: 3rem;
   padding-bottom: 4rem;
