@@ -8,7 +8,7 @@ const Header = styled.header`
   padding: 1rem;
   border-bottom: 1px solid #eeeeee;
 
-  @media (min-width: 786px) {
+  @media (min-width: 480px) {
     padding: 2rem;
   }
 `;
@@ -17,8 +17,6 @@ const HeaderContainer = styled.div`
   width: 100%;
   max-width: 1440px;
   margin: 0 auto;
-  padding-left: 1em;
-  padding-right: 1em;
   display: flex;
   justify-content: space-between;
 

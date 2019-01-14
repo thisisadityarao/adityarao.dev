@@ -49,7 +49,6 @@ const Work = styled.div`
     font-weight: 300;
     line-height: 1.5;
     text-align: left;
-    word-break: keep-all;
     hyphens: none;
 
     @media (max-width: 442px) {
@@ -104,10 +103,15 @@ const H3 = styled.h3`
 
 const H4 = styled.h4`
   font-weight: 700;
-  font-size: 1.2rem;
-  letter-spacing: 1px;
+  font-size: 1.1rem;
+  letter-spacing: 0.5px;
   margin-top: 3.5rem;
   margin-bottom: 2rem;
+  text-align: center;
+
+  @media (min-width: 480px) {
+    font-size: 1.2rem;
+  }
 
   @media (min-width: 768px) {
     font-size: 1.5rem;

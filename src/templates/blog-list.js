@@ -14,7 +14,7 @@ const BlogListing = styled.section`
   width: 100%;
   max-width: 1000px;
   margin: 0 auto;
-  padding: 2.5rem 1.5rem;
+  padding: 2.5rem 0.5rem;
 
   @media (min-width: 576px) {
     padding: 4rem 1.5rem;
@@ -52,6 +52,7 @@ const H2 = styled.h2`
     margin-bottom: 3.5rem;
     letter-spacing: 1px;
     font-size: 1.2rem;
+    padding-left: 16px;
 
     @media (min-width: 576px) {
       margin-bottom: 4rem;
@@ -173,10 +174,11 @@ export default ({ data, pageContext }) => {
               <Links
                 to={`blog/${i === 0 ? '' : i + 1}`}
                 style={{
-                  padding: '0.1em 0.4em',
+                  padding: '0.2em 0.6em',
                   textDecoration: 'none',
                   color: i + 1 === currentPage ? '#ffffff' : '',
                   background: i + 1 === currentPage ? '#F43059' : '',
+                  borderRadius: '4px',
                 }}
               >
                 {i + 1}

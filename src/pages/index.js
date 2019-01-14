@@ -10,8 +10,8 @@ const HomeSection = styled.section`
   min-height: 100%;
   padding: 1rem;
 
-  @media (min-width: 786px) {
-    padding-top: 2rem;
+  @media (min-width: 480px) {
+    padding: 2rem;
   }
 `;
 

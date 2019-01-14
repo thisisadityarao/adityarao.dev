@@ -13,9 +13,9 @@ const Wrapper = styled.main`
 const Divider = styled.div`
   height: 2px;
   width: 100%;
-  max-width: 1000px;
+  max-width: 968px;
   margin: auto;
-  margin-top: 0.5em;
+  margin-top: 4rem;
   display: block;
   background: linear-gradient(
     to right,
