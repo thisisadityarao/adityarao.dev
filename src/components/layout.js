@@ -4,7 +4,7 @@
 import React from 'react';
 import { createGlobalStyle } from 'styled-components';
 import { modularScale } from 'polished';
-import ScrollButton from './scroll-to-top';
+import { TinyButton as ScrollUpButton } from 'react-scroll-up-button';
 import Head from './head';
 import Header from './Navigation/Header';
 import Footer from './footer';
@@ -146,7 +146,7 @@ export default ({ children }) => (
 
     <Header />
     {children}
-    <ScrollButton scrollStepInPx="50" delayInMs="16.66" />
+    <ScrollUpButton style={{ color: '#f43059', backgroundColor: 'transparent' }} />
     <Footer />
   </>
 );
