@@ -4,6 +4,7 @@ import { graphql, Link } from 'gatsby';
 import { Calendar } from 'styled-icons/octicons/Calendar';
 import Layout from '../components/layout';
 import '../../static/styles/post.css';
+import PageProgress from 'react-page-progress';
 
 const Wrapper = styled.main`
   min-height: 100%;
@@ -164,6 +165,7 @@ export default ({ data, pageContext }) => {
 
   return (
     <Layout>
+      <PageProgress color="#f43059" height={3} />
       <Wrapper>
         <article>
           <DateIcon />
