@@ -1,10 +1,10 @@
 import React from 'react';
 import styled from 'styled-components';
 import { graphql, Link } from 'gatsby';
+import PageProgress from 'react-page-progress';
 import { Calendar } from 'styled-icons/octicons/Calendar';
 import Layout from '../components/layout';
 import '../../static/styles/post.css';
-import PageProgress from 'react-page-progress';
 
 const Wrapper = styled.main`
   min-height: 100%;
