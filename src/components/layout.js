@@ -4,8 +4,8 @@
 import React from 'react';
 import { createGlobalStyle } from 'styled-components';
 import { modularScale } from 'polished';
-import PageProgress from 'react-page-progress';
 import { TinyButton as ScrollUpButton } from 'react-scroll-up-button';
+import ProgressBar from './progress-bar';
 import Head from './head';
 import Header from './Navigation/Header';
 import Footer from './footer';
@@ -144,7 +144,7 @@ export default ({ children }) => (
   <>
     <Head />
     <GlobalStyle />
-    <PageProgress color="#f43059" height={3} />
+    <ProgressBar />
     <Header />
     {children}
     <ScrollUpButton style={{ color: '#f43059', backgroundColor: 'transparent' }} />
