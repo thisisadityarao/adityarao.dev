@@ -1,7 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
 import { graphql, Link } from 'gatsby';
-import PageProgress from 'react-page-progress';
 import { Calendar } from 'styled-icons/octicons/Calendar';
 import Layout from '../components/layout';
 import '../../static/styles/post.css';
@@ -165,7 +164,6 @@ export default ({ data, pageContext }) => {
 
   return (
     <Layout>
-      <PageProgress color="#f43059" height={3} />
       <Wrapper>
         <article>
           <DateIcon />
