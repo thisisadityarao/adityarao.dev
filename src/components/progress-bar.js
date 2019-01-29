@@ -6,7 +6,7 @@ const ScrollIndicator = styled.div`
   padding: 0;
   background: #f9a800;
   position: fixed;
-  height: 3px;
+  height: 4px;
   width: ${props => props.width};
   top: 0;
   z-index: 99;
