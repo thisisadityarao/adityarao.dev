@@ -92,7 +92,7 @@ const NavList = styled.ul`
 
   && a:hover {
     border-bottom: none;
-    color: #3798ec;
+    outline: 1px dashed #e91e63;
     background-color: #ffffff;
   }
 
@@ -106,10 +106,6 @@ const GithubAlt = styled(Github)`
   width: 30px;
   height: 30px;
   vertical-align: middle;
-
-  &:hover {
-    color: #3798ec;
-  }
 `;
 
 const EnvelopeAlt = styled(Envelope)`
@@ -117,10 +113,6 @@ const EnvelopeAlt = styled(Envelope)`
   width: 30px;
   height: 30px;
   vertical-align: middle;
-
-  &:hover {
-    color: #3798ec;
-  }
 `;
 
 const TwitterAlt = styled(Twitter)`
@@ -128,10 +120,6 @@ const TwitterAlt = styled(Twitter)`
   width: 30px;
   height: 30px;
   vertical-align: middle;
-
-  &:hover {
-    color: #3798ec;
-  }
 `;
 
 export default props => (
