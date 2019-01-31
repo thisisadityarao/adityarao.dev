@@ -28,8 +28,8 @@ const Nav = styled.nav`
   width: 100%;
   color: #fff;
   z-index: 1000;
-  background: #fafafa;
-  animation: ${slide} 0.7s ease-in-out;
+  background: #fff;
+  animation: ${slide} 0.5s ease-in-out;
 
   @media (min-width: 768px) {
     display: none;

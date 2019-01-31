@@ -11,6 +11,7 @@
     "babel-plugin-styled-components": "^1.10.0",
     "bluebird": "^3.5.3",
     "body-scroll-lock": "^2.6.1",
+    "detect-passive-events": "^1.0.4",
     "gatsby": "^2.0.103",
     "gatsby-plugin-manifest": "^2.0.14",
     "gatsby-plugin-offline": "^2.0.22",

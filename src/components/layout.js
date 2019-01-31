@@ -1,17 +1,17 @@
 /* eslint no-unused-expressions: ["error", { "allowTaggedTemplates": true }] */
 // eslint-disable-next-line
 
+import { modularScale } from 'polished';
 import React from 'react';
 import { createGlobalStyle } from 'styled-components';
-import { modularScale } from 'polished';
-import { TinyButton as ScrollUpButton } from 'react-scroll-up-button';
-import ProgressBar from './progress-bar';
-import Head from './head';
-import Header from './Navigation/Header';
-import Footer from './footer';
-
 // CSS Reset
 import '../../node_modules/sanitize.css/sanitize.css';
+import Footer from './footer';
+import Head from './head';
+import Header from './Navigation/Header';
+import ProgressBar from './progress-bar';
+import ScrollToTop from './scroll-to-top';
+
 // Load Clear Sans typeface
 require('typeface-clear-sans');
 // Load IBM Plex Serif typeface
@@ -147,7 +147,7 @@ export default ({ children }) => (
     <ProgressBar />
     <Header />
     {children}
-    <ScrollUpButton style={{ color: '#f43059', backgroundColor: 'transparent' }} />
+    <ScrollToTop />
     <Footer />
   </>
 );

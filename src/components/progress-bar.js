@@ -4,7 +4,8 @@ import styled from 'styled-components';
 const ScrollIndicator = styled.div`
   margin-top: 0;
   padding: 0;
-  background: #f9a800;
+  background: #64b4f0;
+  background: linear-gradient(135deg, #bc4e9c 0, #f80759 100%);
   position: fixed;
   height: 4px;
   width: ${props => props.width};
