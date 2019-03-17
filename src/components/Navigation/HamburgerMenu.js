@@ -32,8 +32,9 @@ const MenuItem = styled.div`
 const MenuTag = styled.span`
   width: 50px;
   color: #f43059;
-  font-weight: bold;
-  font-size: 18px;
+  font-weight: 700;
+  font-size: 14px;
+  padding-top: 3px;
 
   @media (min-width: 768px) {
     display: none;
@@ -47,6 +48,6 @@ export default props => (
       <div className="line2" />
       <div className="line3" />
     </MenuItem>
-    <MenuTag>Menu</MenuTag>
+    <MenuTag>MENU</MenuTag>
   </Menu>
 );

@@ -25,18 +25,6 @@ const SectionIntro = styled.section`
     padding-top: 5rem;
   }
 
-  @media (min-width: 1220px) {
-    background-image: url('https://res.cloudinary.com/adityar/image/upload/c_scale,h_200/v1544967290/raoaditya.com/Website%20Asset/profile.svg');
-    background-position: center right;
-    background-size: 400px 400px;
-  }
-
-  @media (min-width: 1300px) {
-    background-image: url('https://res.cloudinary.com/adityar/image/upload/c_scale,h_200/v1544967290/raoaditya.com/Website%20Asset/profile.svg');
-    background-position: center right;
-    background-size: 500px 500px;
-  }
-
   & p {
     color: #3d4852;
     font-weight: 300;
@@ -120,13 +108,18 @@ export default () => (
       <HomeSection>
         <SectionIntro>
           <H2>Hi, there! I’m a freelance front-end developer.</H2>
-          <p>I am here to help you and your business turn great ideas into amazing products.</p>
           <p>
-            I help people and organization get the positive attention they deserve by creating
-            elegant, functional and modern websites.
+            I am here to help you and your business turn great ideas into
+            amazing products.
+          </p>
+          <p>
+            I help people and organization get the positive attention they
+            deserve by creating elegant, functional and modern websites.
           </p>
           <p className="subtitle">Want to chat about your project?</p>
-          <LinkButton href="mailto:dev.adityarao@gmail.com">Get in Touch</LinkButton>
+          <LinkButton href="mailto:dev.adityarao@gmail.com">
+            Get in Touch
+          </LinkButton>
         </SectionIntro>
         <SectionAbout />
         <SectionWork />

@@ -12,10 +12,8 @@ import Header from './Navigation/Header';
 import ProgressBar from './progress-bar';
 import ScrollToTop from './scroll-to-top';
 
-// Load Clear Sans typeface
-require('typeface-clear-sans');
-// Load IBM Plex Serif typeface
-require('typeface-ibm-plex-sans');
+// Load Source Sans Pro typeface
+require('typeface-source-sans-pro');
 
 // Create global styles
 const GlobalStyle = createGlobalStyle`
@@ -34,7 +32,7 @@ const GlobalStyle = createGlobalStyle`
   min-height: 100%;
   min-height: 100vh;
   padding: 0;
-  font-family: "IBM Plex Sans", sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
   font-size: ${modularScale(0, '1em', 'majorThird')};
   line-height: 1.4;
   }
@@ -56,7 +54,7 @@ const GlobalStyle = createGlobalStyle`
   }
 
   h1, h2, h3, h4, h5, h6 {
-  font-family: "Clear Sans", sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
   /* non-scalable fallback for old browsers */
   margin: 21px 0 0;
   /* 21px, will be ignored by old browsers */
