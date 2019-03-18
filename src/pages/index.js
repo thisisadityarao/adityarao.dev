@@ -1,34 +1,33 @@
+/* eslint-disable react/display-name */
 import React from 'react';
+import { Link } from 'gatsby';
 import styled from 'styled-components';
 import Layout from '../components/layout';
 import SectionWork from '../components/work';
 import SectionAbout from '../components/about';
 import SectionHireMe from '../components/associate';
 import SectionContact from '../components/contact';
+import ChevronScroll from '../components/scroll-down-indicator';
 
-const HomeSection = styled.section`
-  min-height: 100%;
-  padding: 1rem;
-
-  @media (min-width: 480px) {
-    padding: 2rem;
-  }
+const Main = styled.main`
+  height: 100%;
+  width: 100%;
+  padding: 0 1rem;
 `;
 
 const SectionIntro = styled.section`
   width: 100%;
+  height: calc(100vh - 125px);
   max-width: 1440px;
   margin: 0 auto;
-  padding-top: 3rem;
-
-  @media (min-width: 786px) {
-    padding-top: 5rem;
-  }
+  padding-top: 7rem;
+  padding-bottom: 7rem;
 
   & p {
     color: #3d4852;
-    font-weight: 300;
-    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 1.5;
+    font-size: 1.4rem;
     max-width: 30em;
     @media (min-width: 576px) {
       font-size: 1.6rem;
@@ -50,7 +49,7 @@ const SectionIntro = styled.section`
     margin-top: 0.5em;
 
     @media (min-width: 576px) {
-      margin-top: 0.25em;
+      margin-top: 0.8em;
     }
   }
 
@@ -61,12 +60,12 @@ const SectionIntro = styled.section`
 `;
 
 const H2 = styled.h2`
-  font-size: 1.5rem;
-  margin-bottom: 1.5rem;
+  font-size: 3rem;
+  margin-bottom: 3rem;
 
   @media (min-width: 576px) {
-    font-size: 2rem;
-    margin-bottom: 2rem;
+    font-size: 3rem;
+    margin-bottom: 3rem;
   }
 `;
 
@@ -78,7 +77,7 @@ const LinkButton = styled.a`
   height: 50px;
   font-size: 1.1rem;
   margin: 0;
-  margin-top: 1rem;
+  margin-top: 1.5rem;
   padding: 13px;
   color: #fff;
   text-align: center;
@@ -102,30 +101,36 @@ const LinkButton = styled.a`
   }
 `;
 
+const LinkChevron = styled(Link)`
+  cursor: pointer;
+  color: #3a4a5a;
+`;
+
 export default () => (
   <Layout>
-    <main>
-      <HomeSection>
-        <SectionIntro>
-          <H2>Hi, there! I’m a freelance front-end developer.</H2>
-          <p>
-            I am here to help you and your business turn great ideas into
-            amazing products.
-          </p>
-          <p>
-            I help people and organization get the positive attention they
-            deserve by creating elegant, functional and modern websites.
-          </p>
-          <p className="subtitle">Want to chat about your project?</p>
-          <LinkButton href="mailto:dev.adityarao@gmail.com">
-            Get in Touch
-          </LinkButton>
-        </SectionIntro>
-        <SectionAbout />
-        <SectionWork />
-        <SectionHireMe />
-        <SectionContact />
-      </HomeSection>
-    </main>
+    <Main>
+      <SectionIntro>
+        <H2>
+          Hi, there! <span>👋</span>
+        </H2>
+        <p>I’m Aditya Rao, a freelance front-end developer.</p>
+        <p>
+          I build digital products that are intuitive, accessible, beautiful,
+          and fun. I am here to help you and your business turn great ideas into
+          amazing products.
+        </p>
+        <p className="subtitle">Want to chat about your project?</p>
+        <LinkButton href="mailto:dev.adityarao@gmail.com">
+          Get in Touch
+        </LinkButton>
+        <LinkChevron to="#about">
+          <ChevronScroll />
+        </LinkChevron>
+      </SectionIntro>
+      <SectionAbout />
+      <SectionWork />
+      <SectionHireMe />
+      <SectionContact />
+    </Main>
   </Layout>
 );
