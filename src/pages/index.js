@@ -13,22 +13,33 @@ const Main = styled.main`
   height: 100%;
   width: 100%;
   padding: 0 1rem;
+  display: flex;
+  flex-direction: column;
 `;
 
 const SectionIntro = styled.section`
   width: 100%;
-  height: calc(100vh - 125px);
-  max-width: 1440px;
+  height: calc(100vh - 98px);
+  padding-top: 1rem;
+  padding-bottom: 1rem;
   margin: 0 auto;
-  padding-top: 7rem;
-  padding-bottom: 7rem;
+
+  @media (min-width: 365px) {
+    height: calc(100vh - 125px);
+    max-width: 1440px;
+    padding-top: 5rem;
+    padding-bottom: 7rem;
+  }
 
   & p {
     color: #3d4852;
     font-weight: 400;
     line-height: 1.5;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     max-width: 30em;
+    @media (min-width: 365px) {
+      font-size: 1.4rem;
+    }
     @media (min-width: 576px) {
       font-size: 1.6rem;
     }
@@ -46,7 +57,7 @@ const SectionIntro = styled.section`
   }
 
   p + p {
-    margin-top: 0.5em;
+    margin-top: 1em;
 
     @media (min-width: 576px) {
       margin-top: 0.8em;
@@ -60,10 +71,9 @@ const SectionIntro = styled.section`
 `;
 
 const H2 = styled.h2`
-  font-size: 3rem;
-  margin-bottom: 3rem;
-
-  @media (min-width: 576px) {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  @media (min-width: 365px) {
     font-size: 3rem;
     margin-bottom: 3rem;
   }

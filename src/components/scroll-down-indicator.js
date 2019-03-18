@@ -5,23 +5,23 @@ import { ChevronDown } from 'styled-icons/fa-solid/ChevronDown';
 // Create the keyframes
 const scroll = keyframes`
   0% {
-    transform: translateY(-10px);
+    transform: translateY(-8px);
   }
 
   50% {
-    transform: translateY(10px);
+    transform: translateY(8px);
   }
   100% {
-    transform: translateY(-10px);
+    transform: translateY(-8px);
   }
 `;
 
 const ChevronDownScroll = styled(ChevronDown)`
-  width: 3rem;
+  width: 2rem;
   position: absolute;
   left: 0;
   right: 0;
-  bottom: 50px;
+  bottom: 3vh;
   margin: 0 auto;
   animation-name: ${scroll};
   animation-duration: 1.7s;
