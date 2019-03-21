@@ -1,3 +1,4 @@
+/* eslint-disable react/display-name */
 import React from 'react';
 import styled from 'styled-components';
 import get from 'lodash/get';
@@ -115,7 +116,8 @@ export default ({ data, pageContext }) => {
   const { currentPage, numPages } = pageContext;
   const isFirst = currentPage === 1;
   const isLast = currentPage === numPages;
-  const prevPage = currentPage - 1 === 1 ? '/blog' : (currentPage - 1).toString();
+  const prevPage =
+    currentPage - 1 === 1 ? '/blog' : (currentPage - 1).toString();
   const nextPage = `/blog/${(currentPage + 1).toString()}`;
 
   return (
@@ -127,19 +129,21 @@ export default ({ data, pageContext }) => {
             const title = get(node, 'frontmatter.title') || node.fields.slug;
             return (
               <Links to={node.fields.slug}>
-              <Post key={node.fields.slug}>
-                <H2>
-                  <Links
-                    style={{ boxShadow: 'none', textDecoration: 'underline' }}
-                    to={node.fields.slug}
-                  >
-                    {title}
-                  </Links>
-                </H2>
-                <DateIcon />
-                <Date>{node.frontmatter.date}</Date>
-                <BlogPost dangerouslySetInnerHTML={{ __html: node.excerpt }} />
-              </Post>
+                <Post key={node.fields.slug}>
+                  <H2>
+                    <Links
+                      style={{ boxShadow: 'none', textDecoration: 'underline' }}
+                      to={node.fields.slug}
+                    >
+                      {title}
+                    </Links>
+                  </H2>
+                  <DateIcon />
+                  <Date>{node.frontmatter.date}</Date>
+                  <BlogPost
+                    dangerouslySetInnerHTML={{ __html: node.excerpt }}
+                  />
+                </Post>
               </Links>
             );
           })}

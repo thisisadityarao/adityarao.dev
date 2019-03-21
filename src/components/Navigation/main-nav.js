@@ -5,6 +5,7 @@ import ListLink from './ListLink';
 import MobileNav from './mobile-nav';
 
 const Nav = styled.nav`
+  cursor: pointer;
   margin: 0;
   padding: 0;
   display: flex;

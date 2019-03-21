@@ -3,8 +3,10 @@
 // eslint-disable-next-line
 
 import React from 'react';
-import { createGlobalStyle } from 'styled-components';
+import styled, { createGlobalStyle } from 'styled-components';
 import Head from './head';
+import Footer from './footer';
+import Header from './Navigation/Header';
 import ProgressBar from './progress-bar';
 import ScrollToTop from './scroll-to-top';
 
@@ -62,12 +64,27 @@ const GlobalStyle = createGlobalStyle`
   }
 `;
 
+const PageWrapper = styled.div`
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 100vh;
+`;
+
 export default ({ children }) => (
   <>
     <Head />
     <GlobalStyle />
     <ProgressBar />
-    {children}
-    <ScrollToTop />
+    <PageWrapper>
+      <Header />
+      {children}
+      <Footer />
+      <ScrollToTop />
+    </PageWrapper>
   </>
 );

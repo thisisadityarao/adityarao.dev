@@ -3,7 +3,6 @@ import { Link } from 'gatsby';
 import styled from 'styled-components';
 
 const Menu = styled.button`
-  cursor: pointer;
   width: 30px;
   z-index: 300;
   top: -7px;
@@ -13,7 +12,6 @@ const Menu = styled.button`
 
   &:hover:not(.touch),
   &:focus {
-    cursor: pointer;
     background: transparent;
     border: none;
     outline: none;
@@ -21,8 +19,7 @@ const Menu = styled.button`
 `;
 
 const MenuItem = styled.div`
-  cursor: pointer;
-  width: 24px;
+  width: 27px;
   height: 2px;
   position: absolute;
   left: 0;
@@ -32,7 +29,7 @@ const MenuItem = styled.div`
   &::before {
     content: '';
     top: -8px;
-    width: 24px;
+    width: 27px;
     height: 2px;
     position: absolute;
     background: #2a3a4a;
@@ -45,7 +42,7 @@ const MenuItem = styled.div`
   &::after {
     top: 8px;
     content: '';
-    width: 24px;
+    width: 27px;
     height: 2px;
     background: #2a3a4a;
     position: absolute;
@@ -104,27 +101,35 @@ const Toggle = () => {
       {isToggledOn && (
         <SideBar>
           <Container>
-            <Link aria-label="View blog page" to="/" activeClassName="active">
+            <Link
+              aria-label="View blog page"
+              to="/"
+              activeClassName="active"
+              onClick={toggle}
+            >
               Home
             </Link>
             <Link
               aria-label="View talks page"
-              to="/About"
+              to="#about"
               activeClassName="active"
+              onClick={toggle}
             >
               About
             </Link>
             <Link
               aria-label="View workshops page"
-              to="/Blog"
+              to="/blog/"
               activeClassName="active"
+              onClick={toggle}
             >
               Blog
             </Link>
             <Link
               aria-label="View about page"
-              to="/Contact"
+              to="#contact"
               activeClassName="active"
+              onClick={toggle}
             >
               Contact
             </Link>
