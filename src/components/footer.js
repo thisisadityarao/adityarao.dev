@@ -7,9 +7,12 @@ const Footer = styled.footer`
   flex-direction: column;
   height: 120px;
   width: 100%;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding: 0 20px;
   border: 1px solid #eeeeee;
+
+  @media (min-width: 768px) {
+    padding: 0 40px;
+  }
 
   & p {
     font-size: 80%;
@@ -44,7 +47,8 @@ export default () => (
     <p>
       Build with <a href="https://www.gatsbyjs.org/">Gatsby</a> and{' '}
       <a href="https://reactjs.org/">React</a>. Hosted on{' '}
-      <a href="https://www.netlify.com/">Netlify</a>. The code is open source and available at{' '}
+      <a href="https://www.netlify.com/">Netlify</a>. The code is open source
+      and available at{' '}
       <a href="https://github.com/ad1tyara0/raoaditya.com">Github</a>.
     </p>
     <p>&copy; Aditya Rao - 2019</p>

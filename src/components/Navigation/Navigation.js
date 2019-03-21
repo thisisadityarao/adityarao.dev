@@ -1,7 +1,11 @@
 /* eslint-disable react/destructuring-assignment */
 import React, { Component } from 'react';
 import styled from 'styled-components';
-import { disableBodyScroll, enableBodyScroll, clearAllBodyScrollLocks } from 'body-scroll-lock';
+import {
+  disableBodyScroll,
+  enableBodyScroll,
+  clearAllBodyScrollLocks,
+} from 'body-scroll-lock';
 import ListLink from './ListLink';
 import HamburgerMenu from './HamburgerMenu';
 import SideBar from './SideBar';
@@ -12,8 +16,6 @@ const Nav = styled.nav`
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  display: flex;
-
 
   @media (min-width: 1400px) {
     width: 40%;

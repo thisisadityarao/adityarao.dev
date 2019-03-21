@@ -1,19 +1,15 @@
+/* eslint-disable react/display-name */
 /* eslint no-unused-expressions: ["error", { "allowTaggedTemplates": true }] */
 // eslint-disable-next-line
 
-import { modularScale } from 'polished';
 import React from 'react';
 import { createGlobalStyle } from 'styled-components';
-// CSS Reset
-import '../../node_modules/sanitize.css/sanitize.css';
-import Footer from './footer';
 import Head from './head';
-import Header from './Navigation/Header';
 import ProgressBar from './progress-bar';
 import ScrollToTop from './scroll-to-top';
 
-// Load Source Sans Pro typeface
-require('typeface-source-sans-pro');
+// CSS Reset
+import '../../node_modules/sanitize.css/sanitize.css';
 
 // Create global styles
 const GlobalStyle = createGlobalStyle`
@@ -22,19 +18,16 @@ const GlobalStyle = createGlobalStyle`
     height: 100%;
     width: 100%;
     padding: 0;
-  }
-
-  html {
     margin: 0;
   }
 
+  html {
+    font-size: 112.5%;
+  }
+
   body {
-  min-height: 100%;
-  min-height: 100vh;
-  padding: 0;
-  font-family: "Source Sans Pro", sans-serif;
-  font-size: ${modularScale(0, '1em', 'majorThird')};
-  line-height: 1.4;
+    font-family: 'Source Sans Pro', sans-serif;
+    background-color: #fff;
   }
 
   body::before {
@@ -48,36 +41,17 @@ const GlobalStyle = createGlobalStyle`
   }
 
   p {
-  color: #3d4852;
-  margin: 0;
-  hyphens: auto;
+    hyphens: auto;
+    color: #4a5a6a;
   }
 
   h1, h2, h3, h4, h5, h6 {
-  font-family: "Source Sans Pro", sans-serif;
-  /* non-scalable fallback for old browsers */
-  margin: 21px 0 0;
-  /* 21px, will be ignored by old browsers */
-  margin-top: 1.5rem;
-  color: #22292f;
+    font-family: 'Inter', sans-serif;
+    color: #2a3a4a;
   }
-  h1 {
-    font-size: ${modularScale(5, '1em', 'majorThird')};
-  }
-  h2 {
-    font-size: ${modularScale(4, '1em', 'majorThird')};
-  }
-  h3 {
-    font-size: ${modularScale(3, '1em', 'majorThird')};
-  }
-  h4 {
-    font-size: ${modularScale(2, '1em', 'majorThird')};
-  }
-  h5 {
-    font-size: ${modularScale(1, '1em', 'majorThird')};
-  }
-  h6 {
-    font-size: ${modularScale(1, '1em', 'majorThird')};
+
+  button {
+    font-family: 'Inter', sans-serif;
   }
 
   img {
@@ -86,56 +60,6 @@ const GlobalStyle = createGlobalStyle`
     /* max-width allows image to be responsive. */
     max-width: 100%;
   }
-
-  // Tab Styles
-  @media (min-width: 576px) {
-    body {
-    font-size: ${modularScale(0, '1.125em', 'minorThird')};
-    }
-    h1 {
-      font-size: ${modularScale(6, '1.125em', 'minorThird')};
-    }
-    h2 {
-      font-size: ${modularScale(5, '1.125em', 'minorThird')};
-    }
-    h3 {
-      font-size: ${modularScale(4, '1.125em', 'minorThird')};
-    }
-    h4 {
-      font-size: ${modularScale(3, '1.125em', 'minorThird')};
-    }
-    h5 {
-      font-size: ${modularScale(2, '1.125em', 'minorThird')};
-    }
-    h6 {
-      font-size: ${modularScale(1, '1.125em', 'minorThird')};
-    }
-  }
-
-  // Desktop styles
-  @media (min-width: 992px) {
-    body {
-      font-size: ${modularScale(0, '1.375em', 'minorThird')};
-    }
-    h1 {
-      font-size: ${modularScale(6, '1.375em', 'minorThird')};
-    }
-    h2 {
-      font-size: ${modularScale(5, '1.375em', 'minorThird')};
-    }
-    h3 {
-      font-size: ${modularScale(4, '1.375em', 'minorThird')};
-    }
-    h4 {
-      font-size: ${modularScale(3, '1.375em', 'minorThird')};
-    }
-    h5 {
-      font-size: ${modularScale(2, '1.375em', 'minorThird')};
-    }
-    h6 {
-      font-size: ${modularScale(1, '1.375em', 'minorThird')};
-    }
-  }
 `;
 
 export default ({ children }) => (
@@ -143,9 +67,7 @@ export default ({ children }) => (
     <Head />
     <GlobalStyle />
     <ProgressBar />
-    <Header />
     {children}
     <ScrollToTop />
-    <Footer />
   </>
 );

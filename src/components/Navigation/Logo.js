@@ -1,10 +1,15 @@
+/* eslint-disable react/display-name */
 import React from 'react';
 import styled from 'styled-components';
 
-const Link = styled.a`
-  display: inline-block;
-  width: 100%;
+const Logo = styled.a`
+  display: flex;
+  align-items: center;
+  font-family: 'Inter';
+  text-decoration: none;
   cursor: pointer;
+  margin-top: 3px;
+  transition: all 0.2s ease-in-out 0s;
 
   &:link {
     color: #29384c;
@@ -20,48 +25,15 @@ const Link = styled.a`
   &:active {
     color: #f43059;
   }
-`;
 
-const Logo = styled.div`
-  width: 60%;
-  display: flex;
-  align-items: center;
-
-  @media (min-width: 400px) {
-    width: 50%;
-  }
-
-  @media (min-width: 768px) {
-    width: 35%;
-    text-align: left;
-  }
-
-  h1 {
-    margin: 0;
-    padding: 0;
-    line-height: 65px;
-    font-size: 18px;
-    letter-spacing: 1px;
-
-    @media (min-width: 530px) {
-      font-size: 20px;
-    }
-
-    @media (min-width: 768px) {
-      font-size: 26px;
-      line-height: 60px;
-    }
-
-    & a {
-      transition: color 0.3s ease-in-out;
-    }
+  span {
+    font-weight: 700;
+    letter-spacing: 1.5px;
   }
 `;
 
 export default () => (
-  <Logo>
-    <h1>
-      <Link href="/">ADITYA RAO</Link>
-    </h1>
+  <Logo href="/">
+    <span>ADITYA RAO</span>
   </Logo>
 );

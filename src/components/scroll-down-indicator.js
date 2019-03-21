@@ -1,34 +1,57 @@
 import React from 'react';
 import styled, { keyframes } from 'styled-components';
-import { ChevronDown } from 'styled-icons/fa-solid/ChevronDown';
 
-// Create the keyframes
-const scroll = keyframes`
+const arrowDetail = keyframes`
   0% {
-    transform: translateY(-8px);
+    opacity: 0;
+    transform: translate(0px, -20px);
+  }
+
+  20% {
+    opacity: 1;
+    transform: translate(0px, 0px);
   }
 
   50% {
-    transform: translateY(8px);
+    opacity: 1;
+    transform: translate(0px, 0px);
   }
+
+  80% {
+    opacity: 1;
+    transform: translate(0px, 0px);
+  }
+
   100% {
-    transform: translateY(-8px);
+    opacity: 0;
+    transform: translate(0px, 20px);
   }
 `;
 
-const ChevronDownScroll = styled(ChevronDown)`
-  width: 2rem;
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 3vh;
-  margin: 0 auto;
-  animation-name: ${scroll};
-  animation-duration: 1.7s;
-  animation-timing-function: ease-in-out;
-  animation-iteration-count: infinite;
+const ChevronDownScroll = styled.p`
+  margin-top: 40px;
+  padding: 0;
+  width: 100%;
+  line-height: 1.7em;
+  font-family: 'Inter', sans-serif;
+  font-size: 16px !important;
+  width: 100%;
+
+  .detail {
+    animation: ${arrowDetail} 4s infinite ease;
+    color: #a5a5a5;
+    cursor: pointer;
+    display: inline-block;
+    transition: 0.5s ease;
+    opacity: 0;
+    margin-right: 5px;
+  }
 `;
 
-const ChevronScroll = () => <ChevronDownScroll />;
+const ChevronScroll = () => (
+  <ChevronDownScroll>
+    <span className="detail">↓</span>Scroll down
+  </ChevronDownScroll>
+);
 
 export default ChevronScroll;

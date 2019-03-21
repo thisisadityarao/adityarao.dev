@@ -28,7 +28,7 @@ const Nav = styled.nav`
   width: 100%;
   color: #fff;
   z-index: 1000;
-  background: #fff;
+  background: #ff9966;
   animation: ${slide} 0.5s ease-in-out;
 
   @media (min-width: 768px) {
@@ -83,7 +83,7 @@ const NavList = styled.ul`
     line-height: 0;
     text-align: center;
     letter-spacing: 2px;
-    color: #e91e63;
+    color: #fff;
 
     @media (min-width: 768px) {
       display: none;

@@ -1,3 +1,4 @@
+/* eslint-disable react/display-name */
 import React from 'react';
 import styled from 'styled-components';
 import { Link } from 'gatsby';
@@ -9,7 +10,6 @@ const StyledLink = styled(Link)`
   position: relative;
   padding: 10px 20px;
   letter-spacing: 1px;
-
   transition: all 0.2s ease-in-out;
 
   &:visited {
@@ -30,10 +30,12 @@ const StyledLink = styled(Link)`
   &:active {
     color: #f43059;
   }
+
+  @media (max-width: 767px) {
+    display: none;
+  }
 `;
 
 export default ({ to, children }) => (
-  <li>
-    <StyledLink to={to}>{children}</StyledLink>
-  </li>
+  <StyledLink to={to}>{children}</StyledLink>
 );

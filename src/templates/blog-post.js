@@ -7,7 +7,7 @@ import '../../static/styles/post.css';
 
 const Wrapper = styled.main`
   min-height: 100%;
-  background-color: #fafafa;
+  background-color: #fff;
 `;
 
 const Divider = styled.div`
@@ -183,7 +183,11 @@ export default ({ data, pageContext }) => {
         <List>
           {previous && (
             <ListItem className="first">
-              <Link to={previous.fields.slug} rel="prev" style={{ color: '#F43059' }}>
+              <Link
+                to={previous.fields.slug}
+                rel="prev"
+                style={{ color: '#F43059' }}
+              >
                 ← {previous.frontmatter.title}
               </Link>
             </ListItem>
@@ -191,7 +195,11 @@ export default ({ data, pageContext }) => {
 
           {next && (
             <ListItem className="second">
-              <Link to={next.fields.slug} rel="next" style={{ color: '#F43059' }}>
+              <Link
+                to={next.fields.slug}
+                rel="next"
+                style={{ color: '#F43059' }}
+              >
                 {next.frontmatter.title} →
               </Link>
             </ListItem>

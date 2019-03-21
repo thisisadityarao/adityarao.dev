@@ -4,7 +4,7 @@ article {
   margin-bottom: 3rem;
   padding: 1.5rem;
   padding-top: 4.5rem;
-  line-height: 1.6;
+  line-height: 1.7;
 }
 
 article img {
@@ -28,105 +28,6 @@ article a:active {
 
 article a:visited {
   color: #f43059;
-}
-
-article h1 {
-  font-size: 2.2em;
-  margin-bottom: 4rem;
-  line-height: 1.4;
-}
-
-article p {
-  max-width: 100%;
-}
-
-article h2 {
-  font-size: 2em;
-}
-article h3 {
-  font-size: 1.8em;
-}
-article h4 {
-  font-size: 1.5em;
-}
-
-@media (min-width: 992px) {
-  article h3 {
-    font-size: 1.5em;
-  }
-
-  article h4 {
-    font-size: 1.2em;
-  }
-}
-
-/* Introduces Vertical Rhythm.
-  Whitespace above subhead is larger than whitespace below subhead
-*/
-article p + h2 {
-  margin-top: 2.2rem;
-}
-
-article h2 + p {
-  margin-top: 1.2rem;
-}
-
-article p + h3 {
-  margin-top: 2.4rem;
-}
-
-article h3 + p {
-  margin-top: 0.9rem;
-}
-
-article p + h4 {
-  margin-top: 2.6rem;
-}
-
-article h4 + p {
-  margin-top: 0.9rem;
-}
-
-/* Introduces Vertical Rhythm.
-  Whitespace above list items.
-*/
-article ul,
-li {
-  margin-top: 1.5rem;
-  padding: 0;
-}
-
-article ul p,
-li p {
-  margin: 0;
-  padding: 0;
-}
-
-article ul {
-  margin-left: 1rem;
-  list-style-position: outside;
-}
-
-article li + li {
-  margin-top: 1.2rem;
-}
-
-article p + p {
-  margin-top: 1.4rem;
-}
-
-article ul + p {
-  margin-top: 0.8rem;
-}
-
-/* BLOCKQUOTE
-========================================================================== */
-
-article blockquote {
-  font-style: italic;
-  margin: 1.5em 0;
-  border-left: 3px solid #ff6732;
-  padding: 0.75em 0 0 1.5em;
 }
 
 /* 'pre' Element
@@ -172,14 +73,4 @@ pre > code {
   padding: 0;
   font-size: 95%;
   line-height: 1.6;
-}
-
-/* 'Tab and Desktop Styles'
-=========================================================================
-*/
-
-@media (min-width: 768px) {
-  article h1 {
-    margin-bottom: 6rem;
-  }
 }
