@@ -15,10 +15,10 @@ const SectionIntro = styled.section`
   & p {
     font-weight: 400;
     line-height: 1.65;
-    font-size: 1.2rem;
+    font-size: 1rem;
     max-width: 30em;
     @media (min-width: 576px) {
-      font-size: 1.6rem;
+      font-size: 1.4rem;
     }
     @media (min-width: 786px) {
       max-width: 32em;
@@ -43,11 +43,10 @@ const SectionIntro = styled.section`
 `;
 
 const H2 = styled.h2`
-  font-size: 2rem;
+  font-size: 1.2rem;
   margin-bottom: 3rem;
   @media (min-width: 576px) {
-    font-size: 3rem;
-    margin-bottom: 3rem;
+    font-size: 2rem;
   }
 `;
 
@@ -58,12 +57,12 @@ const LinkButton = styled.a`
   height: 50px;
   font-size: 1.1rem;
   margin: 0;
-  margin-top: 1.5rem;
+  margin-top: 1rem;
   padding: 13px;
   color: #fff;
   text-align: center;
   text-decoration: none;
-  background-color: #f43059;
+  background-color: #f9a800;
 
   border-radius: 4px;
   white-space: nowrap;
@@ -77,7 +76,7 @@ const LinkButton = styled.a`
 
   &:hover {
     opacity: 1;
-    background-color: #e91e63;
+    background-color: #e76f03;
     box-shadow: 0px 3px 6px #b0b0b0;
   }
 `;

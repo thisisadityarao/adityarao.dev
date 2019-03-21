@@ -20,10 +20,10 @@ const Logo = styled.a`
   }
   &:focus,
   &:hover {
-    color: #f43059;
+    color: #f9a800;
   }
   &:active {
-    color: #f43059;
+    color: #f9a800;
   }
 
   span {
@@ -34,6 +34,6 @@ const Logo = styled.a`
 
 export default () => (
   <Logo href="/">
-    <span>ADITYA RAO</span>
+    <span>Aditya Rao</span>
   </Logo>
 );

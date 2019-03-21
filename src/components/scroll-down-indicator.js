@@ -29,22 +29,26 @@ const arrowDetail = keyframes`
 `;
 
 const ChevronDownScroll = styled.p`
-  margin-top: 40px;
+  margin-top: 50px;
   padding: 0;
   width: 100%;
   line-height: 1.7em;
   font-family: 'Inter', sans-serif;
-  font-size: 16px !important;
+  font-size: 16px;
   width: 100%;
 
   .detail {
     animation: ${arrowDetail} 4s infinite ease;
-    color: #a5a5a5;
+    color: #2a3a4a;
     cursor: pointer;
     display: inline-block;
     transition: 0.5s ease;
     opacity: 0;
     margin-right: 5px;
+  }
+
+  @media (min-width: 768px) {
+    font-size: 18px;
   }
 `;
 
