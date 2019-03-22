@@ -43,7 +43,6 @@ const GlobalStyle = createGlobalStyle`
   }
 
   p {
-    hyphens: auto;
     color: #4a5a6a;
   }
 

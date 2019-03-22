@@ -3,28 +3,19 @@ import React from 'react';
 import styled from 'styled-components';
 
 const SectionAbout = styled.section`
-  border-top: 1px solid #eeeeee;
-  border-bottom: 1px solid #eeeeee;
-  height: 100vh;
   margin: 0 auto;
   width: 100%;
-  max-width: 1440px;
-  padding-top: 7rem;
-  padding-bottom: 7rem;
+  margin-bottom: 4rem;
 
   & p {
     font-weight: 400;
-    font-size: 1.2rem;
-    line-height: 1.6;
-    max-width: 35em;
+    font-size: 1rem;
+    line-height: 1.65;
+    max-width: 30em;
 
     @media (min-width: 768px) {
       font-size: 1.4rem;
-      line-height: 1.6;
-    }
-    @media (min-width: 992px) {
-      font-size: 1.6rem;
-      line-height: 1.6;
+      max-width: 32em;
     }
   }
 
@@ -39,23 +30,21 @@ const SectionAbout = styled.section`
 
 const H3 = styled.h3`
   font-weight: 700;
-  font-size: 1.8rem;
-  letter-spacing: 2px;
-  margin-top: 1.5rem;
+  font-size: 1.2rem;
+  letter-spacing: 0.1em;
 
   @media (min-width: 768px) {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 `;
 
 const HR = styled.hr`
-  height: 5px;
+  height: 3px;
   max-width: 60px;
   border: none;
   margin: 0;
-  margin-top: 1rem;
-  margin-bottom: 4rem;
-  background: #f43059;
+  margin-bottom: 3rem;
+  background: rgb(249, 73, 73);
 `;
 
 export default () => (

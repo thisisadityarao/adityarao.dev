@@ -4,9 +4,6 @@ import styled from 'styled-components';
 
 const SectionWork = styled.section`
   width: 100%;
-  max-width: 1440px;
-  margin: 2rem auto;
-  padding-top: 2rem;
 `;
 
 const Section = styled.div`
@@ -51,19 +48,15 @@ const Work = styled.div`
     line-height: 1.6;
     text-align: left;
     hyphens: none;
+    max-width: 35em;
+    margin: 0 auto;
 
     @media (max-width: 442px) {
       text-align: left;
     }
 
-    @media (min-width: 380px) and (max-width: 992px) {
-      font-size: 1.2rem;
-      line-height: 1.6;
-    }
-
-    @media (min-width: 992px) {
-      font-size: 1.5rem;
-      line-height: 1.5;
+    @media (min-width: 1024px) {
+      font-size: 1.4rem;
     }
   }
 
@@ -92,10 +85,14 @@ const ImgContainer = styled.div`
 
 const H3 = styled.h3`
   font-weight: 700;
-  font-size: 1.8rem;
-  letter-spacing: 2px;
+  font-size: 1.2rem;
+  letter-spacing: 0.1em;
   margin-bottom: 1rem;
   margin-top: 1.5rem;
+
+  @media (min-width: 768px) {
+    font-size: 1.5rem;
+  }
 `;
 
 const H4 = styled.h4`
@@ -106,12 +103,8 @@ const H4 = styled.h4`
   margin-bottom: 2rem;
   text-align: center;
 
-  @media (min-width: 480px) {
-    font-size: 1.2rem;
-  }
-
   @media (min-width: 768px) {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     margin-top: 0;
   }
 `;
@@ -123,13 +116,13 @@ const Separator = styled.hr`
 `;
 
 const HR = styled.hr`
-  height: 5px;
+  height: 3px;
   max-width: 60px;
   border: none;
   margin: 1rem;
   margin-left: 0;
-  margin-bottom: 5rem;
-  background: #f43059;
+  margin-bottom: 3rem;
+  background: rgb(249, 73, 73);
 `;
 
 export default () => (

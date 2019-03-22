@@ -3,15 +3,17 @@ import { Link } from 'gatsby';
 import styled from 'styled-components';
 
 const Menu = styled.button`
-  width: 30px;
+  height: 30px;
+  padding: 0;
+  width: 33px;
   z-index: 300;
-  top: -7px;
   position: relative;
   background: transparent;
   border: none;
 
   &:hover:not(.touch),
   &:focus {
+    cursor: pointer;
     background: transparent;
     border: none;
     outline: none;
@@ -32,7 +34,7 @@ const MenuItem = styled.div`
     width: 27px;
     height: 2px;
     position: absolute;
-    background: #2a3a4a;
+    background: ${props => (props.menuToggle ? 'white' : '#2a3a4a')};
     left: 0;
     transform: ${props =>
       props.menuToggle ? `rotate(45deg); top: 0` : `rotate(0)`};
@@ -44,7 +46,7 @@ const MenuItem = styled.div`
     content: '';
     width: 27px;
     height: 2px;
-    background: #2a3a4a;
+    background: ${props => (props.menuToggle ? 'white' : '#2a3a4a')};
     position: absolute;
     left: 0;
     transform: ${props =>
@@ -62,7 +64,7 @@ const SideBar = styled.div`
   height: 100vh;
   display: flex;
   align-items: center;
-  background: orange;
+  background-image: linear-gradient(-20deg, #288cff 0%, #8200ff 100%);
 `;
 
 const Container = styled.div`
@@ -102,7 +104,7 @@ const Toggle = () => {
         <SideBar>
           <Container>
             <Link
-              aria-label="View blog page"
+              aria-label="View home page"
               to="/"
               activeClassName="active"
               onClick={toggle}
@@ -110,7 +112,7 @@ const Toggle = () => {
               Home
             </Link>
             <Link
-              aria-label="View talks page"
+              aria-label="View about page"
               to="#about"
               activeClassName="active"
               onClick={toggle}
@@ -118,7 +120,7 @@ const Toggle = () => {
               About
             </Link>
             <Link
-              aria-label="View workshops page"
+              aria-label="View blog page"
               to="/blog/"
               activeClassName="active"
               onClick={toggle}
@@ -126,7 +128,7 @@ const Toggle = () => {
               Blog
             </Link>
             <Link
-              aria-label="View about page"
+              aria-label="View contact page"
               to="#contact"
               activeClassName="active"
               onClick={toggle}

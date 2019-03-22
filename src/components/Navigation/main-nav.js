@@ -14,9 +14,18 @@ const Nav = styled.nav`
   font-size: 16px;
   line-height: 1.25;
 
+  @media (min-width: 768px) {
+    font-size: 18px;
+  }
+
   .mobile-nav {
     display: block;
     visibility: visible;
+
+    :hover {
+      cursor: pointer;
+    }
+
     @media (min-width: 768px) {
       display: none;
       visibility: hidden;

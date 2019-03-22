@@ -4,10 +4,9 @@ import styled from 'styled-components';
 const ScrollIndicator = styled.div`
   margin-top: 0;
   padding: 0;
-  background: #64b4f0;
-  background: linear-gradient(135deg, #bc4e9c 0, #f80759 100%);
+  background: rgb(249, 73, 73);
   position: fixed;
-  height: 4px;
+  height: 3px;
   width: ${props => props.width};
   top: 0;
   z-index: 99;
@@ -23,17 +22,6 @@ export default class ProgressBar extends Component {
     this.Scrolling = this.Scrolling.bind(this);
   }
 
-  Scrolling() {
-    const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
-    const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-    const scrolled = (winScroll / height) * 100;
-    if (height > 0) {
-      this.setState({ width: `${scrolled}%` });
-    } else {
-      this.setState({ width: null });
-    }
-  }
-
   componentDidMount() {
     try {
       window.addEventListener('scroll', this.Scrolling);
@@ -47,6 +35,20 @@ export default class ProgressBar extends Component {
       window.removeEventListener('scroll', this.Scrolling);
     } catch (oError) {
       console.log(oError);
+    }
+  }
+
+  Scrolling() {
+    const winScroll =
+      document.body.scrollTop || document.documentElement.scrollTop;
+    const height =
+      document.documentElement.scrollHeight -
+      document.documentElement.clientHeight;
+    const scrolled = (winScroll / height) * 100;
+    if (height > 0) {
+      this.setState({ width: `${scrolled}%` });
+    } else {
+      this.setState({ width: null });
     }
   }
 

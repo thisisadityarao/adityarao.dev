@@ -37,8 +37,7 @@ const HR = styled.hr`
   margin: 0;
   margin-top: 1rem;
   margin-bottom: 3rem;
-  background-image: linear-gradient(to right, #ff4b6e, #e11665);
-  background: #ff4b6e;
+  background: rgb(249, 73, 73);
 `;
 
 const SocialIcons = styled.ul`

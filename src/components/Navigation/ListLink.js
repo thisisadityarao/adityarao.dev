@@ -22,13 +22,13 @@ const StyledLink = styled(Link)`
   &:focus,
   &:hover {
     color: #fff;
-    background: #f9a800;
+    background: rgb(249, 73, 73);
     box-shadow: none;
     border-radius: 4px;
     transition: all 0.2s ease-in-out 0s;
   }
   &:active {
-    color: #f9a800;
+    color: rgb(249, 73, 73);
   }
 
   @media (max-width: 767px) {

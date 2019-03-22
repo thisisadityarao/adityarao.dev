@@ -6,9 +6,10 @@ const Logo = styled.a`
   display: flex;
   align-items: center;
   font-family: 'Inter';
+  font-size: 16px;
   text-decoration: none;
   cursor: pointer;
-  margin-top: 3px;
+  margin-top: 2px;
   transition: all 0.2s ease-in-out 0s;
 
   &:link {
@@ -20,20 +21,24 @@ const Logo = styled.a`
   }
   &:focus,
   &:hover {
-    color: #f9a800;
+    color: rgb(249, 73, 73);
   }
   &:active {
-    color: #f9a800;
+    color: rgb(249, 73, 73);
   }
 
   span {
     font-weight: 700;
     letter-spacing: 1.5px;
   }
+
+  @media (min-width: 768px) {
+    font-size: 18px;
+  }
 `;
 
 export default () => (
   <Logo href="/">
-    <span>Aditya Rao</span>
+    <span>ADITYA RAO</span>
   </Logo>
 );
