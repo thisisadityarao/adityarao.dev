@@ -10,15 +10,16 @@ import SectionContact from '../components/contact';
 
 const Main = styled.div`
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 18px;
   height: 100%;
   width: 100%;
   display: flex;
   flex-direction: column;
-  max-width: 1440px;
+  justify-content: flex-start;
+  max-width: 1272px;
 
   @media (min-width: 768px) {
-    padding: 0 40px;
+    padding: 0 36px;
   }
 `;
 

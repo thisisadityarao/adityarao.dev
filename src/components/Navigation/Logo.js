@@ -33,7 +33,7 @@ const Logo = styled.a`
   }
 
   @media (min-width: 768px) {
-    font-size: 18px;
+    font-size: 20px;
   }
 `;
 

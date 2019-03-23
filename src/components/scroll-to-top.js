@@ -4,32 +4,29 @@ import React, { Component } from 'react';
 import styled from 'styled-components';
 import detectPassiveEvents from 'detect-passive-events';
 import TweenFunctions from 'tween-functions';
-import { ChevronCircleUp } from 'styled-icons/fa-solid/ChevronCircleUp';
+import { ChevronUp } from 'styled-icons/fa-solid/ChevronUp';
 
-const ScrollButton = styled(ChevronCircleUp)`
-  display: ${props => (props.customProp ? 'block' : 'none')}; /* Hidden by default */
+const ScrollButton = styled(ChevronUp)`
+  display: ${props =>
+    props.customProp ? 'block' : 'none'}; /* Hidden by default */
   position: fixed; /* Fixed/sticky position */
   bottom: 20px; /* Place the button at the bottom of the page */
   right: 25px; /* Place the button 25px from the right */
   z-index: 99; /* Make sure it does not overlap */
   border: none; /* Remove borders */
+  color: #4a5a6a; /* Set color */
   outline: none; /* Remove outline */
-  background-color: #fff; /* Set a background color */
-  color: #555; /* Text color */
   cursor: pointer; /* Add a mouse pointer on hover */
   width: 35px; /* Some width */
-  font-size: 18px; /* Increase font size */
   border-radius: 20px;
 
   &:hover {
-    color: #f43059;
+    color: rgb(249, 73, 73);
   }
 
   @media (min-width: 786px) {
     bottom: 30px;
     right: 30px;
-    width: 40px;
-    font-size: 16px;
   }
 `;
 
@@ -58,14 +55,14 @@ export default class ScrollToTop extends Component {
       window.addEventListener(
         'wheel',
         this.StopScrollingFrame,
-        detectPassiveEvents.hasSupport ? { passive: true } : false,
+        detectPassiveEvents.hasSupport ? { passive: true } : false
       ); // Stop animation if user mouse wheels during animation.;
     }
     if (typeof window !== 'undefined') {
       window.addEventListener(
         'touchstart',
         this.StopScrollingFrame,
-        detectPassiveEvents.hasSupport ? { passive: true } : false,
+        detectPassiveEvents.hasSupport ? { passive: true } : false
       ); // Stop animation if user touches the screen during animation
     }
   }
@@ -103,7 +100,9 @@ export default class ScrollToTop extends Component {
     this.Animation.CurrentAnimationTime = 0;
     this.Animation.StartTime = null;
     // Start the scrolling animation.
-    this.Animation.AnimationFrame = window.requestAnimationFrame(this.ScrollingFrame);
+    this.Animation.AnimationFrame = window.requestAnimationFrame(
+      this.ScrollingFrame
+    );
   }
 
   ScrollingFrame() {
@@ -131,14 +130,16 @@ export default class ScrollToTop extends Component {
         this.Animation.CurrentAnimationTime,
         this.Animation.StartPosition,
         StopPosition,
-        AnimationDuration,
+        AnimationDuration
       );
       if (YPos <= StopPosition) {
         YPos = StopPosition;
       }
       window.scrollTo(0, YPos);
       // Request another frame to be painted
-      this.Animation.AnimationFrame = window.requestAnimationFrame(this.ScrollingFrame);
+      this.Animation.AnimationFrame = window.requestAnimationFrame(
+        this.ScrollingFrame
+      );
     }
   }
 
@@ -149,6 +150,8 @@ export default class ScrollToTop extends Component {
 
   render() {
     const { isScrolling } = this.state;
-    return <ScrollButton onClick={this.HandleScrolling} customProp={isScrolling} />;
+    return (
+      <ScrollButton onClick={this.HandleScrolling} customProp={isScrolling} />
+    );
   }
 }

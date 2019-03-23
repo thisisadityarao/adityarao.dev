@@ -6,7 +6,7 @@ import React from 'react';
 import styled, { createGlobalStyle } from 'styled-components';
 import Head from './head';
 import Footer from './footer';
-import Header from './Navigation/Header';
+import Header from './header';
 import ProgressBar from './progress-bar';
 import ScrollToTop from './scroll-to-top';
 
@@ -17,42 +17,55 @@ import '../../node_modules/sanitize.css/sanitize.css';
 const GlobalStyle = createGlobalStyle`
 
   html, body {
-    height: 100%;
-    width: 100%;
     padding: 0;
     margin: 0;
+    height: 100%;
+    width: 100%;
+    font-family: 'Source Sans Pro', 'sans-serif';
+    font-style: normal;
   }
 
   html {
+    font-size: 100%;
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+    overflow-y: auto !important;
+    box-sizing: border-box;
+    -ms-overflow-style: scrollbar;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    //scroll-behavior: smooth;
+
+  @media (min-width: 425px) {
     font-size: 112.5%;
+  }
   }
 
   body {
-    font-family: 'Source Sans Pro', sans-serif;
     background-color: #fff;
+    line-height: 1.5;
   }
 
-  body::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 4px;
-    width: 100%;
-    z-index: 1004;
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Inter', 'sans-serif';
+    color: #2a3a4a;
   }
 
   p {
     color: #4a5a6a;
   }
 
-  h1, h2, h3, h4, h5, h6 {
-    font-family: 'Inter', sans-serif;
-    color: #2a3a4a;
+  ul, ol {
+    list-style-position: inside;
+    margin-left: 0;
   }
 
-  button {
-    font-family: 'Inter', sans-serif;
+  [role='button'] {
+    cursor: pointer;
+  }
+
+  button:focus {
+    outline: 1px dotted;
+    outline: 5px auto -webkit-focus-ring-color;
   }
 
   img {
@@ -68,10 +81,10 @@ const PageWrapper = styled.div`
   padding: 0;
   width: 100%;
   height: 100%;
+  position: relative;
   display: flex;
   flex-direction: column;
-  width: 100%;
-  min-height: 100vh;
+  justify-content: flex-start;
 `;
 
 export default ({ children }) => (

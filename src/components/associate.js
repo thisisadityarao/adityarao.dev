@@ -69,8 +69,8 @@ export default () => (
   <SectionHireMe>
     <h3>Let's talk about your project.</h3>
     <p>
-      I'm currently seeking freelance opportunities. If you are interested in a new project or
-      collaboration, send me an email.
+      I'm currently seeking freelance opportunities. If you are interested in a
+      new project or collaboration, send me an email.
     </p>
     <EmailButton>Send Email</EmailButton>
   </SectionHireMe>

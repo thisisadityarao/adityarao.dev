@@ -1,21 +1,14 @@
 /* eslint-disable react/display-name */
 import React from 'react';
 import styled, { keyframes } from 'styled-components';
-import ChevronScroll from './scroll-down-indicator';
 
 const SectionIntro = styled.section`
   width: 100%;
-  padding-top: 3rem;
-  margin-bottom: 4rem;
+  height: 100%;
+  padding-top: 6vh;
+  margin-bottom: 3rem;
 
-  @media (min-width: 578px) {
-    padding-top: 4rem;
-  }
-
-  @media (min-width: 768px) {
-    height: calc(100vh - 120px);
-  }
-  @media (min-width: 1.24px) {
+  @media (min-width: 400px) {
     padding-top: 5rem;
   }
 
@@ -40,16 +33,16 @@ const SectionIntro = styled.section`
 
   .wave {
     display: block;
-    font-size: 1.5rem;
-    margin: 1rem 0 2rem;
+    font-size: 1.8em;
+    margin-top: 1rem;
 
     @media (min-width: 768px) {
-      font-size: 1.8rem;
+      font-size: 2em;
     }
   }
 
   .subtitle {
-    margin-top: 3em;
+    margin-top: 2rem;
     font-size: 0.9rem;
     @media (min-width: 768px) {
       font-size: 1.2rem;
@@ -64,13 +57,13 @@ const offset = keyframes`
 `;
 
 const LinkButton = styled.a`
-  display: block;
+  display: inline-block;
   width: 200px;
-  height: 45px;
+  height: 48px;
   margin: 0;
-  margin-bottom: 3rem;
   padding: 11px;
-  font-size: 1rem;
+  font-size: 0.9rem;
+  font-family: 'Inter', sans-serif;
   letter-spacing: 0.1em;
   text-align: center;
   text-decoration: none;
@@ -78,7 +71,7 @@ const LinkButton = styled.a`
   border: none;
   border-radius: 3px;
   outline: none;
-  background: linear-gradient(45deg, #288cff, #8200ff);
+  background: linear-gradient(45deg, #8200ff, #288cff);
   background-size: 400% 400%;
   cursor: pointer;
   transition: all 0.3s ease;
@@ -92,10 +85,10 @@ const LinkButton = styled.a`
 
   @media (min-width: 768px) {
     width: 230px;
-    height: 55px;
-    margin-bottom: 5rem;
-    padding: 14px;
-    font-size: 1.1rem;
+    height: 54px;
+    margin-bottom: 5vh;
+    padding: 12px;
+    font-size: 1rem;
   }
 `;
 
@@ -109,7 +102,12 @@ export default () => (
       products.
     </p>
     <p className="subtitle">Want to chat about your project?</p>
-    <LinkButton href="mailto:dev.adityarao@gmail.com">Get in Touch</LinkButton>
-    <ChevronScroll />
+    <LinkButton
+      href="mailto:dev.adityarao@gmail.com"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      Get in Touch
+    </LinkButton>
   </SectionIntro>
 );

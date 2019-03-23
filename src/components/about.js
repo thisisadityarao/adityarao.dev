@@ -5,7 +5,7 @@ import styled from 'styled-components';
 const SectionAbout = styled.section`
   margin: 0 auto;
   width: 100%;
-  margin-bottom: 4rem;
+  padding-top: 2rem;
 
   & p {
     font-weight: 400;
@@ -32,6 +32,7 @@ const H3 = styled.h3`
   font-weight: 700;
   font-size: 1.2rem;
   letter-spacing: 0.1em;
+  margin-bottom: 1rem;
 
   @media (min-width: 768px) {
     font-size: 1.5rem;
@@ -43,7 +44,7 @@ const HR = styled.hr`
   max-width: 60px;
   border: none;
   margin: 0;
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
   background: rgb(249, 73, 73);
 `;
 

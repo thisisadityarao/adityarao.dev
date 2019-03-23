@@ -4,6 +4,13 @@ import styled from 'styled-components';
 
 const SectionWork = styled.section`
   width: 100%;
+  padding-top: 2rem;
+  margin-bottom: 2rem;
+
+  @media (min-width: 400px) {
+    padding-top: 3rem;
+    margin-bottom: 3rem;
+  }
 `;
 
 const Section = styled.div`
