@@ -3,7 +3,6 @@ import React, { Component } from 'react';
 import styled from 'styled-components';
 import { Link } from 'gatsby';
 import Toggle from './mobileNav';
-import Logo from './logo';
 
 const StyledLink = styled(Link)`
   cursor: pointer;
@@ -80,11 +79,48 @@ const Nav = styled.div`
   align-items: center;
 `;
 
+const Logo = styled.a`
+  display: flex;
+  align-items: center;
+  font-family: 'Clear Sans';
+  font-size: 16px;
+  text-decoration: none;
+  cursor: pointer;
+  margin-top: 2px;
+  transition: all 0.2s ease-in-out 0s;
+
+  &:link {
+    color: #29384c;
+    text-decoration: none;
+  }
+  &:visited {
+    color: #29384c;
+  }
+  &:focus,
+  &:hover {
+    color: #29384c;
+  }
+  &:active {
+    color: #29384c;
+  }
+
+  span {
+    font-weight: 700;
+    letter-spacing: 1.5px;
+  }
+
+  @media (min-width: 768px) {
+    font-size: 20px;
+  }
+`;
+
 export default class Navigation extends Component {
   render() {
     return (
       <NavigationWrapper>
-        <Logo />
+        <Logo href="/">
+          <span>ADITYA RAO</span>
+        </Logo>
         <Nav>
           <Toggle className="mobile-nav" />
           <StyledLink to="/">Home</StyledLink>
