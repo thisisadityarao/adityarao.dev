@@ -2,7 +2,7 @@ article {
   max-width: 760px;
   margin: auto;
   margin-bottom: 3rem;
-  padding: 4rem 30px;
+  padding: 4rem 20px;
   line-height: 1.5;
 }
 .date {
@@ -13,13 +13,14 @@ h1 {
   margin-top: 2rem;
   margin-bottom: 3rem;
   text-align: center;
-  line-height: 1;
+  line-height: 1.2;
 }
 h2 {
   margin-top: 3.1rem;
   margin-bottom: 1.55rem;
   font-weight: 900;
   line-height: 1.1;
+  font-size: 24px;
 }
 h3 {
   margin-top: 3.1rem;
@@ -29,36 +30,30 @@ h3 {
 }
 p {
   font-size: 16px;
+  line-height: 1.6;
 }
 
 p + p {
   margin-bottom: 1.55rem;
 }
 
-@media (min-width: 768px) {
-  p {
-    font-size: 18px;
-    line-height: 1.65;
-  }
-}
 ul,
 ol {
-  list-style-position: inside;
-  margin-left: 0;
-  margin-right: 0;
-  margin-top: 0;
-  padding-bottom: 0;
-  padding-left: 0;
-  padding-right: 0;
-  padding-top: 0;
   margin-bottom: 1.55rem;
+  padding-left: 0;
 }
 
 ol li {
   padding-left: 0;
+  list-style-position: inside;
+}
+ul li {
+  padding-left: 0;
+  list-style-position: inside;
 }
 li {
-  margin-bottom: calc(1.55rem / 2);
+  font-size: 16px;
+  margin-bottom: 1rem;
 }
 
 article img {
@@ -82,6 +77,23 @@ article a:active {
 
 article a:visited {
   color: #345cd5;
+}
+
+@media (min-width: 768px) {
+  p {
+    font-size: 18px;
+    line-height: 1.65;
+  }
+  article {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  li {
+    font-size: 18px;
+  }
+  h2 {
+    font-size: 28px;
+  }
 }
 
 /* 'pre' Element
@@ -110,7 +122,6 @@ pre {
   display: inline-block;
   background: #fbf2e9;
   color: #3a4a5a;
-  padding: 0.1em;
   border-radius: 3px;
   vertical-align: 9%;
 }

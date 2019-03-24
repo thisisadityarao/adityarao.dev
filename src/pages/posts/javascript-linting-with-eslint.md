@@ -1,7 +1,7 @@
 ---
 title: "Javascript Linting with ESLint."
 date: "2017-09-09"
-tags: ['javascript', 'tooling']
+tags: ["javascript", "tooling"]
 ---
 
 [ESLint][1] is a powerful and customizable Javascript [linter][2].
@@ -21,56 +21,66 @@ You need to know Javascript. ESlint is Javascript tool that works on Javascript 
 
 ESLint is written using Node.js and can be installed using npm.
 
-1. Install ESLint locally
+1.
+Install ESLint locally
 
-   ```shell
-   $ npm install eslint --save-dev
-   ```
+```shell
+$ npm install eslint --save-dev
+```
 
-2) Setup a configuration file
+2.
+Setup a configuration file
 
-   ```shell
-   $ ./node_modules/.bin/eslint --init
-   ```
+```shell
+$ ./node_modules/.bin/eslint --init
+```
 
 This will create `.eslintrc` configuration file by guiding you through a brief setup process.
 
-3. You can run ESLint in your project’s root directory like so
+1.
+You can run ESLint in your project’s root directory like so
 
-   ```shell
-   # yourfile.js is the javascript file to be linted.
+```shell
+# yourfile.js is the javascript file to be linted.
 
-   $ ./node_modules/.bin/eslint yourfile.js
-   ```
+$ ./node_modules/.bin/eslint yourfile.js
+```
 
 **If you want to install ESLint globally than follow these steps:**
 
-1. Install ESLint globally
+1.
+Install ESLint globally
 
-   ```shell
-   $ npm install -g eslint
-   ```
+```shell
+$ npm install -g eslint
+```
 
-2) Setup configuration file
+2.
+Setup configuration file
 
-   ```shell
-   $ eslint --init
-   ```
+```shell
+$ eslint --init
+```
 
-3. Run eslint on any file
-   ```shell
-   $ eslint yourfile.js
-   ```
+3.
+Run eslint on any file
+
+```shell
+$ eslint yourfile.js
+```
 
 ## Cool, but how does it work?
 
 Let's create a demo project to install and use ESLint.
 
-1. Let's create a directory `eslint-demo` and initialize `npm` within project folder.
+1.
+Let's create a directory `eslint-demo` and initialize `npm` within project folder.
 
    <script type="text/javascript" src="https://asciinema.org/a/qcbKUddGYu0m1oKj15WrfHMey.js" id="asciicast-qcbKUddGYu0m1oKj15WrfHMey" async></script>
 
-2. Install ESLint locally and initialize it.
+2.
+Install ESLint locally and initialize it.
+
    <script type="text/javascript" src="https://asciinema.org/a/MRBt0KYM2Kt18yufJdIg0KK2v.js" id="asciicast-MRBt0KYM2Kt18yufJdIg0KK2v" async></script>
 
 Open the `.eslintrc` file and you'll see the following JSON object. ( if you choose to save it as `.json` file as I did.)

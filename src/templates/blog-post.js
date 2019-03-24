@@ -77,11 +77,18 @@ const Date = styled.span`
 
 const TagSection = styled.div`
   width: 100%;
-  max-width: 712px;
+  max-width: 760px;
+  padding-left: 20px;
+  padding-right: 20px;
   height: 48px;
   line-height: 40px;
   margin: 2rem auto;
   margin-top: 0;
+
+  @media (min-width: 768px) {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
 `;
 
 const PostTagLink = styled(Link)`

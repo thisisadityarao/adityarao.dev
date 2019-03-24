@@ -64,9 +64,9 @@ This list provides **free resources** to help you become a front-end developer. 
 
 Jump to whatever section you want :
 
-1.  [HTML & CSS](#html-&-css)
-2.  [Javascript](#javascript)
-3.  [Related technologies](#related-technologies)
+1. [HTML & CSS](#html-&-css)
+2. [Javascript](#javascript)
+3. [Related technologies](#related-technologies)
 
 ### HTML & CSS
 
@@ -77,66 +77,49 @@ Jump to whatever section you want :
 #### Websites
 
 - [HTML Dog][5]
-
 - [Marksheet][6]
-
 - [Interneting is hard][7]
-
 - [Learn to Code HTML & CSS][8]
-
 - [Learn web development - Mozilla Developer Network][9]
 
 #### Video Courses
 
 - [HTML Tutorial for Beginners][11]
-
 - [CSS Tutorial for Beginners][12]
-
 - [What The Flexbox?!][13]
 
 ### HTML (Reference)
 
 The following websites may prove useful to better understand certain concepts that are usually poorly understood.
 
-- [HTML Reference][14]
+- [HTML Reference][14] <span>&#8594;</span>
   It features all elements and attributes.
-
-- [<head> Cheat Sheet][15]
+- [<head> Cheat Sheet][15] <span>&#8594;</span>
   A list of everything that could go in the `<head>` of your document.
-
-- [HTML5 Video Events and API][16]
+- [HTML5 Video Events and API][16] <span>&#8594;</span>
   This page demonstrates the new HTML5 video element, its media API, and the media events.
 
 ### CSS (Reference)
 
-- [CSS Reference][17]
+- [CSS Reference][17] <span>&#8594;</span>
   It features the most popular properties, and explains them with illustrated and animated examples.
-
-- [AtoZ CSS][18]
+- [AtoZ CSS][18] <span>&#8594;</span>
   Screencast teaching popular CSS properties from AtoZ.
-
-- [CSS Almanac][19]
+- [CSS Almanac][19] <span>&#8594;</span>
   A reference guide to the many features of CSS.
-
-- [Mastering the :nth-child][20]
+- [Mastering the :nth-child][20] <span>&#8594;</span>
   Master the :nth-child property.
-
-- [How well do you know CSS display?][21]
+- [How well do you know CSS display?][21] <span>&#8594;</span>
   Learn everything about CSS display property.
-
-- [Learn CSS Layout][22]
+- [Learn CSS Layout][22] <span>&#8594;</span>
   Fundamentals of CSS Layouts.
-
-- [Learn CSS Positioning in Ten Steps][23]
+- [Learn CSS Positioning in Ten Steps][23] <span>&#8594;</span>
   This tutorial examines the different layout properties available in CSS.
-
-- [Centering in CSS : A Complete Guide][24]
+- [Centering in CSS : A Complete Guide][24] <span>&#8594;</span>
   Different ways for centering things in CSS.
-
-- [A Complete Guide to Flexbox][25]
+- [A Complete Guide to Flexbox][25] <span>&#8594;</span>
   One stop guide to learn Flexbox.
-
-- [A Complete Guide to Grid][26]
+- [A Complete Guide to Grid][26] <span>&#8594;</span>
   Learn CSS Grid Layout.
 
 ### Javascript
@@ -146,36 +129,28 @@ JavaScript isn’t just for browsers anymore. The language is being used on the 
 
 #### Websites
 
-- [The Modern JavaScript Tutorial][27]
+- [The Modern JavaScript Tutorial][27] <span>&#8594;</span>
   From the basics to advanced topics with simple, but detailed explanations.
-
-- [JavaScript - MDN][28]
+- [JavaScript - MDN][28] <span>&#8594;</span>
   Everything about Javascript.
-
-- [Eloquent JavaScript][29]
+- [Eloquent JavaScript][29] <span>&#8594;</span>
   A very popular book on Javascript by Marijn Haverbeke.
-
-- [Exploring JS : JavaScript books for programmers][30]
+- [Exploring JS : JavaScript books for programmers][30] <span>&#8594;</span>
   Collection of books authored by Dr. Axel Rauschmayer.
-
-- [You Don't Know JS][31]
+- [You Don't Know JS][31] <span>&#8594;</span>
   This is a series of books diving deep into the core mechanisms of the JavaScript language, by Kyle Simpson.
-
-- [Understanding ECMAScript 6][32]
+- [Understanding ECMAScript 6][32] <span>&#8594;</span>
   This book teaches the latest javascript standard. Authored by Nicholas C. Zakas.
 
 #### Video Courses
 
-- [Javascript Foundations][33]
+- [Javascript Foundations][33] <span>&#8594;</span>
   JavaScript Foundations will teach you the fundamentals of programming with JavaScript.
-
-- [Practical JavaScript][34]
+- [Practical JavaScript][34] <span>&#8594;</span>
   Learn the JavaScript you need for professional web development.
-
-- [ES2015 Crash Course][35]
+- [ES2015 Crash Course][35] <span>&#8594;</span>
   A crash course on the latest and greatest that the language has to offer.
-
-- [Javascript 30][36]
+- [Javascript 30][36] <span>&#8594;</span>
   Build 30 things in 30 days with 30 tutorials.
 
 ### Related technologies
@@ -197,10 +172,9 @@ There is also what is called the **Developer Edition** of popular browsers, that
 
 Note: There is also **Safari** and **Microsoft Edge** that are available for MacOS and Microsoft Windows respectively.
 
-- [Chrome Dev Tools][42]
+- [Chrome Dev Tools][42] <span>&#8594;</span>
   Explore and Master Chrome DevTools by **Code School**.
-
-- [Firefox Dev Tools][43]
+- [Firefox Dev Tools][43] <span>&#8594;</span>
   Scroll down to see tutorial videos.
 
 Note: Dev Tools work mostly same on every browser. If you are using browser other than Chrome or Firefox than I suggest that you learn dev tools using Chrome / Firefox.
@@ -212,10 +186,9 @@ Mastering your text-editor will boost your productivity and reduce your chances 
 
 Below is a list of popular, free text-editors used for web development.
 
-- [Atom][48]
+- [Atom][48] <span>&#8594;</span>
   Master atom editor using [this tutorial][49].
-
-- [Visual Studio Code][50]
+- [Visual Studio Code][50] <span>&#8594;</span>
   Master VSCode editor using [this tutorial][51].
 
 #### Version Control
@@ -231,13 +204,11 @@ There are many VCS in use today. The most popular is [Git][66] which was created
 
 Use the links below to learn Git & Github.
 
-- [Pro Git][45]
+- [Pro Git][45] <span>&#8594;</span>
   Only book you'll need to learn git.
-
-- [Git and GitHub for Poets][46]
+- [Git and GitHub for Poets][46] <span>&#8594;</span>
   Excellent video series that teaches you how to use Github and Git.
-
-- [Try Git][47]
+- [Try Git][47] <span>&#8594;</span>
   15 minutes to get up to speed with git.
 
 This is by no means an exhaustive list of front-end technologies and resources. I will update the related technologies section in future.

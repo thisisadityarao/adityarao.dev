@@ -1,7 +1,7 @@
 ---
 title: "Using rbenv to install and maintain Ruby on macOS."
 date: "2017-10-09"
-tags: ['ruby']
+tags: ["ruby"]
 ---
 
 I haven't learned [Ruby][1] but I do use [Bundler][2] it's dependency management programme. While trying to update the previous post I ran across a problem with Ruby, for which I spent more than 30 minutes to find and try the solutions. I did find the solution that worked - reinstalling Ruby. But this time I used a Ruby version management tool [rbenv][3].
@@ -32,7 +32,7 @@ ERROR: While executing gem ... (Gem::FilePermissionError)
 You don't have write permissions for the /Library/Ruby/Gems/2.0.0 directory.
 ```
 
-I `don't have write permissions for the /Library/Ruby/Gems/2.0.0 directory` because that's the system Ruby installation. The system Ruby is not writable by a normal user; if you want to modify the system Ruby's gems, you need to use `sudo`. But I don't want to use system Ruby, what happened to my Homebrew Ruby?
+I don't have write permissions for the `/Library/Ruby/Gems/2.0.0 directory` because that's the system Ruby installation. The system Ruby is not writable by a normal user; if you want to modify the system Ruby's gems, you need to use `sudo`. But I don't want to use system Ruby, what happened to my Homebrew Ruby?
 
 Honestly, I didn't dig deeper into this issue since I just wanted to get my post online and be done for the day. I decided to remove the homebrew ruby and reinstall it using `rbenv` . From my knowledge, unlike `rvm`, `rbenv` is not available for windows. **This post will only be useful for macOS users.**
 
@@ -73,8 +73,8 @@ echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.zshrc
 echo 'eval "$(rbenv init -)"' >> ~/.zshrc
 ```
 
-4. Restart your shell so that PATH changes take effect. (Opening a new terminal tab will usually do it.)
-5. Verify that rbenv is properly set up using this [rbenv-doctor][7] script:
+4. Restart your shell so that PATH changes take effect. (Opening a new terminal tab will usually do it.) 2.
+   Verify that rbenv is properly set up using this [rbenv-doctor][7] script:
 
 ```shell
 curl -fsSL https://github.com/rbenv/rbenv-installer/raw/master/bin/rbenv-doctor | bash

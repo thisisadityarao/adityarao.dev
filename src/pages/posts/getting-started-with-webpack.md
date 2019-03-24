@@ -1,7 +1,7 @@
 ---
 title: "Getting started with Webpack."
 date: "2017-09-20"
-tags: ['webpack', 'javascript', 'tooling']
+tags: ["webpack", "javascript", "tooling"]
 ---
 
 ![Webpack Logo](https://res.cloudinary.com/adityar/image/upload/v1509028531/adityarao/webpack-logo_kua5wi.png)
@@ -104,16 +104,16 @@ Fill up the three files with the following content.
 Open `index.html` and put the following code in it
 
 ```html
-  <html>
-    <head>
-      <title>Introduction to Webpack</title>
-      <link href="../src/style.css" rel="stylesheet">
-    </head>
-    <body>
-      <h1>Hello Webpack</h1>
-      <script src="../src/main.js"></script>
-    </body>
-  </html>
+<html>
+  <head>
+    <title>Introduction to Webpack</title>
+    <link href="../src/style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <h1>Hello Webpack</h1>
+    <script src="../src/main.js"></script>
+  </body>
+</html>
 ```
 
 in `style.css`
@@ -324,18 +324,14 @@ Head over to [webpack.org][1] for fantastic documentation and experiment with th
 
 Webpack is powering tens of thousands of websites and applications with millions of downloads every month. With large ecosystem and many contributors, it's still growing. The following links will help you learn more about Webpack.
 
-- [Webpack Academy][6]
+- [Webpack Academy][6] <span>&#8594;</span>
   Execellent video course by [Sean Larkin][9], who's part of Webpack core team.
-
-- [Webpack for Everyone][7]
+- [Webpack for Everyone][7] <span>&#8594;</span>
   Another great video course, by [Jeffery Way][10].
-
-- [Webpack Documentation][1]
+- [Webpack Documentation][1] <span>&#8594;</span>
   Pretty much everything you'll need.
-
-- [awesome-webpack][8]
+- [awesome-webpack][8] <span>&#8594;</span>
   A curated list of awesome Webpack resources, libraries and tools
-
 
 [1]: https://webpack.js.org/
 [2]: https://nodejs.org/en/

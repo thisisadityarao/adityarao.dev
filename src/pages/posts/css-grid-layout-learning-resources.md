@@ -1,7 +1,7 @@
 ---
 title: "CSS Grid Layout learning resources."
 date: "2017-10-22"
-tags: ['css', 'resource']
+tags: ["css", "resource"]
 ---
 
 A few weeks ago I came across [this post][1] on Slack Engineering Blog. It's about Slack rebuilding [slack.com][8] (their marketing website) using **CSS Grids**.
@@ -9,14 +9,11 @@ A few weeks ago I came across [this post][1] on Slack Engineering Blog. It's abo
 
 Now I have been avoiding learning CSS Grids as I thought it will take some time before it gets implemented in all major browsers. With Microsoft implementing CSS Grids Layout in Edge 16 in its October 17th, 2017 update, we now have all major browsers ready to handle this specification.
 
-**Where do I start?**
+##Where do I start?
 
 - My first stop to learn about CSS Grids was [MDN][3]. 😉
-
 - In the external resources section there is this [collection of Grid layout examples][4] from [Jen Simmons.][9]
-
 - Here I found a link to this [excellent post by Jen Simmons with a list of resources to learn CSS Grids.][5]
-
 - Which led me to [**Grid by Example**][6], a fantastic website by [Rachel Andrew][7].
   Rachel Andrew has been working with CSS Grid specification for last four years and most of whats out there about CSS Grids is by her. This is the only resource you'll ever need for anything relating CSS Grid Layout.
 
