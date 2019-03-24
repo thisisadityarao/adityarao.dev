@@ -56,5 +56,6 @@ module.exports = {
         pure: true,
       },
     },
+    `gatsby-plugin-netlify`,
   ],
 };
