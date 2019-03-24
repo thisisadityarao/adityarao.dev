@@ -12,7 +12,7 @@ const Wrapper = styled.main`
 
 const TagSection = styled.div`
   width: 80%;
-  max-width: 1000px;
+  max-width: 780px;
   height: 80%;
   margin: 0 auto;
 `;

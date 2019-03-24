@@ -51,22 +51,15 @@ const Work = styled.div`
 
   & p {
     font-size: 1rem;
-    font-weight: 400;
     line-height: 1.6;
     text-align: left;
-    hyphens: none;
     max-width: 35em;
     margin: 0 auto;
 
-    @media (max-width: 442px) {
-      text-align: left;
-    }
-
     @media (min-width: 1024px) {
-      font-size: 1.4rem;
+      font-size: 1.2rem;
     }
   }
-
   @media (min-width: 768px) {
     max-width: 55%;
   }
@@ -91,27 +84,27 @@ const ImgContainer = styled.div`
 `;
 
 const H3 = styled.h3`
-  font-weight: 700;
-  font-size: 1.2rem;
+  font-weight: 900;
+  font-size: 1.4rem;
   letter-spacing: 0.1em;
-  margin-bottom: 1rem;
-  margin-top: 1.5rem;
+  margin: 0;
+  margin-bottom: 0.5rem;
 
   @media (min-width: 768px) {
-    font-size: 1.5rem;
+    font-size: 2rem;
   }
 `;
 
 const H4 = styled.h4`
-  font-weight: 700;
-  font-size: 1.1rem;
-  letter-spacing: 0.5px;
+  font-weight: 900;
+  font-size: 1.2rem;
+  letter-spacing: 0.1em;
   margin-top: 3.5rem;
   margin-bottom: 2rem;
   text-align: center;
 
   @media (min-width: 768px) {
-    font-size: 1.3rem;
+    font-size: 1.6rem;
     margin-top: 0;
   }
 `;
@@ -123,8 +116,8 @@ const Separator = styled.hr`
 `;
 
 const HR = styled.hr`
-  height: 3px;
-  max-width: 60px;
+  height: 4px;
+  max-width: 90px;
   border: none;
   margin: 1rem;
   margin-left: 0;

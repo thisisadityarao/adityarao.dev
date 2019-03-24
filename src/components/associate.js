@@ -1,5 +1,7 @@
+/* eslint-disable react/display-name */
 import React from 'react';
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
+import { between } from 'polished';
 
 const SectionHireMe = styled.section`
   width: 100%;
@@ -11,57 +13,64 @@ const SectionHireMe = styled.section`
   padding-bottom: 4rem;
 
   & h3 {
-    color: #29384d;
     font-weight: 700;
-    font-size: 1.2rem;
+    font-size: ${between('20px', '28px')};
     text-align: center;
     margin-bottom: 1.5em;
-
-    @media (min-width: 576px) {
-      font-size: 1.5rem;
-    }
   }
 
   & p {
-    font-weight: 300;
-    font-size: 1.2rem;
-    line-height: 1.5;
+    font-size: ${between('16px', '21px')};
+    line-height: 1.45;
     max-width: 30em;
     text-align: center;
     padding-left: 0.5em;
     padding-right: 0.5em;
     margin: 0 auto;
-    margin-bottom: 1em;
+    margin-bottom: 4rem;
 
     @media (min-width: 576px) {
-      font-size: 1.4rem;
-      line-height: 1.6;
+      line-height: 1.5;
     }
   }
 `;
 
+const offset = keyframes`
+    50% {
+      background-position: 100% 0;
+    }
+`;
+
 const EmailButton = styled.a`
   cursor: pointer;
-
   display: block;
-  width: 230px;
-  height: 50px;
+  width: 200px;
+  height: 48px;
+  border: none;
+  outline: none;
   border-radius: 3px;
-  font-size: 1.1rem;
-  letter-spacing: 1px;
+  font-size: 1rem;
+  letter-spacing: 0.1em;
   margin: 0 auto;
-  padding: 13px;
-
-  color: white;
+  padding: 11px;
+  color: #fff;
   text-align: center;
   text-decoration: none;
-  background-color: #f43059;
-  transition: all 0.2s linear;
+  background: linear-gradient(45deg, #288cff, #8200ff);
+  background-size: 400% 400%;
+  transition: all 0.3s ease;
+  box-shadow: 0rem 0.5rem 1rem rgba(0, 0, 0, 0.3);
 
   &:hover {
-    opacity: 1;
-    background-color: #e91e63;
-    box-shadow: 0px 3px 6px #b0b0b0;
+    animation: ${offset} 10s ease infinite;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+  }
+  @media (min-width: 768px) {
+    width: 230px;
+    height: 54px;
+    padding: 12px;
+    font-size: 1.1rem;
   }
 `;
 
@@ -72,6 +81,12 @@ export default () => (
       I'm currently seeking freelance opportunities. If you are interested in a
       new project or collaboration, send me an email.
     </p>
-    <EmailButton>Send Email</EmailButton>
+    <EmailButton
+      href="mailto:dev.adityarao@gmail.com"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      Send Email
+    </EmailButton>
   </SectionHireMe>
 );

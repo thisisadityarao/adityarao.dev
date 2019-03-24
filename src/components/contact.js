@@ -1,3 +1,4 @@
+/* eslint-disable react/display-name */
 import React from 'react';
 import styled from 'styled-components';
 import { Github } from 'styled-icons/fa-brands/Github';
@@ -7,49 +8,42 @@ import { ExternalLinkAlt } from 'styled-icons/fa-solid/ExternalLinkAlt';
 
 const SectionContact = styled.section`
   width: 100%;
-  max-width: 1440px;
-  margin: 0 auto;
-  padding-top: 1.5rem;
-  padding-bottom: 3rem;
-
-  @media (min-width: 576px) {
-    padding-top: 2rem;
-  }
+  max-width: 1280px;
+  margin: 4rem auto;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 `;
 
-const H3 = styled.h3.attrs({
-  margin: props => props.size || '1.5rem',
-})`
-  font-weight: 700;
-  font-size: 1.2rem;
-  letter-spacing: 2px;
-  margin-top: ${props => props.margin};
+const H3 = styled.h3`
+  font-size: 1.4rem;
+  margin: 0;
+  margin-bottom: 0.5rem;
+  font-weight: 900;
+  letter-spacing: 0.1em;
 
   @media (min-width: 576px) {
-    font-size: 1.8rem;
+    font-size: 2rem;
   }
 `;
 
 const HR = styled.hr`
-  height: 5px;
-  max-width: 60px;
+  height: 4px;
+  max-width: 90px;
   border: none;
   margin: 0;
-  margin-top: 1rem;
-  margin-bottom: 3rem;
   background: rgb(249, 73, 73);
 `;
 
 const SocialIcons = styled.ul`
   display: flex;
   flex-direction: column;
-  margin-top: 4em;
+  margin-top: 4rem;
   padding-left: 0;
 
   @media (min-width: 786px) {
     flex-direction: row;
     justify-content: space-between;
-    margin-top: 5em;
+    margin-top: 5rem;
   }
 
   & li {
@@ -70,7 +64,7 @@ const SocialIcons = styled.ul`
     text-decoration: none;
 
     &:hover {
-      color: #f43059;
+      color: hsl(224.5945945945946, 66.0714285714%, 62.0784313725%);
     }
   }
 
@@ -87,7 +81,7 @@ const SocialIcons = styled.ul`
 
   & a:hover::before {
     width: 100%;
-    background: #f43059;
+    background: hsl(224.5945945945946, 66.0714285714%, 62.0784313725%);
     transition: width 0.5s ease;
   }
 
@@ -99,7 +93,8 @@ const SocialIcons = styled.ul`
     bottom: 0;
     height: 2px;
     width: 0;
-    background: #f43059;
+    background: hsl(224.5945945945946, 66.0714285714%, 62.0784313725%);
+
     transition: width 0.5s ease;
   }
 

@@ -13,6 +13,7 @@ const StyledLink = styled(Link)`
   padding: 10px 20px;
   letter-spacing: 1px;
   transition: all 0.2s ease-in-out;
+  background-color: transparent;
 
   &:visited {
     color: #595959;
@@ -23,14 +24,15 @@ const StyledLink = styled(Link)`
   }
   &:focus,
   &:hover {
-    color: #fff;
-    background: rgb(249, 73, 73);
+    cursor: pointer;
+    color: rgb(0, 0, 0);
     box-shadow: none;
+    background: rgb(238, 239, 240);
     border-radius: 4px;
     transition: all 0.2s ease-in-out 0s;
   }
   &:active {
-    color: rgb(249, 73, 73);
+    color: #f75a4c;
   }
 
   @media (max-width: 767px) {
@@ -41,10 +43,10 @@ const StyledLink = styled(Link)`
 const NavigationWrapper = styled.nav`
   cursor: pointer;
   width: 100%;
-  max-width: 1272px;
+  max-width: 1280px;
   height: 80px;
   margin: 0 auto;
-  padding: 0 18px;
+  padding: 0 20px;
   display: flex;
   align-items: center;
   flex-wrap: wrap;
@@ -54,7 +56,7 @@ const NavigationWrapper = styled.nav`
 
   @media (min-width: 768px) {
     font-size: 20px;
-    padding: 0 36px;
+    padding: 0 40px;
     height: 120px;
   }
 
@@ -86,7 +88,7 @@ export default class Navigation extends Component {
         <Nav>
           <MobileNav className="mobile-nav" />
           <StyledLink to="/">Home</StyledLink>
-          <StyledLink to="#about">About Me</StyledLink>
+          <StyledLink to="/about/">About Me</StyledLink>
           <StyledLink to="/blog/">Blog</StyledLink>
           <StyledLink to="#contact">Contact</StyledLink>
         </Nav>

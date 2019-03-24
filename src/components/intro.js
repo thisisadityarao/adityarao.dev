@@ -1,6 +1,7 @@
 /* eslint-disable react/display-name */
 import React from 'react';
 import styled, { keyframes } from 'styled-components';
+import { between } from 'polished';
 
 const SectionIntro = styled.section`
   width: 100%;
@@ -13,14 +14,10 @@ const SectionIntro = styled.section`
   }
 
   & p {
-    font-weight: 400;
     line-height: 1.65;
     font-size: 1rem;
+    font-size: ${between('16px', '21px')};
     max-width: 30em;
-    @media (min-width: 768px) {
-      font-size: 1.4rem;
-      max-width: 32em;
-    }
   }
 
   p + p {
@@ -43,9 +40,9 @@ const SectionIntro = styled.section`
 
   .subtitle {
     margin-top: 2rem;
-    font-size: 0.9rem;
+    font-size: 1rem;
     @media (min-width: 768px) {
-      font-size: 1.2rem;
+      font-size: 1.3rem;
     }
   }
 `;
@@ -57,6 +54,7 @@ const offset = keyframes`
 `;
 
 const LinkButton = styled.a`
+  cursor: pointer;
   display: inline-block;
   width: 200px;
   height: 48px;
@@ -71,9 +69,8 @@ const LinkButton = styled.a`
   border: none;
   border-radius: 3px;
   outline: none;
-  background: linear-gradient(45deg, #8200ff, #288cff);
+  background: linear-gradient(45deg, #288cff, #8200ff);
   background-size: 400% 400%;
-  cursor: pointer;
   transition: all 0.3s ease;
   box-shadow: 0rem 0.5rem 1rem rgba(0, 0, 0, 0.3);
 

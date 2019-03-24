@@ -14,7 +14,7 @@ const TagListing = styled.section`
   display: flex;
   flex-direction: column;
   width: 80%;
-  max-width: 1000px;
+  max-width: 780px;
   margin: 0 auto;
   padding: 2.5rem 0;
 
@@ -37,7 +37,6 @@ const H2 = styled.span`
     padding: 4px 16px;
     border-radius: 4px;
     background-color: rgb(255, 246, 187);
-    color: #333;
     box-shadow: rgba(0, 0, 0, 0.04) 0px 1px 2px;
   }
 `;
@@ -45,17 +44,17 @@ const Links = styled(Link)`
   margin-bottom: 50px;
   text-decoration: underline;
   &:link {
-    color: #f43059;
+    color: #345cd5;
   }
   &:focus,
   &:hover {
-    color: #f43059;
+    color: #5e80de;
   }
   &:active {
-    color: #f43059;
+    color: #5e80de;
   }
   &:visited {
-    color: #f43059;
+    color: #345cd5;
   }
 `;
 

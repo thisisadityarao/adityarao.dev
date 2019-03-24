@@ -7,17 +7,16 @@ import TweenFunctions from 'tween-functions';
 import { ChevronUp } from 'styled-icons/fa-solid/ChevronUp';
 
 const ScrollButton = styled(ChevronUp)`
-  display: ${props =>
-    props.customProp ? 'block' : 'none'}; /* Hidden by default */
-  position: fixed; /* Fixed/sticky position */
-  bottom: 20px; /* Place the button at the bottom of the page */
-  right: 25px; /* Place the button 25px from the right */
-  z-index: 99; /* Make sure it does not overlap */
-  border: none; /* Remove borders */
-  color: #4a5a6a; /* Set color */
-  outline: none; /* Remove outline */
-  cursor: pointer; /* Add a mouse pointer on hover */
-  width: 35px; /* Some width */
+  display: ${props => (props.customProp ? 'block' : 'none')};
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  z-index: 99;
+  border: none;
+  color: #4a5a6a;
+  outline: none;
+  cursor: pointer;
+  width: 35px;
   border-radius: 20px;
 
   &:hover {
@@ -25,7 +24,7 @@ const ScrollButton = styled(ChevronUp)`
   }
 
   @media (min-width: 786px) {
-    bottom: 30px;
+    bottom: 40px;
     right: 30px;
   }
 `;

@@ -5,7 +5,7 @@ import styled from 'styled-components';
 const Logo = styled.a`
   display: flex;
   align-items: center;
-  font-family: 'Inter';
+  font-family: 'Clear Sans';
   font-size: 16px;
   text-decoration: none;
   cursor: pointer;
@@ -21,10 +21,10 @@ const Logo = styled.a`
   }
   &:focus,
   &:hover {
-    color: rgb(249, 73, 73);
+    color: #29384c;
   }
   &:active {
-    color: rgb(249, 73, 73);
+    color: #29384c;
   }
 
   span {

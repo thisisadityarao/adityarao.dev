@@ -1,3 +1,4 @@
+/* eslint-disable react/display-name */
 import React from 'react';
 import styled from 'styled-components';
 
@@ -7,38 +8,52 @@ const Footer = styled.footer`
   flex-direction: column;
   height: 120px;
   width: 100%;
-  padding: 0 20px;
+  padding: 20px;
   border: 1px solid #eeeeee;
 
   @media (min-width: 768px) {
-    padding: 0 40px;
+    padding: 30px 40px;
   }
 
   & p {
-    font-size: 80%;
+    font-size: 14px;
     margin: 0 auto;
-    margin-top: 1.5rem;
     text-align: center;
     line-height: 1.6;
+
+    @media (min-width: 768px) {
+      font-size: 15px;
+    }
+  }
+
+  & p:first-of-type {
+    margin-bottom: 0.8rem;
+
+    @media (min-width: 768px) {
+      margin-bottom: 1rem;
+    }
   }
 
   & a:link {
     text-decoration: underline;
     padding-bottom: 1px;
-    color: #f43059;
+    color: #345cd5;
+    text-decoration-skip: ink;
+    text-decoration: underline;
   }
 
   & a:focus,
   & a:hover {
-    color: #ff4b6e;
+    color: #5e80de;
+    outline-width: 0;
   }
 
   & a:active {
-    color: #f43059;
+    color: #5e80de;
   }
 
   & a:visited {
-    color: #f43059;
+    color: #345cd5;
   }
 `;
 

@@ -21,7 +21,7 @@ const GlobalStyle = createGlobalStyle`
     margin: 0;
     height: 100%;
     width: 100%;
-    font-family: 'Source Sans Pro', 'sans-serif';
+    font-family: 'Clear Sans', 'sans-serif';
     font-style: normal;
   }
 
@@ -34,15 +34,11 @@ const GlobalStyle = createGlobalStyle`
     -ms-overflow-style: scrollbar;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
     //scroll-behavior: smooth;
-
-  @media (min-width: 425px) {
-    font-size: 112.5%;
-  }
   }
 
   body {
     background-color: #fff;
-    line-height: 1.5;
+    line-height: 1.65;
   }
 
   h1, h2, h3, h4, h5, h6 {

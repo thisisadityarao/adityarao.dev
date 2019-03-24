@@ -9,11 +9,12 @@ import Layout from '../components/layout';
 const Wrapper = styled.main`
   height: 100%;
   min-height: 702px;
+  background: rgb(250, 250, 250);
 `;
 
 const BlogListing = styled.section`
   width: 100%;
-  max-width: 1000px;
+  max-width: 760px;
   margin: 0 auto;
   padding: 2.5rem 0.5rem;
 
@@ -49,15 +50,14 @@ const H2 = styled.h2`
   }
 
   &.page-header {
-    color: #29384c;
+    font-weight: 900;
+    font-size: 1.4rem;
     margin-bottom: 3.5rem;
-    letter-spacing: 1px;
-    font-size: 1.2rem;
     padding-left: 16px;
 
     @media (min-width: 576px) {
       margin-bottom: 4rem;
-      font-size: 1.5rem;
+      font-size: 1.8rem;
     }
 
     @media (min-width: 1200px) {
@@ -69,17 +69,17 @@ const H2 = styled.h2`
 const Links = styled(Link)`
   &:link {
     text-decoration: none;
-    color: #f43059;
+    color: #2a3a4a;
   }
   &:focus,
   &:hover {
-    color: #f43059;
+    color: hsl(224.5945945945946, 66.0714285714%, 62.0784313725%);
   }
   &:active {
-    color: #f43059;
+    color: hsl(224.5945945945946, 66.0714285714%, 62.0784313725%);
   }
   &:visited {
-    color: #f43059;
+    color: #2a3a4a;
   }
 `;
 
@@ -99,13 +99,14 @@ const DateIcon = styled(Calendar)`
 const Post = styled.div`
   margin-bottom: 3rem;
   padding: 24px 16px;
+  background: rgb(255, 255, 255);
   transition: all 0.2s ease-in-out 0s;
 
   &:hover {
     cursor: pointer;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 8px 24px;
     transform: translateY(-3px);
-    background: rgb(255, 255, 255);
+
     border-radius: 8px;
     transition: all 0.2s ease-in-out 0s;
   }
@@ -155,7 +156,7 @@ export default ({ data, pageContext }) => {
             justifyContent: 'space-between',
             alignItems: 'center',
             listStyle: 'none',
-            maxWidth: '1000px',
+            maxWidth: '760px',
             margin: 'auto',
             paddingLeft: '1.5rem',
             paddingRight: '1.5rem',
@@ -181,7 +182,7 @@ export default ({ data, pageContext }) => {
                   padding: '0.2em 0.6em',
                   textDecoration: 'none',
                   color: i + 1 === currentPage ? '#ffffff' : '',
-                  background: i + 1 === currentPage ? '#F43059' : '',
+                  background: i + 1 === currentPage ? '#f94949' : '',
                   borderRadius: '4px',
                 }}
               >

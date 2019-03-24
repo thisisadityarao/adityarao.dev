@@ -1,3 +1,4 @@
+/* eslint-disable react/display-name */
 import React from 'react';
 import styled from 'styled-components';
 import { graphql, Link } from 'gatsby';
@@ -114,7 +115,7 @@ const PostTagLink = styled(Link)`
 
 const PostTags = styled(Link)`
   display: inline-block;
-  margin-left: 0.8rem;
+  margin-left: 0.5rem;
   text-decoration: none;
   font-size: 16px;
   white-space: nowrap;
@@ -123,24 +124,14 @@ const PostTags = styled(Link)`
   line-height: 1.1;
   position: relative;
   text-align: center;
-  opacity: 1;
-  box-shadow: rgba(0, 0, 0, 0.04) 0px 1px 2px;
-  color: rgb(255, 255, 255);
-  background-color: rgb(6, 132, 248);
-  background-image: linear-gradient(rgb(6, 132, 248), rgb(6, 122, 228));
-  text-shadow: rgba(0, 0, 0, 0.08) 0px 1px 1px;
-  border-radius: 20px;
+  color: #345cd5;
   transition: all 0.2s ease-in-out 0s;
-  padding: 6px 12px;
+  padding: 5px 10px;
 
   &:hover {
-    background-image: linear-gradient(rgb(6, 153, 255), rgb(6, 141, 255));
-    box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
-    transition: all 0.2s ease-in-out 0s;
-  }
-
-  @media (min-width: 576px) {
-    padding: 8px 16px;
+    color: #fff;
+    background-color: #5e80de;
+    border-radius: 3px;
   }
 `;
 
@@ -174,7 +165,7 @@ export default ({ data, pageContext }) => {
         <TagSection>
           <PostTagLink to="/tags/">Tags :</PostTagLink>
           {tags.map((tag, i) => (
-            <PostTags to={`/${tag}`} key={i} style={{ color: '#fff' }}>
+            <PostTags to={`/${tag}`} key={i}>
               #{tag}
             </PostTags>
           ))}
@@ -186,7 +177,7 @@ export default ({ data, pageContext }) => {
               <Link
                 to={previous.fields.slug}
                 rel="prev"
-                style={{ color: '#F43059' }}
+                style={{ color: '#345cd5' }}
               >
                 ← {previous.frontmatter.title}
               </Link>
@@ -198,7 +189,7 @@ export default ({ data, pageContext }) => {
               <Link
                 to={next.fields.slug}
                 rel="next"
-                style={{ color: '#F43059' }}
+                style={{ color: '#345cd5' }}
               >
                 {next.frontmatter.title} →
               </Link>

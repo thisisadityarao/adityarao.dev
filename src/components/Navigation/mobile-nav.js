@@ -113,7 +113,7 @@ const Toggle = () => {
             </Link>
             <Link
               aria-label="View about page"
-              to="#about"
+              to="/about/"
               activeClassName="active"
               onClick={toggle}
             >
