@@ -73,10 +73,10 @@ const Links = styled(Link)`
   }
   &:focus,
   &:hover {
-    color: hsl(224.5945945945946, 66.0714285714%, 62.0784313725%);
+    color: #5e80de;
   }
   &:active {
-    color: hsl(224.5945945945946, 66.0714285714%, 62.0784313725%);
+    color: #5e80de;
   }
   &:visited {
     color: #2a3a4a;

@@ -19,7 +19,6 @@ const H3 = styled.h3`
   margin: 0;
   margin-bottom: 0.5rem;
   font-weight: 900;
-  letter-spacing: 0.1em;
 
   @media (min-width: 576px) {
     font-size: 2rem;
@@ -40,7 +39,7 @@ const SocialIcons = styled.ul`
   margin-top: 4rem;
   padding-left: 0;
 
-  @media (min-width: 786px) {
+  @media (min-width: 768px) {
     flex-direction: row;
     justify-content: space-between;
     margin-top: 5rem;
@@ -59,12 +58,17 @@ const SocialIcons = styled.ul`
     padding-bottom: 3px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
     color: #777777;
+    font-size: 16px;
     font-style: normal;
     transition: all 0.2s linear;
     text-decoration: none;
 
+    @media (min-width: 768px) {
+      font-size: 18px;
+    }
+
     &:hover {
-      color: hsl(224.5945945945946, 66.0714285714%, 62.0784313725%);
+      color: #345cd5;
     }
   }
 
@@ -81,7 +85,7 @@ const SocialIcons = styled.ul`
 
   & a:hover::before {
     width: 100%;
-    background: hsl(224.5945945945946, 66.0714285714%, 62.0784313725%);
+    background: #345cd5;
     transition: width 0.5s ease;
   }
 
@@ -93,7 +97,7 @@ const SocialIcons = styled.ul`
     bottom: 0;
     height: 2px;
     width: 0;
-    background: hsl(224.5945945945946, 66.0714285714%, 62.0784313725%);
+    background: #345cd5;
 
     transition: width 0.5s ease;
   }
@@ -151,14 +155,9 @@ const ExternalLink = styled(ExternalLinkAlt)`
   width: 15px;
   height: 15px;
 
-  @media (min-width: 600px) {
-    width: 18px;
-    height: 18px;
-  }
-
   @media (min-width: 1200px) {
-    width: 20px;
-    height: 20px;
+    width: 17px;
+    height: 17px;
   }
 `;
 

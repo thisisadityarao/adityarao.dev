@@ -1,7 +1,7 @@
 /* eslint-disable react/display-name */
 import React from 'react';
 import styled from 'styled-components';
-import Navigation from './navigation/main-nav';
+import Navigation from './Navigation/mainNav';
 
 const Header = styled.header`
   width: 100%;

@@ -2,7 +2,7 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 import { Link } from 'gatsby';
-import MobileNav from './mobile-nav';
+import Toggle from './mobileNav';
 import Logo from './logo';
 
 const StyledLink = styled(Link)`
@@ -32,7 +32,7 @@ const StyledLink = styled(Link)`
     transition: all 0.2s ease-in-out 0s;
   }
   &:active {
-    color: #f75a4c;
+    color: rgb(0, 0, 0);
   }
 
   @media (max-width: 767px) {
@@ -86,7 +86,7 @@ export default class Navigation extends Component {
       <NavigationWrapper>
         <Logo />
         <Nav>
-          <MobileNav className="mobile-nav" />
+          <Toggle className="mobile-nav" />
           <StyledLink to="/">Home</StyledLink>
           <StyledLink to="/about/">About Me</StyledLink>
           <StyledLink to="/blog/">Blog</StyledLink>

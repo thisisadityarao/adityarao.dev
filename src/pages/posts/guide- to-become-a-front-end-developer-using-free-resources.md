@@ -1,7 +1,7 @@
 ---
 title: "Guide to become a Front-End Developer using Free resources"
 date: "2017-07-19"
-tags: ['resource', 'front-end']
+tags: ["resource", "front-end"]
 ---
 
 [Tim Berners-Lee][53] wrote a proposal in 1989 for a system called the World Wide Web. He also created [HTML (Hypertext Markup Language)][54] in 1990, for the purpose of formatting scientific documents. HTML is a markup language that gives structure and meaning to documents.
@@ -102,7 +102,7 @@ The following websites may prove useful to better understand certain concepts th
   It features all elements and attributes.
 
 - [<head> Cheat Sheet][15]
-  A list of everything that could go in the <head> of your document.
+  A list of everything that could go in the `<head>` of your document.
 
 - [HTML5 Video Events and API][16]
   This page demonstrates the new HTML5 video element, its media API, and the media events.

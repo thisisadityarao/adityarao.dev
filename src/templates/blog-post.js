@@ -71,45 +71,40 @@ const ListItem = styled.li`
 
 const Date = styled.span`
   display: inline-block;
-  font-size: 0.9rem;
+  font-size: 1rem;
   text-decoration: underline;
-
-  @media (min-width: 576px) {
-    font-size: 1rem;
-  }
 `;
 
 const TagSection = styled.div`
   width: 100%;
-  max-width: 43em;
+  max-width: 712px;
   height: 48px;
   line-height: 40px;
   margin: 2rem auto;
   margin-top: 0;
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
 `;
 
 const PostTagLink = styled(Link)`
-  font-size: 1.1rem;
-
-  @media (min-width: 768px) {
-    font-size: 1.2rem;
-  }
+  cursor: pointer;
+  display: inline-block;
+  font-size: 1rem;
+  line-height: 1.4;
+  font-variant: small-caps;
 
   &:link {
     text-decoration: none;
-    color: #f43059;
+    color: rgb(249, 73, 73);
   }
   &:focus,
   &:hover {
-    color: #f43059;
+    color: rgb(249, 73, 73);
+    border-bottom: 2px solid rgb(249, 73, 73);
   }
   &:active {
-    color: #f43059;
+    color: rgb(249, 73, 73);
   }
   &:visited {
-    color: #f43059;
+    color: rgb(249, 73, 73);
   }
 `;
 
@@ -132,6 +127,10 @@ const PostTags = styled(Link)`
     color: #fff;
     background-color: #5e80de;
     border-radius: 3px;
+  }
+
+  @media (min-width: 768px) {
+    font-size: 18px;
   }
 `;
 
@@ -157,13 +156,18 @@ export default ({ data, pageContext }) => {
     <Layout>
       <Wrapper>
         <article>
-          <DateIcon />
-          <Date>{post.frontmatter.date}</Date>
           <h1>{post.frontmatter.title}</h1>
+          <div className="date">
+            {' '}
+            <DateIcon />
+            <Date>{post.frontmatter.date}</Date>
+          </div>
           <div dangerouslySetInnerHTML={{ __html: post.html }} />
         </article>
         <TagSection>
-          <PostTagLink to="/tags/">Tags :</PostTagLink>
+          <PostTagLink to="/tags/">
+            TAGS <span>&#8594;</span>
+          </PostTagLink>
           {tags.map((tag, i) => (
             <PostTags to={`/${tag}`} key={i}>
               #{tag}

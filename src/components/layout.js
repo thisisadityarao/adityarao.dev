@@ -51,7 +51,6 @@ const GlobalStyle = createGlobalStyle`
   }
 
   ul, ol {
-    list-style-position: inside;
     margin-left: 0;
   }
 

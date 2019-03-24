@@ -4,13 +4,8 @@ import styled from 'styled-components';
 
 const SectionWork = styled.section`
   width: 100%;
-  padding-top: 2rem;
-  margin-bottom: 2rem;
-
-  @media (min-width: 400px) {
-    padding-top: 3rem;
-    margin-bottom: 3rem;
-  }
+  padding-top: 3rem;
+  padding-bottom: 3rem;
 `;
 
 const Section = styled.div`
@@ -86,7 +81,6 @@ const ImgContainer = styled.div`
 const H3 = styled.h3`
   font-weight: 900;
   font-size: 1.4rem;
-  letter-spacing: 0.1em;
   margin: 0;
   margin-bottom: 0.5rem;
 
@@ -106,6 +100,7 @@ const H4 = styled.h4`
   @media (min-width: 768px) {
     font-size: 1.6rem;
     margin-top: 0;
+    margin-bottom: 3rem;
   }
 `;
 
@@ -121,7 +116,7 @@ const HR = styled.hr`
   border: none;
   margin: 1rem;
   margin-left: 0;
-  margin-bottom: 3rem;
+  margin-bottom: 5rem;
   background: rgb(249, 73, 73);
 `;
 
