@@ -57,7 +57,7 @@ const SocialIcons = styled.ul`
     position: relative;
     padding-bottom: 3px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-    color: #777777;
+    color: #4a5a6a;
     font-size: 16px;
     font-style: normal;
     transition: all 0.2s linear;

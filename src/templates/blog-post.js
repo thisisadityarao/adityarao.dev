@@ -18,17 +18,7 @@ const Divider = styled.div`
   margin: auto;
   margin-top: 4rem;
   display: block;
-  background: linear-gradient(
-    to right,
-    #e52f45 0%,
-    #e52f45 25%,
-    #b42b3e 25%,
-    #b42b3e 50%,
-    #8ab2ff 50%,
-    #8ab2ff 75%,
-    #4d71b7 75%,
-    #4d71b7 100%
-  );
+  background: #eeeeee;
 `;
 
 const List = styled.ul`
@@ -118,7 +108,7 @@ const PostTagLink = styled(Link)`
 const PostTags = styled(Link)`
   display: inline-block;
   margin-left: 0.5rem;
-  text-decoration: none;
+  text-decoration: underline;
   font-size: 16px;
   white-space: nowrap;
   word-break: keep-all;

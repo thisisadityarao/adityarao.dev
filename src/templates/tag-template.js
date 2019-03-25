@@ -13,18 +13,18 @@ const Wrapper = styled.main`
 const TagListing = styled.section`
   display: flex;
   flex-direction: column;
-  width: 80%;
-  max-width: 780px;
+  width: 100%;
+  max-width: 760px;
   margin: 0 auto;
-  padding: 2.5rem 0;
+  padding: 2.5rem 20px;
 
   @media (min-width: 576px) {
-    padding: 4rem 1.5rem;
+    padding: 4rem 30px;
   }
 `;
-const H2 = styled.span`
+const H2 = styled.h2`
   font-size: 1.2rem;
-  font-weight: bold;
+  font-weight: 900;
   margin-top: 1rem;
   margin-bottom: 3.5rem;
 
@@ -33,15 +33,14 @@ const H2 = styled.span`
   }
 
   & span {
+    font-weight: 700;
     display: inline-block;
-    padding: 4px 16px;
-    border-radius: 4px;
-    background-color: rgb(255, 246, 187);
-    box-shadow: rgba(0, 0, 0, 0.04) 0px 1px 2px;
+    text-decoration: underline;
   }
 `;
 const Links = styled(Link)`
   margin-bottom: 50px;
+  font-size: 16px;
   text-decoration: underline;
   &:link {
     color: #345cd5;
@@ -56,6 +55,10 @@ const Links = styled(Link)`
   &:visited {
     color: #345cd5;
   }
+
+  @media (min-width: 768px) {
+    font-size: 18px;
+  }
 `;
 
 function Tags({ data, pageContext }) {
@@ -66,7 +69,7 @@ function Tags({ data, pageContext }) {
       <Wrapper>
         <TagListing>
           <H2>
-            Posts tagged in - <span>{tag}</span>
+            Posts tagged in - <span>#{tag}</span>
           </H2>
 
           {posts.map(({ node }, i) => (

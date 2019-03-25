@@ -39,6 +39,7 @@ const GlobalStyle = createGlobalStyle`
   body {
     background-color: #fff;
     line-height: 1.65;
+    color: #4a5a6a;
   }
 
   h1, h2, h3, h4, h5, h6 {
@@ -46,9 +47,6 @@ const GlobalStyle = createGlobalStyle`
     color: #2a3a4a;
   }
 
-  p {
-    color: #4a5a6a;
-  }
 
   ul, ol {
     margin-left: 0;

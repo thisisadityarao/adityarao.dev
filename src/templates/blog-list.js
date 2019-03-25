@@ -44,6 +44,7 @@ const H2 = styled.h2`
   font-size: 1.2rem;
   margin-top: 0.3rem;
   margin-bottom: 0.8rem;
+  color: #4a5a6a;
 
   @media (min-width: 576px) {
     font-size: 1.5rem;
