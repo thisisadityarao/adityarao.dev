@@ -61,6 +61,7 @@ module.exports = {
       options: {
         disableOnDev: true,
       },
-    }`gatsby-plugin-netlify`,
+    },
+    `gatsby-plugin-netlify`,
   ],
 };
