@@ -15,6 +15,7 @@
     "core-js": "^2.6.5",
     "detect-passive-events": "^1.0.4",
     "gatsby": "^2.3.4",
+    "gatsby-plugin-csp": "^1.0.1",
     "gatsby-plugin-manifest": "^2.0.26",
     "gatsby-plugin-netlify": "^2.0.13",
     "gatsby-plugin-offline": "^2.0.25",
