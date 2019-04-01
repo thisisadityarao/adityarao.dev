@@ -56,27 +56,6 @@ module.exports = {
         pure: true,
       },
     },
-    {
-      resolve: `gatsby-plugin-netlify`,
-      options: {
-        allPageHeaders: [
-          'Link: </static/styles/post.css>; rel=preload; as=stylesheet',
-          'Link: </*.css>; rel=preload; as=stylesheet',
-          'Link: </*.js>; rel=preload; as=script',
-          'Link: </manifest.webmanifest>; rel=preload; as=script',
-        ],
-        headers: {
-          '/*': [
-            'X-Frame-Options: DENY',
-            'X-XSS-Protection: 1; mode=block',
-            'Referrer-Policy: no-referrer',
-            'X-Content-Type-Options: nosniff',
-          ],
-        },
-        mergeSecurityHeaders: true,
-        mergeLinkHeaders: true,
-        mergeCachingHeaders: true,
-      },
-    },
+    `gatsby-plugin-netlify`,
   ],
 };
