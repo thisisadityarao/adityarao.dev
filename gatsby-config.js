@@ -56,12 +56,6 @@ module.exports = {
         pure: true,
       },
     },
-    {
-      resolve: `gatsby-plugin-csp`,
-      options: {
-        disableOnDev: true,
-      },
-    },
     `gatsby-plugin-netlify`,
   ],
 };
