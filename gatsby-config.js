@@ -59,6 +59,12 @@ module.exports = {
     {
       resolve: `gatsby-plugin-netlify`,
       options: {
+        allPageHeaders: [
+          'Link: </static/styles/post.css>; rel=preload; as=stylesheet',
+          'Link: </*.css>; rel=preload; as=stylesheet',
+          'Link: </*.js>; rel=preload; as=script',
+          'Link: </manifest.webmanifest>; rel=preload; as=script',
+        ],
         headers: {
           '/*': [
             'X-Frame-Options: DENY',
