@@ -26,7 +26,7 @@ const StyledLink = styled(Link)`
     cursor: pointer;
     color: rgb(0, 0, 0);
     box-shadow: none;
-    background: rgb(238, 239, 240);
+    background: #e8ebed;
     border-radius: 4px;
     transition: all 0.2s ease-in-out 0s;
   }

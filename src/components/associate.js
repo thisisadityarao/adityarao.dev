@@ -5,7 +5,7 @@ import { between } from 'polished';
 
 const SectionHireMe = styled.section`
   width: 100%;
-  background-color: #fafafa;
+  background-color: #fef8e7;
   border: 1px solid #eeeeee;
   border-radius: 4px;
   margin-top: 4rem;

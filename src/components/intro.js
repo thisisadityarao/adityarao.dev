@@ -42,7 +42,7 @@ const SectionIntro = styled.section`
     margin-top: 2rem;
     font-size: 1rem;
     @media (min-width: 768px) {
-      font-size: 1.3rem;
+      font-size: 1.1rem;
     }
   }
 `;
@@ -85,7 +85,7 @@ const LinkButton = styled.a`
     height: 54px;
     margin-bottom: 5vh;
     padding: 12px;
-    font-size: 1rem;
+    font-size: 1.1rem;
   }
 `;
 

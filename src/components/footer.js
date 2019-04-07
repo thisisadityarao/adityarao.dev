@@ -9,6 +9,7 @@ const Footer = styled.footer`
   height: 120px;
   width: 100%;
   padding: 20px;
+  background: #f9f9fb;
   border: 1px solid #eeeeee;
 
   @media (min-width: 768px) {
