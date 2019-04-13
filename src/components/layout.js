@@ -4,7 +4,7 @@
 
 import React from 'react';
 import styled, { createGlobalStyle } from 'styled-components';
-import ProgressBar from 'react-scroll-progress-bar';
+import ProgressBar from './progress-bar';
 import Head from './head';
 import Footer from './footer';
 import Header from './header';
