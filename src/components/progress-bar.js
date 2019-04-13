@@ -10,7 +10,7 @@ const ScrollIndicator = styled.div`
   width: ${props => props.width};
   top: 0;
   z-index: 99;
-  transition: ${props => props.width} 1s ease-out;
+  transition: ${props => props.width} 1s;
 `;
 
 export default class ProgressBar extends Component {
