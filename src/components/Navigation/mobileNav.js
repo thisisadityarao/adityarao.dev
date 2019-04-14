@@ -1,4 +1,4 @@
-import React, { useState, useLayoutEffect } from 'react';
+import React, { useState } from 'react';
 import { Link } from 'gatsby';
 import styled from 'styled-components';
 
@@ -89,21 +89,7 @@ const Container = styled.div`
   }
 `;
 
-// Hook
-function useLockBodyScroll() {
-  useLayoutEffect(() => {
-    // Get original body overflow
-    const originalStyle = window.getComputedStyle(document.body).overflow;
-    // Prevent scrolling on mount
-    document.body.style.overflow = 'hidden';
-    // Re-enable scrolling when component unmounts
-    return () => (document.body.style.overflow = originalStyle);
-  }, []); // Empty array ensures effect is only run on mount and unmount
-}
-
 const Toggle = () => {
-  // Call hook to lock body scroll
-  useLockBodyScroll();
   const [isToggledOn, setToggle] = useState(false);
   const toggle = () => setToggle(!isToggledOn);
   return (
@@ -112,7 +98,7 @@ const Toggle = () => {
         onClick={toggle}
         aria-label={`${isToggledOn ? 'close menu' : 'open menu'}`}
       >
-        <MenuItem menuToggle={isToggledOn} />
+        <MenuItem className="hamburger" menuToggle={isToggledOn} />
       </Menu>
       {isToggledOn && (
         <SideBar>

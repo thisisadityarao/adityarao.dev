@@ -67,6 +67,56 @@ const GlobalStyle = createGlobalStyle`
     /* max-width allows image to be responsive. */
     max-width: 100%;
   }
+
+  body.dark, body.dark footer, body.dark article, body.dark main[class*=blog-] {
+    background-color: rgb(30,34,39);
+    color: #fff;
+  }
+
+body.dark article pre code[class*=language-],
+  body.dark article table tbody>tr:nth-child(odd)>td,
+  body.dark article table tbody>tr:nth-child(odd)>th {
+      background: #282c34;
+  }
+body.dark article :not(pre) > code[class*="language-"] {
+    background: #f5f5f5;
+    color: #2a3a4a;
+}
+  body.dark article pre code {
+    color: #fff;
+  }
+
+  body.dark h1 , h2, h3, h4, h5, h6 {
+    color: #fff;
+  }
+  body.dark .footer a {
+    color: #008ffc;
+  }
+  body.dark a {
+    color: #008ffc;
+  }
+  body.dark .logo, body.dark .navigation a {
+    color: #fff;
+  }
+  body.dark .navigation a:hover {
+background-color: #f94949;
+  }
+  body.dark .mobile-nav .hamburger::after,
+  body.dark .mobile-nav .hamburger::before {
+    background: #fff;
+  }
+  body.dark .mobile-nav .hamburger {
+    background: transparent;
+  }
+  body.dark .hire h3, body.dark .hire p {
+    color: #282c34;
+  }
+  body.dark .hire a {
+    color: #fff;
+  }
+  body.dark section[class*=intro] a {
+    color: #fff;
+  }
 `;
 
 const PageWrapper = styled.div`

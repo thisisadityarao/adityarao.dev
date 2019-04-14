@@ -10,7 +10,7 @@ const Footer = styled.footer`
   width: 100%;
   padding: 20px;
   background: #f9f9fb;
-  border: 1px solid #eeeeee;
+  border-top: 1px solid #eeeeee;
 
   @media (min-width: 768px) {
     padding: 30px 40px;
@@ -59,7 +59,7 @@ const Footer = styled.footer`
 `;
 
 export default () => (
-  <Footer>
+  <Footer className="footer">
     <p>
       Build with <a href="https://www.gatsbyjs.org/">Gatsby</a> and{' '}
       <a href="https://reactjs.org/">React</a>. Hosted on{' '}

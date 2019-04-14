@@ -75,7 +75,7 @@ const EmailButton = styled.a`
 `;
 
 export default () => (
-  <SectionHireMe>
+  <SectionHireMe className="hire">
     <h3>Let's talk about your project.</h3>
     <p>
       I'm currently seeking freelance opportunities. If you are interested in a
