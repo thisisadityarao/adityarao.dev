@@ -78,7 +78,7 @@ function TagsPage({ data }) {
           <Tags>
             <H2>All tags</H2>
             {tagData.map(tag => (
-              <Links to={`/${tag.fieldValue}`}>
+              <Links to={`/${tag.fieldValue}`} id="tag-link">
                 {tag.fieldValue} {`(${tag.totalCount})`}
               </Links>
             ))}

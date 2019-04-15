@@ -1,15 +1,22 @@
 /* eslint-disable react/display-name */
 import React from 'react';
 import styled from 'styled-components';
+import { ArrowRight } from 'styled-icons/fa-solid/ArrowRight';
 import get from 'lodash/get';
 import { Link, graphql } from 'gatsby';
-import { Calendar } from 'styled-icons/octicons/Calendar';
 import Layout from '../components/layout';
 
 const Wrapper = styled.main`
   height: 100%;
   min-height: 702px;
   background: rgb(250, 250, 250);
+`;
+
+const Arrow = styled(ArrowRight)`
+  width: 14px;
+  height: 14px;
+  margin-left: 2px;
+  margin-top: 1px;
 `;
 
 const BlogListing = styled.section`
@@ -27,23 +34,10 @@ const BlogPost = styled.p`
   margin-bottom: 1rem;
 `;
 
-const Date = styled.span`
-  display: inline-block;
-  font-size: 0.8rem;
-  margin-bottom: 1.2rem;
-  border-radius: 0.1rem;
-  line-height: 1.2;
-  padding: 0.1rem 0.2rem;
-
-  @media (min-width: 576px) {
-    font-size: 1rem;
-  }
-`;
-
 const H2 = styled.h2`
   font-size: 1.2rem;
-  margin-top: 0.3rem;
-  margin-bottom: 0.8rem;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
   color: #4a5a6a;
 
   @media (min-width: 576px) {
@@ -53,6 +47,7 @@ const H2 = styled.h2`
   &.page-header {
     font-weight: 900;
     font-size: 1.4rem;
+    color: #234361;
     margin-bottom: 3.5rem;
     padding-left: 16px;
 
@@ -74,26 +69,13 @@ const Links = styled(Link)`
   }
   &:focus,
   &:hover {
-    color: #5e80de;
+    color: #2a3a4a;
   }
   &:active {
-    color: #5e80de;
+    color: #2a3a4a;
   }
   &:visited {
     color: #2a3a4a;
-  }
-`;
-
-const DateIcon = styled(Calendar)`
-  width: 20px;
-  height: 20px;
-  margin-right: 4px;
-  margin-top: -2px;
-  color: #888;
-
-  @media (min-width: 576px) {
-    width: 22px;
-    height: 22px;
   }
 `;
 
@@ -101,6 +83,7 @@ const Post = styled.div`
   margin-bottom: 3rem;
   padding: 24px 16px;
   background: rgb(255, 255, 255);
+  border: 1px solid #eeeeee;
   transition: all 0.2s ease-in-out 0s;
 
   &:hover {
@@ -108,7 +91,7 @@ const Post = styled.div`
     box-shadow: rgba(0, 0, 0, 0.1) 0px 8px 24px;
     transform: translateY(-3px);
 
-    border-radius: 8px;
+    border-radius: 4px;
     transition: all 0.2s ease-in-out 0s;
   }
 `;
@@ -133,18 +116,19 @@ export default ({ data, pageContext }) => {
               <Links to={node.fields.slug}>
                 <Post key={node.fields.slug}>
                   <H2>
-                    <Links
-                      style={{ boxShadow: 'none', textDecoration: 'underline' }}
-                      to={node.fields.slug}
-                    >
+                    <Links style={{ boxShadow: 'none' }} to={node.fields.slug}>
                       {title}
                     </Links>
                   </H2>
-                  <DateIcon />
-                  <Date>{node.frontmatter.date}</Date>
                   <BlogPost
                     dangerouslySetInnerHTML={{ __html: node.excerpt }}
                   />
+                  <Links
+                    to={node.fields.slug}
+                    style={{ color: '#345cd5', fontWeight: '500' }}
+                  >
+                    Read More <Arrow />
+                  </Links>
                 </Post>
               </Links>
             );
@@ -164,9 +148,10 @@ export default ({ data, pageContext }) => {
             marginBottom: '3rem',
             height: '50px',
           }}
+          id="pagination-links"
         >
           {!isFirst && (
-            <Links to={prevPage} rel="prev">
+            <Links to={prevPage} rel="prev" style={{ cursor: 'pointer' }}>
               ← Previous Page
             </Links>
           )}
@@ -180,6 +165,7 @@ export default ({ data, pageContext }) => {
               <Links
                 to={`blog/${i === 0 ? '' : i + 1}`}
                 style={{
+                  cursor: 'pointer',
                   padding: '0.2em 0.6em',
                   textDecoration: 'none',
                   color: i + 1 === currentPage ? '#ffffff' : '',
@@ -192,7 +178,7 @@ export default ({ data, pageContext }) => {
             </li>
           ))}
           {!isLast && (
-            <Links to={nextPage} rel="next">
+            <Links to={nextPage} rel="next" style={{ cursor: 'pointer' }}>
               Next Page →
             </Links>
           )}

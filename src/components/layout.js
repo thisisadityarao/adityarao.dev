@@ -68,20 +68,31 @@ const GlobalStyle = createGlobalStyle`
     max-width: 100%;
   }
 
-  body.dark, body.dark footer, body.dark article, body.dark main[class*=blog-] {
+  body.dark,
+  body.dark footer,
+  body.dark article,
+  body.dark main[class*=blog-] {
     background-color: rgb(30,34,39);
     color: #fff;
   }
 
-body.dark article pre code[class*=language-],
+  body.dark main[class*=blog-] .page-header {
+    color: #fff;
+  }
+
+  body.dark #tag-link {
+    color: #fff;
+  }
+
+  body.dark article pre code[class*=language-],
   body.dark article table tbody>tr:nth-child(odd)>td,
   body.dark article table tbody>tr:nth-child(odd)>th {
       background: #282c34;
   }
-body.dark article :not(pre) > code[class*="language-"] {
+  body.dark article :not(pre) > code[class*="language-"] {
     background: #f5f5f5;
     color: #2a3a4a;
-}
+  }
   body.dark article pre code {
     color: #fff;
   }
@@ -95,18 +106,21 @@ body.dark article :not(pre) > code[class*="language-"] {
     color: #fff;
   }
 
-  body.dark .footer a {
-    color: #008ffc;
-  }
   body.dark a {
     color: #008ffc;
   }
-  body.dark .logo, body.dark .navigation a {
+  body.dark .footer a {
+    color: #008ffc;
+  }
+
+  body.dark .logo,
+  body.dark .navigation a {
     color: #fff;
   }
   body.dark .navigation a:hover {
-background-color: #f94949;
+    background-color: #f94949;
   }
+
   body.dark .mobile-nav .hamburger::after,
   body.dark .mobile-nav .hamburger::before {
     background: #fff;
@@ -114,6 +128,7 @@ background-color: #f94949;
   body.dark .mobile-nav .hamburger {
     background: transparent;
   }
+
   body.dark .hire h3, body.dark .hire p {
     color: #282c34;
   }
@@ -121,6 +136,9 @@ background-color: #f94949;
     color: #fff;
   }
   body.dark section[class*=intro] a {
+    color: #fff;
+  }
+  body.dark #pagination-links a {
     color: #fff;
   }
 `;
