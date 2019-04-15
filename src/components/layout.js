@@ -33,7 +33,7 @@ const GlobalStyle = createGlobalStyle`
     box-sizing: border-box;
     -ms-overflow-style: scrollbar;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-    //scroll-behavior: smooth;
+    scroll-behavior: smooth;
   }
 
   body {
