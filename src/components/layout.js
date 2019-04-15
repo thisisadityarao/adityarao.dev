@@ -86,9 +86,15 @@ body.dark article :not(pre) > code[class*="language-"] {
     color: #fff;
   }
 
-  body.dark h1 , h2, h3, h4, h5, h6 {
+  body.dark h1,
+  body.dark h2,
+  body.dark h3,
+  body.dark h4,
+  body.dark h5,
+  body.dark h6 {
     color: #fff;
   }
+
   body.dark .footer a {
     color: #008ffc;
   }
