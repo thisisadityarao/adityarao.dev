@@ -125,7 +125,7 @@ export default ({ data, pageContext }) => {
                   />
                   <Links
                     to={node.fields.slug}
-                    style={{ color: '#345cd5', fontWeight: '500' }}
+                    style={{ color: '#0069ed', fontWeight: '500' }}
                   >
                     Read More <Arrow />
                   </Links>
@@ -169,7 +169,7 @@ export default ({ data, pageContext }) => {
                   padding: '0.2em 0.6em',
                   textDecoration: 'none',
                   color: i + 1 === currentPage ? '#ffffff' : '',
-                  background: i + 1 === currentPage ? '#f94949' : '',
+                  background: i + 1 === currentPage ? '#0069ed' : '',
                   borderRadius: '4px',
                 }}
               >

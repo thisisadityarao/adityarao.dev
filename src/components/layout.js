@@ -21,7 +21,7 @@ const GlobalStyle = createGlobalStyle`
     margin: 0;
     height: 100%;
     width: 100%;
-    font-family: 'Clear Sans', 'sans-serif';
+    font-family: 'Inter', 'sans-serif';
     font-style: normal;
   }
 
@@ -33,7 +33,6 @@ const GlobalStyle = createGlobalStyle`
     box-sizing: border-box;
     -ms-overflow-style: scrollbar;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-    scroll-behavior: smooth;
   }
 
   body {
@@ -90,8 +89,10 @@ const GlobalStyle = createGlobalStyle`
       background: #282c34;
   }
   body.dark article :not(pre) > code[class*="language-"] {
-    background: #f5f5f5;
-    color: #2a3a4a;
+    padding: 2px;
+    background: #e5e5e5;
+    color: #232323;
+    border-radius: 2px;
   }
   body.dark article pre code {
     color: #fff;

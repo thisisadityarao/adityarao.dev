@@ -43,19 +43,21 @@ const SectionAbout = styled.section`
 `;
 
 const H3 = styled.h3`
+  position: relative;
   font-weight: 900;
   font-size: 2rem;
   letter-spacing: 0.1em;
   margin-bottom: 0.5rem;
   text-align: center;
+  padding: 0 0 15px 0;
 `;
 
 const HR = styled.hr`
   height: 4px;
-  max-width: 90px;
+  max-width: 100px;
   border: none;
   margin-bottom: 6rem;
-  background: rgb(249, 73, 73);
+  background: #ec4c47;
 `;
 
 export default () => (

@@ -7,7 +7,7 @@ const SectionIntro = styled.section`
   width: 100%;
   height: 100%;
   padding-top: 6vh;
-  margin-bottom: 3rem;
+  margin-bottom: 5rem;
 
   @media (min-width: 400px) {
     padding-top: 5rem;
@@ -42,7 +42,7 @@ const SectionIntro = styled.section`
     margin-top: 2rem;
     font-size: 1rem;
     @media (min-width: 768px) {
-      font-size: 1.1rem;
+      font-size: 1.3rem;
     }
   }
 `;
@@ -56,35 +56,37 @@ const offset = keyframes`
 const LinkButton = styled.a`
   cursor: pointer;
   display: inline-block;
-  width: 200px;
-  height: 48px;
+  border: none;
   margin: 0;
-  padding: 11px;
-  font-size: 0.9rem;
+  padding: 1rem 4rem;
+  text-decoration: none;
+  font-size: 1rem;
   font-family: 'Inter', sans-serif;
   letter-spacing: 0.1em;
   text-align: center;
-  text-decoration: none;
-  color: #fff;
-  border: none;
   border-radius: 3px;
-  outline: none;
-  background: linear-gradient(45deg, #288cff, #8200ff);
+  background: linear-gradient(45deg, #0069ed, #8200ff);
   background-size: 400% 400%;
+  color: #fff;
   transition: all 0.3s ease;
+  -webkit-appearance: none;
   box-shadow: 0rem 0.5rem 1rem rgba(0, 0, 0, 0.3);
 
   &:hover {
     animation: ${offset} 10s ease infinite;
     box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
-    cursor: pointer;
+  }
+
+  &:focus {
+    outline: 1px solid #fff;
+    outline-offset: -4px;
+  }
+
+  &:active {
+    transform: scale(0.99);
   }
 
   @media (min-width: 768px) {
-    width: 230px;
-    height: 54px;
-    margin-bottom: 5vh;
-    padding: 12px;
     font-size: 1.1rem;
   }
 `;

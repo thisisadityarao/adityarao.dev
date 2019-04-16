@@ -63,20 +63,20 @@ article img {
 article a:link {
   text-decoration: underline;
   padding-bottom: 1px;
-  color: #345cd5;
+  color: #0069ed;
 }
 
 article a:focus,
 article a:hover {
-  color: #5e80de;
+  color: #0053ba;
 }
 
 article a:active {
-  color: #345cd5;
+  color: #0053ba;
 }
 
 article a:visited {
-  color: #345cd5;
+  color: #0069ed;
 }
 
 @media (min-width: 768px) {
@@ -118,8 +118,8 @@ pre {
 ========================================================================== */
 
 :not(pre) > code[class*="language-"] {
-  padding: 2px 4px;
-  border-radius: 0.3em;
+  padding: 2px;
+  border-radius: 2px;
   white-space: normal;
   background: #282c34;
   font-size: 0.8rem;

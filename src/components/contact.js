@@ -15,22 +15,33 @@ const SectionContact = styled.section`
 `;
 
 const H3 = styled.h3`
-  font-size: 1.4rem;
+  position: relative;
+  letter-spacing: 1px;
+  font-weight: 900;
+  font-size: 1.5rem;
   margin: 0;
   margin-bottom: 0.5rem;
-  font-weight: 900;
+  padding: 0 0 15px 0;
 
-  @media (min-width: 576px) {
-    font-size: 2rem;
+  &:after {
+    display: block;
+    width: 100px;
+    height: 5px;
+    background: #ec4c47;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    content: '';
+    speak: none;
   }
-`;
 
-const HR = styled.hr`
-  height: 4px;
-  max-width: 90px;
-  border: none;
-  margin: 0;
-  background: rgb(249, 73, 73);
+  @media (min-width: 768px) {
+    font-size: 2rem;
+
+    &:after {
+      width: 165px;
+    }
+  }
 `;
 
 const SocialIcons = styled.ul`
@@ -68,7 +79,7 @@ const SocialIcons = styled.ul`
     }
 
     &:hover {
-      color: #345cd5;
+      color: #0069ed;
     }
   }
 
@@ -85,7 +96,7 @@ const SocialIcons = styled.ul`
 
   & a:hover::before {
     width: 100%;
-    background: #345cd5;
+    background: #0069ed;
     transition: width 0.5s ease;
   }
 
@@ -97,7 +108,7 @@ const SocialIcons = styled.ul`
     bottom: 0;
     height: 2px;
     width: 0;
-    background: #345cd5;
+    background: #0069ed;
 
     transition: width 0.5s ease;
   }
@@ -164,7 +175,6 @@ const ExternalLink = styled(ExternalLinkAlt)`
 export default () => (
   <SectionContact id="contact">
     <H3>CONTACT</H3>
-    <HR />
     <SocialIcons>
       <li>
         <a href="mailto:dev.adityarao@gmail.com">

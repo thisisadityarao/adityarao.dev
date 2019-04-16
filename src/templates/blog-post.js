@@ -116,13 +116,13 @@ const PostTags = styled(Link)`
   line-height: 1.1;
   position: relative;
   text-align: center;
-  color: #345cd5;
+  color: #0069ed;
   transition: all 0.2s ease-in-out 0s;
   padding: 5px 10px;
 
   &:hover {
     color: #fff;
-    background-color: #5e80de;
+    background-color: #0053ba;
     border-radius: 3px;
   }
 
@@ -178,7 +178,7 @@ export default ({ data, pageContext }) => {
               <Link
                 to={previous.fields.slug}
                 rel="prev"
-                style={{ color: '#345cd5' }}
+                style={{ color: '#0069ed' }}
               >
                 ← {previous.frontmatter.title}
               </Link>
@@ -190,7 +190,7 @@ export default ({ data, pageContext }) => {
               <Link
                 to={next.fields.slug}
                 rel="next"
-                style={{ color: '#345cd5' }}
+                style={{ color: '#0069ed' }}
               >
                 {next.frontmatter.title} →
               </Link>

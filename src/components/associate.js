@@ -44,15 +44,13 @@ const offset = keyframes`
 const EmailButton = styled.a`
   cursor: pointer;
   display: block;
-  width: 200px;
-  height: 48px;
   border: none;
-  outline: none;
   border-radius: 3px;
   font-size: 1rem;
   letter-spacing: 0.1em;
   margin: 0 auto;
-  padding: 11px;
+  padding: 1rem 4rem;
+  width: 242px;
   color: #fff;
   text-align: center;
   text-decoration: none;
@@ -64,12 +62,19 @@ const EmailButton = styled.a`
   &:hover {
     animation: ${offset} 10s ease infinite;
     box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
-    cursor: pointer;
   }
+
+  &:focus {
+    outline: 1px solid #fff;
+    outline-offset: -4px;
+  }
+
+  &:active {
+    transform: scale(0.99);
+  }
+
   @media (min-width: 768px) {
-    width: 230px;
-    height: 54px;
-    padding: 12px;
+    width: 254px;
     font-size: 1.1rem;
   }
 `;

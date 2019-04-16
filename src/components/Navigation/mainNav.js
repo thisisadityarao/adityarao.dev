@@ -84,7 +84,6 @@ const Nav = styled.div`
 const Logo = styled.a`
   display: flex;
   align-items: center;
-  font-family: 'Clear Sans';
   font-size: 16px;
   text-decoration: none;
   cursor: pointer;
@@ -107,7 +106,7 @@ const Logo = styled.a`
   }
 
   span {
-    font-weight: 700;
+    font-weight: 900;
     letter-spacing: 1.5px;
   }
 

@@ -38,23 +38,23 @@ const Footer = styled.footer`
   & a:link {
     text-decoration: underline;
     padding-bottom: 1px;
-    color: #345cd5;
+    color: #0069ed;
     text-decoration-skip: ink;
     text-decoration: underline;
   }
 
   & a:focus,
   & a:hover {
-    color: #5e80de;
+    color: #0053ba;
     outline-width: 0;
   }
 
   & a:active {
-    color: #5e80de;
+    color: #0053ba;
   }
 
   & a:visited {
-    color: #345cd5;
+    color: #0069ed;
   }
 `;
 

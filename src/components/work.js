@@ -79,13 +79,32 @@ const ImgContainer = styled.div`
 `;
 
 const H3 = styled.h3`
+  position: relative;
+  letter-spacing: 1px;
   font-weight: 900;
-  font-size: 1.4rem;
+  font-size: 1.5rem;
   margin: 0;
   margin-bottom: 0.5rem;
+  padding: 0 0 15px 0;
+
+  &:after {
+    display: block;
+    width: 100px;
+    height: 5px;
+    background: #ec4c47;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    content: '';
+    speak: none;
+  }
 
   @media (min-width: 768px) {
     font-size: 2rem;
+
+    &:after {
+      width: 165px;
+    }
   }
 `;
 
@@ -110,22 +129,10 @@ const Separator = styled.hr`
   background: #eee;
 `;
 
-const HR = styled.hr`
-  height: 4px;
-  max-width: 90px;
-  border: none;
-  margin: 1rem;
-  margin-left: 0;
-  margin-bottom: 5rem;
-  background: rgb(249, 73, 73);
-`;
-
 export default () => (
   <>
     <SectionWork>
       <H3>SERVICES</H3>
-      <HR />
-
       <Section>
         <ImgContainer
           style={{
