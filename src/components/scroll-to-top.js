@@ -6,26 +6,39 @@ import detectPassiveEvents from 'detect-passive-events';
 import TweenFunctions from 'tween-functions';
 import { ChevronUp } from 'styled-icons/fa-solid/ChevronUp';
 
-const ScrollButton = styled(ChevronUp)`
+const ScrollUpButton = styled.div`
   display: ${props => (props.customProp ? 'block' : 'none')};
-  position: fixed;
-  bottom: 25px;
-  right: 25px;
-  z-index: 99;
-  border: none;
-  color: #4a5a6a;
-  outline: none;
   cursor: pointer;
-  width: 35px;
-  border-radius: 20px;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 100;
+  width: 50px;
+  height: 50px;
+  padding: 8px 11px;
+  border-radius: 100%;
+  background: #188ef4;
+  border: 1px solid #188ef4;
+  transition: 0.2s ease-in;
 
   &:hover {
-    color: rgb(249, 73, 73);
+    background: #2c73cb;
+    border: 1px solid #2c73cb;
   }
 
-  @media (min-width: 786px) {
-    bottom: 40px;
-    right: 30px;
+  @media (min-width: 992px) {
+    width: 70px;
+    height: 70px;
+    padding: 17px 19px;
+  }
+`;
+
+const Chevron = styled(ChevronUp)`
+  width: 26px;
+  color: #fff;
+
+  @media (min-width: 992px) {
+    width: 30px;
   }
 `;
 
@@ -150,7 +163,9 @@ export default class ScrollToTop extends Component {
   render() {
     const { isScrolling } = this.state;
     return (
-      <ScrollButton onClick={this.HandleScrolling} customProp={isScrolling} />
+      <ScrollUpButton onClick={this.HandleScrolling} customProp={isScrolling}>
+        <Chevron />
+      </ScrollUpButton>
     );
   }
 }

@@ -79,23 +79,6 @@ article a:visited {
   color: #0069ed;
 }
 
-@media (min-width: 768px) {
-  p {
-    font-size: 18px;
-    line-height: 1.65;
-  }
-  article {
-    padding-left: 30px;
-    padding-right: 30px;
-  }
-  li {
-    font-size: 18px;
-  }
-  h2 {
-    font-size: 28px;
-  }
-}
-
 /* 'pre' Element
 ========================================================================== */
 
@@ -118,7 +101,7 @@ pre {
 ========================================================================== */
 
 :not(pre) > code[class*="language-"] {
-  padding: 2px;
+  padding: 0.2em;
   border-radius: 2px;
   white-space: normal;
   background: #282c34;
@@ -148,4 +131,25 @@ pre[class*="language-"] {
   line-height: 1.5;
   tab-size: 4;
   hyphens: none;
+}
+
+@media (min-width: 768px) {
+  p {
+    font-size: 18px;
+    line-height: 1.65;
+  }
+  article {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  li {
+    font-size: 18px;
+  }
+  h2 {
+    font-size: 28px;
+  }
+
+  :not(pre) > code[class*="language-"] {
+    font-size: 1rem;
+  }
 }

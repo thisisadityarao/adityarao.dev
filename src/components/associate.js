@@ -4,33 +4,40 @@ import styled, { keyframes } from 'styled-components';
 import { between } from 'polished';
 
 const SectionHireMe = styled.section`
-  width: 100%;
-  background-color: #fef8e7;
-  border: 1px solid #eeeeee;
-  border-radius: 4px;
+  border-top: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+  width: 100vw;
+  margin-left: 50%;
+  transform: translateX(-50%);
   margin-top: 4rem;
-  padding-top: 3rem;
-  padding-bottom: 4rem;
+  padding-top: 2rem;
+  padding-bottom: 3rem;
+  background-color: #fafafa;
 
   & h3 {
     font-weight: 700;
-    font-size: ${between('20px', '28px')};
+    font-size: ${between('22px', '30px')};
     text-align: center;
-    margin-bottom: 1.5em;
+    margin-bottom: 2rem;
+
+    @media (min-width: 576px) {
+      margin-bottom: 3rem;
+    }
   }
 
   & p {
-    font-size: ${between('16px', '21px')};
+    font-size: ${between('16px', '20px')};
     line-height: 1.45;
     max-width: 30em;
     text-align: center;
     padding-left: 0.5em;
     padding-right: 0.5em;
     margin: 0 auto;
-    margin-bottom: 4rem;
+    margin-bottom: 3rem;
 
     @media (min-width: 576px) {
       line-height: 1.5;
+      margin-bottom: 3.5rem;
     }
   }
 `;
