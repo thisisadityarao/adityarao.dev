@@ -14,13 +14,15 @@ h1 {
   margin-bottom: 3rem;
   text-align: center;
   line-height: 1.2;
+  font-weight: 900;
+  font-size: 36px;
 }
 h2 {
   margin-top: 3.1rem;
   margin-bottom: 1.55rem;
   font-weight: 900;
   line-height: 1.1;
-  font-size: 24px;
+  font-size: 26px;
 }
 h3 {
   margin-top: 3.1rem;
@@ -31,10 +33,11 @@ h3 {
 p {
   font-size: 16px;
   line-height: 1.6;
+  font-weight: normal;
 }
 
 p + p {
-  margin-bottom: 1.55rem;
+  margin-bottom: 1.6rem;
 }
 
 ul,
@@ -79,9 +82,6 @@ article a:visited {
   color: #0069ed;
 }
 
-/* 'pre' Element
-========================================================================== */
-
 pre {
   display: block;
   padding: 9.5px;
@@ -96,9 +96,6 @@ pre {
   border-radius: 1rem;
   overflow: auto;
 }
-
-/* 'code' Element
-========================================================================== */
 
 :not(pre) > code[class*="language-"] {
   padding: 0.2em;
