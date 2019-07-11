@@ -33,7 +33,7 @@
     "react-error-overlay": "^5.1.4",
     "react-helmet": "^5.2.0",
     "react-scroll-up-button": "^1.6.4",
-    "sanitize.css": "^8.0.0",
+    "sanitize.css": "^11.0.0",
     "styled-components": "^4.2.0",
     "styled-icons": "^7.9.0",
     "tween-functions": "^1.2.0",
