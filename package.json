@@ -12,7 +12,7 @@
     "babel-plugin-styled-components": "^1.10.6",
     "bluebird": "^3.5.5",
     "body-scroll-lock": "^2.6.4",
-    "core-js": "^2.6.5",
+    "core-js": "^3.1.4",
     "detect-passive-events": "^1.0.4",
     "gatsby": "^2.13.20",
     "gatsby-plugin-manifest": "^2.2.3",
