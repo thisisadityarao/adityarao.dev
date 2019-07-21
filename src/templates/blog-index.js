@@ -2,7 +2,6 @@
 import React from 'react';
 import styled from 'styled-components';
 import { ArrowRight } from 'styled-icons/fa-solid/ArrowRight';
-import get from 'lodash/get';
 import { Link, graphql } from 'gatsby';
 import Layout from '../components/layout';
 
@@ -97,12 +96,11 @@ const Post = styled.div`
 `;
 
 export default ({ data, pageContext }) => {
-  const posts = data.allMarkdownRemark.edges;
+  const posts = data.allMdx.edges;
   const { currentPage, numPages } = pageContext;
   const isFirst = currentPage === 1;
   const isLast = currentPage === numPages;
-  const prevPage =
-    currentPage - 1 === 1 ? '/blog' : (currentPage - 1).toString();
+  const prevPage = currentPage - 1 === 1 ? '/blog' : (currentPage - 1).toString();
   const nextPage = `/blog/${(currentPage + 1).toString()}`;
 
   return (
@@ -111,22 +109,16 @@ export default ({ data, pageContext }) => {
         <BlogListing>
           <H2 className="page-header">Latest Blog Posts</H2>
           {posts.map(({ node }) => {
-            const title = get(node, 'frontmatter.title') || node.fields.slug;
             return (
               <Links to={node.fields.slug}>
                 <Post key={node.fields.slug}>
                   <H2>
                     <Links style={{ boxShadow: 'none' }} to={node.fields.slug}>
-                      {title}
+                      {node.frontmatter.title}
                     </Links>
                   </H2>
-                  <BlogPost
-                    dangerouslySetInnerHTML={{ __html: node.excerpt }}
-                  />
-                  <Links
-                    to={node.fields.slug}
-                    style={{ color: '#0069ed', fontWeight: '500' }}
-                  >
+                  <BlogPost>{node.excerpt}</BlogPost>
+                  <Links to={node.fields.slug} style={{ color: '#0069ed', fontWeight: '500' }}>
                     Read More <Arrow />
                   </Links>
                 </Post>
@@ -190,11 +182,7 @@ export default ({ data, pageContext }) => {
 
 export const pageQuery = graphql`
   query PageQuery($skip: Int!, $limit: Int!) {
-    allMarkdownRemark(
-      sort: { fields: [frontmatter___date], order: DESC }
-      limit: $limit
-      skip: $skip
-    ) {
+    allMdx(sort: { fields: [frontmatter___date], order: DESC }, limit: $limit, skip: $skip) {
       edges {
         node {
           excerpt

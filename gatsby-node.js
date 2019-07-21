@@ -1,20 +1,20 @@
-const _ = require('lodash');
-const Promise = require('bluebird');
-const path = require('path');
-const { createFilePath } = require('gatsby-source-filesystem');
+const _ = require("lodash");
+const Promise = require("bluebird");
+const path = require("path");
+const { createFilePath } = require("gatsby-source-filesystem");
 
 exports.createPages = ({ graphql, actions }) => {
   const { createPage } = actions;
 
-  const blogPost = path.resolve('./src/templates/blog-post.js');
-  const blogPage = path.resolve('./src/templates/blog-list.js');
+  const blogPost = path.resolve("./src/templates/blog-post.js");
+  const blogPage = path.resolve("./src/templates/blog-index.js");
 
   return new Promise((resolve, reject) => {
     resolve(
       graphql(
         `
           {
-            allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }, limit: 1000) {
+            allMdx(sort: { fields: [frontmatter___date], order: DESC }) {
               edges {
                 node {
                   fields {
@@ -28,22 +28,22 @@ exports.createPages = ({ graphql, actions }) => {
               }
             }
           }
-        `,
-      ).then((result) => {
+        `
+      ).then(result => {
         if (result.errors) {
-          console.log(result.errors);
+          console.error(result.errors);
           return reject(result.errors);
         }
 
         // Create blog posts pages.
-        const posts = result.data.allMarkdownRemark.edges;
-        const tagsTemplate = path.resolve('./src/templates/tag-template.js');
+        const posts = result.data.allMdx.edges;
+        const tagsTemplate = path.resolve("./src/templates/tag-template.js");
 
         // All tags
         let allTags = [];
         // Iterate through each post, putting all found tags into `allTags array`
-        _.each(posts, (edge) => {
-          if (_.get(edge, 'node.frontmatter.tags')) {
+        _.each(posts, edge => {
+          if (_.get(edge, "node.frontmatter.tags")) {
             allTags = allTags.concat(edge.node.frontmatter.tags);
           }
         });
@@ -55,13 +55,14 @@ exports.createPages = ({ graphql, actions }) => {
             path: `/${_.kebabCase(tag)}/`,
             component: tagsTemplate,
             context: {
-              tag,
-            },
+              tag
+            }
           });
         });
 
         _.each(posts, (post, index) => {
-          const previous = index === posts.length - 1 ? null : posts[index + 1].node;
+          const previous =
+            index === posts.length - 1 ? null : posts[index + 1].node;
           const next = index === 0 ? null : posts[index - 1].node;
 
           createPage({
@@ -70,8 +71,8 @@ exports.createPages = ({ graphql, actions }) => {
             context: {
               slug: post.node.fields.slug,
               previous,
-              next,
-            },
+              next
+            }
           });
         });
 
@@ -79,19 +80,19 @@ exports.createPages = ({ graphql, actions }) => {
         const postsPerPage = 5;
         const numPages = Math.ceil(posts.length / postsPerPage);
 
-        _.times(numPages, (i) => {
+        _.times(numPages, i => {
           createPage({
-            path: i === 0 ? '/blog/' : `/blog/${i + 1}`,
+            path: i === 0 ? "/blog/" : `/blog/${i + 1}`,
             component: blogPage,
             context: {
               limit: postsPerPage,
               skip: i * postsPerPage,
               numPages,
-              currentPage: i + 1,
-            },
+              currentPage: i + 1
+            }
           });
         });
-      }),
+      })
     );
   });
 };
@@ -99,12 +100,12 @@ exports.createPages = ({ graphql, actions }) => {
 exports.onCreateNode = ({ node, actions, getNode }) => {
   const { createNodeField } = actions;
 
-  if (node.internal.type === 'MarkdownRemark') {
-    const slug = createFilePath({ node, getNode, basePath: 'pages' });
+  if (node.internal.type === "Mdx") {
+    const slug = createFilePath({ node, getNode });
     createNodeField({
       node,
-      name: 'slug',
-      value: slug,
+      name: "slug",
+      value: `/blog${slug}`
     });
   }
 };

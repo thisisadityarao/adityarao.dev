@@ -93,19 +93,16 @@ const LinkButton = styled.a`
 
 export default () => (
   <SectionIntro>
-    <span className="wave">👋</span>
+    <span className="wave" role="img" aria-label="hand wave emoji">
+      👋
+    </span>
     <p>I’m Aditya Rao, a freelance front-end developer.</p>
     <p>
-      I build digital products that are intuitive, accessible, beautiful, and
-      fun. I am here to help you and your business turn great ideas into amazing
-      products.
+      I build digital products that are intuitive, accessible, beautiful, and fun. I am here to help you and your
+      business turn great ideas into amazing products.
     </p>
     <p className="subtitle">Want to chat about your project?</p>
-    <LinkButton
-      href="mailto:dev.adityarao@gmail.com"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
+    <LinkButton href="mailto:dev.adityarao@gmail.com" target="_blank" rel="noopener noreferrer">
       Get in Touch
     </LinkButton>
   </SectionIntro>

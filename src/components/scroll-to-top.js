@@ -112,9 +112,7 @@ export default class ScrollToTop extends Component {
     this.Animation.CurrentAnimationTime = 0;
     this.Animation.StartTime = null;
     // Start the scrolling animation.
-    this.Animation.AnimationFrame = window.requestAnimationFrame(
-      this.ScrollingFrame
-    );
+    this.Animation.AnimationFrame = window.requestAnimationFrame(this.ScrollingFrame);
   }
 
   ScrollingFrame() {
@@ -149,9 +147,7 @@ export default class ScrollToTop extends Component {
       }
       window.scrollTo(0, YPos);
       // Request another frame to be painted
-      this.Animation.AnimationFrame = window.requestAnimationFrame(
-        this.ScrollingFrame
-      );
+      this.Animation.AnimationFrame = window.requestAnimationFrame(this.ScrollingFrame);
     }
   }
 

@@ -69,18 +69,15 @@ export default () => (
         <HR />
         <p>I'm Aditya Rao.</p>
         <p>
-          I help people &amp; organization get the positive attention they
-          deserve, by creating elegant, functional and modern websites. My
-          emphasis is on producing thoughtful, conceptually driven work that
-          comes from a close understanding of the client and their audience.
+          I help people &amp; organization get the positive attention they deserve, by creating elegant, functional and
+          modern websites. My emphasis is on producing thoughtful, conceptually driven work that comes from a close
+          understanding of the client and their audience.
         </p>
         <p>
-          I’m passionate about technology, design and making peoples lives
-          easier by solving complex problems to create user-friendly, intuitive
-          digital products. I’m constantly trying to expand and evolve my set of
-          technical skills and apply them to equally varied methods of problem
-          solving and understanding. I am inspired by new trends and details are
-          essential to me.
+          I’m passionate about technology, design and making peoples lives easier by solving complex problems to create
+          user-friendly, intuitive digital products. I’m constantly trying to expand and evolve my set of technical
+          skills and apply them to equally varied methods of problem solving and understanding. I am inspired by new
+          trends and details are essential to me.
         </p>
       </SectionAbout>
     </About>

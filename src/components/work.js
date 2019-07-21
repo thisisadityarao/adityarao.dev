@@ -96,7 +96,6 @@ const H3 = styled.h3`
     bottom: 0;
     left: 0;
     content: '';
-    speak: none;
   }
 
   @media (min-width: 768px) {
@@ -146,11 +145,9 @@ export default () => (
             <span>FRONT-END DEVELOPMENT</span>
           </H4>
           <p>
-            As a Front End Developer, I am responsible for converting the design
-            to live, high performance, interactive website. I create responsive
-            websites that work across a range of devices and browsers. I follow
-            industry coding standards and use the latest tools & techniques to
-            create accessible, performant websites.
+            As a Front End Developer, I am responsible for converting the design to live, high performance, interactive
+            website. I create responsive websites that work across a range of devices and browsers. I follow industry
+            coding standards and use the latest tools & techniques to create accessible, performant websites.
           </p>
         </Work>
       </Section>
@@ -166,14 +163,11 @@ export default () => (
         <Work>
           <H4>SEARCH ENGINE OPTIMIZATION</H4>
           <p>
-            For increased traffic, enhanced sales and high page rankings you
-            need effective SEO. Every business is unique & so the SEO strategy
-            is also unique. Through comprehensive SEO audits & deploying on-page
-            optimization techniques to the site, I remove the flaws & optimise
-            the site for search engines and users. With an able PPC campaign,
-            you’ll be able to reach out to your target audience and pay only for
-            the clicks you get, thereby reducing the total advertising
-            expenditure.
+            For increased traffic, enhanced sales and high page rankings you need effective SEO. Every business is
+            unique & so the SEO strategy is also unique. Through comprehensive SEO audits & deploying on-page
+            optimization techniques to the site, I remove the flaws & optimise the site for search engines and users.
+            With an able PPC campaign, you’ll be able to reach out to your target audience and pay only for the clicks
+            you get, thereby reducing the total advertising expenditure.
           </p>
         </Work>
       </Section>
@@ -190,11 +184,9 @@ export default () => (
           <H4>EMAIL MARKETING</H4>
           <p>
             {' '}
-            Email marketing helps you connect with your audience to promote your
-            brand and increase sales. You can sell your product, tell a story,
-            or keep prospective clients/customers updated with the latest news.
-            I help you build and maintain an engaged subscriber list, made up of
-            people who want to receive your messages.
+            Email marketing helps you connect with your audience to promote your brand and increase sales. You can sell
+            your product, tell a story, or keep prospective clients/customers updated with the latest news. I help you
+            build and maintain an engaged subscriber list, made up of people who want to receive your messages.
           </p>
         </Work>
       </Section>
@@ -211,10 +203,9 @@ export default () => (
           <H4>SOCIAL MEDIA MARKETING</H4>
           <p>
             {' '}
-            Social media has emerged as a powerful marketing tool in recent
-            years. Social media gives you an insight into what your customers
-            are looking for. I help you connect with your target audience,
-            manage your reputation, and boost your brand image.{' '}
+            Social media has emerged as a powerful marketing tool in recent years. Social media gives you an insight
+            into what your customers are looking for. I help you connect with your target audience, manage your
+            reputation, and boost your brand image.{' '}
           </p>
         </Work>
       </Section>

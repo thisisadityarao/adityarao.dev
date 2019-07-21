@@ -88,16 +88,12 @@ const EmailButton = styled.a`
 
 export default () => (
   <SectionHireMe className="hire">
-    <h3>Let's talk about your project.</h3>
+    <h3>Let&apos;s talk about your project.</h3>
     <p>
-      I'm currently seeking freelance opportunities. If you are interested in a
-      new project or collaboration, send me an email.
+      I&apos;m currently seeking freelance opportunities. If you are interested in a new project or collaboration, send
+      me an email.
     </p>
-    <EmailButton
-      href="mailto:dev.adityarao@gmail.com"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
+    <EmailButton href="mailto:dev.adityarao@gmail.com" target="_blank" rel="noopener noreferrer">
       Send Email
     </EmailButton>
   </SectionHireMe>

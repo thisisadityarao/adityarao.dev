@@ -37,8 +37,7 @@ const MenuItem = styled.div`
     position: absolute;
     background: ${props => (props.menuToggle ? 'white' : '#2a3a4a')};
     left: 0;
-    transform: ${props =>
-      props.menuToggle ? `rotate(45deg); top: 0` : `rotate(0)`};
+    transform: ${props => (props.menuToggle ? `rotate(45deg); top: 0` : `rotate(0)`)};
     transition: all 250ms cubic-bezier(0.86, 0, 0.07, 1);
   }
 
@@ -50,8 +49,7 @@ const MenuItem = styled.div`
     background: ${props => (props.menuToggle ? 'white' : '#2a3a4a')};
     position: absolute;
     left: 0;
-    transform: ${props =>
-      props.menuToggle ? `rotate(-45deg); top: 0` : `rotate(0)`};
+    transform: ${props => (props.menuToggle ? `rotate(-45deg); top: 0` : `rotate(0)`)};
     transition: all 250ms cubic-bezier(0.86, 0, 0.07, 1);
   }
 `;
@@ -62,15 +60,10 @@ const Toggle = () => {
   const bodyScrollLock = useLockBodyScroll;
   return (
     <div className="mobile-nav">
-      <Menu
-        onClick={toggle}
-        aria-label={`${isToggledOn ? 'close menu' : 'open menu'}`}
-      >
+      <Menu onClick={toggle} aria-label={`${isToggledOn ? 'close menu' : 'open menu'}`}>
         <MenuItem className="hamburger" menuToggle={isToggledOn} />
       </Menu>
-      {isToggledOn && (
-        <SideBar bodyscrolllock={bodyScrollLock} toggle={toggle} />
-      )}
+      {isToggledOn && <SideBar bodyscrolllock={bodyScrollLock} toggle={toggle} />}
     </div>
   );
 };

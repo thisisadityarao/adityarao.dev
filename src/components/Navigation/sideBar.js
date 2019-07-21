@@ -42,36 +42,16 @@ export default function SideBar(props) {
   return (
     <Wrapper>
       <Container>
-        <Link
-          aria-label="View home page"
-          to="/"
-          activeClassName="active"
-          onClick={toggle}
-        >
+        <Link aria-label="View home page" to="/" activeClassName="active" onClick={toggle}>
           Home
         </Link>
-        <Link
-          aria-label="View about page"
-          to="/about/"
-          activeClassName="active"
-          onClick={toggle}
-        >
+        <Link aria-label="View about page" to="/about/" activeClassName="active" onClick={toggle}>
           About
         </Link>
-        <Link
-          aria-label="View blog page"
-          to="/blog/"
-          activeClassName="active"
-          onClick={toggle}
-        >
+        <Link aria-label="View blog page" to="/blog/" activeClassName="active" onClick={toggle}>
           Blog
         </Link>
-        <Link
-          aria-label="View contact page"
-          to="#contact"
-          activeClassName="active"
-          onClick={toggle}
-        >
+        <Link aria-label="View contact page" to="#contact" activeClassName="active" onClick={toggle}>
           Contact
         </Link>
       </Container>

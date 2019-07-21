@@ -2,6 +2,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { graphql, Link } from 'gatsby';
+import MDXRenderer from 'gatsby-plugin-mdx/mdx-renderer';
 import { Calendar } from 'styled-icons/octicons/Calendar';
 import Layout from '../components/layout';
 import '../../static/styles/post.css';
@@ -144,22 +145,21 @@ const DateIcon = styled(Calendar)`
   }
 `;
 
-export default ({ data, pageContext }) => {
-  const post = data.markdownRemark;
-  const { tags } = data.markdownRemark.frontmatter;
+export default ({ data: { mdx }, pageContext }) => {
+  const { tags } = mdx.frontmatter;
   const { previous, next } = pageContext;
 
   return (
     <Layout>
       <Wrapper>
         <article>
-          <h1>{post.frontmatter.title}</h1>
+          <h1>{mdx.frontmatter.title}</h1>
           <div className="date">
             {' '}
             <DateIcon />
-            <Date>{post.frontmatter.date}</Date>
+            <Date>{mdx.frontmatter.date}</Date>
           </div>
-          <div dangerouslySetInnerHTML={{ __html: post.html }} />
+          <MDXRenderer>{mdx.body}</MDXRenderer>
         </article>
         <TagSection>
           <PostTagLink to="/tags/">
@@ -175,11 +175,7 @@ export default ({ data, pageContext }) => {
         <List>
           {previous && (
             <ListItem className="first">
-              <Link
-                to={previous.fields.slug}
-                rel="prev"
-                style={{ color: '#0069ed' }}
-              >
+              <Link to={previous.fields.slug} rel="prev" style={{ color: '#0069ed' }}>
                 ← {previous.frontmatter.title}
               </Link>
             </ListItem>
@@ -187,11 +183,7 @@ export default ({ data, pageContext }) => {
 
           {next && (
             <ListItem className="second">
-              <Link
-                to={next.fields.slug}
-                rel="next"
-                style={{ color: '#0069ed' }}
-              >
+              <Link to={next.fields.slug} rel="next" style={{ color: '#0069ed' }}>
                 {next.frontmatter.title} →
               </Link>
             </ListItem>
@@ -204,15 +196,15 @@ export default ({ data, pageContext }) => {
 
 export const pageQuery = graphql`
   query BlogPostBySlug($slug: String!) {
-    markdownRemark(fields: { slug: { eq: $slug } }) {
+    mdx(fields: { slug: { eq: $slug } }) {
       id
       excerpt
-      html
       frontmatter {
         title
         tags
         date(formatString: "MMMM DD, YYYY")
       }
+      body
     }
   }
 `;

@@ -62,7 +62,7 @@ const Links = styled(Link)`
 `;
 
 function Tags({ data, pageContext }) {
-  const posts = data.allMarkdownRemark.edges;
+  const posts = data.allMdx.edges;
   const { tag } = pageContext;
   return (
     <Layout>
@@ -87,7 +87,7 @@ export default Tags;
 
 export const query = graphql`
   query TagsQuery($tag: String!) {
-    allMarkdownRemark(
+    allMdx(
       limit: 2000
       sort: { fields: [frontmatter___date], order: DESC }
       filter: { frontmatter: { tags: { eq: $tag } } }

@@ -123,9 +123,7 @@ const DarkModeButton = styled(Moon)`
   margin-right: 2rem;
 `;
 
-const DarkMode = ({ darkMode, setDarkMode }) => (
-  <DarkModeButton onClick={() => setDarkMode(!darkMode)} />
-);
+const DarkMode = ({ darkMode, setDarkMode }) => <DarkModeButton onClick={() => setDarkMode(!darkMode)} />;
 
 function Navigation() {
   const [darkMode, setDarkMode] = useDarkMode();

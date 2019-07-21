@@ -69,7 +69,7 @@ const Links = styled(Link)`
 `;
 
 function TagsPage({ data }) {
-  const tagData = data.allMarkdownRemark.group;
+  const tagData = data.allMdx.group;
 
   return (
     <Layout>
@@ -93,7 +93,7 @@ export default TagsPage;
 
 export const pageQuery = graphql`
   query {
-    allMarkdownRemark(limit: 2000) {
+    allMdx(limit: 2000) {
       group(field: frontmatter___tags) {
         fieldValue
         totalCount
