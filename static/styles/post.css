@@ -82,54 +82,6 @@ article a:visited {
   color: #0069ed;
 }
 
-pre {
-  display: block;
-  padding: 9.5px;
-  margin: 1em 0 1.5em;
-  font-size: 1em;
-  line-height: 1.5;
-  color: #3b3b3b;
-  word-break: break-all;
-  word-wrap: break-word;
-  background-color: #fff;
-  border: 1px solid #ccc;
-  border-radius: 1rem;
-  overflow: auto;
-}
-
-:not(pre) > code[class*="language-"] {
-  padding: 0.2em;
-  border-radius: 2px;
-  white-space: normal;
-  background: #282c34;
-  font-size: 0.8rem;
-}
-
-pre[class*="language-"] {
-  padding: 1em;
-  margin: 1.2em 0;
-  margin-bottom: 1.8em;
-  padding: 1em;
-  margin: 0.5em 0;
-  overflow: auto;
-  background: #282c34;
-}
-
-code[class*="language-"],
-pre[class*="language-"] {
-  color: #c8cacc;
-  border-radius: 0.5rem;
-  font-family: Consolas, Monaco, Andale Mono, Ubuntu Mono, monospace;
-  text-align: left;
-  white-space: pre;
-  word-spacing: normal;
-  word-break: normal;
-  word-wrap: normal;
-  line-height: 1.5;
-  tab-size: 4;
-  hyphens: none;
-}
-
 @media (min-width: 768px) {
   p {
     font-size: 18px;
@@ -144,9 +96,5 @@ pre[class*="language-"] {
   }
   h2 {
     font-size: 28px;
-  }
-
-  :not(pre) > code[class*="language-"] {
-    font-size: 1rem;
   }
 }

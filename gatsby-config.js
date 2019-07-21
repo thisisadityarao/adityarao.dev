@@ -1,40 +1,40 @@
 module.exports = {
   siteMetadata: {
-    title: "Aditya Rao",
-    siteUrl: "https://adityarao.in"
+    title: 'Aditya Rao',
+    siteUrl: 'https://adityarao.in',
   },
   plugins: [
-    "gatsby-plugin-react-helmet",
+    'gatsby-plugin-react-helmet',
     {
-      resolve: "gatsby-plugin-manifest",
+      resolve: 'gatsby-plugin-manifest',
       options: {
-        name: "Aditya Rao",
-        short_name: "Aditya Rao",
-        start_url: "/",
-        background_color: "#5e80de",
-        theme_color: "#5e80de",
+        name: 'Aditya Rao',
+        short_name: 'Aditya Rao',
+        start_url: '/',
+        background_color: '#5e80de',
+        theme_color: '#5e80de',
         // Enables "Add to Homescreen" prompt and disables browser UI (including back button)
         // see https://developers.google.com/web/fundamentals/web-app-manifest/#display
-        display: "standalone",
-        icon: "src/images/icon.png" // This path is relative to the root of the site.
-      }
+        display: 'standalone',
+        icon: 'src/images/icon.png', // This path is relative to the root of the site.
+      },
     },
-    "gatsby-plugin-offline",
+    'gatsby-plugin-offline',
     {
-      resolve: "gatsby-source-filesystem",
+      resolve: 'gatsby-source-filesystem',
       options: {
-        name: "posts",
-        path: `${__dirname}/content/posts/`
-      }
+        name: 'posts',
+        path: `${__dirname}/content/posts/`,
+      },
     },
     {
-      resolve: "gatsby-source-cloudinary",
+      resolve: 'gatsby-source-cloudinary',
       options: {
-        cloudName: "adityar",
-        apiKey: "634325125787942",
-        apiSecret: "VMkZeFpBf562yxN_IhNoCxrvBR4",
-        resourceType: "image"
-      }
+        cloudName: 'adityar',
+        apiKey: '634325125787942',
+        apiSecret: 'VMkZeFpBf562yxN_IhNoCxrvBR4',
+        resourceType: 'image',
+      },
     },
     {
       resolve: `gatsby-plugin-mdx`,
@@ -42,17 +42,28 @@ module.exports = {
         extensions: [`.mdx`, `.md`, `.markdown`],
         gatsbyRemarkPlugins: [
           {
-            resolve: "gatsby-remark-copy-linked-files",
+            resolve: `gatsby-remark-prismjs`,
             options: {
-              destinationDir: "./static/posts"
-            }
-          }
+              classPrefix: 'language-',
+              inlineCodeMarker: null,
+              aliases: {},
+              showLineNumbers: false,
+              noInlineHighlight: false,
+            },
+          },
+          {
+            resolve: 'gatsby-remark-copy-linked-files',
+            options: {
+              destinationDir: './static/mdxFiles',
+              ignoreFileExtensions: [],
+            },
+          },
         ],
         defaultLayouts: {
-          posts: require.resolve("./src/templates/blog-post.js"),
-          default: require.resolve("./src/templates/blog-post.js")
-        }
-      }
+          posts: require.resolve('./src/templates/blog-post.js'),
+          default: require.resolve('./src/templates/blog-post.js'),
+        },
+      },
     },
     /*
     {
@@ -64,24 +75,24 @@ module.exports = {
     */
     // ESLint config
     {
-      resolve: "gatsby-plugin-eslint",
+      resolve: 'gatsby-plugin-eslint',
       options: {
         test: /\.js$|\.jsx$/,
         exclude: /(node_modules|.cache|public)/,
-        stages: ["develop"],
+        stages: ['develop'],
         options: {
           emitWarning: true,
-          failOnError: false
-        }
-      }
+          failOnError: false,
+        },
+      },
     },
     {
-      resolve: "gatsby-plugin-styled-components",
+      resolve: 'gatsby-plugin-styled-components',
       options: {
-        pure: true
-      }
+        pure: true,
+      },
     },
     `gatsby-plugin-netlify`,
-    "gatsby-plugin-sitemap"
-  ]
+    'gatsby-plugin-sitemap',
+  ],
 };

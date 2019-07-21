@@ -6,6 +6,7 @@ import MDXRenderer from 'gatsby-plugin-mdx/mdx-renderer';
 import { Calendar } from 'styled-icons/octicons/Calendar';
 import Layout from '../components/layout';
 import '../../static/styles/post.css';
+import '../../static/styles/prism-override.css';
 
 const Wrapper = styled.main`
   min-height: 100%;
