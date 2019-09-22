@@ -64,6 +64,7 @@ const ImgContainer = styled.div`
   height: 200px;
   background-position: center center;
   background-size: 200px 200px;
+  background-repeat: no-repeat;
 
   @media (min-width: 768px) {
     height: 200px;
