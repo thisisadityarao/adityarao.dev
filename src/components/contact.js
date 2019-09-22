@@ -32,7 +32,6 @@ const H3 = styled.h3`
     bottom: 0;
     left: 0;
     content: '';
-    speak: none;
   }
 
   @media (min-width: 768px) {
