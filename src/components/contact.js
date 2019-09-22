@@ -184,16 +184,16 @@ export default () => (
         </a>
       </li>
       <li>
-        <a href="https://twitter.com/ad1tyarao">
+        <a href="https://twitter.com/thisisadityarao">
           <TwitterAlt />
-          <span>@ad1tyarao</span>
+          <span>@thisisadityarao</span>
           <ExternalLink />
         </a>
       </li>
       <li>
-        <a href="https://github.com/ad1tyara0">
+        <a href="https://github.com/thisisadityarao">
           <GithubAlt />
-          <span>@ad1tyarao</span>
+          <span>@thisisadityarao</span>
           <ExternalLink />
         </a>
       </li>
