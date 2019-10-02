@@ -58,15 +58,15 @@ module.exports = function(a, b) {
 `bundle.js`
 
 ```javascript
-    let add      = require(./addition);
-    let divide   = require(./division);
-    let subtract = require(./subtraction);
-    let multiply = require(./multiplication);
+let add      = require(./addition);
+let divide   = require(./division);
+let subtract = require(./subtraction);
+let multiply = require(./multiplication);
 
-    let sum        = add(3,4);         // sum = 7
-    let quotient   = divide(10,5);     // quotient = 2
-    let difference = subtract(6,3);    // difference = 3
-    let product    = multiply(6,7);    // product = 42
+let sum        = add(3,4);         // sum = 7
+let quotient   = divide(10,5);     // quotient = 2
+let difference = subtract(6,3);    // difference = 3
+let product    = multiply(6,7);    // product = 42
 ```
 
 We have four modules here, `addition.js`, `subtraction.js`, `multiplication.js`, `division.js` that each **export** a function that performs an arithmetic operation on two numbers.
@@ -82,19 +82,19 @@ Webpack can be used with other tools like npm scripts, Grunt, Gulp to solve prob
 Create a directory and name it whatever you like. I have named it `learn-webpack`. Run `npm init` with `-y` flag or simply press enter for all prompts. Create two directories `src` and `dist`. Within `src` create a javascript file and a CSS file : `main.js` & `style.css`. In `dist` folder create `index.html` file.
 
 ```shell
-  $ mkdir learn-webpack && cd learn-webpack
+$ mkdir learn-webpack && cd learn-webpack
 
-  $ npm init -y
+$ npm init -y
 
-  $ mkdir src dist
+$ mkdir src dist
 
-  $ cd src
+$ cd src
 
-  $ touch main.js style.css
+$ touch main.js style.css
 
-  $ cd ../dist
+$ cd ../dist
 
-  $ touch index.html
+$ touch index.html
 ```
 
 Note: `$` sign is command-prompt, and is only used for representation.

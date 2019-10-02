@@ -76,12 +76,22 @@ Let's create a demo project to install and use ESLint.
 1.
 Let's create a directory `eslint-demo` and initialize `npm` within project folder.
 
-   <script type="text/javascript" src="https://asciinema.org/a/qcbKUddGYu0m1oKj15WrfHMey.js" id="asciicast-qcbKUddGYu0m1oKj15WrfHMey" async></script>
+<script
+  type="text/javascript"
+  src="https://asciinema.org/a/qcbKUddGYu0m1oKj15WrfHMey.js"
+  id="asciicast-qcbKUddGYu0m1oKj15WrfHMey"
+  async
+></script>
 
 2.
 Install ESLint locally and initialize it.
 
-   <script type="text/javascript" src="https://asciinema.org/a/MRBt0KYM2Kt18yufJdIg0KK2v.js" id="asciicast-MRBt0KYM2Kt18yufJdIg0KK2v" async></script>
+<script
+  type="text/javascript"
+  src="https://asciinema.org/a/MRBt0KYM2Kt18yufJdIg0KK2v.js"
+  id="asciicast-MRBt0KYM2Kt18yufJdIg0KK2v"
+  async
+></script>
 
 Open the `.eslintrc` file and you'll see the following JSON object. ( if you choose to save it as `.json` file as I did.)
 
@@ -162,14 +172,24 @@ In our .eslintrc file, we have four rules defined in `rules` object. There are o
 
 It's time to test our config. Create a javascript file, **yourfile.js** with `console.log("Hello World")` statement and use ESLint on it to check for any errors.
 
-<script type="text/javascript" src="https://asciinema.org/a/0Qpl1htHLHBsR8HX7wB2QVGuI.js" id="asciicast-0Qpl1htHLHBsR8HX7wB2QVGuI" async></script>
+<script
+  type="text/javascript"
+  src="https://asciinema.org/a/0Qpl1htHLHBsR8HX7wB2QVGuI.js"
+  id="asciicast-0Qpl1htHLHBsR8HX7wB2QVGuI"
+  async
+></script>
 
 As you can see ESLint throws two errors `no-console` error & `semi` error. The `no-console` error is thrown as ESLint doesn't allow console statements on browser environment. This rule is defined in `eslint:recommended` property. The `semi` error is defined in the rules object. It checks for semicolon at the end of the statement and throws an error if it's missing.
 See how easy it is to get started with ESLint.
 
 If you head over to rules page on ESlint website you can see checkmarks before some rules. If any of these rules throws an error or warning ESlint can fix these rules using `./node_modules/.bin/eslint --fix yourfile.js` command.
 
-<script type="text/javascript" src="https://asciinema.org/a/lLTGsVY9If72rOqdKPmHIH4Kw.js" id="asciicast-lLTGsVY9If72rOqdKPmHIH4Kw" async></script>
+<script
+  type="text/javascript"
+  src="https://asciinema.org/a/lLTGsVY9If72rOqdKPmHIH4Kw.js"
+  id="asciicast-lLTGsVY9If72rOqdKPmHIH4Kw"
+  async
+></script>
 
 We see that ESLint fixes the no semicolon error with `--fix` flag. ESLint won't remove the console.log statement so `no-console` error is left for the developer to take care of.
 

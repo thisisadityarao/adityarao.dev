@@ -1,7 +1,7 @@
 ---
 title: "Getting started with Babel."
 date: "2017-10-08"
-tags: ['javascript', 'tooling']
+tags: ["javascript", "tooling"]
 ---
 
 ![Babel Logo](https://res.cloudinary.com/adityar/image/upload/v1509028515/adityarao/babel-logo_yovc4x.png)
@@ -16,8 +16,8 @@ If you want to use latest features in your project today you will need to conver
 ## Prerequisites
 
 - **Javascript** (ECMAScript 2015/2016/2017)
-- Your system should have [**Node**][6] installed.
-- You can use [**npm**][7] or [**yarn**][8] as package manager.
+- Your system should have [Node][6] installed.
+- You can use [npm][7] or [yarn][8] as package manager.
 
 ## Installation - Babel (Global & Local)
 
@@ -73,13 +73,13 @@ Fill `index.html` with following code :
 ```html
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <title>Babel Demo</title>
-</head>
-<body>
-<h1>Testing Babel</h1>
-<script src="source.js"></script>
-</body>
+  <head>
+    <title>Babel Demo</title>
+  </head>
+  <body>
+    <h1>Testing Babel</h1>
+    <script src="source.js"></script>
+  </body>
 </html>
 ```
 
@@ -95,7 +95,7 @@ setInterval(() => {
 }, 3000);
 ```
 
-We are using **arrow function** and **let** keyword here which are introduced in ECMAScript 2015. `Arrow function` uses a fat arrow symbol, doesn't use function keyword, and for single statements braces are optional. The `let` keyword introduces block scoping to Javascript. Let's transpile this ES6 code to ES5 using Babel.
+We are using `arrow function` and `let` keyword here which are introduced in ECMAScript 2015. `Arrow function` uses a fat arrow symbol, doesn't use function keyword, and for single statements braces are optional. The `let` keyword introduces block scoping to Javascript. Let's transpile this ES6 code to ES5 using Babel.
 Enter the following command in your command-line :
 
 ```shell
@@ -112,8 +112,7 @@ setInterval(() => {
 }, 3000);
 ```
 
-Note: `node_modules/babel-cli/bin/babel.js` points to `babel-cli` installed locally.
-{: class="note"}
+**NOTE**: `node_modules/babel-cli/bin/babel.js` points to `babel-cli` installed locally.
 
 The babel output is the same ES6 code we wrote. So, why didn't babel apply any transformations to `source.js` ?
 
@@ -151,7 +150,7 @@ setInterval(function () {
 }, 3000);
 ```
 
-We can see babel transpiles our _**arrow function**_ to _**anonymous function expression**_ and replaces the _**let**_ keyword with _**var**_. This code is compatible with all the browsers that have implemented ES5, which is about [97.88%][9].
+We can see babel transpiles our **arrow function** to **anonymous function expression** and replaces the **let** keyword with **var**. This code is compatible with all the browsers that have implemented ES5, which is about [97.88%][9].
 
 ## .babelrc - Babel Configuration file
 
@@ -315,7 +314,7 @@ According to Remy Sharp, [who coined the term polyfill][10] -
 
 > A polyfill, or polyfiller, is a piece of code (or plugin) that provides the technology that you, the developer, expect the browser to provide _natively_.
 
-Babel will transpile the syntax changes introduced in ES2015+, to browser compatible versions using plugins/presets. There may be new features added to ECMAScript such as built-in objects like Promises and WeakMap, as well as new static methods like Array.from or Object.assign. These features are not implemented in older browsers and in order to allow you to use the full set of ES2015+ features beyond syntax changes Babel provides [`babel-polyfill`][11].
+Babel will transpile the syntax changes introduced in ES2015+, to browser compatible versions using plugins/presets. There may be new features added to ECMAScript such as built-in objects like Promises and WeakMap, as well as new static methods like Array.from or Object.assign. These features are not implemented in older browsers and in order to allow you to use the full set of ES2015+ features beyond syntax changes Babel provides [babel-polyfill][11].
 
 ### How to use babel-polyfill ?
 
@@ -336,14 +335,14 @@ To use the polyfill we include it in `index.html` file like so :
 ```html
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <title>Babel Demo</title>
-</head>
-<body>
-<h1>Testing Babel</h1>
-<script src="node_modules/babel-polyfill/dist/polyfill.js"></script>
-<script src="source.js"></script>
-</body>
+  <head>
+    <title>Babel Demo</title>
+  </head>
+  <body>
+    <h1>Testing Babel</h1>
+    <script src="node_modules/babel-polyfill/dist/polyfill.js"></script>
+    <script src="source.js"></script>
+  </body>
 </html>
 ```
 

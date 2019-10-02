@@ -33,16 +33,18 @@ const Work = styled.div`
   & p {
     font-size: 1.1rem;
     line-height: 1.6;
-    text-align: left;
-    max-width: 35em;
+    text-align: center;
+    max-width: 35rem;
     margin: 0 auto;
+
+    @media (min-width: 768px) {
+      text-align: left;
+      max-width: 65%;
+    }
 
     @media (min-width: 1024px) {
       font-size: 1.3rem;
     }
-  }
-  @media (min-width: 768px) {
-    max-width: 55%;
   }
 `;
 

@@ -6,7 +6,7 @@ const Footer = styled.footer`
   display: flex;
   align-items: center;
   flex-direction: column;
-  height: 150px;
+  height: 160px;
   width: 100%;
   padding: 2rem 1rem;
   background: #fafafa;
