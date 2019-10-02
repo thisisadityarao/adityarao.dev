@@ -1,0 +1,116 @@
+/**
+* Add back the container background-color, border-radius, padding, margin
+* and overflow that we removed from <pre>.
+*/
+.gatsby-highlight {
+  position: relative;
+  -webkit-overflow-scrolling: touch;
+  background-color: #272822;
+  border-radius: 0.3rem;
+  margin: 2rem 0;
+  padding: 1rem;
+  overflow: auto;
+}
+
+/**
+* Remove the default PrismJS theme background-color, border-radius, margin,
+* padding and overflow.
+* 1. Make the element just wide enough to fit its content.
+* 2. Always fill the visible space in .gatsby-highlight.
+*/
+.gatsby-highlight pre[class*="language-"] {
+  -webkit-overflow-scrolling: touch;
+  background-color: transparent;
+  margin: 0;
+  padding: 1.5rem 0 1rem;
+  overflow: initial;
+  float: left; /* 1 */
+  min-width: 100%; /* 2 */
+}
+
+.gatsby-highlight-code-line {
+  background-color: rgba(71, 56, 75, 0.568);
+  display: block;
+  margin-right: -1em;
+  margin-left: -1em;
+  padding-right: 1em;
+  padding-left: 0.75em;
+  border-left: 0.25em solid rgb(255, 248, 153);
+}
+
+/*
+*  Language Tabs for Code Blocks
+*/
+.gatsby-highlight pre[class*="language-"]::before {
+  background: rgb(255, 255, 255);
+  border-radius: 0 0 0.25rem 0.25rem;
+  color: rgb(2, 2, 2);
+  font-size: 12px;
+  letter-spacing: 0.025rem;
+  padding: 0.1rem 0.5rem;
+  position: absolute;
+  right: 1rem;
+  text-align: right;
+  text-transform: uppercase;
+  top: 0;
+}
+
+.gatsby-highlight pre[class="language-javascript"]::before {
+  content: "js";
+  background: #f7df1e;
+  color: black;
+}
+
+.gatsby-highlight pre[class="language-js"]::before {
+  content: "js";
+  background: #f7df1e;
+  color: black;
+}
+
+.gatsby-highlight pre[class="language-html"]::before {
+  content: "html";
+  background: #008cff;
+  color: white;
+}
+
+.gatsby-highlight pre[class="language-css"]::before {
+  content: "css";
+  background: #ff9900;
+  color: white;
+}
+.gatsby-highlight pre[class="language-json"]::before {
+  content: "json";
+  background: #ea00ff;
+  color: white;
+}
+.gatsby-highlight pre[class="language-bash"]::before,
+.gatsby-highlight pre[class="language-shell"]::before {
+  content: "bash";
+  background: #00a06b;
+  color: white;
+}
+
+:not(pre) > code[class*="language-"] {
+  font-family: monospace;
+  border: 1px solid #c0f4fb;
+  color: #3a3a3a;
+  font-size: 1.22rem;
+  padding: 0.1rem 0.3rem;
+  margin: 0 0.2rem;
+  word-wrap: break-word;
+  background: #d5f5ff;
+  border-radius: 2px;
+}
+code[class*="language-"] {
+  text-shadow: unset;
+}
+
+/*
+* DESKTOP STYLES
+*/
+@media (min-width: 576px) {
+  :not(pre) > code[class*="language-"] {
+    font-size: 1.3rem;
+    padding: 0.2rem 0.5rem;
+  }
+}

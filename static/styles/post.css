@@ -1,100 +1,469 @@
-article {
+/*****TYPOGRAPHIC STYLES*****/
+.typeset {
+  --background-color: #f3f6fa;
+  --border-color: #dbe2f2;
+  --color: #324354;
+  --blockquote-color: rgba(0, 0, 0, 0.2);
+  --mark-color: rgba(0, 140, 255, 0.1);
+  line-height: 1;
   max-width: 760px;
-  margin: auto;
-  margin-bottom: 3rem;
-  padding: 4rem 20px;
+  margin: 0 auto;
+  padding: 1rem;
+  font-family: "Source Sans Pro";
+  padding-top: 6rem;
+}
+
+/*
+  Reset .typeset element styles to avoid unwanted inheritance
+*/
+
+/* Adapted from Eric Meyer's CSS Reset: http://meyerweb.com/eric/tools/css/reset/ */
+.typeset a,
+.typeset abbr,
+.typeset acronym,
+.typeset address,
+.typeset b,
+.typeset big,
+.typeset cite,
+.typeset code,
+.typeset del,
+.typeset em,
+.typeset i,
+.typeset ins,
+.typeset kbd,
+.typeset mark,
+.typeset output,
+.typeset q,
+.typeset ruby,
+.typeset s,
+.typeset samp,
+.typeset small,
+.typeset strike,
+.typeset strong,
+.typeset sub,
+.typeset sup,
+.typeset time,
+.typeset tt,
+.typeset u,
+.typeset var,
+.typeset dfn,
+.typeset dl,
+.typeset dt,
+.typeset dd,
+.typeset ol,
+.typeset ul,
+.typeset li,
+.typeset blockquote,
+.typeset h1,
+.typeset h2,
+.typeset h3,
+.typeset h4,
+.typeset h5,
+.typeset h6,
+.typeset p,
+.typeset pre,
+.typeset table,
+.typeset caption,
+.typeset tbody,
+.typeset tfoot,
+.typeset thead,
+.typeset tr,
+.typeset th,
+.typeset td,
+.typeset applet,
+.typeset canvas,
+.typeset embed,
+.typeset figure,
+.typeset figcaption,
+.typeset iframe,
+.typeset img,
+.typeset object {
+  background: transparent;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  line-height: 1;
+  margin: 0;
+  padding: 0;
+  vertical-align: baseline;
+}
+
+/*
+  Baseline grid (for debugging baseline grid)
+*/
+
+.typeset.typeset-baseline {
+  background-image: linear-gradient(
+    to bottom,
+    magenta 0,
+    rgba(255, 255, 255, 0) 1px
+  );
+  background-repeat: repeat-y;
+  background-size: 100% 1.5rem;
+}
+
+/*
+  Initialize spacing and colors
+*/
+
+.typeset li,
+.typeset dt,
+.typeset dd,
+.typeset p,
+.typeset pre,
+.typeset caption,
+.typeset th,
+.typeset td,
+.typeset figcaption {
   line-height: 1.5;
 }
-.date {
-  text-align: center;
-  margin-bottom: 3rem;
+.typeset caption,
+.typeset dl,
+.typeset dd,
+.typeset div,
+.typeset figcaption,
+.typeset figure,
+.typeset h1,
+.typeset h2,
+.typeset h3,
+.typeset h4,
+.typeset h5,
+.typeset h6,
+.typeset p,
+.typeset pre,
+.typeset table,
+.typeset ol,
+.typeset ul {
+  margin: 0 0 1.5rem 0;
 }
-h1 {
-  margin-top: 2.5rem;
-  margin-bottom: 3rem;
-  text-align: center;
-  line-height: 1.2;
+.typeset blockquote,
+.typeset ol,
+.typeset ul {
+  margin-left: 2.5rem;
+}
+
+/*
+  Inline elements
+*/
+
+.typeset a {
+  border-bottom: 1px solid rgb(0, 105, 237);
+  padding: 2px 2px 1px;
+  color: rgb(0, 105, 237);
+  transition: all 150ms linear 0s;
+  text-decoration: none;
+}
+.typeset a:focus,
+.typeset a:active,
+.typeset a:hover {
+  background-color: rgb(0, 105, 237);
+  color: rgb(255, 255, 255);
+  outline: 0px;
+  text-decoration: none;
+}
+.typeset strong,
+.typeset b {
+  font-weight: bolder;
+}
+.typeset u,
+.typeset em,
+.typeset i {
+  font-style: italic;
+  text-decoration: none;
+}
+.typeset abbr[title] {
+  border-bottom: 1px dotted gray;
+}
+.typeset address {
+  /* no style */
+}
+.typeset cite {
+  font-style: italic;
+}
+
+.typeset code {
+  font-family: monospace;
+  font-size: 1rem;
+  padding: 0.2rem;
+}
+
+.typeset dfn {
+  /* no style */
+}
+.typeset del {
+  color: red;
+  text-decoration: line-through;
+}
+.typeset ins {
+  color: green;
+  text-decoration: none;
+}
+.typeset kbd {
+  font-family: monospace;
+}
+.typeset mark {
+  background-color: rgba(0, 140, 255, 0.1);
+  background-color: var(--mark-color);
+  color: black;
+}
+.typeset samp {
+  font-family: monospace;
+}
+.typeset small {
+  color: gray;
+  font-size: 0.75rem;
+}
+.typeset s {
+  text-decoration: line-through;
+}
+.typeset sub {
+  font-size: 80%;
+  vertical-align: sub;
+}
+.typeset sup {
+  font-size: 0.75rem;
+  vertical-align: super;
+}
+.typeset var {
+  font-style: italic;
+}
+
+/*
+  Lists
+*/
+
+.typeset ol,
+.typeset ul {
+  margin-left: 1rem;
+}
+.typeset ol ol,
+.typeset ul ul,
+.typeset ol ul,
+.typeset ul ol {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.typeset ol {
+  list-style: decimal;
+  margin: 3rem 0;
+}
+.typeset ol ol {
+  list-style: lower-alpha;
+}
+.typeset ol ol ol {
+  list-style: lower-roman;
+}
+.typeset ol ol ol ol {
+  list-style: decimal;
+}
+.typeset ul {
+  margin: 3rem 0;
+  list-style: default;
+}
+.typeset li {
+  line-height: 1.8;
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+}
+.typeset dl {
+  /* margin set above */
+}
+.typeset dt {
+  font-weight: bold;
+  /* line-height set above */
+}
+.typeset dd {
+  /* line-height set above */
+  margin-top: 0;
+}
+
+/*
+  Block-level elements
+*/
+
+.typeset h1,
+.typeset h2,
+.typeset h3,
+.typeset h4,
+.typeset h5,
+.typeset h6 {
+  font-family: "Raleway";
   font-weight: 900;
-  font-size: 36px;
 }
-h2 {
-  margin-top: 3.1rem;
-  margin-bottom: 1.55rem;
-  font-weight: 900;
-  line-height: 1.1;
-  font-size: 26px;
-}
-h3 {
-  margin-top: 3.1rem;
-  margin-bottom: 1.55rem;
-  font-size: 1.4rem;
+.typeset h1 {
+  font-size: 2.5rem;
   line-height: 1.5;
+  margin: 2.25rem 0 0.75rem 0;
+  text-align: center;
 }
-p {
-  font-size: 16px;
+.typeset h2 {
+  font-size: 1.8rem;
+  line-height: 2;
+  margin: 6rem 0 2rem 0;
+}
+.typeset h3 {
+  font-size: 1.5rem;
+  line-height: 1.5;
+  margin: 5rem 0 2rem;
+}
+.typeset h4 {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  margin: 4rem 0 2rem 0;
+}
+.typeset h5 {
+  font-size: 1.1rem;
+  line-height: 2;
+  margin: 2rem 0 1.5rem 0;
+}
+.typeset h6 {
+  font-size: 1rem;
+  font-weight: inherit;
+  line-height: 2;
+  margin: 2rem 0 1.5rem 0;
+}
+
+.typeset p {
+  line-height: 1.8;
+  font-size: 1.1rem;
+}
+.typeset blockquote {
+  border-left: 0.2rem solid rgba(0, 0, 0, 0.2);
+  border-left-color: var(--blockquote-color);
+  margin-left: 0.2rem;
+  opacity: 0.8;
+  padding-left: 0.8rem;
+}
+.typeset-wysiwyg blockquote {
+  border-left: none;
+  margin-left: 3rem;
+  opacity: 1;
+}
+
+.typeset pre {
+  font-family: monospace;
   line-height: 1.6;
+  padding: calc(1rem - 1px) 1.5rem;
+  white-space: pre-wrap;
+}
+
+/*
+  Tables
+*/
+
+.typeset table {
+  /* border set above */
+  border-collapse: collapse;
+  /* margin set above */
+  table-layout: auto;
+}
+.typeset caption {
+  caption-side: top;
+  font-weight: bold;
+  /* line-height set above */
+  /* margin set above */
+  margin-top: 0;
+  text-align: left;
+}
+.typeset thead {
+  /* no style */
+}
+.typeset tbody {
+  /* no style */
+}
+.typeset tfoot {
+  /* no style */
+}
+.typeset th,
+.typeset td {
+  /* border set above */
+  /* color set above */
+  /* line-height set above */
+  padding: calc(0.75em - 0.5px);
+  text-align: left;
+}
+.typeset th {
+  /* background-color set above */
   font-weight: normal;
 }
-
-p + p {
-  margin-bottom: 1.6rem;
+.typeset td {
+  /* no style */
 }
 
-ul,
-ol {
-  margin-bottom: 1.55rem;
-  padding-left: 0;
+/*
+  Media
+*/
+
+.typeset embed,
+.typeset iframe,
+.typeset img,
+.typeset object {
+  display: inline;
+  max-width: 100%;
+  margin: 1rem 0;
+}
+.typeset figure {
+  max-width: 100%;
+  /* margin set above */
+}
+.typeset figcaption {
+  font-size: 0.75rem;
+  line-height: 2;
+  /* margin set above */
+  text-align: left;
 }
 
-ol li {
-  padding-left: 0;
-  list-style-position: inside;
-}
-ul li {
-  padding-left: 0;
-  list-style-position: inside;
-}
-li {
-  font-size: 16px;
-  margin-bottom: 1rem;
+/***** BLOG POST STYLES *****/
+
+.typeset .date {
+  text-align: center;
 }
 
-article img {
-  margin-bottom: 2em;
-}
+/***** DESKTOP STYLES *****/
 
-article a:link {
-  text-decoration: underline;
-  padding-bottom: 1px;
-  color: #0069ed;
-}
-
-article a:focus,
-article a:hover {
-  color: #0053ba;
-}
-
-article a:active {
-  color: #0053ba;
-}
-
-article a:visited {
-  color: #0069ed;
-}
-
-@media (min-width: 768px) {
-  p {
-    font-size: 18px;
-    line-height: 1.65;
+@media (min-width: 576px) {
+  .typeset h1 {
+    font-size: 3rem;
+    line-height: 1.5;
+    margin: 3rem 0 1rem 0;
   }
-  article {
-    padding-left: 30px;
-    padding-right: 30px;
+  .typeset h2 {
+    font-size: 2.5rem;
+    line-height: 1.2;
+    margin: 4rem 0 2rem 0;
   }
-  li {
-    font-size: 18px;
+  .typeset h3 {
+    font-size: 2rem;
+    line-height: 1.2;
+    margin: 6rem 0 2rem 0;
   }
-  h2 {
-    font-size: 28px;
+  .typeset h4 {
+    font-size: 1.5rem;
+    line-height: 1.5;
+    margin: 5rem 0 2rem 0;
+  }
+  .typeset h5 {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    margin: 3rem 0 1rem 0;
+  }
+  .typeset h6 {
+    font-size: 1rem;
+    font-weight: inherit;
+    line-height: 1.8;
+    margin: 2rem 0 1rem 0;
+  }
+  .typeset p,
+  .typeset li {
+    font-size: 1.3rem;
+  }
+
+  .typeset pre {
+    font-size: inherit;
+    line-height: 1.8;
+  }
+  .typeset code {
+    font-size: 1.1rem;
+    line-height: 1.8;
   }
 }

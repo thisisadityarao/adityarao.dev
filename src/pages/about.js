@@ -13,7 +13,7 @@ const About = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  max-width: 730px;
+  max-width: 760px;
 
   @media (min-width: 768px) {
     padding: 0 40px;
@@ -26,30 +26,34 @@ const SectionAbout = styled.section`
   padding-top: 4rem;
 
   & p {
-    font-size: ${between('16px', '18px')};
-    line-height: 1.45;
+    font-size: ${between('18px', '22px')};
+    line-height: 1.5;
   }
 
   & p:first-of-type {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     text-align: center;
     font-weight: 700;
     margin-bottom: 3rem;
   }
 
   p + p {
-    margin-top: 1rem;
+    margin-top: 1.2rem;
   }
 `;
 
-const H3 = styled.h3`
+const H1 = styled.h1`
   position: relative;
   font-weight: 900;
-  font-size: 2rem;
+  font-size: 2.5rem;
   letter-spacing: 0.1em;
   margin-bottom: 0.5rem;
   text-align: center;
   padding: 0 0 15px 0;
+
+  @media (min-width: 768px) {
+    font-size: 3.5rem;
+  }
 `;
 
 const HR = styled.hr`
@@ -65,7 +69,7 @@ export default () => (
     <About>
       {' '}
       <SectionAbout id="about">
-        <H3>ABOUT ME</H3>
+        <H1>ABOUT ME</H1>
         <HR />
         <p>I'm Aditya Rao.</p>
         <p>

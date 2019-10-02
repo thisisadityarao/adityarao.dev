@@ -40,6 +40,10 @@ module.exports = {
       resolve: `gatsby-plugin-mdx`,
       options: {
         extensions: [`.mdx`, `.md`, `.markdown`],
+        defaultLayouts: {
+          posts: require.resolve('./src/templates/blog-post.js'),
+          default: require.resolve('./src/templates/blog-post.js'),
+        },
         gatsbyRemarkPlugins: [
           {
             resolve: `gatsby-remark-prismjs`,
@@ -48,21 +52,12 @@ module.exports = {
               inlineCodeMarker: null,
               aliases: {},
               showLineNumbers: false,
+              // If setting this to true, the parser won't handle and highlight inline
+              // code used in markdown i.e. single backtick code like `this`.
               noInlineHighlight: false,
             },
           },
-          {
-            resolve: 'gatsby-remark-copy-linked-files',
-            options: {
-              destinationDir: './static/mdxFiles',
-              ignoreFileExtensions: [],
-            },
-          },
         ],
-        defaultLayouts: {
-          posts: require.resolve('./src/templates/blog-post.js'),
-          default: require.resolve('./src/templates/blog-post.js'),
-        },
       },
     },
     /*

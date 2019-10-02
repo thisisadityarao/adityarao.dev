@@ -6,9 +6,9 @@ const Footer = styled.footer`
   display: flex;
   align-items: center;
   flex-direction: column;
-  height: 120px;
+  height: 150px;
   width: 100%;
-  padding: 20px;
+  padding: 2rem 1rem;
   background: #fafafa;
   border-top: 1px solid #eeeeee;
 
@@ -17,13 +17,13 @@ const Footer = styled.footer`
   }
 
   & p {
-    font-size: 14px;
+    font-size: 16px;
     margin: 0 auto;
     text-align: center;
     line-height: 1.6;
 
     @media (min-width: 768px) {
-      font-size: 15px;
+      font-size: 18px;
     }
   }
 
@@ -36,17 +36,19 @@ const Footer = styled.footer`
   }
 
   & a:link {
-    text-decoration: underline;
-    padding-bottom: 1px;
-    color: #0069ed;
-    text-decoration-skip: ink;
-    text-decoration: underline;
+    text-decoration: none;
+    border-bottom: 1px solid rgb(0,105,237);
+    padding: 2px 2px 1px;
+    color: rgb(0,105,237);
+    transition: all 150ms linear 0s;
   }
 
   & a:focus,
   & a:hover {
-    color: #0053ba;
-    outline-width: 0;
+    background-color: rgb(0,105,237);
+    color: rgb(255,255,255);
+    outline: 0px;
+    text-decoration: none;
   }
 
   & a:active {
@@ -54,7 +56,7 @@ const Footer = styled.footer`
   }
 
   & a:visited {
-    color: #0069ed;
+    color: rgb(0, 105, 237);
   }
 `;
 

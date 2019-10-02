@@ -4,7 +4,6 @@
 
 import React from 'react';
 import styled, { createGlobalStyle } from 'styled-components';
-import ProgressBar from './progress-bar';
 import Head from './head';
 import Footer from './footer';
 import Header from './header';
@@ -21,11 +20,8 @@ const GlobalStyle = createGlobalStyle`
     margin: 0;
     height: 100%;
     width: 100%;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
     -webkit-text-size-adjust: 100%;
     -ms-text-size-adjust: 100%;
-    font-family: 'Inter', 'sans-serif';
     font-style: normal;
   }
 
@@ -42,12 +38,13 @@ const GlobalStyle = createGlobalStyle`
   body {
     background-color: #fff;
     line-height: 1.65;
-    color: #4a5a6a;
+    color: #324354;
+    font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, "Segoe  UI", "Roboto", "Oxygen", "Ubuntu", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   }
 
   h1, h2, h3, h4, h5, h6 {
-    font-family: 'Inter', 'sans-serif';
-    color: #2a3a4a;
+    font-family: 'Raleway';
+    color: rgb(30, 13, 43);;
   }
 
 
@@ -77,6 +74,11 @@ const GlobalStyle = createGlobalStyle`
   body.dark main[class*=blog-] {
     background-color: rgb(30,34,39);
     color: #fff;
+  }
+
+  body.dark header {
+    background-color: #212529;
+    color: #f8f9fa;
   }
 
   body.dark main[class*=blog-] .page-header {
@@ -126,13 +128,12 @@ const GlobalStyle = createGlobalStyle`
     background-color: #f94949;
   }
 
+  body.dark .mobile-nav .hamburger,
   body.dark .mobile-nav .hamburger::after,
   body.dark .mobile-nav .hamburger::before {
     background: #fff;
   }
-  body.dark .mobile-nav .hamburger {
-    background: transparent;
-  }
+
 
   body.dark .hire h3, body.dark .hire p {
     color: #282c34;
@@ -163,7 +164,6 @@ export default ({ children }) => (
   <>
     <Head />
     <GlobalStyle />
-    <ProgressBar />
     <PageWrapper>
       <Header />
       {children}

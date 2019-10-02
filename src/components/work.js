@@ -11,7 +11,7 @@ const SectionWork = styled.section`
 const Section = styled.div`
   display: flex;
   flex-direction: column;
-  margin: 4rem auto;
+  margin: 9rem auto 4rem;
 
   @media (min-width: 380px) and (max-width: 768px) {
     margin: 4rem 0;
@@ -23,20 +23,6 @@ const Section = styled.div`
     justify-content: space-around;
     width: 100%;
   }
-
-  &.reverse {
-    @media (min-width: 768px) {
-      flex-direction: row-reverse;
-      text-align: justify;
-      hyphens: auto;
-    }
-  }
-
-  &:not(.reverse) {
-    @media (min-width: 768px) {
-      height: 284px;
-    }
-  }
 `;
 
 const Work = styled.div`
@@ -45,14 +31,14 @@ const Work = styled.div`
   margin-right: 0;
 
   & p {
-    font-size: 1rem;
+    font-size: 1.1rem;
     line-height: 1.6;
     text-align: left;
     max-width: 35em;
     margin: 0 auto;
 
     @media (min-width: 1024px) {
-      font-size: 1.2rem;
+      font-size: 1.3rem;
     }
   }
   @media (min-width: 768px) {
@@ -81,11 +67,11 @@ const ImgContainer = styled.div`
 
 const H3 = styled.h3`
   position: relative;
-  letter-spacing: 1px;
+  letter-spacing: 0.1rem;
   font-weight: 900;
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   margin: 0;
-  margin-bottom: 0.5rem;
+  margin-bottom: 8.5rem;
   padding: 0 0 15px 0;
 
   &:after {
@@ -94,13 +80,13 @@ const H3 = styled.h3`
     height: 5px;
     background: #ec4c47;
     position: absolute;
-    bottom: 0;
+    bottom: 5px;
     left: 0;
     content: '';
   }
 
   @media (min-width: 768px) {
-    font-size: 2rem;
+    font-size: 3rem;
 
     &:after {
       width: 165px;
@@ -110,8 +96,8 @@ const H3 = styled.h3`
 
 const H4 = styled.h4`
   font-weight: 900;
-  font-size: 1.2rem;
-  letter-spacing: 0.1em;
+  font-size: 1.3rem;
+  letter-spacing: 0.1rem;
   margin-top: 3.5rem;
   margin-bottom: 2rem;
   text-align: center;

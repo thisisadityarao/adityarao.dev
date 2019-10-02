@@ -22,17 +22,18 @@ const TagListing = styled.section`
     padding: 4rem 30px;
   }
 `;
-const H2 = styled.h2`
-  font-size: 1.2rem;
-  font-weight: 900;
+const H1 = styled.h1`
+  font-size: 1.5rem;
+  font-weight: 700;
   margin-top: 1rem;
   margin-bottom: 3.5rem;
 
   @media (min-width: 576px) {
-    font-size: 1.6rem;
+    font-size: 1.8rem;
   }
 
   & span {
+    color: #F44336;
     font-weight: 700;
     display: inline-block;
     text-decoration: underline;
@@ -40,10 +41,10 @@ const H2 = styled.h2`
 `;
 const Links = styled(Link)`
   margin-bottom: 50px;
-  font-size: 16px;
+  font-size: 1.1rem;
   text-decoration: underline;
   &:link {
-    color: #345cd5;
+    color: rgb(0, 105, 237);
   }
   &:focus,
   &:hover {
@@ -53,11 +54,11 @@ const Links = styled(Link)`
     color: #5e80de;
   }
   &:visited {
-    color: #345cd5;
+    color: rgb(0, 105, 237);
   }
 
   @media (min-width: 768px) {
-    font-size: 18px;
+    font-size: 1.3rem;
   }
 `;
 
@@ -68,9 +69,9 @@ function Tags({ data, pageContext }) {
     <Layout>
       <Wrapper>
         <TagListing>
-          <H2>
+          <H1>
             Posts tagged in - <span>#{tag}</span>
-          </H2>
+          </H1>
 
           {posts.map(({ node }, i) => (
             <Links to={node.fields.slug} key={i}>

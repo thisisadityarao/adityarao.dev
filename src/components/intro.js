@@ -1,48 +1,56 @@
 /* eslint-disable react/display-name */
 import React from 'react';
 import styled, { keyframes } from 'styled-components';
-import { between } from 'polished';
 
 const SectionIntro = styled.section`
   width: 100%;
   height: 100%;
   padding-top: 6vh;
   margin-bottom: 5rem;
+  text-align: center;
 
   @media (min-width: 400px) {
     padding-top: 5rem;
   }
+  @media (min-width: 768px) {
+    margin-bottom: 10rem;
+    text-align: left;
+  }
 
   & p {
     line-height: 1.65;
-    font-size: 1rem;
-    font-size: ${between('16px', '21px')};
-    max-width: 30em;
+    font-size: 1.2rem;
+    max-width: 45rem;
+
+    @media (min-width: 768px) {
+      font-size: 1.5rem;
+    }
   }
 
   p + p {
-    margin-top: 1.5rem;
+    margin-top: 1.8rem;
 
     @media (min-width: 768px) {
-      margin-top: 0.8rem;
+      margin-top: 1rem;
     }
   }
 
   .wave {
     display: block;
-    font-size: 1.8em;
+    font-size: 2.5rem;
     margin-top: 1rem;
 
     @media (min-width: 768px) {
-      font-size: 2em;
+      font-size: 3rem;
     }
   }
 
   .subtitle {
-    margin-top: 2rem;
-    font-size: 1rem;
+    margin-top: 4rem;
+    font-size: 1.2rem;
     @media (min-width: 768px) {
-      font-size: 1.3rem;
+      font-size: 1.4rem;
+      margin-top: 3rem;
     }
   }
 `;
@@ -56,11 +64,12 @@ const offset = keyframes`
 const LinkButton = styled.a`
   cursor: pointer;
   display: inline-block;
+  margin-top: 1rem;
   border: none;
   margin: 0;
   padding: 1rem 4rem;
   text-decoration: none;
-  font-size: 1rem;
+  font-size: 1.1rem;
   font-family: 'Inter', sans-serif;
   letter-spacing: 0.1em;
   text-align: center;
@@ -87,7 +96,7 @@ const LinkButton = styled.a`
   }
 
   @media (min-width: 768px) {
-    font-size: 1.1rem;
+    font-size: 1.3rem;
   }
 `;
 

@@ -10,23 +10,24 @@ const SectionHireMe = styled.section`
   margin-left: 50%;
   transform: translateX(-50%);
   margin-top: 4rem;
-  padding-top: 2rem;
-  padding-bottom: 3rem;
+  padding-top: 3rem;
+  padding-bottom: 4rem;
   background-color: #fafafa;
 
   & h3 {
-    font-weight: 700;
-    font-size: ${between('22px', '30px')};
+    font-weight: 900;
+    font-size: 2rem;
     text-align: center;
     margin-bottom: 2rem;
 
     @media (min-width: 576px) {
+      font-size: 2.5rem;
       margin-bottom: 3rem;
     }
   }
 
   & p {
-    font-size: ${between('16px', '20px')};
+    font-size: 1.1rem;
     line-height: 1.45;
     max-width: 30em;
     text-align: center;
@@ -36,6 +37,7 @@ const SectionHireMe = styled.section`
     margin-bottom: 3rem;
 
     @media (min-width: 576px) {
+      font-size: 1.5rem;
       line-height: 1.5;
       margin-bottom: 3.5rem;
     }
@@ -53,7 +55,7 @@ const EmailButton = styled.a`
   display: block;
   border: none;
   border-radius: 3px;
-  font-size: 1rem;
+  font-size: 1.1rem;
   letter-spacing: 0.1em;
   margin: 0 auto;
   padding: 1rem 4rem;
@@ -82,7 +84,7 @@ const EmailButton = styled.a`
 
   @media (min-width: 768px) {
     width: 254px;
-    font-size: 1.1rem;
+    font-size: 1.3rem;
   }
 `;
 

@@ -23,15 +23,15 @@ const Tags = styled.div`
   margin: 0 auto;
 `;
 
-const H2 = styled.h2`
+const H1 = styled.h1`
   width: 80%;
-  font-size: 1.4rem;
+  font-size: 1.5rem;
   margin: 0;
   margin-top: 3rem;
   margin-bottom: 3.5rem;
 
   @media (min-width: 576px) {
-    font-size: 1.6rem;
+    font-size: 1.8rem;
   }
 `;
 
@@ -40,7 +40,7 @@ const Links = styled(Link)`
   margin: 0.8rem;
   margin-left: 0;
   text-decoration: none;
-  font-size: 1rem;
+  font-size: 1.1rem;
   white-space: nowrap;
   word-break: keep-all;
   cursor: pointer;
@@ -66,6 +66,10 @@ const Links = styled(Link)`
     box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
     transition: all 0.2s ease-in-out 0s;
   }
+
+    @media (min-width: 576px) {
+    font-size: 1.3rem;
+  }
 `;
 
 function TagsPage({ data }) {
@@ -76,7 +80,7 @@ function TagsPage({ data }) {
       <Wrapper>
         <TagSection>
           <Tags>
-            <H2>All tags</H2>
+            <H1>All tags</H1>
             {tagData.map(tag => (
               <Links to={`/${tag.fieldValue}`} id="tag-link">
                 {tag.fieldValue} {`(${tag.totalCount})`}

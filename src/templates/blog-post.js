@@ -6,11 +6,10 @@ import MDXRenderer from 'gatsby-plugin-mdx/mdx-renderer';
 import { Calendar } from 'styled-icons/octicons/Calendar';
 import Layout from '../components/layout';
 import '../../static/styles/post.css';
-import '../../static/styles/prism-override.css';
 
 const Wrapper = styled.main`
   min-height: 100%;
-  background-color: #fff;
+  background-color: #f3f6fa;
 `;
 
 const Divider = styled.div`
@@ -20,7 +19,7 @@ const Divider = styled.div`
   margin: auto;
   margin-top: 4rem;
   display: block;
-  background: #eeeeee;
+  background: #9e9e9e;
 `;
 
 const List = styled.ul`
@@ -31,7 +30,11 @@ const List = styled.ul`
   width: 100%;
   max-width: 1000px;
   margin: auto;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
+
+  @media (min-width: 576px) {
+    font-size: 1.3rem;
+  }
 
   @media (min-width: 1000px) {
     flex-flow: row wrap;
@@ -45,6 +48,21 @@ const ListItem = styled.li`
 
   &.first {
     margin-top: 0;
+  }
+  & a {
+    border-bottom: 1px solid rgb(0, 105, 237);
+    padding: 2px 2px 1px;
+    color: rgb(0, 105, 237);
+    transition: all 150ms linear 0s;
+    text-decoration: none;
+  }
+  & a:focus,
+  & a:active,
+  & a:hover {
+    background-color: rgb(0, 105, 237);
+    color: rgb(255, 255, 255);
+    outline: 0px;
+    text-decoration: none;
   }
 
   @media (min-width: 1000px) {
@@ -63,86 +81,86 @@ const ListItem = styled.li`
 
 const Date = styled.span`
   display: inline-block;
-  font-size: 1rem;
-  text-decoration: underline;
+  font-size: 1.1rem;
+  margin-top: 2rem;
+
+  @media (min-width: 576px) {
+    font-size: 1.3rem;
+  }
 `;
 
 const TagSection = styled.div`
   width: 100%;
   max-width: 760px;
-  padding-left: 20px;
-  padding-right: 20px;
   height: 48px;
   line-height: 40px;
-  margin: 2rem auto;
-  margin-top: 0;
-
-  @media (min-width: 768px) {
-    padding-left: 30px;
-    padding-right: 30px;
-  }
+  padding-left: 1rem;
+  margin: 3rem auto 6rem;
 `;
 
 const PostTagLink = styled(Link)`
   cursor: pointer;
   display: inline-block;
-  font-size: 1rem;
+  font-size: 1.1rem;
   line-height: 1.4;
   font-variant: small-caps;
+  padding: 1px 3px 1px;
+  color: rgb(249, 73, 73);
+  transition: all 150ms linear 0s;
+  text-decoration: none;
 
-  &:link {
-    text-decoration: none;
-    color: rgb(249, 73, 73);
-  }
   &:focus,
+  &:active,
   &:hover {
-    color: rgb(249, 73, 73);
-    border-bottom: 2px solid rgb(249, 73, 73);
+    background-color: rgb(249, 73, 73);
+    color: rgb(255, 255, 255);
+    outline: 0px;
+    text-decoration: none;
+    border-radius: 0.25rem;
   }
-  &:active {
-    color: rgb(249, 73, 73);
-  }
-  &:visited {
-    color: rgb(249, 73, 73);
+  @media (min-width: 576px) {
+    font-size: 1.3rem;
   }
 `;
 
 const PostTags = styled(Link)`
   display: inline-block;
   margin-left: 0.5rem;
-  text-decoration: underline;
-  font-size: 16px;
+  font-size: 1.1rem;
   white-space: nowrap;
   word-break: keep-all;
   cursor: pointer;
+  text-decoration: none;
   line-height: 1.1;
   position: relative;
   text-align: center;
-  color: #0069ed;
-  transition: all 0.2s ease-in-out 0s;
-  padding: 5px 10px;
+  color: rgb(0, 105, 237);
+  border: 1px solid rgb(0, 105, 237);
+  border-radius: 0.25rem;
+  padding: 2px 4px;
+  transition: all 150ms linear 0s;
 
+  &:focus,
+  &:active,
   &:hover {
     color: #fff;
-    background-color: #0053ba;
-    border-radius: 3px;
+    background-color: rgb(0, 105, 237);
   }
-
-  @media (min-width: 768px) {
-    font-size: 18px;
+  @media (min-width: 576px) {
+    font-size: 1.3rem;
   }
 `;
 
 const DateIcon = styled(Calendar)`
   width: 20px;
   height: 20px;
-  margin-right: 4px;
+  margin-right: 8px;
   margin-top: -2px;
   color: #888;
 
   @media (min-width: 576px) {
-    width: 22px;
-    height: 22px;
+    width: 20px;
+    height: 20px;
   }
 `;
 
@@ -153,13 +171,14 @@ export default ({ data: { mdx }, pageContext }) => {
   return (
     <Layout>
       <Wrapper>
-        <article>
+        <article className="typeset">
           <h1>{mdx.frontmatter.title}</h1>
           <div className="date">
             {' '}
             <DateIcon />
             <Date>{mdx.frontmatter.date}</Date>
           </div>
+          <Divider style={{ margin: '4rem 0 8rem' }} />
           <MDXRenderer>{mdx.body}</MDXRenderer>
         </article>
         <TagSection>
@@ -176,7 +195,7 @@ export default ({ data: { mdx }, pageContext }) => {
         <List>
           {previous && (
             <ListItem className="first">
-              <Link to={previous.fields.slug} rel="prev" style={{ color: '#0069ed' }}>
+              <Link to={previous.fields.slug} rel="prev">
                 ← {previous.frontmatter.title}
               </Link>
             </ListItem>
@@ -184,7 +203,7 @@ export default ({ data: { mdx }, pageContext }) => {
 
           {next && (
             <ListItem className="second">
-              <Link to={next.fields.slug} rel="next" style={{ color: '#0069ed' }}>
+              <Link to={next.fields.slug} rel="next">
                 {next.frontmatter.title} →
               </Link>
             </ListItem>

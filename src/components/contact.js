@@ -16,9 +16,9 @@ const SectionContact = styled.section`
 
 const H3 = styled.h3`
   position: relative;
-  letter-spacing: 1px;
+  letter-spacing: 0.1rem;
   font-weight: 900;
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   margin: 0;
   margin-bottom: 0.5rem;
   padding: 0 0 15px 0;
@@ -35,7 +35,7 @@ const H3 = styled.h3`
   }
 
   @media (min-width: 768px) {
-    font-size: 2rem;
+    font-size: 3rem;
 
     &:after {
       width: 165px;
@@ -78,7 +78,7 @@ const SocialIcons = styled.ul`
     }
 
     &:hover {
-      color: #0069ed;
+      color: rgb(0,105,237);
     }
   }
 
@@ -95,7 +95,7 @@ const SocialIcons = styled.ul`
 
   & a:hover::before {
     width: 100%;
-    background: #0069ed;
+    background: rgb(0,105,237);
     transition: width 0.5s ease;
   }
 
@@ -107,7 +107,7 @@ const SocialIcons = styled.ul`
     bottom: 0;
     height: 2px;
     width: 0;
-    background: #0069ed;
+    background: rgb(0,105,237);
 
     transition: width 0.5s ease;
   }
@@ -119,11 +119,11 @@ const SocialIcons = styled.ul`
   }
 
   & li span {
-    font-size: 1.1em;
+    font-size: 1.1rem;
     padding-left: 15px;
     padding-right: 8px;
     @media (min-width: 1200px) {
-      font-size: 1em;
+      font-size: 1.3rem;
     }
   }
 `;

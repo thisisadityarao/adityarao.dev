@@ -45,20 +45,20 @@ const NavigationWrapper = styled.nav`
   cursor: pointer;
   width: 100%;
   max-width: 1280px;
-  height: 80px;
+  height: 120px;
   margin: 0 auto;
   padding: 0 20px;
   display: flex;
   align-items: center;
   flex-wrap: wrap;
   justify-content: space-between;
-  font-size: 16px;
-  line-height: 1.25;
+  font-size: 18px;
+  line-height: 18px;
 
   @media (min-width: 768px) {
     font-size: 20px;
+    line-height: 20px;
     padding: 0 40px;
-    height: 120px;
   }
 
   .mobile-nav {
@@ -84,14 +84,17 @@ const Nav = styled.div`
 const Logo = styled.a`
   display: flex;
   align-items: center;
-  font-size: 16px;
+  font-family: 'Raleway';
+  font-size: 24px;
+  line-height: 24px;
+  text-transform: uppercase;
   text-decoration: none;
   cursor: pointer;
   margin-top: 2px;
   transition: all 0.2s ease-in-out 0s;
 
   &:link {
-    color: #29384c;
+    color: #252525;
     text-decoration: none;
   }
   &:visited {
@@ -107,11 +110,12 @@ const Logo = styled.a`
 
   span {
     font-weight: 900;
-    letter-spacing: 1.5px;
+    letter-spacing: 0.1em;
   }
 
   @media (min-width: 768px) {
-    font-size: 20px;
+    font-size: 26px;
+    line-height: 26px;
   }
 `;
 

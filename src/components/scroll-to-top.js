@@ -7,37 +7,51 @@ import TweenFunctions from 'tween-functions';
 import { ChevronUp } from 'styled-icons/fa-solid/ChevronUp';
 
 const ScrollUpButton = styled.div`
-  display: ${props => (props.customProp ? 'block' : 'none')};
+  display: ${props => (props.customProp ? 'inline-block' : 'none')};
+  opacity: ${props => (props.customProp ? '1' : '0')};
   cursor: pointer;
   position: fixed;
   bottom: 20px;
   right: 20px;
   z-index: 100;
-  width: 50px;
-  height: 50px;
-  padding: 8px 11px;
-  border-radius: 100%;
-  background: #188ef4;
-  border: 1px solid #188ef4;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: rgb(0, 105, 237);
   transition: 0.2s ease-in;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+  text-decoration: none;
+  background-image: none;
+  white-space: nowrap;
 
   &:hover {
-    background: #2c73cb;
-    border: 1px solid #2c73cb;
+    background: #0072ff;
+
+    & svg {
+      top: 5px;
+    }
   }
 
   @media (min-width: 992px) {
-    width: 70px;
-    height: 70px;
-    padding: 17px 19px;
+    width: 60px;
+    height: 60px;
   }
 `;
 
 const Chevron = styled(ChevronUp)`
   width: 26px;
   color: #fff;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  left: 11px;
+  top: 7px;
+  transition: all 0.3s ease;
 
   @media (min-width: 992px) {
+    left: 15px;
+    top: 12px;
     width: 30px;
   }
 `;
@@ -95,7 +109,7 @@ export default class ScrollToTop extends Component {
   ButtonToggle() {
     // Position at which to show scroll-to-top button(unit: px)
     // Can convert it into a prop??
-    const ShowAtPosition = 900;
+    const ShowAtPosition = 1200;
     // window.pageYOffset = current scroll position
     // ShowAtPosition = position at which we want the button to show.
     if (window.pageYOffset > ShowAtPosition) {
@@ -121,7 +135,7 @@ export default class ScrollToTop extends Component {
     const StopPosition = 0;
     // Total duration for animation
     // Can convert it into a prop??
-    const AnimationDuration = 500;
+    const AnimationDuration = 700;
     const timestamp = Math.floor(Date.now());
     // If StartTime has not been assigned a value, assign it the start timestamp.
     if (!this.Animation.StartTime) {
