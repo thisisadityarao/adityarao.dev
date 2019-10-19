@@ -3,7 +3,7 @@
   "description": "Personal website of Aditya Rao.",
   "license": "MIT",
   "scripts": {
-    "develop": "rm -rf .cache && gatsby develop",
+    "develop": "gatsby clean && gatsby develop",
     "build": "gatsby build",
     "serve": "gatsby serve"
   },
@@ -22,7 +22,7 @@
     "gatsby-plugin-netlify": "^2.1.22",
     "gatsby-plugin-offline": "^3.0.16",
     "gatsby-plugin-sitemap": "^2.2.19",
-    "gatsby-plugin-styled-components": "^3.1.8",
+    "gatsby-plugin-styled-components": "^3.1.11",
     "gatsby-remark-copy-linked-files": "^2.1.28",
     "gatsby-remark-prismjs": "^3.3.20",
     "gatsby-source-cloudinary": "^0.1.8",
