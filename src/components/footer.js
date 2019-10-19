@@ -1,6 +1,7 @@
 /* eslint-disable react/display-name */
 import React from 'react';
 import styled from 'styled-components';
+import { Reveal, Animation } from "react-genie";
 
 const Footer = styled.footer`
   display: flex;
@@ -64,11 +65,15 @@ const Footer = styled.footer`
 
 export default () => (
   <Footer className="footer">
-    <p>
-      Build with <a href="https://www.gatsbyjs.org/">Gatsby</a> and <a href="https://reactjs.org/">React</a>. Hosted on{' '}
-      <a href="https://www.netlify.com/">Netlify</a>. The code is open source and available at{' '}
-      <a href="https://github.com/ad1tyara0/raoaditya.com">Github</a>.
-    </p>
-    <p>&copy; Aditya Rao - 2019</p>
+    <Reveal animation={Animation.FadeInUp}>
+      <p>
+        Build with <a href="https://www.gatsbyjs.org/">Gatsby</a> and{" "}
+        <a href="https://reactjs.org/">React</a>. Hosted on{" "}
+        <a href="https://www.netlify.com/">Netlify</a>. The code is open source
+        and available at{" "}
+        <a href="https://github.com/ad1tyara0/raoaditya.com">Github</a>.
+      </p>
+      <p>&copy; Aditya Rao - 2019</p>
+    </Reveal>
   </Footer>
 );

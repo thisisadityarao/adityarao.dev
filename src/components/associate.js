@@ -1,7 +1,7 @@
 /* eslint-disable react/display-name */
 import React from 'react';
 import styled, { keyframes } from 'styled-components';
-import { between } from 'polished';
+import { Reveal, Animation } from "react-genie";
 
 const SectionHireMe = styled.section`
   border-top: 1px solid #eeeeee;
@@ -89,14 +89,22 @@ const EmailButton = styled.a`
 `;
 
 export default () => (
-  <SectionHireMe className="hire">
-    <h3>Let&apos;s talk about your project.</h3>
-    <p>
-      I&apos;m currently seeking freelance opportunities. If you are interested in a new project or collaboration, send
-      me an email.
-    </p>
-    <EmailButton href="mailto:dev.adityarao@gmail.com" target="_blank" rel="noopener noreferrer">
-      Send Email
-    </EmailButton>
-  </SectionHireMe>
+
+    <SectionHireMe className="hire">
+      <Reveal animation={Animation.FadeInUp}>
+      <h3>Let&apos;s talk about your project.</h3>
+      <p>
+        I&apos;m currently seeking freelance opportunities. If you are
+        interested in a new project or collaboration, send me an email.
+      </p>
+      <EmailButton
+        href="mailto:dev.adityarao@gmail.com"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Send Email
+      </EmailButton>
+      </Reveal>
+    </SectionHireMe>
+
 );

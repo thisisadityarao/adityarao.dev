@@ -5,6 +5,7 @@ import { Github } from 'styled-icons/fa-brands/Github';
 import { Envelope } from 'styled-icons/fa-regular/Envelope';
 import { Twitter } from 'styled-icons/fa-brands/Twitter';
 import { ExternalLinkAlt } from 'styled-icons/fa-solid/ExternalLinkAlt';
+import { Reveal, Animation } from "react-genie";
 
 const SectionContact = styled.section`
   width: 100%;
@@ -173,29 +174,31 @@ const ExternalLink = styled(ExternalLinkAlt)`
 
 export default () => (
   <SectionContact id="contact">
-    <H3>CONTACT</H3>
-    <SocialIcons>
-      <li>
-        <a href="mailto:dev.adityarao@gmail.com">
-          <EnvelopeAlt />
-          <span>dev.adityarao@gmail.com</span>
-          <ExternalLink />
-        </a>
-      </li>
-      <li>
-        <a href="https://twitter.com/thisisadityarao">
-          <TwitterAlt />
-          <span>@thisisadityarao</span>
-          <ExternalLink />
-        </a>
-      </li>
-      <li>
-        <a href="https://github.com/thisisadityarao">
-          <GithubAlt />
-          <span>@thisisadityarao</span>
-          <ExternalLink />
-        </a>
-      </li>
-    </SocialIcons>
+    <Reveal animation={Animation.FadeInUp}>
+      <H3>CONTACT</H3>
+      <SocialIcons>
+        <li>
+          <a href="mailto:dev.adityarao@gmail.com">
+            <EnvelopeAlt />
+            <span>dev.adityarao@gmail.com</span>
+            <ExternalLink />
+          </a>
+        </li>
+        <li>
+          <a href="https://twitter.com/thisisadityarao">
+            <TwitterAlt />
+            <span>@thisisadityarao</span>
+            <ExternalLink />
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/thisisadityarao">
+            <GithubAlt />
+            <span>@thisisadityarao</span>
+            <ExternalLink />
+          </a>
+        </li>
+      </SocialIcons>
+    </Reveal>
   </SectionContact>
 );

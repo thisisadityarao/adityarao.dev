@@ -3,10 +3,12 @@ import React from 'react';
 import styled from 'styled-components';
 import { Link } from 'gatsby';
 import Toggle from './mobileNav';
+import { AnimatedTitle } from "react-genie";
 
 const StyledLink = styled(Link)`
   cursor: pointer;
   margin: 0;
+  margin-right: 2px;
   display: inline-block;
   position: relative;
   padding: 10px 20px;
@@ -32,6 +34,10 @@ const StyledLink = styled(Link)`
   }
   &:active {
     color: #fff;
+  }
+
+  &:last-of-type {
+    margin-right: 0;
   }
 
   @media (max-width: 767px) {
@@ -122,7 +128,9 @@ function Navigation() {
   return (
     <NavigationWrapper>
       <Logo href="/">
-        <span className="logo">ADITYA RAO</span>
+        <span className="logo">
+          <AnimatedTitle>ADITYA RAO</AnimatedTitle>
+        </span>
       </Logo>
       <Nav className="navigation">
         <Toggle className="mobile-nav" />
@@ -159,11 +167,7 @@ function Navigation() {
         >
           Blog
         </StyledLink>
-        <StyledLink
-          to="/#contact"
-        >
-          Contact
-        </StyledLink>
+        <StyledLink to="/#contact">Contact</StyledLink>
       </Nav>
     </NavigationWrapper>
   );
