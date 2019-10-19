@@ -37,26 +37,27 @@ const Footer = styled.footer`
 
   & a:link {
     text-decoration: none;
-    border-bottom: 1px solid rgb(0,105,237);
+    border-bottom: 1px solid rgb(0, 105, 237);
     padding: 2px 2px 1px;
-    color: rgb(0,105,237);
+    color: rgb(0, 105, 237);
     transition: all 150ms linear 0s;
+  }
+
+  & a:visited {
+    background-color: transparent;
+    color: rgb(0, 105, 237);
   }
 
   & a:focus,
   & a:hover {
-    background-color: rgb(0,105,237);
-    color: rgb(255,255,255);
+    background-color: rgb(0, 105, 237);
+    color: rgb(255, 255, 255);
     outline: 0px;
     text-decoration: none;
   }
 
   & a:active {
     color: #0053ba;
-  }
-
-  & a:visited {
-    color: rgb(0, 105, 237);
   }
 `;
 

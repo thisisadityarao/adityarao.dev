@@ -9,7 +9,7 @@ import '../../static/styles/post.css';
 
 const Wrapper = styled.main`
   min-height: 100%;
-  background-color: #f3f6fa;
+  background-color: #fffcf5;
 `;
 
 const Divider = styled.div`

@@ -1,9 +1,7 @@
 /* eslint-disable react/destructuring-assignment */
 import React from 'react';
-import { Moon } from 'styled-icons/fa-solid/Moon';
 import styled from 'styled-components';
 import { Link } from 'gatsby';
-import useDarkMode from '../utils/use-dark-mode';
 import Toggle from './mobileNav';
 
 const StyledLink = styled(Link)`
@@ -26,14 +24,14 @@ const StyledLink = styled(Link)`
   &:focus,
   &:hover {
     cursor: pointer;
-    color: rgb(0, 0, 0);
+    color: #fff;
     box-shadow: none;
-    background: #e8ebed;
+    background: #ff6433;
     border-radius: 4px;
     transition: all 0.2s ease-in-out 0s;
   }
   &:active {
-    color: rgb(0, 0, 0);
+    color: #fff;
   }
 
   @media (max-width: 767px) {
@@ -119,25 +117,14 @@ const Logo = styled.a`
   }
 `;
 
-const DarkModeButton = styled(Moon)`
-  cursor: pointer;
-  width: 22px;
-  height: 22px;
-  display: block;
-  margin-right: 2rem;
-`;
-
-const DarkMode = ({ darkMode, setDarkMode }) => <DarkModeButton onClick={() => setDarkMode(!darkMode)} />;
 
 function Navigation() {
-  const [darkMode, setDarkMode] = useDarkMode();
   return (
     <NavigationWrapper>
       <Logo href="/">
         <span className="logo">ADITYA RAO</span>
       </Logo>
       <Nav className="navigation">
-        <DarkMode darkMode={darkMode} setDarkMode={setDarkMode} />
         <Toggle className="mobile-nav" />
         <StyledLink to="/">Home</StyledLink>
         <StyledLink to="/about/">About Me</StyledLink>

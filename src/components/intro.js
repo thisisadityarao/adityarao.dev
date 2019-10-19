@@ -8,9 +8,11 @@ const SectionIntro = styled.section`
   padding-top: 6vh;
   margin-bottom: 5rem;
   text-align: center;
+  display: flex;
+  justify-content: space-between;
 
   @media (min-width: 400px) {
-    padding-top: 5rem;
+    padding-top: 4rem;
   }
   @media (min-width: 768px) {
     margin-bottom: 10rem;
@@ -18,7 +20,7 @@ const SectionIntro = styled.section`
   }
 
   & p {
-    line-height: 1.65;
+    line-height: 1.4;
     font-size: 1.2rem;
     max-width: 45rem;
 
@@ -35,10 +37,29 @@ const SectionIntro = styled.section`
     }
   }
 
+  & p:first-of-type {
+    font-size: 1.5rem;
+    line-height: 1.2;
+    font-weight: bold;
+
+    @media (min-width: 768px) {
+      font-size: 2.5rem;
+    }
+  }
+
+  & p#job {
+    font-size: 1.2rem;
+    font-weight: 700;
+
+    @media (min-width: 768px) {
+      font-size: 1.5rem;
+    }
+  }
+
   .wave {
     display: block;
     font-size: 2.5rem;
-    margin-top: 1rem;
+    margin-top: 0.8rem;
 
     @media (min-width: 768px) {
       font-size: 3rem;
@@ -69,8 +90,8 @@ const LinkButton = styled.a`
   margin: 0;
   padding: 1rem 4rem;
   text-decoration: none;
-  font-size: 1.1rem;
-  font-family: 'Inter', sans-serif;
+  font-size: 1.2rem;
+  font-family: 'Source Sans Pro', sans-serif;
   letter-spacing: 0.1em;
   text-align: center;
   border-radius: 3px;
@@ -96,23 +117,52 @@ const LinkButton = styled.a`
   }
 
   @media (min-width: 768px) {
-    font-size: 1.3rem;
+    font-size: 1.4rem;
+  }
+`;
+
+const ImgContainer = styled.div`
+align-self: center;
+
+  @media (min-width: 992px) {
+    background-repeat: no-repeat;
+    height: 400px;
+    width: 40%;
+    background-position: center center;
+    background-size: 400px 350px;
   }
 `;
 
 export default () => (
   <SectionIntro>
-    <span className="wave" role="img" aria-label="hand wave emoji">
-      👋
-    </span>
-    <p>I’m Aditya Rao, a freelance front-end developer.</p>
-    <p>
-      I build digital products that are intuitive, accessible, beautiful, and fun. I am here to help you and your
-      business turn great ideas into amazing products.
-    </p>
-    <p className="subtitle">Want to chat about your project?</p>
-    <LinkButton href="mailto:dev.adityarao@gmail.com" target="_blank" rel="noopener noreferrer">
-      Get in Touch
-    </LinkButton>
+    <div className="intro">
+      <span className="wave" role="img" aria-label="hand wave emoji">
+        👋
+      </span>
+      <p>I’m Aditya Rao, a freelance front-end developer.</p>
+      <p>
+        I build digital products that are intuitive, accessible, beautiful, and
+        fun. I am here to help you and your business turn great ideas into
+        amazing products.
+      </p>
+      <p id="location">Location- Mumbai, India.</p>
+      <p id="job">
+        *Currently looking for remote/full/part time contract.
+      </p>
+      <p className="subtitle">Want to chat about your project?</p>
+      <LinkButton
+        href="mailto:dev.adityarao@gmail.com"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Get in Touch
+      </LinkButton>
+    </div>
+    <ImgContainer
+      style={{
+        backgroundImage:
+          'url("https://res.cloudinary.com/adityar/image/upload/v1571462366/adityarao/Website%20Assets/landing-page.svg")'
+      }}
+    />
   </SectionIntro>
 );

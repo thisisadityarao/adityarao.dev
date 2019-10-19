@@ -20,19 +20,14 @@ const GlobalStyle = createGlobalStyle`
     margin: 0;
     height: 100%;
     width: 100%;
-    -webkit-text-size-adjust: 100%;
-    -ms-text-size-adjust: 100%;
     font-style: normal;
   }
 
   html {
     font-size: 100%;
-    text-rendering: optimizeLegibility;
     overflow-x: hidden;
     overflow-y: auto !important;
     box-sizing: border-box;
-    -ms-overflow-style: scrollbar;
-    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   }
 
   body {
@@ -68,22 +63,24 @@ const GlobalStyle = createGlobalStyle`
     max-width: 100%;
   }
 
+  /* DARK MODE STYLES */
   body.dark,
+  body.dark header,
   body.dark footer,
   body.dark article,
   body.dark main[class*=blog-] {
-    background-color: rgb(30,34,39);
-    color: #fff;
+    background-color: #141414;
+    color: #efefef;
   }
 
-  body.dark header {
-    background-color: #212529;
-    color: #f8f9fa;
-  }
 
   body.dark main[class*=blog-] .page-header {
     color: #fff;
   }
+
+  body.dark img {
+  filter: grayscale(30%);
+}
 
   body.dark #tag-link {
     color: #fff;

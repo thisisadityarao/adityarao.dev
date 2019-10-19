@@ -9,7 +9,7 @@ import { ExternalLinkAlt } from 'styled-icons/fa-solid/ExternalLinkAlt';
 const SectionContact = styled.section`
   width: 100%;
   max-width: 1280px;
-  margin: 4rem auto;
+  margin: 5rem auto;
   padding-top: 2rem;
   padding-bottom: 2rem;
 `;
@@ -27,11 +27,11 @@ const H3 = styled.h3`
     display: block;
     width: 100px;
     height: 5px;
-    background: #ec4c47;
+    background: #ff6433;
     position: absolute;
     bottom: 0;
     left: 0;
-    content: '';
+    content: "";
   }
 
   @media (min-width: 768px) {

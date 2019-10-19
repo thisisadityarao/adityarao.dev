@@ -80,11 +80,11 @@ const H3 = styled.h3`
     display: block;
     width: 100px;
     height: 5px;
-    background: #ec4c47;
+    background: #ff6433;
     position: absolute;
     bottom: 5px;
     left: 0;
-    content: '';
+    content: "";
   }
 
   @media (min-width: 768px) {
@@ -125,8 +125,8 @@ export default () => (
         <ImgContainer
           style={{
             backgroundImage:
-              'url("https://res.cloudinary.com/adityar/image/upload/v1544967290/raoaditya.com/Website%20Asset/front-end-development.svg")',
-            backgroundSize: '275px 180px',
+              'url("https://res.cloudinary.com/adityar/image/upload/v1571462366/adityarao/Website%20Assets/developer.svg")',
+            backgroundSize: "275px 180px"
           }}
         />
         <Work>
@@ -134,9 +134,11 @@ export default () => (
             <span>FRONT-END DEVELOPMENT</span>
           </H4>
           <p>
-            As a Front End Developer, I am responsible for converting the design to live, high performance, interactive
-            website. I create responsive websites that work across a range of devices and browsers. I follow industry
-            coding standards and use the latest tools & techniques to create accessible, performant websites.
+            As a Front End Developer, I am responsible for converting the design
+            to live, high performance, interactive website. I create responsive
+            websites that work across a range of devices and browsers. I follow
+            industry coding standards and use the latest tools & techniques to
+            create accessible, performant websites.
           </p>
         </Work>
       </Section>
@@ -146,55 +148,39 @@ export default () => (
         <ImgContainer
           style={{
             backgroundImage:
-              'url("https://res.cloudinary.com/adityar/image/upload/v1544967290/raoaditya.com/Website%20Asset/seo.svg")',
+              'url("https://res.cloudinary.com/adityar/image/upload/v1571462366/adityarao/Website%20Assets/seo_asset.svg")'
           }}
         />
         <Work>
           <H4>SEARCH ENGINE OPTIMIZATION</H4>
           <p>
-            For increased traffic, enhanced sales and high page rankings you need effective SEO. Every business is
-            unique & so the SEO strategy is also unique. Through comprehensive SEO audits & deploying on-page
-            optimization techniques to the site, I remove the flaws & optimise the site for search engines and users.
-            With an able PPC campaign, you’ll be able to reach out to your target audience and pay only for the clicks
-            you get, thereby reducing the total advertising expenditure.
+            For increased traffic, enhanced sales and high page rankings you
+            need effective SEO. Every business is unique & so the SEO strategy
+            is also unique. Through comprehensive SEO audits & deploying on-page
+            optimization techniques to the site, I remove the flaws & optimise
+            the site for search engines and users. With an able PPC campaign,
+            you’ll be able to reach out to your target audience and pay only for
+            the clicks you get, thereby reducing the total advertising
+            expenditure.
           </p>
         </Work>
       </Section>
       <Separator />
-
-      <Section>
-        <ImgContainer
-          style={{
-            backgroundImage:
-              'url("https://res.cloudinary.com/adityar/image/upload/v1544967290/raoaditya.com/Website%20Asset/email-marketing.svg")',
-          }}
-        />
-        <Work>
-          <H4>EMAIL MARKETING</H4>
-          <p>
-            {' '}
-            Email marketing helps you connect with your audience to promote your brand and increase sales. You can sell
-            your product, tell a story, or keep prospective clients/customers updated with the latest news. I help you
-            build and maintain an engaged subscriber list, made up of people who want to receive your messages.
-          </p>
-        </Work>
-      </Section>
-      <Separator />
-
       <Section className="reverse">
         <ImgContainer
           style={{
             backgroundImage:
-              'url("https://res.cloudinary.com/adityar/image/upload/v1544967290/raoaditya.com/Website%20Asset/social-media-marketing.svg")',
+              'url("https://res.cloudinary.com/adityar/image/upload/v1571462366/adityarao/Website%20Assets/social_media.svg")'
           }}
         />
         <Work>
           <H4>SOCIAL MEDIA MARKETING</H4>
           <p>
-            {' '}
-            Social media has emerged as a powerful marketing tool in recent years. Social media gives you an insight
-            into what your customers are looking for. I help you connect with your target audience, manage your
-            reputation, and boost your brand image.{' '}
+            {" "}
+            Social media has emerged as a powerful marketing tool in recent
+            years. Social media gives you an insight into what your customers
+            are looking for. I help you connect with your target audience,
+            manage your reputation, and boost your brand image.{" "}
           </p>
         </Work>
       </Section>
