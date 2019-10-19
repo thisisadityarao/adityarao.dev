@@ -28,6 +28,7 @@ const Footer = styled.footer`
   }
 
   & p:first-of-type {
+    margin-top: 0.8rem;
     margin-bottom: 0.8rem;
 
     @media (min-width: 768px) {

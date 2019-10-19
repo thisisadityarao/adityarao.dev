@@ -10,6 +10,16 @@ const Wrapper = styled.main`
   margin: 0 auto;
 `;
 
+const Posts = styled.div`
+  width: 100%;
+  display: flex;
+  align-items: baseline;
+
+  .note {
+    margin-right: 0.7rem;
+  }
+`;
+
 const TagListing = styled.section`
   display: flex;
   flex-direction: column;
@@ -26,23 +36,26 @@ const H1 = styled.h1`
   font-size: 1.5rem;
   font-weight: 700;
   margin-top: 1rem;
-  margin-bottom: 3.5rem;
+  margin-bottom: 5rem;
 
   @media (min-width: 576px) {
     font-size: 1.8rem;
   }
 
   & span {
-    color: #F44336;
+
+    color: #ff6433;
     font-weight: 700;
+    letter-spacing: 0.3px;
+    text-transform: uppercase;
     display: inline-block;
-    text-decoration: underline;
   }
 `;
 const Links = styled(Link)`
   margin-bottom: 50px;
-  font-size: 1.1rem;
-  text-decoration: underline;
+  font-size: 1.2rem;
+  text-decoration: none;
+
   &:link {
     color: rgb(0, 105, 237);
   }
@@ -57,8 +70,10 @@ const Links = styled(Link)`
     color: rgb(0, 105, 237);
   }
 
+
+
   @media (min-width: 768px) {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
   }
 `;
 
@@ -74,9 +89,12 @@ function Tags({ data, pageContext }) {
           </H1>
 
           {posts.map(({ node }, i) => (
-            <Links to={node.fields.slug} key={i}>
-              {node.frontmatter.title}
-            </Links>
+            <Posts>
+              <span className="note">📝</span>
+              <Links to={node.fields.slug} key={i}>
+                {node.frontmatter.title}
+              </Links>
+            </Posts>
           ))}
         </TagListing>
       </Wrapper>

@@ -60,6 +60,8 @@ const Links = styled(Link)`
   border-style: solid;
   border-color: rgb(6, 122, 228);
   border-image: initial;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
 
   &:hover {
     background-image: linear-gradient(rgb(6, 153, 255), rgb(6, 141, 255));

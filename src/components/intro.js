@@ -5,21 +5,17 @@ import styled, { keyframes } from 'styled-components';
 const SectionIntro = styled.section`
   width: 100%;
   height: 100%;
-  padding-top: 6vh;
-  margin-bottom: 5rem;
+  padding: 6rem 0;
   text-align: center;
   display: flex;
   justify-content: space-between;
 
-  @media (min-width: 400px) {
-    padding-top: 4rem;
-  }
   @media (min-width: 768px) {
-    margin-bottom: 10rem;
     text-align: left;
   }
 
   & p {
+    color: rgba(65, 75, 80, 1);
     line-height: 1.4;
     font-size: 1.2rem;
     max-width: 45rem;
@@ -29,15 +25,9 @@ const SectionIntro = styled.section`
     }
   }
 
-  p + p {
-    margin-top: 1.8rem;
-
-    @media (min-width: 768px) {
-      margin-top: 1rem;
-    }
-  }
-
-  & p:first-of-type {
+  & .self {
+    color: rgba(65, 75, 80);
+    font-family: "Source Sans Pro", sans-serif;
     font-size: 1.5rem;
     line-height: 1.2;
     font-weight: bold;
@@ -47,31 +37,26 @@ const SectionIntro = styled.section`
     }
   }
 
-  & p#job {
+  & .work {
+    margin-top: 40px;
+  }
+
+  & .job {
     font-size: 1.2rem;
     font-weight: 700;
+    margin-top: 36px;
+    margin-bottom: 24px;
 
     @media (min-width: 768px) {
       font-size: 1.5rem;
     }
   }
 
-  .wave {
-    display: block;
-    font-size: 2.5rem;
-    margin-top: 0.8rem;
-
-    @media (min-width: 768px) {
-      font-size: 3rem;
-    }
-  }
-
   .subtitle {
-    margin-top: 4rem;
     font-size: 1.2rem;
+    margin-top: 0;
     @media (min-width: 768px) {
       font-size: 1.4rem;
-      margin-top: 3rem;
     }
   }
 `;
@@ -136,17 +121,14 @@ align-self: center;
 export default () => (
   <SectionIntro>
     <div className="intro">
-      <span className="wave" role="img" aria-label="hand wave emoji">
-        👋
-      </span>
-      <p>I’m Aditya Rao, a freelance front-end developer.</p>
-      <p>
+      <h1 className="self">Hi!, I’m Aditya Rao, a freelance front-end developer.</h1>
+      <p className="work">
         I build digital products that are intuitive, accessible, beautiful, and
         fun. I am here to help you and your business turn great ideas into
         amazing products.
       </p>
-      <p id="location">Location- Mumbai, India.</p>
-      <p id="job">
+      <p className="location">Location - Mumbai, India.</p>
+      <p className="job">
         *Currently looking for remote/full/part time contract.
       </p>
       <p className="subtitle">Want to chat about your project?</p>

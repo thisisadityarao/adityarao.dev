@@ -129,7 +129,7 @@ function Navigation() {
         <StyledLink to="/">Home</StyledLink>
         <StyledLink to="/about/">About Me</StyledLink>
         <StyledLink to="/blog/">Blog</StyledLink>
-        <StyledLink to="#contact">Contact</StyledLink>
+        <StyledLink to="/#contact">Contact</StyledLink>
       </Nav>
     </NavigationWrapper>
   );

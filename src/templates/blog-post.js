@@ -126,10 +126,11 @@ const PostTagLink = styled(Link)`
 const PostTags = styled(Link)`
   display: inline-block;
   margin-left: 0.5rem;
-  font-size: 1.1rem;
+  font-size: 1rem;
   white-space: nowrap;
   word-break: keep-all;
   cursor: pointer;
+  text-transform: uppercase;
   text-decoration: none;
   line-height: 1.1;
   position: relative;
@@ -147,7 +148,7 @@ const PostTags = styled(Link)`
     background-color: rgb(0, 105, 237);
   }
   @media (min-width: 576px) {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
   }
 `;
 
