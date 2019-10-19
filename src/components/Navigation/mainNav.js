@@ -126,10 +126,44 @@ function Navigation() {
       </Logo>
       <Nav className="navigation">
         <Toggle className="mobile-nav" />
-        <StyledLink to="/">Home</StyledLink>
-        <StyledLink to="/about/">About Me</StyledLink>
-        <StyledLink to="/blog/">Blog</StyledLink>
-        <StyledLink to="/#contact">Contact</StyledLink>
+        <StyledLink
+          to="/"
+          activeStyle={{
+            color: "#fff",
+            boxShadow: "none",
+            background: "#ff6433",
+            borderRadius: "4px"
+          }}
+        >
+          Home
+        </StyledLink>
+        <StyledLink
+          to="/about/"
+          activeStyle={{
+            color: "#fff",
+            boxShadow: "none",
+            background: "#ff6433",
+            borderRadius: "4px"
+          }}
+        >
+          About Me
+        </StyledLink>
+        <StyledLink
+          to="/blog/"
+          activeStyle={{
+            color: "#fff",
+            boxShadow: "none",
+            background: "#ff6433",
+            borderRadius: "4px"
+          }}
+        >
+          Blog
+        </StyledLink>
+        <StyledLink
+          to="/#contact"
+        >
+          Contact
+        </StyledLink>
       </Nav>
     </NavigationWrapper>
   );
