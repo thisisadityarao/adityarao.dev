@@ -1,7 +1,7 @@
 /* eslint-disable react/display-name */
 import React from 'react';
 import styled from 'styled-components';
-import { Reveal, Animation } from "react-genie";
+import { Reveal, Animation } from 'react-genie';
 
 const SectionWork = styled.section`
   width: 100%;
@@ -85,7 +85,7 @@ const H3 = styled.h3`
     position: absolute;
     bottom: 5px;
     left: 0;
-    content: "";
+    content: '';
   }
 
   @media (min-width: 768px) {
@@ -121,16 +121,16 @@ const Separator = styled.hr`
 export default () => (
   <>
     <SectionWork>
-      <Reveal animation={Animation.FadeIn}>
+      <Reveal animation={Animation.FadeIn} delay={400}>
         <H3>SERVICES</H3>
       </Reveal>
-      <Reveal animation={Animation.SlideInLeft}>
+      <Reveal animation={Animation.SlideInLeft} delay={400}>
         <Section>
           <ImgContainer
             style={{
               backgroundImage:
                 'url("https://res.cloudinary.com/adityar/image/upload/v1571462366/adityarao/Website%20Assets/developer.svg")',
-              backgroundSize: "275px 180px"
+              backgroundSize: '275px 180px',
             }}
           />
 
@@ -139,56 +139,51 @@ export default () => (
               <span>FRONT-END DEVELOPMENT</span>
             </H4>
             <p>
-              As a Front End Developer, I am responsible for converting the
-              design to live, high performance, interactive website. I create
-              responsive websites that work across a range of devices and
-              browsers. I follow industry coding standards and use the latest
-              tools & techniques to create accessible, performant websites.
+              As a Front End Developer, I am responsible for converting the design to live, high performance,
+              interactive website. I create responsive websites that work across a range of devices and browsers. I
+              follow industry coding standards and use the latest tools & techniques to create accessible, performant
+              websites.
             </p>
           </Work>
         </Section>
       </Reveal>
       <Separator />
-      <Reveal animation={Animation.SlideInLeft}>
+      <Reveal animation={Animation.SlideInLeft} delay={400}>
         <Section className="reverse">
           <ImgContainer
             style={{
               backgroundImage:
-                'url("https://res.cloudinary.com/adityar/image/upload/v1571462366/adityarao/Website%20Assets/seo_asset.svg")'
+                'url("https://res.cloudinary.com/adityar/image/upload/v1571462366/adityarao/Website%20Assets/seo_asset.svg")',
             }}
           />
           <Work>
             <H4>SEARCH ENGINE OPTIMIZATION</H4>
             <p>
-              For increased traffic, enhanced sales and high page rankings you
-              need effective SEO. Every business is unique & so the SEO strategy
-              is also unique. Through comprehensive SEO audits & deploying
-              on-page optimization techniques to the site, I remove the flaws &
-              optimise the site for search engines and users. With an able PPC
-              campaign, you’ll be able to reach out to your target audience and
-              pay only for the clicks you get, thereby reducing the total
-              advertising expenditure.
+              For increased traffic, enhanced sales and high page rankings you need effective SEO. Every business is
+              unique & so the SEO strategy is also unique. Through comprehensive SEO audits & deploying on-page
+              optimization techniques to the site, I remove the flaws & optimise the site for search engines and users.
+              With an able PPC campaign, you’ll be able to reach out to your target audience and pay only for the clicks
+              you get, thereby reducing the total advertising expenditure.
             </p>
           </Work>
         </Section>
       </Reveal>
       <Separator />
-      <Reveal animation={Animation.SlideInLeft}>
+      <Reveal animation={Animation.SlideInLeft} delay={400}>
         <Section className="reverse">
           <ImgContainer
             style={{
               backgroundImage:
-                'url("https://res.cloudinary.com/adityar/image/upload/v1571462366/adityarao/Website%20Assets/social_media.svg")'
+                'url("https://res.cloudinary.com/adityar/image/upload/v1571462366/adityarao/Website%20Assets/social_media.svg")',
             }}
           />
           <Work>
             <H4>SOCIAL MEDIA MARKETING</H4>
             <p>
-              {" "}
-              Social media has emerged as a powerful marketing tool in recent
-              years. Social media gives you an insight into what your customers
-              are looking for. I help you connect with your target audience,
-              manage your reputation, and boost your brand image.{" "}
+              {' '}
+              Social media has emerged as a powerful marketing tool in recent years. Social media gives you an insight
+              into what your customers are looking for. I help you connect with your target audience, manage your
+              reputation, and boost your brand image.{' '}
             </p>
           </Work>
         </Section>

@@ -1,7 +1,7 @@
 /* eslint-disable react/display-name */
 import React from 'react';
 import styled, { keyframes } from 'styled-components';
-import { Reveal, Animation } from "react-genie";
+import { Reveal, Animation } from 'react-genie';
 
 const SectionHireMe = styled.section`
   border-top: 1px solid #eeeeee;
@@ -56,7 +56,8 @@ const EmailButton = styled.a`
   border: none;
   border-radius: 3px;
   font-size: 1.1rem;
-  letter-spacing: 0.1em;
+  font-weight: bold;
+  letter-spacing: 1px;
   margin: 0 auto;
   padding: 1rem 4rem;
   width: 242px;
@@ -89,22 +90,16 @@ const EmailButton = styled.a`
 `;
 
 export default () => (
-
-    <SectionHireMe className="hire">
-      <Reveal animation={Animation.FadeInUp}>
+  <SectionHireMe className="hire">
+    <Reveal animation={Animation.FadeInUp} delay={450}>
       <h3>Let&apos;s talk about your project.</h3>
       <p>
-        I&apos;m currently seeking freelance opportunities. If you are
-        interested in a new project or collaboration, send me an email.
+        I&apos;m currently seeking freelance opportunities. If you are interested in a new project or collaboration,
+        send me an email.
       </p>
-      <EmailButton
-        href="mailto:dev.adityarao@gmail.com"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
+      <EmailButton href="mailto:dev.adityarao@gmail.com" target="_blank" rel="noopener noreferrer">
         Send Email
       </EmailButton>
-      </Reveal>
-    </SectionHireMe>
-
+    </Reveal>
+  </SectionHireMe>
 );

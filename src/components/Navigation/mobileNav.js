@@ -22,8 +22,9 @@ const Menu = styled.button`
 `;
 
 const MenuItem = styled.div`
-  width: 27px;
-  height: 2px;
+  width: 30px;
+  height: 3px;
+  border-radius: 8px;
   position: absolute;
   left: 0;
   background: ${props => (props.menuToggle ? 'transparent' : '#2a3a4a')};
@@ -32,8 +33,9 @@ const MenuItem = styled.div`
   &::before {
     content: '';
     top: -8px;
-    width: 27px;
-    height: 2px;
+    width: 30px;
+    height: 3px;
+    border-radius: 8px;
     position: absolute;
     background: ${props => (props.menuToggle ? 'white' : '#2a3a4a')};
     left: 0;
@@ -44,8 +46,9 @@ const MenuItem = styled.div`
   &::after {
     top: 8px;
     content: '';
-    width: 27px;
-    height: 2px;
+    width: 30px;
+    height: 3px;
+    border-radius: 8px;
     background: ${props => (props.menuToggle ? 'white' : '#2a3a4a')};
     position: absolute;
     left: 0;

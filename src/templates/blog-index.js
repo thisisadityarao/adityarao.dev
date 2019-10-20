@@ -3,8 +3,8 @@ import React from 'react';
 import styled from 'styled-components';
 import { ArrowRight } from 'styled-icons/fa-solid/ArrowRight';
 import { Link, graphql } from 'gatsby';
+import { Reveal, Animation } from 'react-genie';
 import Layout from '../components/layout';
-import { Reveal, Animation } from "react-genie";
 
 const Wrapper = styled.main`
   height: 100%;
@@ -19,8 +19,7 @@ const Wrapper = styled.main`
   }
 
   & .paginationLink:hover,
-  & .paginationLink:active
-  & .paginationLink:focus {
+  & .paginationLink:active & .paginationLink:focus {
     color: rgb(255, 255, 255);
     background: rgb(0, 105, 237);
   }
@@ -29,7 +28,7 @@ const Wrapper = styled.main`
     padding: 2rem;
 
     & .paginationLink {
-    font-size: 1.3rem;
+      font-size: 1.3rem;
     }
   }
 `;
@@ -117,7 +116,6 @@ const Arrow = styled(ArrowRight)`
   margin-top: 1px;
 `;
 
-
 const Links = styled(Link)`
   &:link {
     text-decoration: none;
@@ -133,10 +131,7 @@ const Links = styled(Link)`
   &:visited {
     color: #2a3a4a;
   }
-
 `;
-
-
 
 export default ({ data, pageContext }) => {
   const posts = data.allMdx.edges;
@@ -153,15 +148,12 @@ export default ({ data, pageContext }) => {
           <H1>Latest Blog Posts</H1>
           {posts.map(({ node }) => {
             return (
-              <Reveal animation={Animation.FadeInUp}>
+              <Reveal animation={Animation.FadeInUp} delay={400}>
                 <Links to={node.fields.slug}>
                   <Post key={node.fields.slug}>
                     <H2>{node.frontmatter.title}</H2>
                     <BlogPost>{node.excerpt}</BlogPost>
-                    <Links
-                      to={node.fields.slug}
-                      style={{ color: "#0069ed", fontWeight: "500" }}
-                    >
+                    <Links to={node.fields.slug} style={{ color: '#0069ed', fontWeight: '500' }}>
                       Read More <Arrow />
                     </Links>
                   </Post>
@@ -187,10 +179,15 @@ export default ({ data, pageContext }) => {
           id="pagination-links"
         >
           {!isFirst && (
-            <Links to={prevPage} rel="prev" className={'paginationLink'} style={{
-              padding: '0.2rem 0.6rem',
-              borderRadius: '4px',
-            }}>
+            <Links
+              to={prevPage}
+              rel="prev"
+              className="paginationLink"
+              style={{
+                padding: '0.2rem 0.6rem',
+                borderRadius: '4px',
+              }}
+            >
               ← Previous Page
             </Links>
           )}
@@ -210,17 +207,22 @@ export default ({ data, pageContext }) => {
                   background: i + 1 === currentPage ? '#0069ed' : '',
                   borderRadius: '4px',
                 }}
-                className={'paginationLink'}
+                className="paginationLink"
               >
                 {i + 1}
               </Links>
             </li>
           ))}
           {!isLast && (
-            <Links to={nextPage} rel="next" className={'paginationLink'} style={{
-              padding: '0.2rem 0.6rem',
-              borderRadius: '4px',
-            }}>
+            <Links
+              to={nextPage}
+              rel="next"
+              className="paginationLink"
+              style={{
+                padding: '0.2rem 0.6rem',
+                borderRadius: '4px',
+              }}
+            >
               Next Page →
             </Links>
           )}

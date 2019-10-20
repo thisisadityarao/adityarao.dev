@@ -4,11 +4,11 @@
 
 import React from 'react';
 import styled, { createGlobalStyle } from 'styled-components';
+import { RevealGlobalStyles } from 'react-genie';
 import Head from './head';
 import Footer from './footer';
 import Header from './header';
 import ScrollToTop from './scroll-to-top';
-import { RevealGlobalStyles } from "react-genie";
 
 // CSS Reset
 import '../../node_modules/sanitize.css/sanitize.css';
@@ -29,6 +29,8 @@ const GlobalStyle = createGlobalStyle`
     overflow-x: hidden;
     overflow-y: auto !important;
     box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
   }
 
   body {

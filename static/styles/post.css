@@ -1,6 +1,6 @@
 /*****TYPOGRAPHIC STYLES*****/
 .typeset {
-  --background-color: #fffcf5;
+  --background-color: #fff;
   --border-color: #dbe2f2;
   --color: #324354;
   --blockquote-color: rgba(0, 0, 0, 0.2);
@@ -232,10 +232,6 @@
   Lists
 */
 
-.typeset ol,
-.typeset ul {
-  margin-left: 1rem;
-}
 .typeset ol ol,
 .typeset ul ul,
 .typeset ol ul,
@@ -265,6 +261,12 @@
   font-size: 1.1rem;
   margin-bottom: 1.5rem;
 }
+
+.typeset ol,
+.typeset ul {
+  margin-left: 1rem;
+}
+
 .typeset dl {
   /* margin set above */
 }

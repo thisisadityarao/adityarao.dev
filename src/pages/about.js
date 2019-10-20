@@ -2,8 +2,8 @@
 import React from 'react';
 import styled from 'styled-components';
 import { between } from 'polished';
+import { Reveal, Animation } from 'react-genie';
 import Layout from '../components/layout';
-import { Reveal, AnimatedTitle, Animation } from "react-genie";
 
 const About = styled.div`
   margin: 0 auto;
@@ -27,7 +27,7 @@ const SectionAbout = styled.section`
   padding-top: 4rem;
 
   & p {
-    font-size: ${between("18px", "20px")};
+    font-size: ${between('18px', '20px')};
     line-height: 1.5;
   }
 
@@ -80,7 +80,7 @@ const SectionAbout = styled.section`
   }
   li {
     line-height: 1.4;
-    font-size: ${between("18px", "20px")};
+    font-size: ${between('18px', '20px')};
     margin-bottom: 1rem;
   }
 `;
@@ -89,8 +89,9 @@ const H1 = styled.h1`
   position: relative;
   font-weight: 900;
   font-size: 2.5rem;
-  letter-spacing: 0.1em;
-  margin-bottom: 0.5rem;
+  letter-spacing: 1px;
+  word-spacing: 5px;
+  margin-bottom: 0.4rem;
   text-align: center;
   padding: 0 0 15px 0;
 
@@ -117,7 +118,7 @@ const H3 = styled.h3`
   position: relative;
   font-weight: 700;
   font-size: 1.4rem;
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
   margin-bottom: 0.5rem;
   text-align: left;
   padding: 0 0 15px 0;
@@ -137,61 +138,47 @@ const HR = styled.hr`
 
 export default () => (
   <Layout>
-    <Reveal animation={Animation.FadeInUp}>
+    <Reveal animation={Animation.FadeInUp} delay={400}>
       <About>
-        {" "}
+        {' '}
         <SectionAbout id="about">
-          <H1>
-            <AnimatedTitle>ABOUT ME</AnimatedTitle>
-          </H1>
+          <H1>ABOUT ME</H1>
           <HR />
           <H2>I'm Aditya Rao.</H2>
           <p>web developer · occasional designer</p>
           <H3>Who am I?</H3>
+          <p>I am a self-taught freelance web developer based out of Mumbai, India.</p>
           <p>
-            I am a self-taught freelance web developer based out of Mumbai,
-            India.
+            {' '}
+            My focus is mainly in front-end technologies such as <b>HTML</b>, <b>CSS</b>, <b>JavaScript</b>,{' '}
+            <b>GatsbyJS</b>, <b>ReactJS</b> &amp; others that make up the <a href="https://jamstack.org">JAMSTACK</a>{' '}
+            architecture.
           </p>
           <p>
-            {" "}
-            My focus is mainly in front-end technologies such as <b>
-              HTML
-            </b>, <b>CSS</b>, <b>JavaScript</b>, <b>GatsbyJS</b>, <b>ReactJS</b>{" "}
-            &amp; others that make up the{" "}
-            <a href="https://jamstack.org">JAMSTACK</a> architecture.
+            {' '}
+            I help people &amp; organization get the positive attention they deserve, by creating elegant, functional
+            and modern websites. My emphasis is on producing thoughtful, conceptually driven work that comes from a
+            close understanding of the client and their audience.
           </p>
           <p>
-            {" "}
-            I help people &amp; organization get the positive attention they
-            deserve, by creating elegant, functional and modern websites. My
-            emphasis is on producing thoughtful, conceptually driven work that
-            comes from a close understanding of the client and their audience.
-          </p>
-          <p>
-            I’m passionate about technology, design and making peoples lives
-            easier by solving complex problems to create user-friendly,
-            intuitive digital products. I’m constantly trying to expand and
-            evolve my set of technical skills and apply them to equally varied
-            methods of problem solving and understanding. I am inspired by new
-            trends and details are essential to me.
+            I’m passionate about technology, design and making peoples lives easier by solving complex problems to
+            create user-friendly, intuitive digital products. I’m constantly trying to expand and evolve my set of
+            technical skills and apply them to equally varied methods of problem solving and understanding. I am
+            inspired by new trends and details are essential to me.
           </p>
           <H3>About This Site</H3>
           <p>
-            This website was formally built in the year 2017, but the style of
-            the site has been changed several times.
+            This website was formally built in the year 2017, but the style of the site has been changed several times.
           </p>
           <p>The main purposes of this website are listed here:</p>
           <ul>
             <li>Showcase my personal projects.</li>
-            <li>
-              Document new learnings and implementation in front-end landscape.
-            </li>
+            <li>Document new learnings and implementation in front-end landscape.</li>
             <li>It works as a portfolio.</li>
           </ul>
           <p>
-            To know more about me you can follow me on{" "}
-            <a href="https://twitter.com/thisisadityarao">Twitter</a> or send me
-            a <a href="mailto:dev.adityarao@gmail.com">mail</a>.
+            To know more about me you can follow me on <a href="https://twitter.com/thisisadityarao">Twitter</a> or send
+            me a <a href="mailto:dev.adityarao@gmail.com">Email</a>.
           </p>
         </SectionAbout>
       </About>

@@ -3,7 +3,6 @@ import React from 'react';
 import styled from 'styled-components';
 import { Link } from 'gatsby';
 import Toggle from './mobileNav';
-import { AnimatedTitle } from "react-genie";
 
 const StyledLink = styled(Link)`
   cursor: pointer;
@@ -114,7 +113,7 @@ const Logo = styled.a`
 
   span {
     font-weight: 900;
-    letter-spacing: 0.1em;
+    letter-spacing: 0.5px;
   }
 
   @media (min-width: 768px) {
@@ -123,24 +122,21 @@ const Logo = styled.a`
   }
 `;
 
-
 function Navigation() {
   return (
     <NavigationWrapper>
       <Logo href="/">
-        <span className="logo">
-          <AnimatedTitle>ADITYA RAO</AnimatedTitle>
-        </span>
+        <span className="logo">ADITYA RAO</span>
       </Logo>
       <Nav className="navigation">
         <Toggle className="mobile-nav" />
         <StyledLink
           to="/"
           activeStyle={{
-            color: "#fff",
-            boxShadow: "none",
-            background: "#ff6433",
-            borderRadius: "4px"
+            color: '#fff',
+            boxShadow: 'none',
+            background: '#ff6433',
+            borderRadius: '4px',
           }}
         >
           Home
@@ -148,10 +144,10 @@ function Navigation() {
         <StyledLink
           to="/about/"
           activeStyle={{
-            color: "#fff",
-            boxShadow: "none",
-            background: "#ff6433",
-            borderRadius: "4px"
+            color: '#fff',
+            boxShadow: 'none',
+            background: '#ff6433',
+            borderRadius: '4px',
           }}
         >
           About Me
@@ -159,10 +155,10 @@ function Navigation() {
         <StyledLink
           to="/blog/"
           activeStyle={{
-            color: "#fff",
-            boxShadow: "none",
-            background: "#ff6433",
-            borderRadius: "4px"
+            color: '#fff',
+            boxShadow: 'none',
+            background: '#ff6433',
+            borderRadius: '4px',
           }}
         >
           Blog

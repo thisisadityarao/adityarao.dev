@@ -1,18 +1,19 @@
+/* eslint-disable import/no-extraneous-dependencies */
 /* eslint-disable react/display-name */
 import React from 'react';
-import { Reveal, Animation } from "react-genie";
+import { Reveal, Animation } from 'react-genie';
 import styled, { keyframes } from 'styled-components';
 
 const SectionIntro = styled.section`
   width: 100%;
   height: 100%;
-  padding: 6rem 0;
-  text-align: center;
+  padding: 4rem 0;
+  text-align: left;
   display: flex;
   justify-content: space-between;
 
   @media (min-width: 768px) {
-    text-align: left;
+    padding: 6rem 0;
   }
 
   & p {
@@ -28,7 +29,7 @@ const SectionIntro = styled.section`
 
   & .self {
     color: rgba(65, 75, 80);
-    font-family: "Source Sans Pro", sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
     font-size: 1.5rem;
     line-height: 1.2;
     font-weight: bold;
@@ -77,8 +78,9 @@ const LinkButton = styled.a`
   padding: 1rem 3rem;
   text-decoration: none;
   font-size: 1.2rem;
+  font-weight: bold;
   font-family: 'Source Sans Pro', sans-serif;
-  letter-spacing: 0.1em;
+  letter-spacing: 1px;
   text-align: center;
   border-radius: 3px;
   background: linear-gradient(45deg, #0069ed, #8200ff);
@@ -108,7 +110,7 @@ const LinkButton = styled.a`
 `;
 
 const ImgContainer = styled.div`
-align-self: center;
+  align-self: center;
 
   @media (min-width: 992px) {
     background-repeat: no-repeat;
@@ -120,34 +122,25 @@ align-self: center;
 `;
 
 export default () => (
-  <Reveal animation={Animation.FadeInUp}>
+  <Reveal animation={Animation.FadeInUp} delay={450}>
     <SectionIntro>
       <div className="intro">
-        <h1 className="self">
-            Hi!, I’m Aditya Rao, a freelance front-end developer.
-        </h1>
+        <h1 className="self">Hi!, I’m Aditya Rao, a freelance front-end developer.</h1>
         <p className="work">
-          I build digital products that are intuitive, accessible, beautiful,
-          and fun. I am here to help you and your business turn great ideas into
-          amazing products.
+          I build digital products that are intuitive, accessible, beautiful, and fun. I am here to help you and your
+          business turn great ideas into amazing products.
         </p>
         <p className="location">Location - Mumbai, India.</p>
-        <p className="job">
-          *Currently looking for remote/full/part time contract.
-        </p>
+        <p className="job">*Currently looking for remote/full/part time contract.</p>
         <p className="subtitle">Want to chat about your project?</p>
-        <LinkButton
-          href="mailto:dev.adityarao@gmail.com"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+        <LinkButton href="mailto:dev.adityarao@gmail.com" target="_blank" rel="noopener noreferrer">
           Get in Touch
         </LinkButton>
       </div>
       <ImgContainer
         style={{
           backgroundImage:
-            'url("https://res.cloudinary.com/adityar/image/upload/v1571462366/adityarao/Website%20Assets/landing-page.svg")'
+            'url("https://res.cloudinary.com/adityar/image/upload/v1571462366/adityarao/Website%20Assets/landing-page.svg")',
         }}
       />
     </SectionIntro>

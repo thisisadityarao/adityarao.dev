@@ -5,7 +5,7 @@ import { Github } from 'styled-icons/fa-brands/Github';
 import { Envelope } from 'styled-icons/fa-regular/Envelope';
 import { Twitter } from 'styled-icons/fa-brands/Twitter';
 import { ExternalLinkAlt } from 'styled-icons/fa-solid/ExternalLinkAlt';
-import { Reveal, Animation } from "react-genie";
+import { Reveal, Animation } from 'react-genie';
 
 const SectionContact = styled.section`
   width: 100%;
@@ -32,7 +32,7 @@ const H3 = styled.h3`
     position: absolute;
     bottom: 0;
     left: 0;
-    content: "";
+    content: '';
   }
 
   @media (min-width: 768px) {
@@ -79,7 +79,7 @@ const SocialIcons = styled.ul`
     }
 
     &:hover {
-      color: rgb(0,105,237);
+      color: rgb(0, 105, 237);
     }
   }
 
@@ -96,7 +96,7 @@ const SocialIcons = styled.ul`
 
   & a:hover::before {
     width: 100%;
-    background: rgb(0,105,237);
+    background: rgb(0, 105, 237);
     transition: width 0.5s ease;
   }
 
@@ -108,7 +108,7 @@ const SocialIcons = styled.ul`
     bottom: 0;
     height: 2px;
     width: 0;
-    background: rgb(0,105,237);
+    background: rgb(0, 105, 237);
 
     transition: width 0.5s ease;
   }
@@ -174,7 +174,7 @@ const ExternalLink = styled(ExternalLinkAlt)`
 
 export default () => (
   <SectionContact id="contact">
-    <Reveal animation={Animation.FadeInUp}>
+    <Reveal animation={Animation.FadeInUp} delay={400}>
       <H3>CONTACT</H3>
       <SocialIcons>
         <li>
