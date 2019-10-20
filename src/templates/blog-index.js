@@ -148,7 +148,7 @@ export default ({ data, pageContext }) => {
           <H1>Latest Blog Posts</H1>
           {posts.map(({ node }) => {
             return (
-              <Reveal animation={Animation.FadeInUp} delay={400}>
+              <Reveal animation={Animation.FadeInUp} delay={350}>
                 <Links to={node.fields.slug}>
                   <Post key={node.fields.slug}>
                     <H2>{node.frontmatter.title}</H2>

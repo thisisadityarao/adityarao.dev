@@ -91,7 +91,7 @@ const EmailButton = styled.a`
 
 export default () => (
   <SectionHireMe className="hire">
-    <Reveal animation={Animation.FadeInUp} delay={450}>
+    <Reveal animation={Animation.FadeInUp} delay={350}>
       <h3>Let&apos;s talk about your project.</h3>
       <p>
         I&apos;m currently seeking freelance opportunities. If you are interested in a new project or collaboration,

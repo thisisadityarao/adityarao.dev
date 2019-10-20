@@ -43,7 +43,6 @@ const H1 = styled.h1`
   }
 
   & span {
-
     color: #ff6433;
     font-weight: 700;
     letter-spacing: 0.3px;
@@ -70,8 +69,6 @@ const Links = styled(Link)`
     color: rgb(0, 105, 237);
   }
 
-
-
   @media (min-width: 768px) {
     font-size: 1.5rem;
   }
@@ -90,7 +87,9 @@ function Tags({ data, pageContext }) {
 
           {posts.map(({ node }, i) => (
             <Posts>
-              <span className="note">📝</span>
+              <span className="note" role="img" aria-label="note">
+                📝
+              </span>
               <Links to={node.fields.slug} key={i}>
                 {node.frontmatter.title}
               </Links>

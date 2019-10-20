@@ -174,7 +174,7 @@ const ExternalLink = styled(ExternalLinkAlt)`
 
 export default () => (
   <SectionContact id="contact">
-    <Reveal animation={Animation.FadeInUp} delay={400}>
+    <Reveal animation={Animation.FadeInUp} delay={350}>
       <H3>CONTACT</H3>
       <SocialIcons>
         <li>

@@ -65,7 +65,7 @@ const Footer = styled.footer`
 
 export default () => (
   <Footer className="footer">
-    <Reveal animation={Animation.FadeInUp} delay={400}>
+    <Reveal animation={Animation.FadeInUp} delay={350}>
       <p>
         Build with <a href="https://www.gatsbyjs.org/">Gatsby</a> and <a href="https://reactjs.org/">React</a>. Hosted
         on <a href="https://www.netlify.com/">Netlify</a>. The code is open source and available at{' '}

@@ -121,10 +121,10 @@ const Separator = styled.hr`
 export default () => (
   <>
     <SectionWork>
-      <Reveal animation={Animation.FadeIn} delay={400}>
+      <Reveal animation={Animation.FadeIn} delay={350}>
         <H3>SERVICES</H3>
       </Reveal>
-      <Reveal animation={Animation.SlideInLeft} delay={400}>
+      <Reveal animation={Animation.SlideInLeft} delay={350}>
         <Section>
           <ImgContainer
             style={{
@@ -148,7 +148,7 @@ export default () => (
         </Section>
       </Reveal>
       <Separator />
-      <Reveal animation={Animation.SlideInLeft} delay={400}>
+      <Reveal animation={Animation.SlideInLeft} delay={350}>
         <Section className="reverse">
           <ImgContainer
             style={{
@@ -169,7 +169,7 @@ export default () => (
         </Section>
       </Reveal>
       <Separator />
-      <Reveal animation={Animation.SlideInLeft} delay={400}>
+      <Reveal animation={Animation.SlideInLeft} delay={350}>
         <Section className="reverse">
           <ImgContainer
             style={{
