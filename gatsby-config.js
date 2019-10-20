@@ -11,8 +11,8 @@ module.exports = {
         name: 'Aditya Rao',
         short_name: 'Aditya Rao',
         start_url: '/',
-        background_color: '#5e80de',
-        theme_color: '#5e80de',
+        background_color: '#0069ed',
+        theme_color: '#0069ed',
         // Enables "Add to Homescreen" prompt and disables browser UI (including back button)
         // see https://developers.google.com/web/fundamentals/web-app-manifest/#display
         display: 'standalone',

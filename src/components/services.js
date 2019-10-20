@@ -170,7 +170,7 @@ export default () => (
       </Reveal>
       <Separator />
       <Reveal animation={Animation.SlideInLeft} delay={350}>
-        <Section className="reverse">
+        <Section>
           <ImgContainer
             style={{
               backgroundImage:
