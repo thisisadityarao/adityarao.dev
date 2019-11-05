@@ -4,9 +4,9 @@ module.exports = {
     siteUrl: 'https://adityarao.in',
   },
   plugins: [
-    'gatsby-plugin-react-helmet',
+    `gatsby-plugin-react-helmet`,
     {
-      resolve: 'gatsby-plugin-manifest',
+      resolve: `gatsby-plugin-manifest`,
       options: {
         name: 'Aditya Rao',
         short_name: 'Aditya Rao',
@@ -19,16 +19,16 @@ module.exports = {
         icon: 'src/images/icon.png', // This path is relative to the root of the site.
       },
     },
-    'gatsby-plugin-offline',
+    `gatsby-plugin-offline`,
     {
-      resolve: 'gatsby-source-filesystem',
+      resolve: `gatsby-source-filesystem`,
       options: {
         name: 'posts',
         path: `${__dirname}/content/posts/`,
       },
     },
     {
-      resolve: 'gatsby-source-cloudinary',
+      resolve: `gatsby-source-cloudinary`,
       options: {
         cloudName: 'adityar',
         apiKey: '634325125787942',
@@ -70,7 +70,7 @@ module.exports = {
     */
     // ESLint config
     {
-      resolve: 'gatsby-plugin-eslint',
+      resolve: `gatsby-plugin-eslint`,
       options: {
         test: /\.js$|\.jsx$/,
         exclude: /(node_modules|.cache|public)/,
@@ -82,12 +82,12 @@ module.exports = {
       },
     },
     {
-      resolve: 'gatsby-plugin-styled-components',
+      resolve: `gatsby-plugin-styled-components`,
       options: {
         pure: true,
       },
     },
     `gatsby-plugin-netlify`,
-    'gatsby-plugin-sitemap',
+    `gatsby-plugin-advanced-sitemap`,
   ],
 };
