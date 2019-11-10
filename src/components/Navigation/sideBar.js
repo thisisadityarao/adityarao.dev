@@ -10,9 +10,10 @@ const Container = styled.div`
   justify-content: space-evenly;
   a {
     color: white;
-    font-size: 22px;
-    margin: 10px 0;
-    padding: 10px;
+    font-size: 1.6rem;
+    font-weight: 500;
+    margin: 15px 0;
+    padding: 15px;
     border-radius: 5px;
     text-decoration: none;
     :hover {

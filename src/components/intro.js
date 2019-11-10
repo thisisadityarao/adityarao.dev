@@ -18,11 +18,11 @@ const SectionIntro = styled.section`
   & p {
     color: rgba(65, 75, 80, 1);
     line-height: 1.4;
-    font-size: 1.8rem;
+    font-size: 1.4rem;
     max-width: 45rem;
 
     @media (min-width: 768px) {
-      font-size: 2rem;
+      font-size: 1.8rem;
     }
   }
 
@@ -40,11 +40,13 @@ const SectionIntro = styled.section`
 
   & .work {
     margin-top: 40px;
+    margin-bottom: 60px;
   }
 
   .subtitle {
     font-size: 1.4rem;
     margin-top: 0;
+
     @media (min-width: 768px) {
       font-size: 1.6rem;
     }
@@ -117,7 +119,6 @@ export default () => (
         I build digital products that are intuitive, accessible, beautiful, and fun. I am here to help you and your
         business turn great ideas into amazing products.
       </p>
-      <p className="location">Location - Mumbai, India. </p>
       <p className="subtitle">Want to chat about your project?</p>
       <LinkButton href="mailto:dev.adityarao@gmail.com" target="_blank" rel="noopener noreferrer">
         Get in Touch
