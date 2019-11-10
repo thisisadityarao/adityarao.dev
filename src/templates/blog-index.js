@@ -3,7 +3,6 @@ import React from 'react';
 import styled from 'styled-components';
 import { ArrowRight } from 'styled-icons/fa-solid/ArrowRight';
 import { Link, graphql } from 'gatsby';
-import { Reveal, Animation } from 'react-genie';
 import Layout from '../components/layout';
 
 const Wrapper = styled.main`
@@ -148,17 +147,15 @@ export default ({ data, pageContext }) => {
           <H1>Latest Blog Posts</H1>
           {posts.map(({ node }) => {
             return (
-              <Reveal animation={Animation.FadeInUp} delay={350}>
-                <Links to={node.fields.slug}>
-                  <Post key={node.fields.slug}>
-                    <H2>{node.frontmatter.title}</H2>
-                    <BlogPost>{node.excerpt}</BlogPost>
-                    <Links to={node.fields.slug} style={{ color: '#0069ed', fontWeight: '500' }}>
-                      Read More <Arrow />
-                    </Links>
-                  </Post>
-                </Links>
-              </Reveal>
+              <Links to={node.fields.slug}>
+                <Post key={node.fields.slug}>
+                  <H2>{node.frontmatter.title}</H2>
+                  <BlogPost>{node.excerpt}</BlogPost>
+                  <Links to={node.fields.slug} style={{ color: '#0069ed', fontWeight: '500' }}>
+                    Read More <Arrow />
+                  </Links>
+                </Post>
+              </Links>
             );
           })}
         </BlogListing>

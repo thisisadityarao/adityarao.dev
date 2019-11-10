@@ -4,7 +4,6 @@
 
 import React from 'react';
 import styled, { createGlobalStyle } from 'styled-components';
-import { RevealGlobalStyles } from 'react-genie';
 import Head from './head';
 import Footer from './footer';
 import Header from './header';
@@ -81,7 +80,6 @@ const PageWrapper = styled.div`
 export default ({ children }) => (
   <>
     <Head />
-    <RevealGlobalStyles />
     <GlobalStyle />
     <PageWrapper>
       <Header />

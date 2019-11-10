@@ -1,7 +1,6 @@
 /* eslint-disable import/no-extraneous-dependencies */
 /* eslint-disable react/display-name */
 import React from 'react';
-import { Reveal, Animation } from 'react-genie';
 import styled, { keyframes } from 'styled-components';
 
 const SectionIntro = styled.section`
@@ -122,27 +121,25 @@ const ImgContainer = styled.div`
 `;
 
 export default () => (
-  <Reveal animation={Animation.FadeInUp} delay={450}>
-    <SectionIntro>
-      <div className="intro">
-        <h1 className="self">Hi!, I’m Aditya Rao, a freelance front-end developer.</h1>
-        <p className="work">
-          I build digital products that are intuitive, accessible, beautiful, and fun. I am here to help you and your
-          business turn great ideas into amazing products.
-        </p>
-        <p className="location">Location - Mumbai, India.</p>
-        <p className="job">*Currently looking for remote/full/part time contract.</p>
-        <p className="subtitle">Want to chat about your project?</p>
-        <LinkButton href="mailto:dev.adityarao@gmail.com" target="_blank" rel="noopener noreferrer">
-          Get in Touch
-        </LinkButton>
-      </div>
-      <ImgContainer
-        style={{
-          backgroundImage:
-            'url("https://res.cloudinary.com/adityar/image/upload/v1571462366/adityarao/Website%20Assets/landing-page.svg")',
-        }}
-      />
-    </SectionIntro>
-  </Reveal>
+  <SectionIntro>
+    <div className="intro">
+      <h1 className="self">Hi!, I’m Aditya Rao, a freelance front-end developer.</h1>
+      <p className="work">
+        I build digital products that are intuitive, accessible, beautiful, and fun. I am here to help you and your
+        business turn great ideas into amazing products.
+      </p>
+      <p className="location">Location - Mumbai, India.</p>
+      <p className="job">*Currently looking for remote/full/part time contract.</p>
+      <p className="subtitle">Want to chat about your project?</p>
+      <LinkButton href="mailto:dev.adityarao@gmail.com" target="_blank" rel="noopener noreferrer">
+        Get in Touch
+      </LinkButton>
+    </div>
+    <ImgContainer
+      style={{
+        backgroundImage:
+          'url("https://res.cloudinary.com/adityar/image/upload/v1571462366/adityarao/Website%20Assets/landing-page.svg")',
+      }}
+    />
+  </SectionIntro>
 );

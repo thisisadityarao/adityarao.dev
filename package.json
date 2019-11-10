@@ -36,7 +36,6 @@
     "react": "^16.11.0",
     "react-dom": "^16.11.0",
     "react-error-overlay": "^6.0.3",
-    "react-genie": "^0.1.5",
     "react-helmet": "^5.2.1",
     "react-scroll-up-button": "^1.6.4",
     "sanitize.css": "^11.0.0",
