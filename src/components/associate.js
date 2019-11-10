@@ -15,12 +15,12 @@ const SectionHireMe = styled.section`
 
   & h3 {
     font-weight: 900;
-    font-size: 2rem;
+    font-size: 1.8rem;
     text-align: center;
     margin-bottom: 2rem;
 
     @media (min-width: 576px) {
-      font-size: 2.5rem;
+      font-size: 3rem;
       margin-bottom: 3rem;
     }
   }
@@ -36,7 +36,7 @@ const SectionHireMe = styled.section`
     margin-bottom: 3rem;
 
     @media (min-width: 576px) {
-      font-size: 1.5rem;
+      font-size: 1.6rem;
       line-height: 1.5;
       margin-bottom: 3.5rem;
     }
@@ -56,9 +56,10 @@ const EmailButton = styled.a`
   border-radius: 3px;
   font-size: 1.4rem;
   font-weight: bold;
+  font-family: 'Fira Sans', sans-serif;
   letter-spacing: 1px;
   margin: 0 auto;
-  padding: 1rem 3rem;
+  padding: 0.9rem 2.2rem;
   width: 242px;
   color: #fff;
   text-align: center;
@@ -83,6 +84,7 @@ const EmailButton = styled.a`
   }
 
   @media (min-width: 768px) {
+    padding: 1rem 3rem;
     width: 254px;
     font-size: 1.6rem;
   }

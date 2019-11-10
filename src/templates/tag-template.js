@@ -33,13 +33,13 @@ const TagListing = styled.section`
   }
 `;
 const H1 = styled.h1`
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   font-weight: 700;
   margin-top: 1rem;
   margin-bottom: 5rem;
 
   @media (min-width: 576px) {
-    font-size: 1.8rem;
+    font-size: 2rem;
   }
 
   & span {
@@ -52,7 +52,7 @@ const H1 = styled.h1`
 `;
 const Links = styled(Link)`
   margin-bottom: 50px;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   text-decoration: none;
 
   &:link {
@@ -70,7 +70,7 @@ const Links = styled(Link)`
   }
 
   @media (min-width: 768px) {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
   }
 `;
 

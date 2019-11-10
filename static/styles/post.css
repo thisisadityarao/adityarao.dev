@@ -289,7 +289,7 @@
 .typeset h4,
 .typeset h5,
 .typeset h6 {
-  font-family: "Raleway";
+  font-family: "Fira Sans";
   font-weight: 900;
 }
 .typeset h1 {
@@ -327,7 +327,7 @@
 
 .typeset p {
   line-height: 1.8;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
 }
 .typeset blockquote {
   border-left: 0.2rem solid rgba(0, 0, 0, 0.2);
@@ -457,7 +457,7 @@
   }
   .typeset p,
   .typeset li {
-    font-size: 1.3rem;
+    font-size: 1.4rem;
   }
 
   .typeset pre {

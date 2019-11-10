@@ -25,13 +25,13 @@ const Tags = styled.div`
 
 const H1 = styled.h1`
   width: 80%;
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   margin: 0;
   margin-top: 3rem;
   margin-bottom: 3.5rem;
 
   @media (min-width: 576px) {
-    font-size: 1.8rem;
+    font-size: 2rem;
   }
 `;
 
@@ -40,7 +40,7 @@ const Links = styled(Link)`
   margin: 0.8rem;
   margin-left: 0;
   text-decoration: none;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   white-space: nowrap;
   word-break: keep-all;
   cursor: pointer;
@@ -69,8 +69,8 @@ const Links = styled(Link)`
     transition: all 0.2s ease-in-out 0s;
   }
 
-    @media (min-width: 576px) {
-    font-size: 1.3rem;
+  @media (min-width: 576px) {
+    font-size: 1.4rem;
   }
 `;
 

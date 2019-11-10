@@ -30,16 +30,20 @@ const Work = styled.div`
   margin-left: 0;
   margin-right: 0;
 
+  @media (min-width: 768px) {
+    width: 56%;
+  }
+
   & p {
     font-size: 1.2rem;
     line-height: 1.6;
     text-align: center;
-    max-width: 35rem;
+    max-width: 100%;
     margin: 0 auto;
 
     @media (min-width: 768px) {
       text-align: left;
-      max-width: 65%;
+      margin: 0 0 0 15px;
     }
 
     @media (min-width: 1024px) {
@@ -56,13 +60,9 @@ const ImgContainer = styled.div`
 
   @media (min-width: 768px) {
     height: 200px;
+    width: 35%;
     width: 40%;
     background-position: center center;
-    background-size: 250px 200px;
-  }
-
-  @media (min-width: 1200px) {
-    height: 200px;
     background-size: 250px 200px;
   }
 `;
@@ -126,7 +126,7 @@ export default () => (
           style={{
             backgroundImage:
               'url("https://res.cloudinary.com/adityar/image/upload/v1571462366/adityarao/Website%20Assets/developer.svg")',
-            backgroundSize: '275px 180px',
+            backgroundSize: '300px 200px',
           }}
         />
 

@@ -18,7 +18,7 @@ const H3 = styled.h3`
   position: relative;
   letter-spacing: 0.1rem;
   font-weight: 900;
-  font-size: 1.8rem;
+  font-size: 2rem;
   margin: 0;
   margin-bottom: 0.5rem;
   padding: 0 0 15px 0;
@@ -74,7 +74,7 @@ const SocialIcons = styled.ul`
     text-decoration: none;
 
     @media (min-width: 768px) {
-      font-size: 18px;
+      font-size: 20px;
     }
 
     &:hover {

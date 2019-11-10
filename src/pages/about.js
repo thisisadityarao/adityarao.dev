@@ -79,7 +79,7 @@ const SectionAbout = styled.section`
   }
   li {
     line-height: 1.4;
-    font-size: ${between('18px', '20px')};
+    font-size: ${between('18px', '22px')};
     margin-bottom: 1rem;
   }
 `;
@@ -102,28 +102,28 @@ const H1 = styled.h1`
 const H2 = styled.h2`
   position: relative;
   font-weight: 700;
-  font-size: 1.8rem;
+  font-size: 2rem;
   font-family: 'Source Sans Pro', sans-serif;
   margin-bottom: -0.8rem;
   text-align: center;
   padding: 0 0 15px 0;
 
   @media (min-width: 768px) {
-    font-size: 2.2rem;
+    font-size: 2.5rem;
   }
 `;
 
 const H3 = styled.h3`
   position: relative;
   font-weight: 700;
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   font-family: 'Source Sans Pro', sans-serif;
   margin-bottom: 0.5rem;
   text-align: left;
   padding: 0 0 15px 0;
 
   @media (min-width: 768px) {
-    font-size: 1.8rem;
+    font-size: 2rem;
   }
 `;
 

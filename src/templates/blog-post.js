@@ -101,7 +101,7 @@ const TagSection = styled.div`
 const PostTagLink = styled(Link)`
   cursor: pointer;
   display: inline-block;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   line-height: 1.4;
   font-variant: small-caps;
   padding: 1px 3px 1px;
@@ -119,7 +119,7 @@ const PostTagLink = styled(Link)`
     border-radius: 0.25rem;
   }
   @media (min-width: 576px) {
-    font-size: 1.3rem;
+    font-size: 1.4rem;
   }
 `;
 
