@@ -103,7 +103,7 @@ const ImgContainer = styled.div`
   @media (min-width: 992px) {
     background-repeat: no-repeat;
     height: 400px;
-    width: 40%;
+    width: 55%;
     background-position: center center;
     background-size: 400px 350px;
   }
@@ -126,7 +126,7 @@ export default () => (
     <ImgContainer
       style={{
         backgroundImage:
-          'url("https://res.cloudinary.com/adityar/image/upload/v1571462366/adityarao/Website%20Assets/landing-page.svg")',
+          'url("https://res.cloudinary.com/adityar/image/upload/v1573394935/adityarao/Website%20Assets/do_code_orange.svg")',
       }}
     />
   </SectionIntro>
