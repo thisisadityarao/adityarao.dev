@@ -50,7 +50,6 @@ const Footer = styled.footer`
     color: rgb(0, 105, 237);
   }
 
-  & a:focus,
   & a:hover {
     background-color: rgb(0, 105, 237);
     color: rgb(255, 255, 255);
@@ -60,6 +59,10 @@ const Footer = styled.footer`
 
   & a:active {
     color: #0053ba;
+  }
+
+  & a:focus {
+    outline: 3px dotted;
   }
 `;
 
