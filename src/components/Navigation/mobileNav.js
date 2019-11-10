@@ -3,31 +3,13 @@ import styled from 'styled-components';
 import SideBar from './sideBar';
 import useLockBodyScroll from '../utils/use-lock-body-scroll';
 
-const Menu = styled.button`
-  height: 30px;
-  padding: 0;
-  width: 33px;
-  z-index: 300;
-  position: relative;
-  background: transparent;
-  border: none;
-
-  &:hover:not(.touch),
-  &:focus {
-    cursor: pointer;
-    background: transparent;
-    border: none;
-    outline: none;
-  }
-`;
-
 const MenuItem = styled.div`
   width: 30px;
   height: 3px;
   border-radius: 8px;
   position: absolute;
   left: 0;
-  background: ${props => (props.menuToggle ? 'transparent' : '#2a3a4a')};
+  background: ${props => (props.menuToggle ? 'transparent' : '#fff')};
   transition: all 250ms cubic-bezier(0.86, 0, 0.07, 1);
 
   &::before {
@@ -37,7 +19,7 @@ const MenuItem = styled.div`
     height: 3px;
     border-radius: 8px;
     position: absolute;
-    background: ${props => (props.menuToggle ? 'white' : '#2a3a4a')};
+    background: ${props => (props.menuToggle ? '#fff' : '#fff')};
     left: 0;
     transform: ${props => (props.menuToggle ? `rotate(45deg); top: 0` : `rotate(0)`)};
     transition: all 250ms cubic-bezier(0.86, 0, 0.07, 1);
@@ -49,11 +31,47 @@ const MenuItem = styled.div`
     width: 30px;
     height: 3px;
     border-radius: 8px;
-    background: ${props => (props.menuToggle ? 'white' : '#2a3a4a')};
+    background: ${props => (props.menuToggle ? '#fff' : '#fff')};
     position: absolute;
     left: 0;
     transform: ${props => (props.menuToggle ? `rotate(-45deg); top: 0` : `rotate(0)`)};
     transition: all 250ms cubic-bezier(0.86, 0, 0.07, 1);
+  }
+`;
+
+const Menu = styled.button`
+  height: 30px;
+  padding: 0;
+  width: 33px;
+  z-index: 300;
+  position: relative;
+  background: transparent;
+  border: none;
+
+  &::after {
+    content: '';
+    position: absolute;
+    left: -10px;
+    top: -9px;
+    z-index: -1;
+    width: 50px;
+    height: 50px;
+    background: rgb(255, 100, 51);
+    border-radius: 7px;
+    opacity: 0.5;
+    transition: 0.3s ease-out;
+  }
+
+  &:hover:not(.touch),
+  &:focus {
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    outline: none;
+
+    &::after {
+      opacity: 1;
+    }
   }
 `;
 
