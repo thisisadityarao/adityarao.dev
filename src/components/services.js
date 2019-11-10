@@ -31,7 +31,7 @@ const Work = styled.div`
   margin-right: 0;
 
   & p {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     line-height: 1.6;
     text-align: center;
     max-width: 35rem;
@@ -43,7 +43,7 @@ const Work = styled.div`
     }
 
     @media (min-width: 1024px) {
-      font-size: 1.3rem;
+      font-size: 1.5rem;
     }
   }
 `;
@@ -69,7 +69,7 @@ const ImgContainer = styled.div`
 
 const H3 = styled.h3`
   position: relative;
-  letter-spacing: 0.1rem;
+  letter-spacing: 2px;
   font-weight: 900;
   font-size: 1.8rem;
   margin: 0;
@@ -98,14 +98,14 @@ const H3 = styled.h3`
 
 const H4 = styled.h4`
   font-weight: 900;
-  font-size: 1.3rem;
-  letter-spacing: 0.1rem;
+  font-size: 1.4rem;
+  letter-spacing: 2px;
   margin-top: 3.5rem;
   margin-bottom: 2rem;
   text-align: center;
 
   @media (min-width: 768px) {
-    font-size: 1.6rem;
+    font-size: 1.8rem;
     margin-top: 0;
     margin-bottom: 3rem;
   }

@@ -26,12 +26,12 @@ const SectionAbout = styled.section`
   padding-top: 4rem;
 
   & p {
-    font-size: ${between('18px', '20px')};
+    font-size: ${between('18px', '22px')};
     line-height: 1.5;
   }
 
   & p:first-of-type {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     font-weight: 300;
     line-height: 1;
     margin-top: 0.5rem;
@@ -88,8 +88,8 @@ const H1 = styled.h1`
   position: relative;
   font-weight: 900;
   font-size: 2.5rem;
-  letter-spacing: 1px;
-  word-spacing: 5px;
+  letter-spacing: 2px;
+  word-spacing: 4px;
   margin-bottom: 0.4rem;
   text-align: center;
   padding: 0 0 15px 0;
@@ -102,28 +102,28 @@ const H1 = styled.h1`
 const H2 = styled.h2`
   position: relative;
   font-weight: 700;
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   font-family: 'Source Sans Pro', sans-serif;
   margin-bottom: -0.8rem;
   text-align: center;
   padding: 0 0 15px 0;
 
   @media (min-width: 768px) {
-    font-size: 2rem;
+    font-size: 2.2rem;
   }
 `;
 
 const H3 = styled.h3`
   position: relative;
   font-weight: 700;
-  font-size: 1.4rem;
+  font-size: 1.5rem;
   font-family: 'Source Sans Pro', sans-serif;
   margin-bottom: 0.5rem;
   text-align: left;
   padding: 0 0 15px 0;
 
   @media (min-width: 768px) {
-    font-size: 1.6rem;
+    font-size: 1.8rem;
   }
 `;
 

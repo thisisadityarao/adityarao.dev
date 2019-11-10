@@ -26,7 +26,7 @@ const SectionHireMe = styled.section`
   }
 
   & p {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     line-height: 1.45;
     max-width: 30em;
     text-align: center;
@@ -54,11 +54,11 @@ const EmailButton = styled.a`
   display: block;
   border: none;
   border-radius: 3px;
-  font-size: 1.1rem;
+  font-size: 1.4rem;
   font-weight: bold;
   letter-spacing: 1px;
   margin: 0 auto;
-  padding: 1rem 4rem;
+  padding: 1rem 3rem;
   width: 242px;
   color: #fff;
   text-align: center;
@@ -84,7 +84,7 @@ const EmailButton = styled.a`
 
   @media (min-width: 768px) {
     width: 254px;
-    font-size: 1.3rem;
+    font-size: 1.6rem;
   }
 `;
 

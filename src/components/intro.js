@@ -18,23 +18,23 @@ const SectionIntro = styled.section`
   & p {
     color: rgba(65, 75, 80, 1);
     line-height: 1.4;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     max-width: 45rem;
 
     @media (min-width: 768px) {
-      font-size: 1.5rem;
+      font-size: 2rem;
     }
   }
 
   & .self {
-    color: rgba(65, 75, 80);
-    font-family: 'Source Sans Pro', sans-serif;
-    font-size: 1.5rem;
+    color: hsl(0, 0%, 11%);
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 3rem;
     line-height: 1.2;
-    font-weight: bold;
+    font-weight: 300;
 
     @media (min-width: 768px) {
-      font-size: 2.5rem;
+      font-size: 3.5rem;
     }
   }
 
@@ -42,22 +42,11 @@ const SectionIntro = styled.section`
     margin-top: 40px;
   }
 
-  & .job {
-    font-size: 1.2rem;
-    font-weight: 700;
-    margin-top: 36px;
-    margin-bottom: 24px;
-
-    @media (min-width: 768px) {
-      font-size: 1.5rem;
-    }
-  }
-
   .subtitle {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     margin-top: 0;
     @media (min-width: 768px) {
-      font-size: 1.4rem;
+      font-size: 1.8rem;
     }
   }
 `;
@@ -76,9 +65,9 @@ const LinkButton = styled.a`
   margin: 0;
   padding: 1rem 3rem;
   text-decoration: none;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   font-weight: bold;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'Fira Sans', sans-serif;
   letter-spacing: 1px;
   text-align: center;
   border-radius: 3px;
@@ -104,7 +93,7 @@ const LinkButton = styled.a`
   }
 
   @media (min-width: 768px) {
-    font-size: 1.4rem;
+    font-size: 1.6rem;
   }
 `;
 
@@ -128,8 +117,7 @@ export default () => (
         I build digital products that are intuitive, accessible, beautiful, and fun. I am here to help you and your
         business turn great ideas into amazing products.
       </p>
-      <p className="location">Location - Mumbai, India.</p>
-      <p className="job">*Currently looking for remote/full/part time contract.</p>
+      <p className="location">Location - Mumbai, India. </p>
       <p className="subtitle">Want to chat about your project?</p>
       <LinkButton href="mailto:dev.adityarao@gmail.com" target="_blank" rel="noopener noreferrer">
         Get in Touch

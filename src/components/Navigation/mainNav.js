@@ -5,7 +5,8 @@ import { Link } from 'gatsby';
 import Toggle from './mobileNav';
 
 const StyledLink = styled(Link)`
-  font-weight: 600;
+  font-weight: 400;
+  font-family: 'Fira Sans', sans-serif;
   cursor: pointer;
   margin: 0;
   margin-right: 2px;
@@ -88,7 +89,7 @@ const Nav = styled.div`
 const Logo = styled.a`
   display: flex;
   align-items: center;
-  font-family: 'Raleway';
+  font-family: 'Fira Sans';
   font-size: 24px;
   line-height: 24px;
   text-transform: uppercase;
@@ -114,7 +115,7 @@ const Logo = styled.a`
 
   span {
     font-weight: 900;
-    letter-spacing: 0.5px;
+    letter-spacing: 2px;
   }
 
   @media (min-width: 768px) {

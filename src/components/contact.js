@@ -119,11 +119,11 @@ const SocialIcons = styled.ul`
   }
 
   & li span {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     padding-left: 15px;
     padding-right: 8px;
     @media (min-width: 1200px) {
-      font-size: 1.3rem;
+      font-size: 1.5rem;
     }
   }
 `;
