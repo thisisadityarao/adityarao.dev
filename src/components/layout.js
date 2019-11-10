@@ -36,7 +36,7 @@ const GlobalStyle = createGlobalStyle`
     background-color: #fff;
     line-height: 1.65;
     color: #324354;
-    font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, "Segoe  UI", "Roboto", "Oxygen", "Ubuntu", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-family: 'IBM Plex Sans', -apple-system, BlinkMacSystemFont, "Segoe  UI", "Roboto", "Oxygen", "Ubuntu", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   }
 
   h1, h2, h3, h4, h5, h6 {

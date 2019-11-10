@@ -144,7 +144,6 @@ export default () => (
         <HR />
         <H2>I&apos;m Aditya Rao.</H2>
         <p>web developer · occasional designer</p>
-        <H3>Who am I?</H3>
         <p>I am a self-taught freelance web developer based out of Mumbai, India.</p>
         <p>
           {' '}

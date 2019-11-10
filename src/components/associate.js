@@ -64,7 +64,7 @@ const EmailButton = styled.a`
   color: #fff;
   text-align: center;
   text-decoration: none;
-  background: linear-gradient(45deg, #0069ed, #8200ff);
+  background: linear-gradient(45deg, #0069ed, #0037ff);
   background-size: 400% 400%;
   transition: all 0.3s ease;
   box-shadow: 0rem 0.5rem 1rem rgba(0, 0, 0, 0.3);

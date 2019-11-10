@@ -18,7 +18,7 @@ const SectionIntro = styled.section`
   & p {
     color: rgba(65, 75, 80, 1);
     line-height: 1.4;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     max-width: 45rem;
 
     @media (min-width: 768px) {
@@ -46,7 +46,7 @@ const SectionIntro = styled.section`
     font-size: 1.4rem;
     margin-top: 0;
     @media (min-width: 768px) {
-      font-size: 1.8rem;
+      font-size: 1.6rem;
     }
   }
 `;
@@ -71,7 +71,7 @@ const LinkButton = styled.a`
   letter-spacing: 1px;
   text-align: center;
   border-radius: 3px;
-  background: linear-gradient(45deg, #0069ed, #8200ff);
+  background: linear-gradient(45deg, #0069ed, #0037ff);
   background-size: 400% 400%;
   color: #fff;
   transition: all 0.3s ease;
