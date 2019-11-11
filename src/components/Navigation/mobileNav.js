@@ -68,10 +68,10 @@ const Menu = styled.button`
     background: transparent;
     border: none;
     outline: none;
+  }
 
-    &::after {
-      opacity: 1;
-    }
+  &:hover::after {
+    opacity: 1;
   }
 `;
 
