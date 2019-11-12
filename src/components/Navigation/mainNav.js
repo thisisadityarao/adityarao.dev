@@ -28,7 +28,7 @@ const StyledLink = styled(Link)`
     cursor: pointer;
     color: #fff;
     box-shadow: none;
-    background: #ff6433;
+    background: #e4004e;
     border-radius: 4px;
     transition: all 0.2s ease-in-out 0s;
   }
@@ -133,7 +133,7 @@ function Navigation() {
           activeStyle={{
             color: '#fff',
             boxShadow: 'none',
-            background: '#ff6433',
+            background: '#e4004e',
             borderRadius: '4px',
           }}
         >
@@ -144,7 +144,7 @@ function Navigation() {
           activeStyle={{
             color: '#fff',
             boxShadow: 'none',
-            background: '#ff6433',
+            background: '#e4004e',
             borderRadius: '4px',
           }}
         >
@@ -155,7 +155,7 @@ function Navigation() {
           activeStyle={{
             color: '#fff',
             boxShadow: 'none',
-            background: '#ff6433',
+            background: '#e4004e',
             borderRadius: '4px',
           }}
         >

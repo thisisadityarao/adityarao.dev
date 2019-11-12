@@ -2,6 +2,22 @@ import React from 'react';
 import { Link } from 'gatsby';
 import styled from 'styled-components';
 
+const UnderText = styled.span`
+  text-transform: uppercase;
+  pointer-events: none;
+  opacity: 0.2;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32vw;
+  color: #fff;
+`;
+
 const Container = styled.div`
   margin: auto;
   display: flex;
@@ -12,7 +28,7 @@ const Container = styled.div`
     color: white;
     font-size: 1.6rem;
     font-weight: 500;
-    margin: 15px 0;
+    margin: 5vh 0;
     padding: 15px;
     border-radius: 5px;
     text-decoration: none;
@@ -26,7 +42,7 @@ const Container = styled.div`
 `;
 
 const Wrapper = styled.div`
-  position: absolute;
+  position: fixed;
   z-index: 200;
   left: 0;
   top: 0;
@@ -34,7 +50,7 @@ const Wrapper = styled.div`
   height: 100vh;
   display: flex;
   align-items: center;
-  background-image: linear-gradient(-20deg, #288cff 0%, #8200ff 100%);
+  background: #e4004e;
 `;
 
 export default function SideBar(props) {
@@ -56,6 +72,7 @@ export default function SideBar(props) {
           Contact
         </Link>
       </Container>
+      <UnderText>Menu</UnderText>
     </Wrapper>
   );
 }

@@ -56,7 +56,7 @@ const Menu = styled.button`
     z-index: -1;
     width: 50px;
     height: 50px;
-    background: rgb(255, 100, 51);
+    background: #e4004e;
     border-radius: 7px;
     opacity: 0.5;
     transition: 0.3s ease-out;

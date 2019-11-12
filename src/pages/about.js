@@ -26,7 +26,7 @@ const SectionAbout = styled.section`
   padding-top: 4rem;
 
   & p {
-    font-size: ${between('18px', '22px')};
+    font-size: ${between('18px', '20px')};
     line-height: 1.5;
   }
 
@@ -40,7 +40,7 @@ const SectionAbout = styled.section`
   }
 
   p + p {
-    margin-top: 1.3rem;
+    margin-top: 1.8rem;
   }
 
   p + h3 {
@@ -79,7 +79,7 @@ const SectionAbout = styled.section`
   }
   li {
     line-height: 1.4;
-    font-size: ${between('18px', '22px')};
+    font-size: ${between('18px', '20px')};
     margin-bottom: 1rem;
   }
 `;
@@ -103,7 +103,7 @@ const H2 = styled.h2`
   position: relative;
   font-weight: 700;
   font-size: 2rem;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'Fira Sans', sans-serif;
   margin-bottom: -0.8rem;
   text-align: center;
   padding: 0 0 15px 0;
@@ -117,7 +117,7 @@ const H3 = styled.h3`
   position: relative;
   font-weight: 700;
   font-size: 1.8rem;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'Fira Sans', sans-serif;
   margin-bottom: 0.5rem;
   text-align: left;
   padding: 0 0 15px 0;
@@ -132,7 +132,7 @@ const HR = styled.hr`
   max-width: 100px;
   border: none;
   margin-bottom: 6rem;
-  background: #ff6433;
+  background: #ff3077;
 `;
 
 export default () => (

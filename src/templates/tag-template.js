@@ -43,7 +43,7 @@ const H1 = styled.h1`
   }
 
   & span {
-    color: #ff6433;
+    color: #e4004e;
     font-weight: 700;
     letter-spacing: 0.3px;
     text-transform: uppercase;

@@ -18,7 +18,7 @@ const ScrollUpButton = styled.div`
   width: 48px;
   height: 48px;
   border-radius: 50%;
-  background: rgb(0, 105, 237);
+  background: #e4004e;
   transition: 0.2s ease-in;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
   overflow: hidden;
@@ -27,7 +27,7 @@ const ScrollUpButton = styled.div`
   white-space: nowrap;
 
   &:hover {
-    background: #0072ff;
+    background: #ff3077;
 
     & svg {
       top: 5px;

@@ -13,6 +13,11 @@ const Main = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  padding: 0 20px;
+
+  @media (min-width: 768px) {
+    padding: 0 40px;
+  }
 `;
 
 export default () => (

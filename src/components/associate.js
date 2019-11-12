@@ -9,8 +9,8 @@ const SectionHireMe = styled.section`
   width: 100vw;
   margin-left: 50%;
   transform: translateX(-50%);
-  padding-top: 6rem;
-  padding-bottom: 4rem;
+  padding-top: 5rem;
+  padding-bottom: 6rem;
   background-color: #fafafa;
 
   & h3 {

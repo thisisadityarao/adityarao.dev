@@ -105,14 +105,14 @@ const PostTagLink = styled(Link)`
   line-height: 1.4;
   font-variant: small-caps;
   padding: 1px 3px 1px;
-  color: rgb(249, 73, 73);
+  color: #e4004e;
   transition: all 150ms linear 0s;
   text-decoration: none;
 
   &:focus,
   &:active,
   &:hover {
-    background-color: rgb(249, 73, 73);
+    background-color: #e4004e;
     color: rgb(255, 255, 255);
     outline: 0px;
     text-decoration: none;

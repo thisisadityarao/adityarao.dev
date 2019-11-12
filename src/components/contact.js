@@ -28,7 +28,7 @@ const H3 = styled.h3`
     display: block;
     width: 100px;
     height: 5px;
-    background: #ff6433;
+    background: #ff3077;
     position: absolute;
     bottom: 0;
     left: 0;
