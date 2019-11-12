@@ -9,7 +9,7 @@ const Footer = styled.footer`
   flex-direction: column;
   width: 100%;
   padding: 3rem 20px;
-  background: #f3f7f9;
+  background: #fefefe;
   border-top: 1px solid #eeeeee;
 
   @media (min-width: 600px) {

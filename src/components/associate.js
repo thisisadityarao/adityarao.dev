@@ -5,6 +5,10 @@ import styled, { keyframes } from 'styled-components';
 const Wrapper = styled.div`
   height: 100%;
   width: 100%;
+  background-color: #fefefe;
+  background-image: url('https://res.cloudinary.com/adityar/image/upload/v1573575769/adityarao/Website%20Assets/bg-dots.png');
+  background-repeat: repeat-x;
+  background-position: center center;
 `;
 
 const SectionHireMe = styled.section`
@@ -15,7 +19,6 @@ const SectionHireMe = styled.section`
   transform: translateX(-50%);
   padding-top: 5rem;
   padding-bottom: 6rem;
-  background-color: #f3f7f9;
   padding-left: 20px;
   padding-right: 20px;
 
