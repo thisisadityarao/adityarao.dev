@@ -1,9 +1,12 @@
 /* eslint-disable react/display-name */
 import React from 'react';
 import styled from 'styled-components';
+import Wrapper from './wrapper-background';
 
 const SectionWork = styled.section`
   width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
   padding-top: 3rem;
   padding-bottom: 3rem;
 `;
@@ -118,7 +121,7 @@ const Separator = styled.hr`
 `;
 
 export default () => (
-  <>
+  <Wrapper>
     <SectionWork>
       <H3>SERVICES</H3>
       <Section>
@@ -179,5 +182,5 @@ export default () => (
         </Work>
       </Section>
     </SectionWork>
-  </>
+  </Wrapper>
 );

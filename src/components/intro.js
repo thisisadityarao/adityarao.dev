@@ -2,9 +2,12 @@
 /* eslint-disable react/display-name */
 import React from 'react';
 import styled, { keyframes } from 'styled-components';
+import Wrapper from './wrapper-background';
 
 const SectionIntro = styled.section`
   width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
   height: 100%;
   padding: 4rem 0;
   text-align: left;
@@ -112,23 +115,25 @@ const ImgContainer = styled.div`
 `;
 
 export default () => (
-  <SectionIntro>
-    <div className="intro">
-      <h1 className="self">Hi!, I’m Aditya Rao, a freelance front-end developer.</h1>
-      <p className="work">
-        I build digital products that are intuitive, accessible, beautiful, and fun. I am here to help you and your
-        business turn great ideas into amazing products.
-      </p>
-      <p className="subtitle">Want to chat about your project?</p>
-      <LinkButton href="mailto:dev.adityarao@gmail.com" target="_blank" rel="noopener noreferrer">
-        Get in Touch
-      </LinkButton>
-    </div>
-    <ImgContainer
-      style={{
-        backgroundImage:
-          'url("https://res.cloudinary.com/adityar/image/upload/v1573394935/adityarao/Website%20Assets/do_code_orange.svg")',
-      }}
-    />
-  </SectionIntro>
+  <Wrapper>
+    <SectionIntro>
+      <div className="intro">
+        <h1 className="self">Hi!, I’m Aditya Rao, a freelance front-end developer.</h1>
+        <p className="work">
+          I build digital products that are intuitive, accessible, beautiful, and fun. I am here to help you and your
+          business turn great ideas into amazing products.
+        </p>
+        <p className="subtitle">Want to chat about your project?</p>
+        <LinkButton href="mailto:dev.adityarao@gmail.com" target="_blank" rel="noopener noreferrer">
+          Get in Touch
+        </LinkButton>
+      </div>
+      <ImgContainer
+        style={{
+          backgroundImage:
+            'url("https://res.cloudinary.com/adityar/image/upload/v1573394935/adityarao/Website%20Assets/do_code_orange.svg")',
+        }}
+      />
+    </SectionIntro>
+  </Wrapper>
 );

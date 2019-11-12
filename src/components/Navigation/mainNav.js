@@ -51,7 +51,6 @@ const NavigationWrapper = styled.nav`
   max-width: 1280px;
   height: 120px;
   margin: 0 auto;
-  padding: 0 20px;
   display: flex;
   align-items: center;
   flex-wrap: wrap;
@@ -62,7 +61,6 @@ const NavigationWrapper = styled.nav`
   @media (min-width: 768px) {
     font-size: 20px;
     line-height: 20px;
-    padding: 0 40px;
   }
 
   .mobile-nav {

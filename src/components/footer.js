@@ -1,6 +1,7 @@
 /* eslint-disable react/display-name */
 import React from 'react';
 import styled from 'styled-components';
+import Wrapper from './wrapper-background';
 
 const Footer = styled.footer`
   display: flex;
@@ -8,7 +9,7 @@ const Footer = styled.footer`
   flex-direction: column;
   height: 160px;
   width: 100%;
-  padding: 2rem 1rem;
+  padding: 2rem 20px;
   background: #fafafa;
   border-top: 1px solid #eeeeee;
 
@@ -29,10 +30,10 @@ const Footer = styled.footer`
 
   & p:first-of-type {
     margin-top: 0.8rem;
-    margin-bottom: 0.8rem;
+    margin-bottom: 1rem;
 
     @media (min-width: 768px) {
-      margin-bottom: 1rem;
+      margin-bottom: 2rem;
     }
   }
 
@@ -66,12 +67,14 @@ const Footer = styled.footer`
 `;
 
 export default () => (
-  <Footer className="footer">
-    <p>
-      Build with <a href="https://www.gatsbyjs.org/">Gatsby</a> and <a href="https://reactjs.org/">React</a>. Hosted on{' '}
-      <a href="https://www.netlify.com/">Netlify</a>. The code is open source and available at{' '}
-      <a href="https://github.com/ad1tyara0/raoaditya.com">Github</a>.
-    </p>
-    <p>&copy; Aditya Rao - 2019</p>
-  </Footer>
+  <Wrapper>
+    <Footer className="footer">
+      <p>
+        Build with <a href="https://www.gatsbyjs.org/">Gatsby</a> and <a href="https://reactjs.org/">React</a>. Hosted
+        on <a href="https://www.netlify.com/">Netlify</a>. The code is open source and available at{' '}
+        <a href="https://github.com/ad1tyara0/raoaditya.com">Github</a>.
+      </p>
+      <p>&copy; Aditya Rao - 2019</p>
+    </Footer>
+  </Wrapper>
 );

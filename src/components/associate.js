@@ -1,6 +1,7 @@
 /* eslint-disable react/display-name */
 import React from 'react';
 import styled, { keyframes } from 'styled-components';
+import Wrapper from './wrapper-background';
 
 const SectionHireMe = styled.section`
   border-top: 1px solid #eeeeee;
@@ -8,8 +9,7 @@ const SectionHireMe = styled.section`
   width: 100vw;
   margin-left: 50%;
   transform: translateX(-50%);
-  margin-top: 4rem;
-  padding-top: 3rem;
+  padding-top: 6rem;
   padding-bottom: 4rem;
   background-color: #fafafa;
 
@@ -91,14 +91,16 @@ const EmailButton = styled.a`
 `;
 
 export default () => (
-  <SectionHireMe className="hire">
-    <h3>Let&apos;s talk about your project.</h3>
-    <p>
-      I&apos;m currently seeking freelance opportunities. If you are interested in a new project or collaboration, send
-      me an email.
-    </p>
-    <EmailButton href="mailto:dev.adityarao@gmail.com" target="_blank" rel="noopener noreferrer">
-      Send Email
-    </EmailButton>
-  </SectionHireMe>
+  <Wrapper>
+    <SectionHireMe className="hire">
+      <h3>Let&apos;s talk about your project.</h3>
+      <p>
+        I&apos;m currently seeking freelance opportunities. If you are interested in a new project or collaboration,
+        send me an email.
+      </p>
+      <EmailButton href="mailto:dev.adityarao@gmail.com" target="_blank" rel="noopener noreferrer">
+        Send Email
+      </EmailButton>
+    </SectionHireMe>
+  </Wrapper>
 );
