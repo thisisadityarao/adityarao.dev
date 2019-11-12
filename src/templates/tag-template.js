@@ -33,6 +33,7 @@ const TagListing = styled.section`
   }
 `;
 const H1 = styled.h1`
+  font-family: 'Bree Serif', serif;
   font-size: 1.8rem;
   font-weight: 700;
   margin-top: 1rem;

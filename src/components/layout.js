@@ -40,7 +40,7 @@ const GlobalStyle = createGlobalStyle`
   }
 
   h1, h2, h3, h4, h5, h6 {
-    font-family: 'Fira Sans';
+    font-family: 'Source Sans Pro';
     color: rgb(30, 13, 43);;
   }
 

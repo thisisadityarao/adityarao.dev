@@ -85,6 +85,7 @@ const SectionAbout = styled.section`
 `;
 
 const H1 = styled.h1`
+  font-family: 'Bree Serif', serif;
   position: relative;
   font-weight: 900;
   font-size: 2.5rem;
@@ -103,7 +104,7 @@ const H2 = styled.h2`
   position: relative;
   font-weight: 700;
   font-size: 2rem;
-  font-family: 'Fira Sans', sans-serif;
+  font-family: 'Bree Serif', serif;
   margin-bottom: -0.8rem;
   text-align: center;
   padding: 0 0 15px 0;
@@ -117,7 +118,7 @@ const H3 = styled.h3`
   position: relative;
   font-weight: 700;
   font-size: 1.8rem;
-  font-family: 'Fira Sans', sans-serif;
+  font-family: 'Bree Serif', serif;
   margin-bottom: 0.5rem;
   text-align: left;
   padding: 0 0 15px 0;
@@ -132,52 +133,60 @@ const HR = styled.hr`
   max-width: 100px;
   border: none;
   margin-bottom: 6rem;
-  background: #ff3077;
+  background: #e4004e;
+`;
+
+const Wrapper = styled.div`
+  height: 100%;
+  width: 100%;
+  background: #fefefe;
 `;
 
 export default () => (
   <Layout>
-    <About>
-      {' '}
-      <SectionAbout id="about">
-        <H1>ABOUT ME</H1>
-        <HR />
-        <H2>I&apos;m Aditya Rao.</H2>
-        <p>web developer · occasional designer</p>
-        <p>I am a self-taught freelance web developer based out of Mumbai, India.</p>
-        <p>
-          {' '}
-          My focus is mainly in front-end technologies such as <b>HTML</b>, <b>CSS</b>, <b>JavaScript</b>,{' '}
-          <b>GatsbyJS</b>, <b>ReactJS</b> &amp; others that make up the <a href="https://jamstack.org">JAMSTACK</a>{' '}
-          architecture.
-        </p>
-        <p>
-          {' '}
-          I help people &amp; organization get the positive attention they deserve, by creating elegant, functional and
-          modern websites. My emphasis is on producing thoughtful, conceptually driven work that comes from a close
-          understanding of the client and their audience.
-        </p>
-        <p>
-          I’m passionate about technology, design and making peoples lives easier by solving complex problems to create
-          user-friendly, intuitive digital products. I’m constantly trying to expand and evolve my set of technical
-          skills and apply them to equally varied methods of problem solving and understanding. I am inspired by new
-          trends and details are essential to me.
-        </p>
-        <H3>About This Site</H3>
-        <p>
-          This website was formally built in the year 2017, but the style of the site has been changed several times.
-        </p>
-        <p>The main purposes of this website are listed here:</p>
-        <ul>
-          <li>Showcase my personal projects.</li>
-          <li>Document new learnings and implementation in front-end landscape.</li>
-          <li>It works as a portfolio.</li>
-        </ul>
-        <p>
-          To know more about me you can follow me on <a href="https://twitter.com/thisisadityarao">Twitter</a> or send
-          me a <a href="mailto:dev.adityarao@gmail.com">Email</a>.
-        </p>
-      </SectionAbout>
-    </About>
+    <Wrapper>
+      <About>
+        {' '}
+        <SectionAbout id="about">
+          <H1>ABOUT ME</H1>
+          <HR />
+          <H2>I&apos;m Aditya Rao.</H2>
+          <p>web developer · occasional designer</p>
+          <p>I am a self-taught freelance web developer based out of Mumbai, India.</p>
+          <p>
+            {' '}
+            My focus is mainly in front-end technologies such as <b>HTML</b>, <b>CSS</b>, <b>JavaScript</b>,{' '}
+            <b>GatsbyJS</b>, <b>ReactJS</b> &amp; others that make up the <a href="https://jamstack.org">JAMSTACK</a>{' '}
+            architecture.
+          </p>
+          <p>
+            {' '}
+            I help people &amp; organization get the positive attention they deserve, by creating elegant, functional
+            and modern websites. My emphasis is on producing thoughtful, conceptually driven work that comes from a
+            close understanding of the client and their audience.
+          </p>
+          <p>
+            I’m passionate about technology, design and making peoples lives easier by solving complex problems to
+            create user-friendly, intuitive digital products. I’m constantly trying to expand and evolve my set of
+            technical skills and apply them to equally varied methods of problem solving and understanding. I am
+            inspired by new trends and details are essential to me.
+          </p>
+          <H3>About This Site</H3>
+          <p>
+            This website was formally built in the year 2017, but the style of the site has been changed several times.
+          </p>
+          <p>The main purposes of this website are listed here:</p>
+          <ul>
+            <li>Showcase my personal projects.</li>
+            <li>Document new learnings and implementation in front-end landscape.</li>
+            <li>It works as a portfolio.</li>
+          </ul>
+          <p>
+            To know more about me you can follow me on <a href="https://twitter.com/thisisadityarao">Twitter</a> or send
+            me a <a href="mailto:dev.adityarao@gmail.com">Email</a>.
+          </p>
+        </SectionAbout>
+      </About>
+    </Wrapper>
   </Layout>
 );

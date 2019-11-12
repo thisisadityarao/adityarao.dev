@@ -5,14 +5,25 @@ import { Github } from 'styled-icons/fa-brands/Github';
 import { Envelope } from 'styled-icons/fa-regular/Envelope';
 import { Twitter } from 'styled-icons/fa-brands/Twitter';
 import { ExternalLinkAlt } from 'styled-icons/fa-solid/ExternalLinkAlt';
-import Wrapper from './wrapper-background';
+
+const Wrapper = styled.div`
+  height: 100%;
+  width: 100%;
+`;
 
 const SectionContact = styled.section`
   width: 100%;
   max-width: 1280px;
   margin: 5rem auto;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+  padding: 2rem 20px;
+
+  @media (min-width: 600px) {
+    padding: 2rem 30px;
+  }
+
+  @media (min-width: 768px) {
+    padding: 2rem 40px;
+  }
 `;
 
 const H3 = styled.h3`
@@ -28,7 +39,7 @@ const H3 = styled.h3`
     display: block;
     width: 100px;
     height: 5px;
-    background: #ff3077;
+    background: #e4004e;
     position: absolute;
     bottom: 0;
     left: 0;

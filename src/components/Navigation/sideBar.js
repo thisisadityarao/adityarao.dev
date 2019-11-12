@@ -3,6 +3,7 @@ import { Link } from 'gatsby';
 import styled from 'styled-components';
 
 const UnderText = styled.span`
+  font-family: 'Bree serif', serif;
   text-transform: uppercase;
   pointer-events: none;
   opacity: 0.2;

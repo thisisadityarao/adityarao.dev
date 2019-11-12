@@ -19,7 +19,7 @@ const Divider = styled.div`
   margin: auto;
   margin-top: 4rem;
   display: block;
-  background: #9e9e9e;
+  background: #f5f5f5;
 `;
 
 const List = styled.ul`

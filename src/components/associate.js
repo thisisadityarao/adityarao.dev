@@ -1,7 +1,11 @@
 /* eslint-disable react/display-name */
 import React from 'react';
 import styled, { keyframes } from 'styled-components';
-import Wrapper from './wrapper-background';
+
+const Wrapper = styled.div`
+  height: 100%;
+  width: 100%;
+`;
 
 const SectionHireMe = styled.section`
   border-top: 1px solid #eeeeee;
@@ -11,9 +15,22 @@ const SectionHireMe = styled.section`
   transform: translateX(-50%);
   padding-top: 5rem;
   padding-bottom: 6rem;
-  background-color: #fafafa;
+  background-color: #f3f7f9;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  @media (min-width: 600px) {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  @media (min-width: 768px) {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
 
   & h3 {
+    font-family: 'Bree Serif', serif;
     font-weight: 900;
     font-size: 1.8rem;
     text-align: center;
@@ -30,8 +47,8 @@ const SectionHireMe = styled.section`
     line-height: 1.45;
     max-width: 30em;
     text-align: center;
-    padding-left: 0.5em;
-    padding-right: 0.5em;
+    padding-left: 0.6em;
+    padding-right: 0.6em;
     margin: 0 auto;
     margin-bottom: 3rem;
 
@@ -56,7 +73,7 @@ const EmailButton = styled.a`
   border-radius: 3px;
   font-size: 1.4rem;
   font-weight: bold;
-  font-family: 'Fira Sans', sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
   letter-spacing: 1px;
   margin: 0 auto;
   padding: 0.9rem 2.2rem;

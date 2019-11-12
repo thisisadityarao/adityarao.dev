@@ -24,6 +24,7 @@ const Tags = styled.div`
 `;
 
 const H1 = styled.h1`
+  font-family: 'Bree Serif', serif;
   width: 80%;
   font-size: 1.8rem;
   margin: 0;

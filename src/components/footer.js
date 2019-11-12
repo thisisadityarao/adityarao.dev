@@ -7,14 +7,18 @@ const Footer = styled.footer`
   display: flex;
   align-items: center;
   flex-direction: column;
-  height: 160px;
   width: 100%;
-  padding: 2rem 20px;
-  background: #fafafa;
+  padding: 3rem 20px;
+  background: #f3f7f9;
   border-top: 1px solid #eeeeee;
 
+  @media (min-width: 600px) {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
   @media (min-width: 768px) {
-    padding: 30px 40px;
+    padding: 5rem 40px;
   }
 
   & p {

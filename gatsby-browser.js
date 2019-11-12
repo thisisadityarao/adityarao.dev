@@ -5,8 +5,8 @@
 require('typeface-source-sans-pro');
 // Load IBM Plex Sans typeface
 require('typeface-ibm-plex-sans');
-// Load Fira Sans typeface
-require('typeface-fira-sans');
+// Load Bree Serif typeface
+require('typeface-bree-serif');
 // Import PrismJS Theme
 require('prism-themes/themes/prism-dracula.css');
 require('prismjs/plugins/line-numbers/prism-line-numbers.css');

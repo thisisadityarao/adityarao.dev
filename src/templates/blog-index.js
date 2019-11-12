@@ -9,7 +9,7 @@ const Wrapper = styled.main`
   height: 100%;
   /* min-height for pages with one or two posts */
   min-height: 702px;
-  background: rgb(250, 250, 250);
+  background: #f3f7f9;
   padding-top: 3rem;
 
   & .paginationLink {
@@ -20,7 +20,7 @@ const Wrapper = styled.main`
   & .paginationLink:hover,
   & .paginationLink:active & .paginationLink:focus {
     color: rgb(255, 255, 255);
-    background: rgb(0, 105, 237);
+    background: #e4004e;
   }
 
   @media (min-width: 576px) {
@@ -43,6 +43,7 @@ const BlogListing = styled.section`
 `;
 
 const H1 = styled.h1`
+  font-family: 'Bree Serif', serif;
   font-weight: 900;
   font-size: 2.5rem;
   color: #234361;
@@ -87,6 +88,7 @@ const Post = styled.div`
 `;
 
 const H2 = styled.h2`
+  font-family: 'Bree Serif', serif;
   font-size: 1.8rem;
   font-weight: 900;
   line-height: 1.2;
@@ -151,7 +153,7 @@ export default ({ data, pageContext }) => {
                 <Post key={node.fields.slug}>
                   <H2>{node.frontmatter.title}</H2>
                   <BlogPost>{node.excerpt}</BlogPost>
-                  <Links to={node.fields.slug} style={{ color: '#0069ed', fontWeight: '500' }}>
+                  <Links to={node.fields.slug} style={{ color: '#e4004e', fontWeight: '500' }}>
                     Read More <Arrow />
                   </Links>
                 </Post>
@@ -201,7 +203,7 @@ export default ({ data, pageContext }) => {
                   padding: '0.3rem 0.7rem',
                   textDecoration: 'none',
                   color: i + 1 === currentPage ? '#ffffff' : '',
-                  background: i + 1 === currentPage ? '#0069ed' : '',
+                  background: i + 1 === currentPage ? '#e4004e' : '',
                   borderRadius: '4px',
                 }}
                 className="paginationLink"

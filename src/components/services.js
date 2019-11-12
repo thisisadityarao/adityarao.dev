@@ -1,14 +1,21 @@
 /* eslint-disable react/display-name */
 import React from 'react';
 import styled from 'styled-components';
-import Wrapper from './wrapper-background';
 
 const SectionWork = styled.section`
+  position: relative;
   width: 100%;
   max-width: 1280px;
   margin: 0 auto;
-  padding-top: 3rem;
-  padding-bottom: 3rem;
+  padding: 4rem 20px;
+
+  @media (min-width: 600px) {
+    padding: 5rem 30px;
+  }
+
+  @media (min-width: 768px) {
+    padding: 6rem 40px;
+  }
 `;
 
 const Section = styled.div`
@@ -29,6 +36,7 @@ const Section = styled.div`
 `;
 
 const Work = styled.div`
+  position: relative;
   width: 100%;
   margin-left: 0;
   margin-right: 0;
@@ -83,7 +91,7 @@ const H3 = styled.h3`
     display: block;
     width: 100px;
     height: 5px;
-    background: #ff3077;
+    background: #e4004e;
     position: absolute;
     bottom: 5px;
     left: 0;
@@ -118,6 +126,12 @@ const Separator = styled.hr`
   border: 0;
   border-bottom: 1px solid #eee;
   background: #eee;
+`;
+
+const Wrapper = styled.div`
+  height: 100%;
+  width: 100%;
+  background: #fefefe;
 `;
 
 export default () => (

@@ -57,10 +57,16 @@ const NavigationWrapper = styled.nav`
   justify-content: space-between;
   font-size: 18px;
   line-height: 18px;
+  padding: 0 20px;
+
+  @media (min-width: 600px) {
+    padding: 0 30px;
+  }
 
   @media (min-width: 768px) {
     font-size: 20px;
     line-height: 20px;
+    padding: 0 40px;
   }
 
   .mobile-nav {

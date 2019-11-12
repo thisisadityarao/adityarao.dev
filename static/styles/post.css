@@ -9,7 +9,7 @@
   max-width: 760px;
   margin: 0 auto;
   padding: 1rem;
-  font-family: "Source Sans Pro";
+  font-family: "IBM Plex Sans";
   padding-top: 6rem;
 }
 
@@ -289,7 +289,7 @@
 .typeset h4,
 .typeset h5,
 .typeset h6 {
-  font-family: "Fira Sans";
+  font-family: "Bree Serif", serif;
   font-weight: 900;
 }
 .typeset h1 {

@@ -2,26 +2,36 @@
 /* eslint-disable react/display-name */
 import React from 'react';
 import styled, { keyframes } from 'styled-components';
-import Wrapper from './wrapper-background';
+
+const Wrapper = styled.div`
+  height: 100%;
+  width: 100%;
+  background-image: url('https://res.cloudinary.com/adityar/image/upload/v1573571421/adityarao/Website%20Assets/2.png');
+`;
 
 const SectionIntro = styled.section`
   width: 100%;
   max-width: 1280px;
   margin: 0 auto;
   height: 100%;
-  padding: 4rem 0;
+  padding: 4rem 20px;
   text-align: left;
   display: flex;
   justify-content: space-between;
 
+  @media (min-width: 600px) {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
   @media (min-width: 768px) {
-    padding: 6rem 0;
+    padding: 6rem 40px;
   }
 
   & p {
-    color: rgba(65, 75, 80, 1);
+    color: #234361;
     line-height: 1.4;
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     max-width: 45rem;
 
     @media (min-width: 768px) {
@@ -30,13 +40,13 @@ const SectionIntro = styled.section`
   }
 
   & .self {
-    color: hsl(0, 0%, 11%);
-    font-family: 'Fira Sans', sans-serif;
-    font-size: 3rem;
+    color: #234361;
+    font-family: 'Bree Serif', sans-serif;
+    font-size: 2.6rem;
     line-height: 1.2;
-    font-weight: 300;
+    font-weight: 400;
 
-    @media (min-width: 768px) {
+    @media (min-width: 992px) {
       font-size: 3.5rem;
     }
   }
@@ -72,7 +82,7 @@ const LinkButton = styled.a`
   text-decoration: none;
   font-size: 1.4rem;
   font-weight: bold;
-  font-family: 'Fira Sans', sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
   letter-spacing: 1px;
   text-align: center;
   border-radius: 3px;
