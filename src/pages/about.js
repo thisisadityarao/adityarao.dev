@@ -5,29 +5,42 @@ import { between } from 'polished';
 import Layout from '../components/layout';
 
 const About = styled.div`
-  margin: 0 auto;
-  margin-bottom: 120px;
-  padding: 20px;
   height: 100%;
   width: 100%;
+  margin: 0 auto;
+  padding: 0 16px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  max-width: 700px;
+  max-width: 944px;
+  border-radius: 3px;
+  box-shadow: rgba(19, 17, 16, 0.1) 0px 0.5rem 1rem -0.5rem;
+  background: #ffffff;
 
-  @media (min-width: 768px) {
-    padding: 0 40px;
+  @media (min-width: 600px) {
+    padding: 0px 40px;
   }
 `;
 
 const SectionAbout = styled.section`
-  margin: 0 auto;
   width: 100%;
-  padding-top: 4rem;
+  padding: 32px;
+
+  @media (min-width: 600px) {
+    padding: 50px 60px;
+  }
+
+  @media (min-width: 1600px) {
+    padding: 70px 80px;
+  }
 
   & p {
-    font-size: ${between('18px', '20px')};
+    font-size: ${between('16px', '20px')};
     line-height: 1.5;
+
+    @media (min-width: 600px) {
+      line-height: 1.7;
+    }
   }
 
   & p:first-of-type {
@@ -40,7 +53,7 @@ const SectionAbout = styled.section`
   }
 
   p + p {
-    margin-top: 1.8rem;
+    margin-top: 30px;
   }
 
   p + h3 {
@@ -74,13 +87,17 @@ const SectionAbout = styled.section`
   }
 
   ul {
-    margin: 2rem 0;
+    margin: 1.5rem 0;
     list-style: default;
   }
   li {
-    line-height: 1.4;
-    font-size: ${between('18px', '20px')};
+    line-height: 1.5;
+    font-size: ${between('16px', '20px')};
     margin-bottom: 1rem;
+
+    @media (min-width: 600px) {
+      line-height: 1.7;
+    }
   }
 `;
 
@@ -88,12 +105,13 @@ const H1 = styled.h1`
   font-family: 'Bree Serif', serif;
   position: relative;
   font-weight: 900;
-  font-size: 2.5rem;
+  font-size: 2.3rem;
   letter-spacing: 2px;
   word-spacing: 4px;
   margin-bottom: 0.4rem;
   text-align: center;
   padding: 0 0 15px 0;
+  color: #3a4a5a;
 
   @media (min-width: 768px) {
     font-size: 3.5rem;
@@ -103,11 +121,12 @@ const H1 = styled.h1`
 const H2 = styled.h2`
   position: relative;
   font-weight: 700;
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-family: 'Bree Serif', serif;
   margin-bottom: -0.8rem;
   text-align: center;
   padding: 0 0 15px 0;
+  color: #3a4a5a;
 
   @media (min-width: 768px) {
     font-size: 2.5rem;
@@ -117,11 +136,12 @@ const H2 = styled.h2`
 const H3 = styled.h3`
   position: relative;
   font-weight: 700;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   font-family: 'Bree Serif', serif;
   margin-bottom: 0.5rem;
   text-align: left;
   padding: 0 0 15px 0;
+  color: #3a4a5a;
 
   @media (min-width: 768px) {
     font-size: 2rem;
@@ -139,7 +159,7 @@ const HR = styled.hr`
 const Wrapper = styled.div`
   height: 100%;
   width: 100%;
-  background: #fefefe;
+  background: #f3f7f9;
 `;
 
 export default () => (
@@ -148,7 +168,7 @@ export default () => (
       <About>
         {' '}
         <SectionAbout id="about">
-          <H1>ABOUT ME</H1>
+          <H1>ABOUT</H1>
           <HR />
           <H2>I&apos;m Aditya Rao.</H2>
           <p>web developer · occasional designer</p>
