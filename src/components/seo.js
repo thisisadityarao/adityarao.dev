@@ -14,6 +14,9 @@ function SEO({ description, meta, title, keywords }) {
               author
               description
               siteUrl
+              siteVerification {
+                google
+              }
             }
           }
         }
@@ -38,6 +41,10 @@ function SEO({ description, meta, title, keywords }) {
               {
                 property: 'og:description',
                 content: metaDescription,
+              },
+              {
+                name: 'google-site-verification',
+                content: data.site.siteMetadata.siteVerification.google,
               },
               {
                 name: 'twitter:creator',

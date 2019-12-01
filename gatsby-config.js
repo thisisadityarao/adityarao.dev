@@ -7,6 +7,9 @@ module.exports = {
     social: {
       twitter: `thisisadityarao`,
     },
+    siteVerification: {
+      google: 'fw84RjlaJv5i2yleReiCyk605wgYyjchRWM0mfh_43c',
+    },
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
