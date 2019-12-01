@@ -16,7 +16,13 @@ const Main = styled.div`
 `;
 
 export default () => (
-  <Layout>
+  <Layout
+    pageMeta={{
+      title: 'Main',
+      keywords: ['webdev', 'gatsbyjs', 'reactjs', 'graphql', 'frontend'],
+      description: 'Front-End developer - Aditya Rao.',
+    }}
+  >
     <Main>
       <SectionIntro />
       <SectionWork />

@@ -14,7 +14,7 @@ const SectionWork = styled.section`
   }
 
   @media (min-width: 768px) {
-    padding: 6rem 40px;
+    padding: 6rem 40px;66
   }
 `;
 
@@ -23,14 +23,13 @@ const Section = styled.div`
   flex-direction: column;
   margin: 9rem auto 4rem;
 
-  @media (min-width: 380px) and (max-width: 768px) {
+  @media (min-width: 380px) and (max-width: 767px) {
     margin: 4rem 0;
   }
 
   @media (min-width: 768px) {
     flex-direction: row;
     align-items: center;
-    justify-content: space-around;
     width: 100%;
   }
 `;
@@ -42,7 +41,7 @@ const Work = styled.div`
   margin-right: 0;
 
   @media (min-width: 768px) {
-    width: 56%;
+    flex: 1;
   }
 
   & p {
@@ -71,8 +70,8 @@ const ImgContainer = styled.div`
 
   @media (min-width: 768px) {
     height: 200px;
-    width: 35%;
     width: 40%;
+    margin-right: 1em;
     background-position: center center;
     background-size: 250px 200px;
   }

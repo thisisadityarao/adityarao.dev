@@ -163,7 +163,13 @@ const Wrapper = styled.div`
 `;
 
 export default () => (
-  <Layout>
+  <Layout
+    pageMeta={{
+      title: 'About',
+      keywords: ['about', 'aditya', 'developer'],
+      description: 'More information about Aditya Rao.',
+    }}
+  >
     <Wrapper>
       <About>
         {' '}
