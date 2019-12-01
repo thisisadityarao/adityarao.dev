@@ -94,5 +94,11 @@ module.exports = {
     },
     `gatsby-plugin-netlify`,
     `gatsby-plugin-advanced-sitemap`,
+    {
+      resolve: 'gatsby-plugin-robots-txt',
+      options: {
+        policy: [{ userAgent: '*', allow: '/' }],
+      },
+    },
   ],
 };

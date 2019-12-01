@@ -45,6 +45,7 @@ const SectionIntro = styled.section`
     font-size: 2.6rem;
     line-height: 1.2;
     font-weight: 400;
+    max-width: 30ch;
 
     @media (min-width: 992px) {
       font-size: 3.5rem;
@@ -112,18 +113,6 @@ const LinkButton = styled.a`
   }
 `;
 
-const ImgContainer = styled.div`
-  align-self: center;
-
-  @media (min-width: 992px) {
-    background-repeat: no-repeat;
-    height: 400px;
-    width: 55%;
-    background-position: center center;
-    background-size: 400px 350px;
-  }
-`;
-
 export default () => (
   <Wrapper>
     <SectionIntro>
@@ -138,12 +127,6 @@ export default () => (
           Get in Touch
         </LinkButton>
       </div>
-      <ImgContainer
-        style={{
-          backgroundImage:
-            'url("https://res.cloudinary.com/adityar/image/upload/v1573394935/adityarao/Website%20Assets/do_code_orange.svg")',
-        }}
-      />
     </SectionIntro>
   </Wrapper>
 );
