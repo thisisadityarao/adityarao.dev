@@ -3,6 +3,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { ArrowRight } from 'styled-icons/fa-solid/ArrowRight';
 import { Link, graphql } from 'gatsby';
+import SEO from '../components/seo';
 import Layout from '../components/layout';
 
 const Wrapper = styled.main`
@@ -144,6 +145,10 @@ export default ({ data, pageContext }) => {
 
   return (
     <Layout>
+      <SEO
+        title="Aditya Rao - Blog"
+        keywords={[`blog`, `gatsby`, `javascript`, `react`, `webdev`, `frontend`, `about`]}
+      />
       <Wrapper>
         <BlogListing>
           <H1>Latest Blog Posts</H1>

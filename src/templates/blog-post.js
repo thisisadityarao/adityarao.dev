@@ -5,6 +5,7 @@ import { graphql, Link } from 'gatsby';
 import MDXRenderer from 'gatsby-plugin-mdx/mdx-renderer';
 import { Calendar } from 'styled-icons/octicons/Calendar';
 import Layout from '../components/layout';
+import SEO from '../components/seo';
 import '../../static/styles/post.css';
 
 const Wrapper = styled.main`
@@ -171,6 +172,7 @@ export default ({ data: { mdx }, pageContext }) => {
 
   return (
     <Layout>
+      <SEO title={mdx.frontmatter.title} description={mdx.excerpt} />
       <Wrapper>
         <article className="typeset">
           <h1>{mdx.frontmatter.title}</h1>

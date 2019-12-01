@@ -3,6 +3,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { between } from 'polished';
 import Layout from '../components/layout';
+import SEO from '../components/seo';
 
 const About = styled.div`
   height: 100%;
@@ -163,13 +164,11 @@ const Wrapper = styled.div`
 `;
 
 export default () => (
-  <Layout
-    pageMeta={{
-      title: 'About',
-      keywords: ['about', 'aditya', 'developer'],
-      description: 'More information about Aditya Rao.',
-    }}
-  >
+  <Layout>
+    <SEO
+      title="Aditya Rao - About"
+      keywords={[`blog`, `gatsby`, `javascript`, `react`, `webdev`, `frontend`, `about`]}
+    />
     <Wrapper>
       <About>
         {' '}

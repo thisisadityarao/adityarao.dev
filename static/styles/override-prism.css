@@ -92,14 +92,14 @@
 
 :not(pre) > code[class*="language-"] {
   font-family: monospace;
-  border: 1px solid #c0f4fb;
-  color: #3a3a3a;
   font-size: 1.22rem;
-  padding: 0.1rem 0.3rem;
   margin: 0 0.2rem;
   word-wrap: break-word;
-  background: #d5f5ff;
-  border-radius: 2px;
+  color: #0324ab;
+  background: #fbf9ff;
+  border-radius: 0.3em;
+  border: 1px solid #e0dbff;
+  padding: 0.2rem 0.4rem;
 }
 code[class*="language-"] {
   text-shadow: unset;

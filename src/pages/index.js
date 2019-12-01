@@ -2,6 +2,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import Layout from '../components/layout';
+import SEO from '../components/seo';
 import SectionWork from '../components/services';
 import SectionIntro from '../components/intro';
 import SectionHireMe from '../components/associate';
@@ -16,13 +17,8 @@ const Main = styled.div`
 `;
 
 export default () => (
-  <Layout
-    pageMeta={{
-      title: 'Main',
-      keywords: ['webdev', 'gatsbyjs', 'reactjs', 'graphql', 'frontend'],
-      description: 'Front-End developer - Aditya Rao.',
-    }}
-  >
+  <Layout>
+    <SEO title="Aditya Rao - Main" keywords={[`blog`, `gatsby`, `javascript`, `react`, `webdev`, `frontend`]} />
     <Main>
       <SectionIntro />
       <SectionWork />

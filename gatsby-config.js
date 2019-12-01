@@ -1,7 +1,12 @@
 module.exports = {
   siteMetadata: {
-    title: 'Aditya Rao',
+    title: `Aditya Rao - Personal Website`,
+    author: `Aditya Rao`,
+    description: `Personal website of Aditya Rao`,
     siteUrl: 'https://adityarao.in',
+    social: {
+      twitter: `thisisadityarao`,
+    },
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
