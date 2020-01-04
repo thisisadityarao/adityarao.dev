@@ -31,23 +31,24 @@ const SectionService = styled.section`
     margin-top: 3rem;
     text-align: center;
     font-size: 1rem;
-    padding: 0 8%;
+    padding: 0 6%;
 
     @media (min-width: 900px) {
       font-size: 1.2rem;
       padding: 0 25%;
     }
 
-  & .content {
-    display: flex;
-    flex-direction: column;
+    & .content {
+      display: flex;
+      flex-direction: column;
+    }
   }
 `;
 
 const Section = styled.div`
   display: flex;
   flex-direction: column;
-  margin: 9rem auto 4rem;
+  margin: 6rem auto 4rem;
 
   @media (min-width: 380px) and (max-width: 767px) {
     margin: 4rem 0;
@@ -81,7 +82,7 @@ const Work = styled.div`
       text-align: left;
     }
     @media (min-width: 1110px) {
-      max-width: 90%;
+      max-width: 100%;
     }
   }
 `;

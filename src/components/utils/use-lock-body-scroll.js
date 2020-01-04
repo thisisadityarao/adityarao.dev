@@ -1,3 +1,5 @@
+/* eslint-disable no-return-assign */
+/* eslint-disable no-undef */
 import { useLayoutEffect } from 'react';
 
 export default function useLockBodyScroll() {

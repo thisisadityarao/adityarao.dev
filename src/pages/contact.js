@@ -128,7 +128,7 @@ export default () => (
         <SectionContact>
           <H1>Contact</H1>
           <p>
-            The best way to get in touch is to follow me on Twitter at 
+            The best way to get in touch is to follow me on Twitter at
             <a href="https://twitter.com/thisisadityarao">@thisisadityarao</a>. If you’d rather send an email, though,
             you can reach me at:
           </p>

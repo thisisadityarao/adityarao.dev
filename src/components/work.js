@@ -30,6 +30,7 @@ const Text = styled.div`
       font-size: 1.2rem;
       padding: 0 25%;
     }
+  }
 `;
 
 const Content = styled.div`
@@ -37,6 +38,7 @@ const Content = styled.div`
   flex-direction: column;
   flex-wrap: wrap;
   width: 100%;
+  counter-reset: my-awesome-counter;
 
   @media (min-width: 880px) {
     flex-direction: row;
@@ -62,7 +64,7 @@ const H3 = styled.h3`
 const CardWrapper = styled.div`
   display: flex;
   flex-direction: column;
-  width: 440px;
+  max-width: 440px;
   min-height: auto;
   border-radius: 8px;
   display: block;
@@ -97,8 +99,18 @@ const Cover = styled.div`
 
 const Description = styled.div`
   & h1 {
+    counter-increment: my-awesome-counter;
     margin: 0 0 1rem;
     font: 400 24px / 1.33333 'IBM Plex Sans', sans-serif;
+  }
+
+  & h1:before {
+    content: '0' counter(my-awesome-counter);
+    font-weight: bold;
+    font-size: 3rem;
+    margin-right: 1rem;
+    line-height: 1;
+    color: #38a169;
   }
   p {
     margin: 16px 0;
@@ -112,14 +124,19 @@ export default () => (
         <H3>HOW I WORK</H3>
         <p>
           My development process.
-          <span>👨‍💻</span>
+          <span role="img" aria-label="coder">
+            👨‍💻
+          </span>
         </p>
       </Text>
       <Content>
         <CardWrapper>
           <Card>
             <Cover>
-              <img src="https://res.cloudinary.com/adityar/image/upload/v1578125144/adityarao/Website%20Assets/planning.png" />
+              <img
+                src="https://res.cloudinary.com/adityar/image/upload/v1578125144/adityarao/Website%20Assets/planning.png"
+                alt=""
+              />
             </Cover>
             <Description>
               <h1>Planning</h1>
@@ -134,7 +151,10 @@ export default () => (
           {' '}
           <Card>
             <Cover>
-              <img src="https://res.cloudinary.com/adityar/image/upload/v1578125144/adityarao/Website%20Assets/prototyping.png" />
+              <img
+                src="https://res.cloudinary.com/adityar/image/upload/v1578125144/adityarao/Website%20Assets/prototyping.png"
+                alt=""
+              />
             </Cover>
             <Description>
               <h1>Design/Prototype</h1>
@@ -150,7 +170,10 @@ export default () => (
           {' '}
           <Card>
             <Cover>
-              <img src="https://res.cloudinary.com/adityar/image/upload/v1578125143/adityarao/Website%20Assets/coding.png" />
+              <img
+                src="https://res.cloudinary.com/adityar/image/upload/v1578125143/adityarao/Website%20Assets/coding.png"
+                alt=""
+              />
             </Cover>
             <Description>
               <h1>Development</h1>
@@ -166,7 +189,10 @@ export default () => (
           {' '}
           <Card>
             <Cover>
-              <img src="https://res.cloudinary.com/adityar/image/upload/v1578125144/adityarao/Website%20Assets/testing.png" />
+              <img
+                src="https://res.cloudinary.com/adityar/image/upload/v1578125144/adityarao/Website%20Assets/testing.png"
+                alt=""
+              />
             </Cover>
             <Description>
               <h1>Testing</h1>
@@ -181,7 +207,10 @@ export default () => (
           {' '}
           <Card>
             <Cover>
-              <img src="https://res.cloudinary.com/adityar/image/upload/v1578125144/adityarao/Website%20Assets/release.png" />
+              <img
+                src="https://res.cloudinary.com/adityar/image/upload/v1578125144/adityarao/Website%20Assets/release.png"
+                alt=""
+              />
             </Cover>
             <Description>
               <h1>Release</h1>
@@ -196,7 +225,10 @@ export default () => (
           {' '}
           <Card>
             <Cover>
-              <img src="https://res.cloudinary.com/adityar/image/upload/v1578125144/adityarao/Website%20Assets/maintenance.png" />
+              <img
+                src="https://res.cloudinary.com/adityar/image/upload/v1578125144/adityarao/Website%20Assets/maintenance.png"
+                alt=""
+              />
             </Cover>
             <Description>
               <h1>Maintainence</h1>

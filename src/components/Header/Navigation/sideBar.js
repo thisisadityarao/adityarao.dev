@@ -69,7 +69,7 @@ export default function SideBar(props) {
         <Link aria-label="View blog page" to="/blog/" activeClassName="active" onClick={toggle}>
           Blog
         </Link>
-        <Link aria-label="View contact page" to="#contact" activeClassName="active" onClick={toggle}>
+        <Link aria-label="View contact page" to="/contact/" activeClassName="active" onClick={toggle}>
           Contact
         </Link>
       </Container>

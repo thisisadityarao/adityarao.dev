@@ -85,7 +85,6 @@ function Tags({ data, pageContext }) {
           <H1>
             Posts tagged in - <span>#{tag}</span>
           </H1>
-
           {posts.map(({ node }, i) => (
             <Posts>
               <span className="note" role="img" aria-label="note">
