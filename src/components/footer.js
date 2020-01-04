@@ -1,6 +1,8 @@
 /* eslint-disable react/display-name */
 import React from 'react';
 import styled from 'styled-components';
+import { Github } from 'styled-icons/fa-brands/Github';
+import { Twitter } from 'styled-icons/fa-brands/Twitter';
 import Wrapper from './wrapper-background';
 
 const Footer = styled.footer`
@@ -9,7 +11,8 @@ const Footer = styled.footer`
   flex-direction: column;
   width: 100%;
   padding: 3rem 20px;
-  background: #fefefe;
+  background: #fafafa;
+
   border-top: 1px solid #eeeeee;
 
   @media (min-width: 600px) {
@@ -18,7 +21,7 @@ const Footer = styled.footer`
   }
 
   @media (min-width: 768px) {
-    padding: 5rem 40px;
+    padding: 1rem 40px;
   }
 
   & p {
@@ -33,30 +36,28 @@ const Footer = styled.footer`
   }
 
   & p:first-of-type {
-    margin-top: 0.8rem;
+    margin-top: 1rem;
     margin-bottom: 1rem;
 
     @media (min-width: 768px) {
+      margin-top: 2rem;
       margin-bottom: 2rem;
     }
   }
 
   & a:link {
-    text-decoration: none;
-    border-bottom: 1px solid rgb(0, 105, 237);
+    text-decoration: underline;
     padding: 2px 2px 1px;
-    color: rgb(0, 105, 237);
+    color: #3740ff;
     transition: all 150ms linear 0s;
   }
 
   & a:visited {
     background-color: transparent;
-    color: rgb(0, 105, 237);
+    color: #3740ff;
   }
 
   & a:hover {
-    background-color: rgb(0, 105, 237);
-    color: rgb(255, 255, 255);
     outline: 0px;
     text-decoration: none;
   }
@@ -70,15 +71,83 @@ const Footer = styled.footer`
   }
 `;
 
+const SocialIcons = styled.ul`
+  display: flex;
+  flex-direction: row;
+  width: 100px;
+  justify-content: space-around;
+  margin-top: 2rem;
+  padding-left: 0;
+
+  & li {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+  }
+
+  && a {
+    display: inline-block;
+    color: rgba(0, 0, 0, 0.7);
+    font-size: 18px;
+    font-style: normal;
+    transition: all 0.2s linear;
+    text-decoration: none;
+
+    @media (min-width: 768px) {
+      font-size: 20px;
+    }
+
+    &:hover {
+      color: rgb(0, 105, 237);
+    }
+  }
+`;
+
+const GithubAlt = styled(Github)`
+  width: 22px;
+  height: 22px;
+  vertical-align: middle;
+
+  @media (min-width: 1200px) {
+    width: 25px;
+    height: 25px;
+  }
+`;
+
+const TwitterAlt = styled(Twitter)`
+  width: 22px;
+  height: 22px;
+  vertical-align: middle;
+
+  @media (min-width: 1200px) {
+    width: 25px;
+    height: 25px;
+  }
+`;
+
 export default () => (
   <Wrapper>
     <Footer className="footer">
-      <p>
-        Build with <a href="https://www.gatsbyjs.org/">Gatsby</a> and <a href="https://reactjs.org/">React</a>. Hosted
-        on <a href="https://www.netlify.com/">Netlify</a>. The code is open source and available at{' '}
-        <a href="https://github.com/ad1tyara0/raoaditya.com">Github</a>.
-      </p>
-      <p>&copy; Aditya Rao - 2019</p>
+      <>
+        <p>
+          Build with <a href="https://www.gatsbyjs.org/">Gatsby</a>. Hosted on{' '}
+          <a href="https://www.netlify.com/">Netlify</a>. The code is open source and available at{' '}
+          <a href="https://github.com/ad1tyara0/raoaditya.com">Github</a>.
+        </p>
+        <p>&copy; Aditya Rao - 2020</p>
+      </>
+      <SocialIcons>
+        <li>
+          <a href="mailto:dev.adityarao@gmail.com">
+            <TwitterAlt />
+          </a>
+        </li>
+        <li>
+          <a href="https://twitter.com/thisisadityarao">
+            <GithubAlt />
+          </a>
+        </li>
+      </SocialIcons>
     </Footer>
   </Wrapper>
 );

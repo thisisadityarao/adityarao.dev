@@ -4,9 +4,9 @@
 
 import React from 'react';
 import styled, { createGlobalStyle } from 'styled-components';
+import Header from './Header/header';
 import Footer from './footer';
-import Header from './header';
-import ScrollToTop from './scroll-to-top';
+import ScrollToTop from './utils/scroll-to-top';
 
 // CSS Reset
 import '../../node_modules/sanitize.css/sanitize.css';
@@ -33,6 +33,7 @@ const GlobalStyle = createGlobalStyle`
 
   body {
     background-color: #fff;
+    position: relative;
     line-height: 1.65;
     color: #324354;
     font-family: 'IBM Plex Sans', -apple-system, BlinkMacSystemFont, "Segoe  UI", "Roboto", "Oxygen", "Ubuntu", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
@@ -66,14 +67,10 @@ const GlobalStyle = createGlobalStyle`
 `;
 
 const PageWrapper = styled.div`
-  margin: 0;
-  padding: 0;
   width: 100%;
   height: 100%;
-  position: relative;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
 `;
 
 export default ({ children }) => (

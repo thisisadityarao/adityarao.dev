@@ -92,7 +92,7 @@
 
 :not(pre) > code[class*="language-"] {
   font-family: monospace;
-  font-size: 1.22rem;
+  font-size: 0.8rem;
   margin: 0 0.2rem;
   word-wrap: break-word;
   color: #0324ab;
@@ -110,7 +110,7 @@ code[class*="language-"] {
 */
 @media (min-width: 576px) {
   :not(pre) > code[class*="language-"] {
-    font-size: 1.3rem;
+    font-size: 1rem;
     padding: 0.2rem 0.5rem;
   }
 }

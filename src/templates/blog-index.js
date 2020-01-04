@@ -3,14 +3,14 @@ import React from 'react';
 import styled from 'styled-components';
 import { ArrowRight } from 'styled-icons/fa-solid/ArrowRight';
 import { Link, graphql } from 'gatsby';
-import SEO from '../components/seo';
+import SEO from '../components/utils/seo';
 import Layout from '../components/layout';
 
 const Wrapper = styled.main`
   height: 100%;
   /* min-height for pages with one or two posts */
   min-height: 702px;
-  background: #f3f7f9;
+  background-image: url('https://res.cloudinary.com/adityar/image/upload/v1577797341/adityarao/Website%20Assets/so-white.png');
   padding-top: 3rem;
 
   & .paginationLink {
@@ -21,7 +21,7 @@ const Wrapper = styled.main`
   & .paginationLink:hover,
   & .paginationLink:active & .paginationLink:focus {
     color: rgb(255, 255, 255);
-    background: #e4004e;
+    background: #38a169;
   }
 
   @media (min-width: 576px) {
@@ -158,7 +158,7 @@ export default ({ data, pageContext }) => {
                 <Post key={node.fields.slug}>
                   <H2>{node.frontmatter.title}</H2>
                   <BlogPost>{node.excerpt}</BlogPost>
-                  <Links to={node.fields.slug} style={{ color: '#e4004e', fontWeight: '500' }}>
+                  <Links to={node.fields.slug} style={{ color: '#38a169', fontWeight: '700' }}>
                     Read More <Arrow />
                   </Links>
                 </Post>
@@ -208,7 +208,7 @@ export default ({ data, pageContext }) => {
                   padding: '0.3rem 0.7rem',
                   textDecoration: 'none',
                   color: i + 1 === currentPage ? '#ffffff' : '',
-                  background: i + 1 === currentPage ? '#e4004e' : '',
+                  background: i + 1 === currentPage ? '#38a169' : '',
                   borderRadius: '4px',
                 }}
                 className="paginationLink"

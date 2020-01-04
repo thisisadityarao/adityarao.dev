@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
 import SideBar from './sideBar';
-import useLockBodyScroll from '../utils/use-lock-body-scroll';
+import useLockBodyScroll from '../../utils/use-lock-body-scroll';
 
 const MenuItem = styled.div`
   width: 30px;
@@ -56,9 +56,9 @@ const Menu = styled.button`
     z-index: -1;
     width: 50px;
     height: 50px;
-    background: #e4004e;
+    background: #3740ff;
     border-radius: 7px;
-    opacity: 0.5;
+    opacity: 0.8;
     transition: 0.3s ease-out;
   }
 

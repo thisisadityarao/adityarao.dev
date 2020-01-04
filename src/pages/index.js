@@ -2,11 +2,12 @@
 import React from 'react';
 import styled from 'styled-components';
 import Layout from '../components/layout';
-import SEO from '../components/seo';
-import SectionWork from '../components/services';
-import SectionIntro from '../components/intro';
+import SEO from '../components/utils/seo';
+import SectionService from '../components/services';
+import SectionWork from '../components/work';
+import ProjectWork from '../components/project';
 import SectionHireMe from '../components/associate';
-import SectionContact from '../components/contact';
+import SectionIntro from '../components/intro';
 
 const Main = styled.div`
   height: 100%;
@@ -21,9 +22,10 @@ export default () => (
     <SEO title="Aditya Rao - Main" keywords={[`blog`, `gatsby`, `javascript`, `react`, `webdev`, `frontend`]} />
     <Main>
       <SectionIntro />
+      <SectionService />
       <SectionWork />
+      <ProjectWork />
       <SectionHireMe />
-      <SectionContact />
     </Main>
   </Layout>
 );

@@ -6,7 +6,7 @@
   --blockquote-color: rgba(0, 0, 0, 0.2);
   --mark-color: rgba(0, 140, 255, 0.1);
   line-height: 1;
-  max-width: 760px;
+  max-width: 732px;
   margin: 0 auto;
   padding: 1rem;
   font-family: "IBM Plex Sans";
@@ -147,17 +147,14 @@
 */
 
 .typeset a {
-  border-bottom: 1px solid rgb(0, 105, 237);
   padding: 2px 2px 1px;
-  color: rgb(0, 105, 237);
+  color: #3740ff;
   transition: all 150ms linear 0s;
-  text-decoration: none;
+  text-decoration: underline;
 }
 .typeset a:focus,
 .typeset a:active,
 .typeset a:hover {
-  background-color: rgb(0, 105, 237);
-  color: rgb(255, 255, 255);
   outline: 0px;
   text-decoration: none;
 }
@@ -327,7 +324,7 @@
 
 .typeset p {
   line-height: 1.8;
-  font-size: 1.2rem;
+  font-size: 16px;
 }
 .typeset blockquote {
   border-left: 0.2rem solid rgba(0, 0, 0, 0.2);
@@ -457,7 +454,7 @@
   }
   .typeset p,
   .typeset li {
-    font-size: 1.4rem;
+    font-size: 20px;
   }
 
   .typeset pre {
@@ -465,7 +462,7 @@
     line-height: 1.8;
   }
   .typeset code {
-    font-size: 1.1rem;
+    font-size: 1rem;
     line-height: 1.8;
   }
 }

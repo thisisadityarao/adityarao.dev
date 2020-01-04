@@ -1,21 +1,21 @@
 /* eslint-disable import/no-extraneous-dependencies */
 /* eslint-disable react/display-name */
 import React from 'react';
-import styled, { keyframes } from 'styled-components';
+import styled from 'styled-components';
 
-const Wrapper = styled.div`
-  height: 100%;
+const IntroWrapper = styled.div`
   width: 100%;
-  background-image: url('https://res.cloudinary.com/adityar/image/upload/v1573571421/adityarao/Website%20Assets/2.png');
+  height: 100%;
+  background-image: url('https://res.cloudinary.com/adityar/image/upload/v1577797174/adityarao/Website%20Assets/dot-grid.jpg');
 `;
 
-const SectionIntro = styled.section`
+const Intro = styled.section`
   width: 100%;
   max-width: 1280px;
   margin: 0 auto;
   height: 100%;
   padding: 4rem 20px;
-  text-align: left;
+  text-align: center;
   display: flex;
   justify-content: space-between;
 
@@ -28,49 +28,49 @@ const SectionIntro = styled.section`
     padding: 6rem 40px;
   }
 
-  & p {
-    color: #234361;
-    line-height: 1.4;
-    font-size: 1.5rem;
-    max-width: 45rem;
+  & .intro {
+    margin: 0 auto;
 
-    @media (min-width: 768px) {
-      font-size: 1.8rem;
+    @media (min-width: 600px) {
+      max-width: 70%;
     }
   }
 
-  & .self {
+  & h1 {
     color: #234361;
     font-family: 'Bree Serif', sans-serif;
     font-size: 2.6rem;
     line-height: 1.2;
     font-weight: 400;
-    max-width: 30ch;
 
     @media (min-width: 992px) {
       font-size: 3.5rem;
     }
   }
 
+  & p {
+    color: #234361;
+    line-height: 1.4;
+    font-size: 1.5rem;
+
+    @media (min-width: 768px) {
+      font-size: 1.8rem;
+    }
+  }
+
   & .work {
-    margin-top: 40px;
-    margin-bottom: 60px;
+    padding: 0 8%;
+    margin: 40px auto 54px;
   }
 
   .subtitle {
     font-size: 1.4rem;
-    margin-top: 0;
+    margin: 0 auto 24px;
 
     @media (min-width: 768px) {
       font-size: 1.6rem;
     }
   }
-`;
-
-const offset = keyframes`
-    50% {
-      background-position: 100% 0;
-    }
 `;
 
 const LinkButton = styled.a`
@@ -87,16 +87,14 @@ const LinkButton = styled.a`
   letter-spacing: 1px;
   text-align: center;
   border-radius: 3px;
-  background: linear-gradient(45deg, #0069ed, #0037ff);
+  background: #38a169;
   background-size: 400% 400%;
   color: #fff;
-  transition: all 0.3s ease;
-  -webkit-appearance: none;
-  box-shadow: 0rem 0.5rem 1rem rgba(0, 0, 0, 0.3);
+  outline: 0px;
+  transition: background-color 0.2s ease 0s, box-shadow 0.2s ease 0s;
 
   &:hover {
-    animation: ${offset} 10s ease infinite;
-    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.2), 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12);
   }
 
   &:focus {
@@ -113,11 +111,11 @@ const LinkButton = styled.a`
   }
 `;
 
-export default () => (
-  <Wrapper>
-    <SectionIntro>
+const SectionIntro = () => (
+  <IntroWrapper>
+    <Intro>
       <div className="intro">
-        <h1 className="self">Hi!, I’m Aditya Rao, a freelance front-end developer.</h1>
+        <h1>Hi!, I’m Aditya Rao, a freelance front-end developer.</h1>
         <p className="work">
           I build digital products that are intuitive, accessible, beautiful, and fun. I am here to help you and your
           business turn great ideas into amazing products.
@@ -127,6 +125,8 @@ export default () => (
           Get in Touch
         </LinkButton>
       </div>
-    </SectionIntro>
-  </Wrapper>
+    </Intro>
+  </IntroWrapper>
 );
+
+export default SectionIntro;

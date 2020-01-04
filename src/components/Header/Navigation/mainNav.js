@@ -28,7 +28,7 @@ const StyledLink = styled(Link)`
     cursor: pointer;
     color: #fff;
     box-shadow: none;
-    background: #e4004e;
+    background: #3740ff;
     border-radius: 4px;
     transition: all 0.2s ease-in-out 0s;
   }
@@ -139,7 +139,7 @@ function Navigation() {
           activeStyle={{
             color: '#fff',
             boxShadow: 'none',
-            background: '#e4004e',
+            background: '#3740ff',
             borderRadius: '4px',
           }}
         >
@@ -150,7 +150,7 @@ function Navigation() {
           activeStyle={{
             color: '#fff',
             boxShadow: 'none',
-            background: '#e4004e',
+            background: '#3740ff',
             borderRadius: '4px',
           }}
         >
@@ -161,13 +161,23 @@ function Navigation() {
           activeStyle={{
             color: '#fff',
             boxShadow: 'none',
-            background: '#e4004e',
+            background: '#3740ff',
             borderRadius: '4px',
           }}
         >
           Blog
         </StyledLink>
-        <StyledLink to="/#contact">Contact</StyledLink>
+        <StyledLink
+          to="/contact/"
+          activeStyle={{
+            color: '#fff',
+            boxShadow: 'none',
+            background: '#3740ff',
+            borderRadius: '4px',
+          }}
+        >
+          Contact
+        </StyledLink>
       </Nav>
     </NavigationWrapper>
   );

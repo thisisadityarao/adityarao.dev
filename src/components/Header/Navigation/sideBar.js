@@ -51,7 +51,7 @@ const Wrapper = styled.div`
   height: 100vh;
   display: flex;
   align-items: center;
-  background: #e4004e;
+  background: #3740ff;
 `;
 
 export default function SideBar(props) {

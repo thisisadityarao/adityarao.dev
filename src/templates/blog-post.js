@@ -5,12 +5,13 @@ import { graphql, Link } from 'gatsby';
 import MDXRenderer from 'gatsby-plugin-mdx/mdx-renderer';
 import { Calendar } from 'styled-icons/octicons/Calendar';
 import Layout from '../components/layout';
-import SEO from '../components/seo';
+import SEO from '../components/utils/seo';
 import '../../static/styles/post.css';
 
 const Wrapper = styled.main`
   min-height: 100%;
   background-color: #fff;
+  background-image: url('https://res.cloudinary.com/adityar/image/upload/v1577797341/adityarao/Website%20Assets/so-white.png');
 `;
 
 const Divider = styled.div`
@@ -51,16 +52,16 @@ const ListItem = styled.li`
     margin-top: 0;
   }
   & a {
-    border-bottom: 1px solid rgb(0, 105, 237);
+    border-bottom: 1px solid #3740ff;
     padding: 2px 2px 1px;
-    color: rgb(0, 105, 237);
+    color: #3740ff;
     transition: all 150ms linear 0s;
     text-decoration: none;
   }
   & a:focus,
   & a:active,
   & a:hover {
-    background-color: rgb(0, 105, 237);
+    background-color: #3740ff;
     color: rgb(255, 255, 255);
     outline: 0px;
     text-decoration: none;
@@ -92,11 +93,11 @@ const Date = styled.span`
 
 const TagSection = styled.div`
   width: 100%;
-  max-width: 760px;
+  max-width: 732px;
+  margin: 0 auto;
+  padding: 1rem;
   height: 48px;
   line-height: 40px;
-  padding-left: 1rem;
-  margin: 3rem auto 6rem;
 `;
 
 const PostTagLink = styled(Link)`
@@ -106,21 +107,26 @@ const PostTagLink = styled(Link)`
   line-height: 1.4;
   font-variant: small-caps;
   padding: 1px 3px 1px;
-  color: #e4004e;
+  color: #38a169;
   transition: all 150ms linear 0s;
   text-decoration: none;
+
+  background-color: #fff;
+  border: 1px solid #38a169;
+  color: #38a169;
+  border-radius: 0.25rem;
 
   &:focus,
   &:active,
   &:hover {
-    background-color: #e4004e;
-    color: rgb(255, 255, 255);
+    background-color: #c6f6d5;
+    color: #38a169;
     outline: 0px;
     text-decoration: none;
     border-radius: 0.25rem;
   }
   @media (min-width: 576px) {
-    font-size: 1.4rem;
+    font-size: 1.25rem;
   }
 `;
 
@@ -137,7 +143,7 @@ const PostTags = styled(Link)`
   position: relative;
   text-align: center;
   color: rgb(0, 105, 237);
-  border: 1px solid rgb(0, 105, 237);
+  border: 1px solid #e3f2fd;
   border-radius: 0.25rem;
   padding: 2px 4px;
   transition: all 150ms linear 0s;
@@ -145,11 +151,11 @@ const PostTags = styled(Link)`
   &:focus,
   &:active,
   &:hover {
-    color: #fff;
-    background-color: rgb(0, 105, 237);
+    color: #e3f2fd;
+    background-color: #3740ff;
   }
   @media (min-width: 576px) {
-    font-size: 1.2rem;
+    font-size: 1.25rem;
   }
 `;
 

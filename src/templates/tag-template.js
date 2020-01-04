@@ -44,7 +44,7 @@ const H1 = styled.h1`
   }
 
   & span {
-    color: #e4004e;
+    color: #38a169;
     font-weight: 700;
     letter-spacing: 0.3px;
     text-transform: uppercase;
@@ -53,11 +53,11 @@ const H1 = styled.h1`
 `;
 const Links = styled(Link)`
   margin-bottom: 50px;
-  font-size: 1.4rem;
+  font-size: 16px;
   text-decoration: none;
 
   &:link {
-    color: rgb(0, 105, 237);
+    color: #3740ff;
   }
   &:focus,
   &:hover {
@@ -67,11 +67,11 @@ const Links = styled(Link)`
     color: #5e80de;
   }
   &:visited {
-    color: rgb(0, 105, 237);
+    color: #3740ff;
   }
 
   @media (min-width: 768px) {
-    font-size: 1.8rem;
+    font-size: 20px;
   }
 `;
 
