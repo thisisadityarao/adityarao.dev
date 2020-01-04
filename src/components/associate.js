@@ -6,7 +6,7 @@ const Wrapper = styled.div`
   height: 100%;
   width: 100%;
   background-color: #fefefe;
-  background-image: url('https://res.cloudinary.com/adityar/image/upload/v1577797341/adityarao/Website%20Assets/so-white.png');
+  background-image: url('https://res.cloudinary.com/adityar/image/upload/v1578152566/adityarao/Website%20Assets/whitediamond__2X.png');
 `;
 
 const SectionHireMe = styled.section`

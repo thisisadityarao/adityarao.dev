@@ -32,18 +32,22 @@ const Intro = styled.section`
     margin: 0 auto;
 
     @media (min-width: 600px) {
-      max-width: 70%;
+      max-width: 75%;
+    }
+
+    @media (min-width: 1120px) {
+      max-width: 80%;
     }
   }
 
   & h1 {
     color: #234361;
     font-family: 'Bree Serif', sans-serif;
-    font-size: 2.6rem;
+    font-size: 2rem;
     line-height: 1.2;
     font-weight: 400;
 
-    @media (min-width: 992px) {
+    @media (min-width: 1120px) {
       font-size: 3.5rem;
     }
   }
@@ -51,7 +55,7 @@ const Intro = styled.section`
   & p {
     color: #234361;
     line-height: 1.4;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
 
     @media (min-width: 768px) {
       font-size: 1.8rem;
@@ -64,7 +68,7 @@ const Intro = styled.section`
   }
 
   .subtitle {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     margin: 0 auto 24px;
 
     @media (min-width: 768px) {

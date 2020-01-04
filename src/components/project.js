@@ -7,6 +7,7 @@ const Wrapper = styled.div`
   height: 100%;
   border-top: 1px solid #eeeeee;
   background: #fafafa;
+  background-image: url('https://res.cloudinary.com/adityar/image/upload/v1578152567/adityarao/Website%20Assets/fabric_of_squares_gray__2X.png');
 `;
 
 const ProjectWork = styled.section`
