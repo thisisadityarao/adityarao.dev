@@ -87,7 +87,7 @@ const SectionContact = styled.section`
   }
   & a:visited {
     background-color: transparent;
-    color: #3740ff;
+    color: #fff;
   }
 
   & a:focus,
@@ -97,7 +97,7 @@ const SectionContact = styled.section`
   }
 
   & a:active {
-    color: #0053ba;
+    color: #fff;
   }
 `;
 
