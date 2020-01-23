@@ -3,7 +3,7 @@ module.exports = {
     title: `Aditya Rao - Personal Website`,
     author: `Aditya Rao`,
     description: `Personal website of Aditya Rao`,
-    siteUrl: 'https://adityarao.in',
+    siteUrl: 'https://adityarao.dev',
     social: {
       twitter: `thisisadityarao`,
     },
@@ -93,6 +93,16 @@ module.exports = {
       resolve: `gatsby-plugin-styled-components`,
       options: {
         pure: true,
+      },
+    },
+    {
+      resolve: `gatsby-plugin-csp`,
+      options: {
+        disableOnDev: true,
+        directives: {
+          'img-src': "'self' https://res.cloudinary.com/",
+          // you can add your directives or override defaults
+        },
       },
     },
     `gatsby-plugin-netlify`,

@@ -70,7 +70,7 @@ class NotFoundPage extends React.Component {
           <ImgContainer
             style={{
               backgroundImage:
-                'url("https://res.cloudinary.com/adityar/image/upload/v1573394935/adityarao/Website%20Assets/404_orange.svg")',
+                'url("https://res.cloudinary.com/adityar/image/upload/v1573394935/adityarao/website/404_orange.svg")',
             }}
           />
           <P>

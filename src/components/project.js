@@ -7,7 +7,7 @@ const Wrapper = styled.div`
   height: 100%;
   border-top: 1px solid #eeeeee;
   background: #fafafa;
-  background-image: url('https://res.cloudinary.com/adityar/image/upload/v1578152567/adityarao/Website%20Assets/fabric_of_squares_gray__2X.png');
+  background-image: url('https://res.cloudinary.com/adityar/image/upload/v1579750957/adityarao/website/background/fabric_of_square.png');
 `;
 
 const ProjectWork = styled.section`
@@ -145,7 +145,11 @@ export default () => (
         </CardWrapper>
         <CardWrapper href="https://www.adityarao.dev/" target="_blank">
           <Card>
-            <Cover>
+            <Cover
+              backgroundImage="url(
+                'https://res.cloudinary.com/adityar/image/upload/v1579155295/adityarao/Website%20Assets/social-media-card.png'
+              )"
+            >
               <h1>Personal Website</h1>
             </Cover>
             <Description>This website created using GatsbyJS.</Description>

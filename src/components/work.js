@@ -134,7 +134,7 @@ export default () => (
           <Card>
             <Cover>
               <img
-                src="https://res.cloudinary.com/adityar/image/upload/v1578125144/adityarao/Website%20Assets/planning.png"
+                src="https://res.cloudinary.com/adityar/image/upload/v1579751054/adityarao/website/planning.png"
                 alt=""
               />
             </Cover>
@@ -152,7 +152,7 @@ export default () => (
           <Card>
             <Cover>
               <img
-                src="https://res.cloudinary.com/adityar/image/upload/v1578125144/adityarao/Website%20Assets/prototyping.png"
+                src="https://res.cloudinary.com/adityar/image/upload/v1579751054/adityarao/website/prototype.png"
                 alt=""
               />
             </Cover>
@@ -171,7 +171,7 @@ export default () => (
           <Card>
             <Cover>
               <img
-                src="https://res.cloudinary.com/adityar/image/upload/v1578125143/adityarao/Website%20Assets/coding.png"
+                src="https://res.cloudinary.com/adityar/image/upload/v1579751054/adityarao/website/coding.png"
                 alt=""
               />
             </Cover>
@@ -190,7 +190,7 @@ export default () => (
           <Card>
             <Cover>
               <img
-                src="https://res.cloudinary.com/adityar/image/upload/v1578125144/adityarao/Website%20Assets/testing.png"
+                src="https://res.cloudinary.com/adityar/image/upload/v1579751055/adityarao/website/testing.png"
                 alt=""
               />
             </Cover>
@@ -208,7 +208,7 @@ export default () => (
           <Card>
             <Cover>
               <img
-                src="https://res.cloudinary.com/adityar/image/upload/v1578125144/adityarao/Website%20Assets/release.png"
+                src="https://res.cloudinary.com/adityar/image/upload/v1579751055/adityarao/website/release.png"
                 alt=""
               />
             </Cover>
@@ -226,7 +226,7 @@ export default () => (
           <Card>
             <Cover>
               <img
-                src="https://res.cloudinary.com/adityar/image/upload/v1578125144/adityarao/Website%20Assets/maintenance.png"
+                src="https://res.cloudinary.com/adityar/image/upload/v1579751056/adityarao/website/maintenance.png"
                 alt=""
               />
             </Cover>

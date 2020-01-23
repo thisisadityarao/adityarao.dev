@@ -6,7 +6,7 @@ import styled from 'styled-components';
 const IntroWrapper = styled.div`
   width: 100%;
   height: 100%;
-  background-image: url('https://res.cloudinary.com/adityar/image/upload/v1577797174/adityarao/Website%20Assets/dot-grid.jpg');
+  background-image: url('https://res.cloudinary.com/adityar/image/upload/v1579750956/adityarao/website/background/dot-grid.jpg');
 `;
 
 const Intro = styled.section`

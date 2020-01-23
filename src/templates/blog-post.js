@@ -11,7 +11,7 @@ import '../../static/styles/post.css';
 const Wrapper = styled.main`
   min-height: 100%;
   background-color: #fff;
-  background-image: url('https://res.cloudinary.com/adityar/image/upload/v1577797341/adityarao/Website%20Assets/so-white.png');
+  background-image: url('https://res.cloudinary.com/adityar/image/upload/v1579750956/adityarao/website/background/so-white.png');
 `;
 
 const Divider = styled.div`

@@ -6,7 +6,7 @@ import { between } from 'polished';
 const ServiceWrapper = styled.div`
   width: 100%;
   height: 100%;
-  background-image: url('https://res.cloudinary.com/adityar/image/upload/v1577797341/adityarao/Website%20Assets/so-white.png');
+  background-image: url('https://res.cloudinary.com/adityar/image/upload/v1579750956/adityarao/website/background/so-white.png');
 `;
 
 const SectionService = styled.section`
@@ -155,8 +155,8 @@ export default () => (
           <ImgContainer
             style={{
               backgroundImage:
-                'url("https://res.cloudinary.com/adityar/image/upload/v1577759414/adityarao/Website%20Assets/dev.svg")',
-              backgroundSize: '300px 200px',
+                'url("https://res.cloudinary.com/adityar/image/upload/v1579751054/adityarao/website/dev.svg")',
+              backgroundSize: '300px 165px',
             }}
           />
 
@@ -180,7 +180,7 @@ export default () => (
           <ImgContainer
             style={{
               backgroundImage:
-                'url("https://res.cloudinary.com/adityar/image/upload/v1577759414/adityarao/Website%20Assets/seo.svg")',
+                'url("https://res.cloudinary.com/adityar/image/upload/v1579751056/adityarao/website/seo.svg")',
               backgroundSize: '300px 200px',
             }}
           />
@@ -200,8 +200,8 @@ export default () => (
           <ImgContainer
             style={{
               backgroundImage:
-                'url("https://res.cloudinary.com/adityar/image/upload/v1578114339/adityarao/Website%20Assets/social.svg")',
-              backgroundSize: '400px 200px',
+                'url("https://res.cloudinary.com/adityar/image/upload/v1579751055/adityarao/website/social.svg")',
+              backgroundSize: '300px 180px',
             }}
           />
           <Work>

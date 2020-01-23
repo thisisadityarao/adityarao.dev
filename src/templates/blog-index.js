@@ -10,7 +10,7 @@ const Wrapper = styled.main`
   height: 100%;
   /* min-height for pages with one or two posts */
   min-height: 702px;
-  background-image: url('https://res.cloudinary.com/adityar/image/upload/v1577797341/adityarao/Website%20Assets/so-white.png');
+  background-image: url('https://res.cloudinary.com/adityar/image/upload/v1579750956/adityarao/website/background/so-white.png');
   padding-top: 3rem;
 
   & .paginationLink {

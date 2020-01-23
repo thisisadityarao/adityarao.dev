@@ -125,7 +125,7 @@ const H3 = styled.h3`
 const Wrapper = styled.div`
   height: 100%;
   width: 100%;
-  background-image: url('https://res.cloudinary.com/adityar/image/upload/v1577797341/adityarao/Website%20Assets/so-white.png');
+  background-image: url('https://res.cloudinary.com/adityar/image/upload/v1579750956/adityarao/website/background/so-white.png');
 `;
 
 export default () => (

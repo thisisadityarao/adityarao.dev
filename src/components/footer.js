@@ -130,9 +130,19 @@ export default () => (
     <Footer className="footer">
       <>
         <p>
-          Build with <a href="https://www.gatsbyjs.org/">Gatsby</a>. Hosted on{' '}
-          <a href="https://www.netlify.com/">Netlify</a>. The code is open source and available at{' '}
-          <a href="https://github.com/ad1tyara0/raoaditya.com">Github</a>.
+          Build with{' '}
+          <a href="https://www.gatsbyjs.org/" aria-label="Visit Gatsby website">
+            Gatsby
+          </a>
+          . Hosted on{' '}
+          <a href="https://www.netlify.com/" aria-label="Visit Netlify">
+            Netlify
+          </a>
+          . The code is open source and available at{' '}
+          <a href="https://github.com/ad1tyara0/raoaditya.com" aria-label="Visit GitHub profile of Aditya Rao">
+            Github
+          </a>
+          .
         </p>
         <p>&copy; Aditya Rao - 2020</p>
       </>
