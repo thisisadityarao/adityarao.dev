@@ -100,7 +100,7 @@ module.exports = {
       options: {
         disableOnDev: true,
         directives: {
-          'img-src': "'self' https://res.cloudinary.com/",
+          'img-src': "'self' https://res.cloudinary.com/adityar",
           // you can add your directives or override defaults
         },
       },

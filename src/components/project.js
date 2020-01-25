@@ -127,7 +127,11 @@ export default () => (
         </p>
       </Text>
       <Content>
-        <CardWrapper href="https://github.com/thisisadityarao/simple-responsive-grid" target="_blank">
+        <CardWrapper
+          href="https://github.com/thisisadityarao/simple-responsive-grid"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <Card>
             <Cover>
               <h1>Simple Responsive Grid</h1>
@@ -135,7 +139,11 @@ export default () => (
             <Description>Simple responsive grid with max-width of 1440px.</Description>
           </Card>
         </CardWrapper>
-        <CardWrapper href="https://github.com/thisisadityarao/react-scroll-progress-bar" target="_blank">
+        <CardWrapper
+          href="https://github.com/thisisadityarao/react-scroll-progress-bar"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <Card>
             <Cover>
               <h1>React Scroll Progress Bar</h1>
@@ -143,7 +151,7 @@ export default () => (
             <Description>React Component for a fixed scroll progress bar.</Description>
           </Card>
         </CardWrapper>
-        <CardWrapper href="https://www.adityarao.dev/" target="_blank">
+        <CardWrapper href="https://www.adityarao.dev/" target="_blank" rel="noopener noreferrer">
           <Card>
             <Cover
               backgroundImage="url(
@@ -155,7 +163,7 @@ export default () => (
             <Description>This website created using GatsbyJS.</Description>
           </Card>
         </CardWrapper>
-        <CardWrapper href="https://vigorous-carson-53eb5c.netlify.com/" target="_blank">
+        <CardWrapper href="https://vigorous-carson-53eb5c.netlify.com/" target="_blank" rel="noopener noreferrer">
           <Card>
             <Cover>
               <h1>React Social Media Cards</h1>
@@ -163,7 +171,7 @@ export default () => (
             <Description>Card components used on Socia Media.</Description>
           </Card>
         </CardWrapper>
-        <CardWrapper href="https://unruffled-davinci-b9c261.netlify.com/" target="_blank">
+        <CardWrapper href="https://unruffled-davinci-b9c261.netlify.com/" target="_blank" rel="noopener noreferrer">
           <Card>
             <Cover>
               <h1>Simple React Calculator</h1>
