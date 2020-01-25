@@ -95,16 +95,6 @@ module.exports = {
         pure: true,
       },
     },
-    {
-      resolve: `gatsby-plugin-csp`,
-      options: {
-        disableOnDev: true,
-        directives: {
-          'img-src': "'self' https://res.cloudinary.com/adityar",
-          // you can add your directives or override defaults
-        },
-      },
-    },
     `gatsby-plugin-netlify`,
     `gatsby-plugin-advanced-sitemap`,
     {
