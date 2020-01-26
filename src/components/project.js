@@ -114,7 +114,12 @@ const Cover = styled.div`
 `;
 
 const Description = styled.p`
+  font: 400 16px / 1.33333 'IBM Plex Sans', sans-serif;
   margin: 8px 0;
+
+  @media (min-width: 920px) {
+    font-size: 18px;
+  }
 `;
 
 export default () => (
@@ -133,9 +138,14 @@ export default () => (
           rel="noopener noreferrer"
         >
           <Card>
-            <Cover>
-              <h1>Simple Responsive Grid</h1>
-            </Cover>
+            <Cover
+              style={{
+                backgroundImage:
+                  'url("https://res.cloudinary.com/adityar/image/upload/v1580011705/adityarao/website/project/grid.png")',
+                backgroundSize: 'cover',
+                backgroundRepeat: 'no-repeat',
+              }}
+            />
             <Description>Simple responsive grid with max-width of 1440px.</Description>
           </Card>
         </CardWrapper>
@@ -154,29 +164,53 @@ export default () => (
         <CardWrapper href="https://www.adityarao.dev/" target="_blank" rel="noopener noreferrer">
           <Card>
             <Cover
-              backgroundImage="url(
-                'https://res.cloudinary.com/adityar/image/upload/v1579155295/adityarao/Website%20Assets/social-media-card.png'
-              )"
-            >
-              <h1>Personal Website</h1>
-            </Cover>
+              style={{
+                backgroundImage:
+                  'url("https://res.cloudinary.com/adityar/image/upload/v1580011705/adityarao/website/project/personal-website.png")',
+                backgroundSize: 'cover',
+                backgroundRepeat: 'no-repeat',
+              }}
+            />
             <Description>This website created using GatsbyJS.</Description>
           </Card>
         </CardWrapper>
         <CardWrapper href="https://vigorous-carson-53eb5c.netlify.com/" target="_blank" rel="noopener noreferrer">
           <Card>
-            <Cover>
-              <h1>React Social Media Cards</h1>
-            </Cover>
+            <Cover
+              style={{
+                backgroundImage:
+                  'url("https://res.cloudinary.com/adityar/image/upload/v1580011705/adityarao/website/project/social-media.png")',
+                backgroundSize: 'cover',
+                backgroundRepeat: 'no-repeat',
+              }}
+            />
             <Description>Card components used on Socia Media.</Description>
           </Card>
         </CardWrapper>
         <CardWrapper href="https://unruffled-davinci-b9c261.netlify.com/" target="_blank" rel="noopener noreferrer">
           <Card>
-            <Cover>
-              <h1>Simple React Calculator</h1>
-            </Cover>
+            <Cover
+              style={{
+                backgroundImage:
+                  'url("https://res.cloudinary.com/adityar/image/upload/v1580011705/adityarao/website/project/calculator.png")',
+                backgroundSize: 'cover',
+                backgroundRepeat: 'no-repeat',
+              }}
+            />
             <Description>Simple Calculator App created using React.</Description>
+          </Card>
+        </CardWrapper>
+        <CardWrapper href="https://condescending-lamport-b6d95c.netlify.com/" target="_blank" rel="noopener noreferrer">
+          <Card>
+            <Cover
+              style={{
+                backgroundImage:
+                  'url("https://res.cloudinary.com/adityar/image/upload/v1580011705/adityarao/website/project/todo.png")',
+                backgroundSize: 'cover',
+                backgroundRepeat: 'no-repeat',
+              }}
+            />
+            <Description>To-Do App created using React and Redux.</Description>
           </Card>
         </CardWrapper>
       </Content>
