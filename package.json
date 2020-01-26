@@ -3,7 +3,7 @@
   "description": "Personal website of Aditya Rao.",
   "license": "MIT",
   "scripts": {
-    "develop": "gatsby clean && gatsby develop -o",
+    "develop": "gatsby clean && gatsby develop",
     "build": "gatsby build",
     "serve": "gatsby serve"
   },

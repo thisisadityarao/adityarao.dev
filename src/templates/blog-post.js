@@ -1,3 +1,4 @@
+/* eslint-disable react/no-array-index-key */
 /* eslint-disable react/display-name */
 import React from 'react';
 import styled from 'styled-components';
