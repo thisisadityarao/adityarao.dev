@@ -116,6 +116,7 @@ const Logo = styled.a`
   }
 
   span {
+    z-index: 999;
     font-weight: 900;
     letter-spacing: 1px;
   }
@@ -130,7 +131,7 @@ function Navigation() {
   return (
     <NavigationWrapper>
       <Logo href="/">
-        <span className="logo">ADITYA RAO</span>
+        <span>ADITYA RAO</span>
       </Logo>
       <Nav className="navigation">
         <Toggle className="mobile-nav" />

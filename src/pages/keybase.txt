@@ -1,0 +1,56 @@
+==================================================================
+https://keybase.io/aditya_rao
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://adityarao.dev
+  * I am aditya_rao (https://keybase.io/aditya_rao) on keybase.
+  * I have a public key ASAxOQqlisC3Yona8fPhmKk9Uuv6WfX877cBNTV-SNHe5go
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "012031390aa58ac0b76289daf1f3e198a93d52ebfa59f5fcefb70135357e48d1dee60a",
+      "host": "keybase.io",
+      "kid": "012031390aa58ac0b76289daf1f3e198a93d52ebfa59f5fcefb70135357e48d1dee60a",
+      "uid": "1dba11f2b043e875cb8add19150b9b19",
+      "username": "aditya_rao"
+    },
+    "merkle_root": {
+      "ctime": 1582512820,
+      "hash": "7ff6838162884014e43624c4806793bf576b8094347a03bbd61b7883c10c7fe15615b3df44ea4b35b5dd4f7210ed1434cf6932f6f4e825023af6552a03c4fbeb",
+      "hash_meta": "4d88b453e309a6315d6d23fb3180450936736e2374bb76bb84115ad538620787",
+      "seqno": 14712347
+    },
+    "service": {
+      "entropy": "mMo3SsTF5x2z3xYC5/erwBgt",
+      "hostname": "adityarao.dev",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "5.2.0"
+  },
+  "ctime": 1582512855,
+  "expire_in": 504576000,
+  "prev": "f401fab5bfb7c784238731af21ead80b28aca0789c04412abc0f414a64d3ef0b",
+  "seqno": 6,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgMTkKpYrAt2KJ2vHz4ZipPVLr+ln1/O+3ATU1fkjR3uYKp3BheWxvYWTESpcCBsQg9AH6tb+3x4QjhzGvIerYCyisoHicBEEqvA9BSmTT7wvEIOXUOKex/i0GjptEunCALvA78XYYfKhrbrjoA4AbKqdhAgHCo3NpZ8RA0itPASy8DF/MSrWEUtqfRzOtHx5BWU0qcyvrhLaeZsbQbaKklsLKgN+QxEIKyvSZ5MhFUrRkJFHeCz2jwb9DDqhzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIAxJQ7DFesXMjnZbfHYM/Ug/xhxBBVR9aWWupQQW51dBo3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/aditya_rao
+
+==================================================================
