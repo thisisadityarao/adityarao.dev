@@ -30,8 +30,6 @@ const H3 = styled.h3`
   position: relative;
   letter-spacing: 0.1rem;
   font-weight: 900;
-  font-size: 2rem;
-  margin: 0;
   margin-bottom: 0.5rem;
   padding: 0 0 15px 0;
 
