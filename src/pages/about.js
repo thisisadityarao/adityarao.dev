@@ -133,6 +133,8 @@ const ImgWrapper = styled.div`
   width: 100%;
   
   & img {
+    max-width: 360px;
+    max-height: 360px;
     margin: 0 auto;
   }
 `
@@ -148,13 +150,9 @@ export default () => (
         {' '}
         <SectionAbout id="about">
           <ImgWrapper>
-          <img src="https://res.cloudinary.com/adityar/image/upload/ar_1:1,b_rgb:ffffff,bo_5px_solid_rgb:ffffff,c_fill,g_auto,r_max,w_350/v1612938273/adityarao/IMG20210119194854.jpg" />
-</ImgWrapper>
-          <H1>
-            <span role="img" aria-label="wave emoji">
-              👋
-            </span>
-          </H1>
+            <img src="https://res.cloudinary.com/adityar/image/upload/ar_1:1,b_rgb:ffffff,bo_5px_solid_rgb:ffffff,c_fill,g_auto,r_max,w_350/v1612938273/adityarao/IMG20210119194854.jpg" />
+          </ImgWrapper>
+
           <p>
             Hi, again~ My name is Aditya. I&apos;m a Developer. SEO. Marketer. I focus on optimizing, designing,
             developing, marketing, and managing websites and applications. I work on complex front-end projects with
