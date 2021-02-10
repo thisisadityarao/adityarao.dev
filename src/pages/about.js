@@ -128,6 +128,15 @@ const Wrapper = styled.div`
   background-image: url('https://res.cloudinary.com/adityar/image/upload/v1579750956/adityarao/website/background/so-white.png');
 `;
 
+const ImgWrapper = styled.div`
+  height: 100%;
+  width: 100%;
+  
+  & img {
+    margin: 0 auto;
+  }
+`
+
 export default () => (
   <Layout>
     <SEO
@@ -138,6 +147,9 @@ export default () => (
       <About>
         {' '}
         <SectionAbout id="about">
+          <ImgWrapper>
+          <img src="https://res.cloudinary.com/adityar/image/upload/ar_1:1,b_rgb:ffffff,bo_5px_solid_rgb:ffffff,c_fill,g_auto,r_max,w_350/v1612938273/adityarao/IMG20210119194854.jpg" />
+</ImgWrapper>
           <H1>
             <span role="img" aria-label="wave emoji">
               👋

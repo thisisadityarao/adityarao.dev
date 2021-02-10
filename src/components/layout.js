@@ -6,7 +6,7 @@ import React from 'react';
 import styled, { createGlobalStyle } from 'styled-components';
 import Header from './Header/header';
 import Footer from './footer';
-import ScrollToTop from './utils/scroll-to-top';
+//import ScrollToTop from './utils/scroll-to-top';
 
 // CSS Reset
 import '../../node_modules/sanitize.css/sanitize.css';
@@ -80,7 +80,6 @@ export default ({ children }) => (
       <Header />
       {children}
       <Footer />
-      <ScrollToTop />
     </PageWrapper>
   </>
 );

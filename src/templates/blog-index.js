@@ -1,7 +1,7 @@
 /* eslint-disable react/display-name */
 import React from 'react';
 import styled from 'styled-components';
-import { ArrowRight } from 'styled-icons/fa-solid/ArrowRight';
+import { ArrowRight } from '@styled-icons/fa-solid/ArrowRight';
 import { Link, graphql } from 'gatsby';
 import SEO from '../components/utils/seo';
 import Layout from '../components/layout';

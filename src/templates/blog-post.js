@@ -4,7 +4,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { graphql, Link } from 'gatsby';
 import MDXRenderer from 'gatsby-plugin-mdx/mdx-renderer';
-import { Calendar } from 'styled-icons/octicons/Calendar';
+import { Calendar } from '@styled-icons/octicons/Calendar';
 import Layout from '../components/layout';
 import SEO from '../components/utils/seo';
 import '../../static/styles/post.css';

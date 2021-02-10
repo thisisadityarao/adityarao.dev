@@ -5,7 +5,7 @@ import React, { Component } from 'react';
 import styled from 'styled-components';
 import detectPassiveEvents from 'detect-passive-events';
 import TweenFunctions from 'tween-functions';
-import { ChevronUp } from 'styled-icons/fa-solid/ChevronUp';
+import { ChevronUp } from '@styled-icons/fa-solid/ChevronUp';
 
 const ScrollUpButton = styled.div`
   display: ${props => (props.customProp ? 'inline-block' : 'none')};

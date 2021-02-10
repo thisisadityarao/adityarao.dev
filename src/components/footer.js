@@ -1,8 +1,8 @@
 /* eslint-disable react/display-name */
 import React from 'react';
 import styled from 'styled-components';
-import { Github } from 'styled-icons/fa-brands/Github';
-import { Twitter } from 'styled-icons/fa-brands/Twitter';
+import { Github } from '@styled-icons/fa-brands/Github';
+import { Twitter } from '@styled-icons/fa-brands/Twitter';
 import Wrapper from './wrapper-background';
 
 const Footer = styled.footer`
