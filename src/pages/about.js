@@ -131,11 +131,13 @@ const Wrapper = styled.div`
 const ImgWrapper = styled.div`
   height: 100%;
   width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   
   & img {
     max-width: 360px;
     max-height: 360px;
-    margin: 0 auto;
   }
 `
 
