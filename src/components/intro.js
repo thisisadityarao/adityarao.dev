@@ -119,7 +119,7 @@ const SectionIntro = () => (
   <IntroWrapper>
     <Intro>
       <div className="intro">
-        <h1>Hi!, I’m Aditya Rao, a freelance front-end developer.</h1>
+        <h1>Hi!, I’m Aditya Rao, a front-end developer.</h1>
         <p className="work">
           I build digital products that are intuitive, accessible, beautiful, and fun. I am here to help you and your
           business turn great ideas into amazing products.
